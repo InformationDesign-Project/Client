@@ -42,7 +42,7 @@
             </div>
           </div>
         <div class="dashboard-main">
-            <div class="heatmap"></div>
+            <div class="heatmap"> <img width="100%;" src="/layout/heatmap.png" alt="heatmap"/></div>
             <div class="sidebar">
                 <div class="sorted-by">Sorted By</div>
                 <div class="validators-info">
