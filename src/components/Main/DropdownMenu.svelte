@@ -23,7 +23,6 @@
 					}
 				}
 			});
-
 			// 옵션을 클릭하면 선택한 옵션을 드롭다운 버튼 텍스트로 설정하고 목록 숨기기
 			const options = document.querySelectorAll('.sorting-option');
 			options.forEach((option) => {
@@ -59,7 +58,7 @@
 </div>
 
 <style lang="scss">
-.dropdown-toggle {
+	.dropdown-toggle {
 		display: flex;
 		width: 168px;
 		height: 36px;
