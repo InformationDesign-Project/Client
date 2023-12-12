@@ -1,51 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-
-	let dropdownButton: HTMLButtonElement | null = null;
-	let dropdownContent: HTMLDivElement | null = null;
-
-	onMount(() => {
-		dropdownButton = document.getElementById('dropdownButton') as HTMLButtonElement | null;
-		dropdownContent = document.getElementById('dropdownContent') as HTMLDivElement | null;
-
-		if (dropdownButton && dropdownContent) {
-			// 초기에 드롭다운 옵션 목록을 가려줍니다.
-			dropdownContent.style.display = 'none';
-
-			// 드롭다운 버튼 클릭 시 옵션 목록 토글
-			dropdownButton.addEventListener('click', () => {
-				if (dropdownContent) {
-					// 현재 상태를 확인하여 토글합니다.
-					if (dropdownContent.style.display === 'none') {
-						dropdownContent.style.display = 'block';
-					} else {
-						dropdownContent.style.display = 'none';
-					}
-				}
-			});
-
-			// 옵션을 클릭하면 선택한 옵션을 드롭다운 버튼 텍스트로 설정하고 목록 숨기기
-			const options = document.querySelectorAll('.sorting-option');
-			options.forEach((option) => {
-				option.addEventListener('click', () => {
-					if (dropdownButton) {
-						dropdownButton.textContent = option.textContent || 'Select Sorting Option';
-						// 옵션 선택 후 목록을 다시 가립니다.
-						dropdownContent.style.display = 'none';
-					}
-				});
-			});
-
-			// 드롭다운 옵션 목록 외의 영역을 클릭하면 목록 숨기기
-			window.addEventListener('click', (event) => {
-				if (dropdownContent && dropdownButton) {
-					if (event.target !== dropdownContent && event.target !== dropdownButton) {
-						dropdownContent.style.display = 'none';
-					}
-				}
-			});
-		}
-	});
+	import DropdownMenu from '../components/DropdownMenu.svelte';
 </script>
 
 <body>
@@ -100,39 +54,31 @@
 				</div>
 				<div class="sidebar">
 					<div class="sorted-by">Sorted By</div>
-					<div class="dropdown">
-						<button class="dropdown-toggle" id="dropdownButton">Healthy Level</button>
-						<div class="dropdown-content" id="dropdownContent">
-							<div class="sorting-option">Option 1</div>
-							<div class="sorting-option">Option 2</div>
-							<div class="sorting-option">Option 3</div>
-							<!-- 원하는 옵션들을 추가하세요 -->
+					<DropdownMenu /> <!-- DropdownMenu 컴포넌트 사용 -->
+					<div class="validators-info">
+						<div class="validators-info-item">
+							<div class="validators-info-label">Total Validators</div>
+							<div class="validators-info-number">50</div>
 						</div>
-						<div class="validators-info">
-							<div class="validators-info-item">
-								<div class="validators-info-label">Total Validators</div>
-								<div class="validators-info-number">50</div>
-							</div>
-							<div class="validators-info-item">
-								<div class="validators-info-label">Level 1</div>
-								<div class="validators-info-number">10</div>
-							</div>
-							<div class="validators-info-item">
-								<div class="validators-info-label">Level 2</div>
-								<div class="validators-info-number">15</div>
-							</div>
-							<div class="validators-info-item">
-								<div class="validators-info-label">Level 3</div>
-								<div class="validators-info-number">20</div>
-							</div>
-							<div class="validators-info-item">
-								<div class="validators-info-label">Level 4</div>
-								<div class="validators-info-number">12</div>
-							</div>
-							<div class="validators-info-item">
-								<div class="validators-info-label">Level 5</div>
-								<div class="validators-info-number">8</div>
-							</div>
+						<div class="validators-info-item">
+							<div class="validators-info-label">Level 1</div>
+							<div class="validators-info-number">10</div>
+						</div>
+						<div class="validators-info-item">
+							<div class="validators-info-label">Level 2</div>
+							<div class="validators-info-number">15</div>
+						</div>
+						<div class="validators-info-item">
+							<div class="validators-info-label">Level 3</div>
+							<div class="validators-info-number">20</div>
+						</div>
+						<div class="validators-info-item">
+							<div class="validators-info-label">Level 4</div>
+							<div class="validators-info-number">12</div>
+						</div>
+						<div class="validators-info-item">
+							<div class="validators-info-label">Level 5</div>
+							<div class="validators-info-number">8</div>
 						</div>
 					</div>
 				</div>
@@ -156,154 +102,172 @@
 
 <style lang="scss">
 	.header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.logo {
-	flex-grow: 0;
-	padding-left: 40px;
-	padding-top: 15px;
-}
-
-.top-coins {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-top: 15px;
-	margin-right: 38px;
-}
-
-.top-coin {
-	background-color: #11141b;
-	color: #ffffff;
-	padding: 28px;
-	border-radius: 10px;
-	margin: 0 15px;
-	width: 150px;
-	height: 50px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}
-
-.time-period, .coin-name, .title {
-	font-weight: normal;
-	margin-bottom: 5px;
-}
-
-.coin-name {
-	font-size: 34px;
-	font-weight: bold;
-}
-
-.title {
-	font-size: 11px;
-	opacity: 0.6;
-}
-
-.dashboard-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: start;
-	align-items: flex-start;
-	padding: 20px;
-	gap: 20px;
-}
-
-.dashboard {
-	width: 900px;
-	height: 500px;
-	padding: 20px;
-	border-radius: 10px;
-	background-color: #11141b;
-	color: #fff;
-	margin: 20px;
-}
-
-.dashboard-top-line, .dashboard-main {
-	display: flex;
-	justify-content: space-between;
-}
-
-.dashboard-metric {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-left: 30px;
-
-	.metric-value {
-		font-size: 50px;
-		font-weight: bold;
-	}
-	.metric-value.score {
-		color: #267af9;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
-	.metric-label {
+	.logo {
+		// 로고 스타일링
+		flex-grow: 0;
+		padding-left: 40px;
+		padding-top: 15px;
+	}
+
+	.top-coins {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 15px;
+		margin-right: 38px;
+	}
+
+	.top-coin {
+		background-color: #11141b;
+		color: #ffffff;
+		padding: 28px;
+		border-radius: 10px;
+		margin: 0 15px;
+		width: 150px;
+		height: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.time-period {
 		font-size: 16px;
-		margin-top: 5px;
+		font-weight: normal;
+		margin-bottom: 5px;
+	}
+
+	.coin-name {
+		font-size: 34px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+
+	.title {
+		font-size: 11px;
+		font-weight: normal;
 		opacity: 0.6;
 	}
-}
+	.dashboard-coin {
+		background-color: #161b26;
+		padding: 15px 15px;
+		border-radius: 10px;
+		width: 150px;
+		height: 50px;
 
-.sidebar {
-	flex-basis: 200px;
-}
+		font-size: 24px;
+		color: #ffffff;
+	}
 
-.dropdown-toggle {
-	display: flex;
-	width: 168px;
-	height: 36px;
-	padding: 8px 10.24px 8.12px 13px;
-	border-radius: 5px;
-	background-color: #161b26;
-	color: #afb7c0;
-	border: none;
-	margin-bottom: 10px;
-}
+	.sorted-by {
+		font-size: 12px;
+		font-style: normal;
+		color: #7987a8;
+		margin-bottom: 10px;
+	}
 
-.dropdown-toggle::after {
-	content: url('/layout/Rectangle.png');
-	margin-left: 50px;
-}
+	.dashboard-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		align-items: flex-start;
+		padding: 20px;
+		gap: 20px;
+	}
 
-.heatmap {
-	display: flex;
-	width: 900px;
-	height: 400px;
-}
+	.dashboard {
+		width: 900px;
+		height: 500px;
+		padding: 20px;
+		border-radius: 10px;
+		background-color: #11141b;
+		color: #fff;
+		border-radius: 10px;
+		margin: 20px;
 
-.right-section {
-	display: flex;
-	flex-direction: column;
-	width: 300px;
-	height: 540px;
-	gap: 20px;
-	padding: 20px;
-}
+		.dashboard-top-line {
+			display: flex;
+			justify-content: space-between;
+			width: 85%;
+			.dashboard-metric {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
 
-.coin-list-section, .rader-chart {
-	flex-grow: 1;
-	min-height: 230px;
-	width: 100%;
-	border-radius: 10px;
-	background-color: #11141b;
-	color: #fff;
-}
+				.metric-value {
+					font-size: 50px;
+					font-weight: bold;
+				}
+				.metric-value.score {
+					color: #267af9;
+				}
 
-/* 공통 스타일 */
-.validators-info-item, .validators-info-label, .validators-info-number {
-	font-size: 12px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	color: #7987a8;
-}
+				.metric-label {
+					font-size: 16px;
+					margin-top: 5px;
+					opacity: 0.6;
+				}
+			}
+		}
 
-.validators-info-number {
-	font-size: 24px;
-	font-weight: bold;
-	color: #ffffff;
-}
+		.dashboard-main {
+			display: flex;
+			width: 100%;
+
+			.sidebar {
+				flex-basis: 200px;
+				margin-left: 30px;
+			}
+		}
+	}
+
+	.validators-info-item {
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+	}
+
+	/* validators-info-label 스타일 */
+	.validators-info-label {
+		font-size: 12px;
+		font-weight: normal;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		color: #7987a8;
+	}
+
+	.validators-info-number {
+		font-size: 24px;
+		font-weight: bold;
+		color: #ffffff;
+	}
+	.heatmap {
+		display: flex;
+		width: 900px;
+		height: 400px;
+		// background-color: #161B26;
+		//border-radius: 10px;
+	}
+	.right-section {
+		display: flex;
+		flex-direction: column;
+		width: 300px;
+		height: 540px;
+		gap: 20px;
+		padding: 20px;
+	}
+
+	.coin-list-section,
+	.rader-chart {
+		flex-grow: 1;
+		min-height: 230px;
+		width: 100%;
+		border-radius: 10px;
+		background-color: #11141b;
+		color: #fff;
+	}
 </style>
