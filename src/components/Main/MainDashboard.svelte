@@ -165,7 +165,6 @@
 		display: flex;
 		width: 100%;
 		height: 100%;
-		/* 주석 처리된 배경색과 border-radius 스타일이 있지만 주석 처리되어 있습니다. */
 	}
 
 	.sidebar {

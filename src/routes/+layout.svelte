@@ -1,62 +1,67 @@
 <!-- +layout.svelte -->
 
-<script>
-	import Header from '../components/Header/Header.svelte';
-	const btns = [
-		{
-			title: 'EXPLORER',
-			url: '/layout/explorer.png',
-			fnc: ''
-		},
-		{
-			title: 'OVERVIEW',
-			url: '/layout/overview.png',
-			fnc: ''
-		},
-		{
-			title: 'PROPOSALS',
-			url: '/layout/proposals.png',
-			fnc: ''
-		},
-		{
-			title: 'HEALTHY STATUS',
-			url: '/layout/healthyStatus.png',
-			fnc: ''
-		}
-	];
+<script lang="ts">
+
+	 const btns = [
+    {
+      title: "EXPLORER",
+      url: "/layout/explorer.png",
+      route: "/Explorer",
+    },
+    {
+      title: "OVERVIEW",
+      url: "/layout/overview.png",
+      route: "/Overview",
+    },
+    {
+      title: "PROPOSALS",
+      url: "/layout/proposals.png",
+      route: "/Proposals",
+    },
+    {
+      title: "HEALTHY STATUS",
+      url: "/layout/healthyStatus.png",
+      route: "/HealthyStatus",
+    },
+  ];
+
+  function navigateTo(route: string) {
+  location.href = route;
+}
 </script>
 
 <main>
 	<div class="wrapper">
-		<div class="leftSection">
-			<div class="topSection iconBox">
-				<div class="iconWrapper">
-					<img width="50%;" src="/layout/Logotype.png" />
+	  <div class="leftSection">
+		<!-- 로고 이미지 클릭 시 메인 페이지로 이동 -->
+		<div class="topSection iconBox" on:click={() => navigateTo('/')}>
+		  <div class="iconWrapper">
+			<img width="50%;" src="/layout/Logotype.png" />
+		  </div>
+		</div>
+		<div class="bottomSection menuSection">
+		  {#each btns as btn}
+			<div class="menuBtn" on:click={() => navigateTo(btn.route)}>
+			  <div class="menuInner">
+				<div style="display:flex; align-items:center;">
+				  <img width="18px;" src={btn.url} />
+				  <div style="margin-left:10px; font-size:14px; margin-top:2px;">
+					{btn.title}
+				  </div>
 				</div>
+			  </div>
 			</div>
-			<div class="bottomSection menuSection">
-				{#each btns as btn}
-					<div class="menuBtn">
-						<div class="menuInner">
-							<div style="display:flex; align-items:center;">
-								<img width="18px;" src={btn.url} />
-								<div style="margin-left:10px; fons-size:14px; margin-top:2px;">
-									{btn.title}
-								</div>
-							</div>
-						</div>
-					</div>
-				{/each}
-			</div>
+		  {/each}
 		</div>
-		<div class="rightSection">
-			<div class="topSection"></div>
-			<div class="bottomSection">
-				<slot />
-			</div>
+	  </div>
+	  <div class="rightSection">
+		<div class="topSection"></div>
+		<div class="bottomSection">
+		  <slot />
 		</div>
+	  </div>
 	</div>
-</main>
+  </main>
 
 <style lang="scss">
 	.wrapper {
