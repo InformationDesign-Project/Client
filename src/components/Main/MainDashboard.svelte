@@ -61,14 +61,33 @@
 	</div>
 	<div class="right-section">
 		<div class="coin-list-section">
-			<!-- 코인 목록 섹션 -->
-		</div>
+            <div class="coin-list-header">
+                <img src="/layout/Vector.png" alt="vector" />
+                <div class="coin-list-top">Top 10 Healthy Chains</div>
+            </div>
+            <div class="coin-list-divider"></div> <!-- 구분선 -->
+            <div class="coin-list">
+                <img
+				width="90%;"
+				src="/layout/cosmosFrame.png"
+				alt="cosmos-freame"
+			/>
+                <!-- <div class="coin-list-left">
+                    
+                    <div>01 COSMOS</div>
+        
+                </div>
+                <div class="coin-list-right">
+                </div> -->
+            </div>
+        </div>
+        
 		<div class="rader-chart">
 			<img
 				width="100%;"
 				src="/layout/rader-chart.png"
 				alt="rader-chart"
-				style="margin-top: 25px;"
+                style="margin-top: 25px;"
 			/>
 		</div>
 	</div>
@@ -86,7 +105,7 @@
 
 	.dashboard {
 		width: 70%;
-		height: 100%;
+		height: 580px;
 		padding: 20px;
 		border-radius: 10px;
 		background-color: #11141b;
@@ -208,13 +227,56 @@
 		padding: 20px;
 	}
 
-	.coin-list-section,
-	.rader-chart {
-		flex-grow: 1;
-		min-height: 200px;
-		width: 85%;
+    .coin-list-section {
+        flex-grow: 1;
+		height: 275px;
+		width: 70%;
 		border-radius: 10px;
 		background-color: #11141b;
 		color: #fff;
+
+    .coin-list-header {
+        display: flex;
+        align-items: center;
+        gap: 10px; // 필요에 따라 조정
+        margin: 20px;
+
+        .coin-list-top {
+            color:#FFFFFF;
+            opacity: 0.7;
+        }
+    }
+
+    .coin-list-divider {
+        border-top: 1px solid rgba(121, 135, 168, 0.15); // 색상은 필요에 따라 조정
+        margin: 0 20px;
+    }
+
+    .coin-list {
+        display: flex;
+        justify-content: space-between;
+        margin-left:25px;
+
+        .coin-list-left, .coin-list-right {
+            display: flex;
+            flex-direction: column;
+            width: 48%; // 필요에 따라 조정
+            margin: 20px;
+
+            div {
+                // 개별 코인들을 위한 스타일
+            }
+        }
+    }
+}
+
+	.rader-chart {
+		flex-grow: 1;
+		height: 325px;
+		width: 70%;
+		border-radius: 10px;
+		background-color: #11141b;
+		color: #fff;
+        
 	}
 </style>
