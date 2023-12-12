@@ -85,19 +85,19 @@
 	}
 
 	.dashboard {
-		width: 900px;
-		height: 500px;
+		width: 70%;
+		height: 100%;
 		padding: 20px;
 		border-radius: 10px;
 		background-color: #11141b;
 		color: #fff;
 		border-radius: 10px;
 		margin: 20px;
-
 		.dashboard-top-line {
 			display: flex;
 			justify-content: space-between;
 			width: 85%;
+			margin-bottom: 20px;
 			.dashboard-metric {
 				display: flex;
 				flex-direction: column;
@@ -124,8 +124,8 @@
 			width: 100%;
 
 			.sidebar {
-				flex-basis: 200px;
-				margin-left: 30px;
+				flex-basis: 30%;
+				margin-left: 5%;
 			}
 		}
 	}
@@ -163,14 +163,14 @@
 
 	.heatmap {
 		display: flex;
-		width: 900px;
-		height: 400px;
+		width: 100%;
+		height: 100%;
 		/* 주석 처리된 배경색과 border-radius 스타일이 있지만 주석 처리되어 있습니다. */
 	}
 
 	.sidebar {
-		flex-basis: 50px;
-		margin-left: 30px;
+		flex-basis: 30%;
+		margin-left: 5%;
 	}
 
 	.sorted-by {
@@ -199,11 +199,12 @@
 		font-weight: bold;
 		color: #ffffff;
 	}
+
 	.right-section {
 		display: flex;
 		flex-direction: column;
-		width: 300px;
-		height: 540px;
+		width: 30%;
+		height: 100%;
 		gap: 20px;
 		padding: 20px;
 	}
@@ -211,8 +212,8 @@
 	.coin-list-section,
 	.rader-chart {
 		flex-grow: 1;
-		min-height: 230px;
-		width: 100%;
+		min-height: 200px;
+		width: 85%;
 		border-radius: 10px;
 		background-color: #11141b;
 		color: #fff;
