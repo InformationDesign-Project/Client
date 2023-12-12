@@ -156,189 +156,154 @@
 
 <style lang="scss">
 	.header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
-	.logo {
-		// 로고 스타일링
-		flex-grow: 0;
-		padding-left: 40px;
-		padding-top: 15px;
-	}
+.logo {
+	flex-grow: 0;
+	padding-left: 40px;
+	padding-top: 15px;
+}
 
-	.top-coins {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding-top: 15px;
-		margin-right: 38px;
-	}
+.top-coins {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 15px;
+	margin-right: 38px;
+}
 
-	.top-coin {
-		background-color: #11141b;
-		color: #ffffff;
-		padding: 28px;
-		border-radius: 10px;
-		margin: 0 15px;
-		width: 150px;
-		height: 50px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
+.top-coin {
+	background-color: #11141b;
+	color: #ffffff;
+	padding: 28px;
+	border-radius: 10px;
+	margin: 0 15px;
+	width: 150px;
+	height: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
 
-	.time-period {
-		font-size: 16px;
-		font-weight: normal;
-		margin-bottom: 5px;
-	}
+.time-period, .coin-name, .title {
+	font-weight: normal;
+	margin-bottom: 5px;
+}
 
-	.coin-name {
-		font-size: 34px;
+.coin-name {
+	font-size: 34px;
+	font-weight: bold;
+}
+
+.title {
+	font-size: 11px;
+	opacity: 0.6;
+}
+
+.dashboard-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: flex-start;
+	padding: 20px;
+	gap: 20px;
+}
+
+.dashboard {
+	width: 900px;
+	height: 500px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #11141b;
+	color: #fff;
+	margin: 20px;
+}
+
+.dashboard-top-line, .dashboard-main {
+	display: flex;
+	justify-content: space-between;
+}
+
+.dashboard-metric {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 30px;
+
+	.metric-value {
+		font-size: 50px;
 		font-weight: bold;
-		margin-bottom: 5px;
+	}
+	.metric-value.score {
+		color: #267af9;
 	}
 
-	.title {
-		font-size: 11px;
-		font-weight: normal;
+	.metric-label {
+		font-size: 16px;
+		margin-top: 5px;
 		opacity: 0.6;
 	}
-	.dashboard-coin {
-		background-color: #161b26;
-		padding: 15px 15px;
-		border-radius: 10px;
-		width: 150px;
-		height: 50px;
+}
 
-		font-size: 24px;
-		color: #ffffff;
-	}
+.sidebar {
+	flex-basis: 200px;
+}
 
-	.sorted-by {
-		font-size: 12px;
-		font-style: normal;
-		color: #7987a8;
-		margin-bottom: 10px;
-	}
+.dropdown-toggle {
+	display: flex;
+	width: 168px;
+	height: 36px;
+	padding: 8px 10.24px 8.12px 13px;
+	border-radius: 5px;
+	background-color: #161b26;
+	color: #afb7c0;
+	border: none;
+	margin-bottom: 10px;
+}
 
-	.dashboard-container {
-		display: flex;
-		flex-direction: row;
-		justify-content: start;
-		align-items: flex-start;
-		padding: 20px;
-		gap: 20px;
-	}
+.dropdown-toggle::after {
+	content: url('/layout/Rectangle.png');
+	margin-left: 50px;
+}
 
-	.dashboard {
-		width: 900px;
-		height: 500px;
-		padding: 20px;
-		border-radius: 10px;
-		background-color: #11141b;
-		color: #fff;
-		border-radius: 10px;
-		margin: 20px;
+.heatmap {
+	display: flex;
+	width: 900px;
+	height: 400px;
+}
 
-		.dashboard-top-line {
-			display: flex;
-			justify-content: space-between;
-			width: 85%;
-			.dashboard-metric {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
+.right-section {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	height: 540px;
+	gap: 20px;
+	padding: 20px;
+}
 
-				.metric-value {
-					font-size: 50px;
-					font-weight: bold;
-				}
-				.metric-value.score {
-					color: #267af9;
-				}
+.coin-list-section, .rader-chart {
+	flex-grow: 1;
+	min-height: 230px;
+	width: 100%;
+	border-radius: 10px;
+	background-color: #11141b;
+	color: #fff;
+}
 
-				.metric-label {
-					font-size: 16px;
-					margin-top: 5px;
-					opacity: 0.6;
-				}
-			}
-		}
+/* 공통 스타일 */
+.validators-info-item, .validators-info-label, .validators-info-number {
+	font-size: 12px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #7987a8;
+}
 
-		.dashboard-main {
-			display: flex;
-			width: 100%;
-
-			.sidebar {
-				flex-basis: 200px;
-				margin-left: 30px;
-			}
-		}
-	}
-
-	.validators-info-item {
-		display: flex;
-		flex-direction: column;
-		align-items: left;
-	}
-
-	/* validators-info-label 스타일 */
-	.validators-info-label {
-		font-size: 12px;
-		font-weight: normal;
-		margin-top: 5px;
-		margin-bottom: 5px;
-		color: #7987a8;
-	}
-
-	.validators-info-number {
-		font-size: 24px;
-		font-weight: bold;
-		color: #ffffff;
-	}
-
-	.dropdown-toggle {
-		display: flex;
-		width: 168px;
-		height: 36px;
-		padding: 8px 10.24px 8.12px 13px;
-		border-radius: 5px;
-		background-color: #161b26;
-		color: #afb7c0;
-		border: none;
-		margin-bottom: 10px;
-	}
-	.dropdown-toggle::after {
-		content: url('/layout/Rectangle.png');
-		margin-left: 50px;
-	}
-
-	.heatmap {
-		display: flex;
-		width: 900px;
-		height: 400px;
-		// background-color: #161B26;
-		//border-radius: 10px;
-	}
-	.right-section {
-		display: flex;
-		flex-direction: column;
-		width: 300px;
-		height: 540px;
-		gap: 20px;
-		padding: 20px;
-	}
-
-	.coin-list-section,
-	.rader-chart {
-		flex-grow: 1;
-		min-height: 230px;
-		width: 100%;
-		border-radius: 10px;
-		background-color: #11141b;
-		color: #fff;
-	}
+.validators-info-number {
+	font-size: 24px;
+	font-weight: bold;
+	color: #ffffff;
+}
 </style>
