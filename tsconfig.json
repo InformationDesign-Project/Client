@@ -11,5 +11,5 @@
 		"strict": true,
 		"moduleResolution": "node"
 	},
-	"types": ["svelte", "d3", "chart.js", "highcharts"]
+	"types": ["svelte", "d3", "chart.js", "highcharts", "d3-sankey"]
 }

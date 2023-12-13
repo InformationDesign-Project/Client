@@ -31,6 +31,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		width: 90.5%;
 	}
 
 	.logo {
@@ -45,7 +46,7 @@
 		justify-content: center;
 		align-items: center;
 		padding-top: 15px;
-		margin-right: 38px;
+		//margin-right: 170px;
 	}
 
 	.top-coin {
