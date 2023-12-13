@@ -1,4 +1,14 @@
-<script lang="ts"></script>
+<script lang="ts">
+	import { goto } from '$app/navigation';
+
+	function navigateToFlow() {
+		goto('/Proposals/flow');
+	}
+
+	function navigateToOverview() {
+		goto('/Proposals/overview');
+	}
+</script>
 
 <main>
 	<div class="image-container">
@@ -6,13 +16,13 @@
 	</div>
 
 	<div class="content">
-		<div class="box">
+		<div class="box" on:click={navigateToFlow}>
 			<h2>Proposals Flow</h2>
 			<p>블록체인의 투표에 대한 흐름과 현황을 한 눈에 파악할 수 있습니다.</p>
 			<img src="/layout/proposals-flow.png" alt="Flow Image" />
 		</div>
 
-		<div class="box">
+		<div class="box" on:click={navigateToOverview}>
 			<h2>Proposals Overview</h2>
 			<p>
 				블록체인들의 투표 기록을 막대 차트로 시각화 하였습니다. 초록색의 비율이 많을 수록 건강한
@@ -51,6 +61,12 @@
 				padding: 20px;
 				border-radius: 10px;
 				margin-top: 100px;
+				transition: transform 0.3s ease;
+
+				&:hover {
+					transform: scale(1.05);
+					cursor: pointer;
+				}
 
 				h2 {
 					color: #ffffff;
