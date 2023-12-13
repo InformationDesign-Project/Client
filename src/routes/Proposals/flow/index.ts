@@ -1,11 +1,13 @@
 export interface SankeyNode {
-	name: string;
-}
+    name: string;
+    x0?: number;
+    x1?: number;
+    y0?: number;
+    y1?: number;
+  }
 
-export interface SankeyLink {
-	source: number;
-	target: number;
-	value: number;
-}
-
-let data: { nodes: SankeyNode[]; links: SankeyLink[] } = { nodes: [], links: [] };
+  export interface SankeyLink {
+    source: number | SankeyNode;
+    target: number | SankeyNode;
+    value: number;
+  }
