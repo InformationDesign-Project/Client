@@ -65,7 +65,7 @@
                 <img src="/layout/Vector.png" alt="vector" />
                 <div class="coin-list-top">Top 10 Healthy Chains</div>
             </div>
-            <div class="coin-list-divider"></div> <!-- 구분선 -->
+            <div class="coin-list-divider"></div> 
             <div class="coin-list">
                 <img
 				width="90%;"
@@ -248,7 +248,7 @@
     }
 
     .coin-list-divider {
-        border-top: 1px solid rgba(121, 135, 168, 0.15); // 색상은 필요에 따라 조정
+        border-top: 1px solid rgba(121, 135, 168, 0.15); 
         margin: 0 20px;
     }
 
@@ -260,11 +260,11 @@
         .coin-list-left, .coin-list-right {
             display: flex;
             flex-direction: column;
-            width: 48%; // 필요에 따라 조정
+            width: 48%; 
             margin: 20px;
 
             div {
-                // 개별 코인들을 위한 스타일
+                
             }
         }
     }
