@@ -13,7 +13,6 @@
     border-radius: 10px;
     color: #FFF;
     background: var(--color-background, #191B27);
-    // 추가적인 스타일링이 필요할 수 있습니다
   }
 
   </style>
