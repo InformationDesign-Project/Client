@@ -103,6 +103,9 @@
 		.iconWrapper {
 			width: 80%;
 		}
+		&:hover{
+			cursor: pointer;
+		}
 	}
 	.menuSection {
 		padding: 10px 0 10px 0;
@@ -120,6 +123,9 @@
 				justify-content: space-between;
 				align-items: center;
 				color: #7987a8;
+			}
+			&:hover{
+				cursor: pointer;
 			}
 		}
 	}
