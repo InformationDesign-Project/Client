@@ -61,33 +61,29 @@
 	</div>
 	<div class="right-section">
 		<div class="coin-list-section">
-            <div class="coin-list-header">
-                <img src="/layout/Vector.png" alt="vector" />
-                <div class="coin-list-top">Top 10 Healthy Chains</div>
-            </div>
-            <div class="coin-list-divider"></div> 
-            <div class="coin-list">
-                <img
-				width="90%;"
-				src="/layout/cosmosFrame.png"
-				alt="cosmos-freame"
-			/>
-                <!-- <div class="coin-list-left">
+			<div class="coin-list-header">
+				<img src="/layout/Vector.png" alt="vector" />
+				<div class="coin-list-top">Top 10 Healthy Chains</div>
+			</div>
+			<div class="coin-list-divider"></div>
+			<div class="coin-list">
+				<img width="90%;" src="/layout/cosmosFrame.png" alt="cosmos-freame" />
+				<!-- <div class="coin-list-left">
                     
                     <div>01 COSMOS</div>
         
                 </div>
                 <div class="coin-list-right">
                 </div> -->
-            </div>
-        </div>
-        
+			</div>
+		</div>
+
 		<div class="rader-chart">
 			<img
 				width="100%;"
 				src="/layout/rader-chart.png"
 				alt="rader-chart"
-                style="margin-top: 25px;"
+				style="margin-top: 25px;"
 			/>
 		</div>
 	</div>
@@ -227,48 +223,48 @@
 		padding: 20px;
 	}
 
-    .coin-list-section {
-        flex-grow: 1;
+	.coin-list-section {
+		flex-grow: 1;
 		height: 275px;
 		width: 70%;
 		border-radius: 10px;
 		background-color: #11141b;
 		color: #fff;
 
-    .coin-list-header {
-        display: flex;
-        align-items: center;
-        gap: 10px; // 필요에 따라 조정
-        margin: 20px;
+		.coin-list-header {
+			display: flex;
+			align-items: center;
+			gap: 10px; // 필요에 따라 조정
+			margin: 20px;
 
-        .coin-list-top {
-            color:#FFFFFF;
-            opacity: 0.7;
-        }
-    }
+			.coin-list-top {
+				color: #ffffff;
+				opacity: 0.7;
+			}
+		}
 
-    .coin-list-divider {
-        border-top: 1px solid rgba(121, 135, 168, 0.15); 
-        margin: 0 20px;
-    }
+		.coin-list-divider {
+			border-top: 1px solid rgba(121, 135, 168, 0.15);
+			margin: 0 20px;
+		}
 
-    .coin-list {
-        display: flex;
-        justify-content: space-between;
-        margin-left:25px;
+		.coin-list {
+			display: flex;
+			justify-content: space-between;
+			margin-left: 25px;
 
-        .coin-list-left, .coin-list-right {
-            display: flex;
-            flex-direction: column;
-            width: 48%; 
-            margin: 20px;
+			.coin-list-left,
+			.coin-list-right {
+				display: flex;
+				flex-direction: column;
+				width: 48%;
+				margin: 20px;
 
-            div {
-                
-            }
-        }
-    }
-}
+				div {
+				}
+			}
+		}
+	}
 
 	.rader-chart {
 		flex-grow: 1;
@@ -277,6 +273,5 @@
 		border-radius: 10px;
 		background-color: #11141b;
 		color: #fff;
-        
 	}
 </style>

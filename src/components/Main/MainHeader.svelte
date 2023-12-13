@@ -31,7 +31,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-        width:90.5%;
+		width: 90.5%;
 	}
 
 	.logo {
