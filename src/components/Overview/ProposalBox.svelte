@@ -8,7 +8,7 @@
   
   <style lang="scss">
     .proposal-box {
-    width: 370px;
+    width: 330px;
     padding: 25px 20px;
     border-radius: 10px;
     color: #FFF;
