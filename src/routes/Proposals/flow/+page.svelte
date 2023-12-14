@@ -147,12 +147,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 90vh;
         }
     
         #sankey-chart {
-        max-width: 90%;
-        height: auto;
+        max-width: 100%;
+        height: 90%;
         }
     </style>
     

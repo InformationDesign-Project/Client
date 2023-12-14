@@ -101,7 +101,7 @@
 
 	.dashboard {
 		width: 70%;
-		height: 580px;
+		height: 500px;
 		padding: 20px;
 		border-radius: 10px;
 		background-color: #11141b;
@@ -225,7 +225,7 @@
 
 	.coin-list-section {
 		flex-grow: 1;
-		height: 275px;
+		height: 250px;
 		width: 70%;
 		border-radius: 10px;
 		background-color: #11141b;
@@ -268,7 +268,7 @@
 
 	.rader-chart {
 		flex-grow: 1;
-		height: 325px;
+		height: 270px;
 		width: 70%;
 		border-radius: 10px;
 		background-color: #11141b;
