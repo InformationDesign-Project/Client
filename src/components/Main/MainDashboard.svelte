@@ -1,26 +1,42 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import DropdownMenu from './DropdownMenu.svelte';
+
+	let chainsData = [];
+	let validatorsData = [];
+	let validatorsCount = { level1: 0, level2: 0, level3: 0, level4: 0, level5: 0 };
+
+	onMount(async () => {
+		const response = await fetch('/allchain_with_level.json');
+		const data = await response.json();
+		chainsData = data.data;
+	});
+	//필터링할 체인 이름
+	let chainName = 'cosmos';
+
+	$: filteredChain = chainsData.find(
+		(chain) => chain.chain.toLowerCase() === chainName.toLowerCase()
+	);
 </script>
 
 <div class="dashboard-container">
 	<div class="dashboard">
 		<div class="dashboard-top-line">
-			<div class="dashboard-coin">COSMOS</div>
-			<div class="dashboard-metric">
-				<div class="metric-value">85</div>
-				<!-- 임의의 값 -->
-				<div class="metric-label">Healthy Level</div>
-			</div>
-			<div class="dashboard-metric">
-				<div class="metric-value score">92</div>
-				<!-- 임의의 값 -->
-				<div class="metric-label">Healthy Score</div>
-			</div>
-			<div class="dashboard-metric">
-				<div class="metric-value">76%</div>
-				<!-- 임의의 값 -->
-				<div class="metric-label">Decentralization</div>
-			</div>
+			{#if filteredChain}
+				<div class="dashboard-coin">{filteredChain.chain}</div>
+				<div class="dashboard-metric">
+					<div class="metric-value">{Math.round(filteredChain.level)}</div>
+					<div class="metric-label">Healthy Level</div>
+				</div>
+				<div class="dashboard-metric">
+					<div class="metric-value score">{Math.round(filteredChain.HealthyScore)}</div>
+					<div class="metric-label">Healthy Score</div>
+				</div>
+				<div class="dashboard-metric">
+					<div class="metric-value">{Math.round(filteredChain.Decentralization)}%</div>
+					<div class="metric-label">Decentralization</div>
+				</div>
+			{/if}
 		</div>
 		<div class="dashboard-main">
 			<div class="heatmap">
@@ -29,11 +45,13 @@
 			<div class="sidebar">
 				<div class="sorted-by">Sorted By</div>
 				<DropdownMenu />
-				<!-- DropdownMenu 컴포넌트 사용 -->
+
 				<div class="validators-info">
 					<div class="validators-info-item">
-						<div class="validators-info-label">Total Validators</div>
-						<div class="validators-info-number">50</div>
+						{#if filteredChain}
+							<div class="validators-info-label">Total Validators</div>
+							<div class="validators-info-number">{Math.round(filteredChain.validators.total)}</div>
+						{/if}
 					</div>
 					<div class="validators-info-item">
 						<div class="validators-info-label">Level 1</div>
