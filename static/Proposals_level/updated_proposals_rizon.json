@@ -1,0 +1,2268 @@
+{
+    "data": [
+        {
+            "detail": {
+                "id": "4",
+                "tx_hash": "928E6B6B10756504129C94D86704BADE6E1C224B9BE298AF516700C3055F3DC2",
+                "proposer": "rizon1qy37cqvlzedmlgzcdw577ex32r4ttfqv8ljfr7",
+                "title": "Nebulae Upgrade",
+                "description": "### RIZON Nebulae Upgrade\\n\\nThis onchain software upgrade, called Nebulae, will add a number of upstream version updates, fixes and new modules, especially enable the CosmWasm.\\n* By voting YES to this proposal, you approve of adding this upgrade.\\n* By voting NO to this proposal, you do not approve of this upgrade.\\n\\n### Informations\\n\\n* Upgrade name: Nebulae\\n* Upgrade Block Height: 9522000\\n* Upgrade Time: around 2023-07-20 08:00 (UTC)\\n\\nPlease see more informations [here](https://github.com/rizon-world/mainnet/blob/master/upgrade/Nebulae.md).\\n",
+                "proposal_type": "SoftwareUpgrade",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2023-07-04T06:59:21.057Z",
+                "voting_start_time": "2023-07-04T06:59:21.057Z",
+                "voting_end_time": "2023-07-18T06:59:21.057Z",
+                "deposit_end_time": "2023-07-18T06:59:21.057Z",
+                "notification_status": "VotingNotified",
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.upgrade.v1beta1.SoftwareUpgradeProposal",
+                        "title": "Nebulae Upgrade",
+                        "description": "### RIZON Nebulae Upgrade\\n\\nThis onchain software upgrade, called Nebulae, will add a number of upstream version updates, fixes and new modules, especially enable the CosmWasm.\\n* By voting YES to this proposal, you approve of adding this upgrade.\\n* By voting NO to this proposal, you do not approve of this upgrade.\\n\\n### Informations\\n\\n* Upgrade name: Nebulae\\n* Upgrade Block Height: 9522000\\n* Upgrade Time: around 2023-07-20 08:00 (UTC)\\n\\nPlease see more informations [here](https://github.com/rizon-world/mainnet/blob/master/upgrade/Nebulae.md).\\n",
+                        "plan": {
+                            "name": "Nebulae",
+                            "time": "0001-01-01T00:00:00Z",
+                            "height": "9522000",
+                            "info": "",
+                            "upgraded_client_state": null
+                        }
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": "uatolo",
+                    "amount": "1024000000"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uatolo",
+                        "amount": "1024000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "202",
+                    "no": "1",
+                    "no_with_veto": 0,
+                    "abstain": "1",
+                    "weighted": "0",
+                    "yes_amount": "1438692446634784",
+                    "no_amount": "3100000584284",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "1808149000001"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "rizon1gyrrvup6x3g732uhxq9x0qd4lyjjcs62pt5v4e",
+                    "tx_hash": "2BA3BEA1C39D63693F54C276C4CC8D7CCC71DC132032BF00EB9F37A48AEECD3B",
+                    "timestamp": "2023-07-04T09:10:20.330Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9288744,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1gyrrvup6x3g732uhxq9x0qd4lyjjcs62j0kdhf",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1qpgalplval6ynvq2r0afxchmc0x00zmu0tcsdl",
+                    "tx_hash": "C4C0F3B2381BD60E01C27A7048469541D9EF3DC05529F8FD7B2A4A2C463A1739",
+                    "timestamp": "2023-07-07T09:15:03.364Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9332639,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1qpgalplval6ynvq2r0afxchmc0x00zmuu06300",
+                    "level": 4
+                },
+                {
+                    "voter": "rizon1x97ynk0zsc6u06nghjc6emzp4fmqfjgm48vfqm",
+                    "tx_hash": "00AD5D1684B97E7C2E103A122D215D75CF60E536FAB9B9ACC20BB10FEEC24CC3",
+                    "timestamp": "2023-07-14T05:12:22.623Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9432280,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1x97ynk0zsc6u06nghjc6emzp4fmqfjgmxrwgzt",
+                    "level": 4
+                },
+                {
+                    "voter": "rizon1lqlqtze69tdnff3etkmdh2h5glhusz68qg2la0",
+                    "tx_hash": "210A8FC2D543229EE3FF8A9387A952A1D9AD76DDA2FD0A5097C2DFB9A7D96504",
+                    "timestamp": "2023-07-14T05:10:38.485Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9432262,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1lqlqtze69tdnff3etkmdh2h5glhusz68nvg7ll",
+                    "level": 4
+                },
+                {
+                    "voter": "rizon1fshqmgvtm0s8t6t9lc4eexs2kaz6lwzyft002t",
+                    "tx_hash": "DF18F712A1306729F5A8CE948A160C003713DFAF420C3D320772D0EECAB0C135",
+                    "timestamp": "2023-07-11T07:49:47.839Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9390218,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1fshqmgvtm0s8t6t9lc4eexs2kaz6lwzy60dwgm",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1zwxghkuehu26xa9p3fhehqhwzyj35xfn4e3pnp",
+                    "tx_hash": "5D4E0F6F762E8BA8BA7A9F4C2AB72618993A7D4461EBA868A2038376A55F4D03",
+                    "timestamp": "2023-07-14T05:12:39.537Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9432283,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1zwxghkuehu26xa9p3fhehqhwzyj35xfnxanq33",
+                    "level": 4
+                },
+                {
+                    "voter": "rizon1ngt06cyxnp5cy5hqntdxqzdnnjac393ppzjedl",
+                    "tx_hash": "BD648BEA9ECF49219DB588373B9D3A61F8D6C81B4B04C3C1CE1E281621D0DB58",
+                    "timestamp": "2023-07-07T11:35:25.292Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9334062,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1ngt06cyxnp5cy5hqntdxqzdnnjac393pjxsc00",
+                    "level": 4
+                },
+                {
+                    "voter": "rizon1axa2p2klp4er2z0a29msplf9mtmq7vensl7v5w",
+                    "tx_hash": "41F5B0B34CDC135681B8D27CDA99E8437AB98A16C9FBD4028FAA312C60298EB8",
+                    "timestamp": "2023-07-07T21:24:00.335Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9340037,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1axa2p2klp4er2z0a29msplf9mtmq7venrmudk7",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1mgufdca5u0jp8gkdjl326ad3l74wkcg97d7yn3",
+                    "tx_hash": "1EEE08020852DB667F81CA26F1504CB44CE7C5019DF91AE24888EC7944D25A1F",
+                    "timestamp": "2023-07-14T13:11:19.054Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9437151,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1mgufdca5u0jp8gkdjl326ad3l74wkcg9dfu93p",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1xst7g5cd9puxh3l94tvxch0ar8njks8k8dllx9",
+                    "tx_hash": "27B2F4080BCE41C72A60FDB4381B3D31946635F6F29D5E44EF92B7243BD7979E",
+                    "timestamp": "2023-07-14T05:09:29.512Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9432251,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1xst7g5cd9puxh3l94tvxch0ar8njks8k5fa7y4",
+                    "level": 5
+                },
+                {
+                    "voter": "rizon1u4285azprzlrqpq45azsw7464ymmw4jun2vxmt",
+                    "tx_hash": "0A9350996510245AF7B1485E40102CE49916F10F75E50EF552598B172D99E38D",
+                    "timestamp": "2023-07-04T07:09:14.359Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9287514,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1u4285azprzlrqpq45azsw7464ymmw4juqww8em",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1wgw0c9d3wqs84wttyjkm0n8efgywmv47mmls5v",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1wgw0c9d3wqs84wttyjkm0n8efgywmv47gla3ku",
+                    "level": 2
+                },
+                {
+                    "voter": "rizon1kjz7hqkfvd6uhfl0e0t9cdg9gcgu9p06598lq3",
+                    "tx_hash": "64108B2C654B4C6B38EE77477F5E15BE26871F79D440D7F91E79795A1231F0AF",
+                    "timestamp": "2023-07-11T07:32:34.607Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9390044,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1kjz7hqkfvd6uhfl0e0t9cdg9gcgu9p068p97zp",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1t7g0jeqhh46jkpyhfjnwsa2fr35k4zjrj4kvqg",
+                    "tx_hash": "7E2A6DC9897360F03303058E5DC18CBE38D23632E2F30834AFD02793712F7BD2",
+                    "timestamp": "2023-07-04T09:22:06.950Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9288866,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1t7g0jeqhh46jkpyhfjnwsa2fr35k4zjrp35dzc",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1gg6d8c60zt2v8t0h8fsm8mflervpjxlflp8z2w",
+                    "tx_hash": "F72E1626770ED166917AB9EF8BF625B61DD0E0654BCC1A0FBF6DF730212ED823",
+                    "timestamp": "2023-07-14T05:12:50.920Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9432285,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1gg6d8c60zt2v8t0h8fsm8mflervpjxlfv99rg7",
+                    "level": 4
+                },
+                {
+                    "voter": "rizon1ukk3cg3uselvaqe97knd68c99ps6l405xmn8dg",
+                    "tx_hash": "692934FA9072C29E31F673691DA39A1766E5C01FC2691CB0A76E12D64FACE4CC",
+                    "timestamp": "2023-07-04T08:08:16.069Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9288112,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1ukk3cg3uselvaqe97knd68c99ps6l4054l3x0c",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon130sp64ud4v83y4rw4mx697mtahe5ve7a2jcylw",
+                    "tx_hash": "30B3F3F98698A8ECF3E6FA52BE1BD4E02A4309DFB7903F37DF49E2C0496AB504",
+                    "timestamp": "2023-07-04T14:35:05.588Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9292049,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper130sp64ud4v83y4rw4mx697mtahe5ve7aek69a7",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1hjw7u06z4l8vlg8xwu7lrug3687gashesl33q2",
+                    "tx_hash": "CA2EE454A5B283578FE729D2E4DDB0291292924F9026FB023C12ADAC0F3649E5",
+                    "timestamp": "2023-07-04T14:07:45.614Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9291774,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1hjw7u06z4l8vlg8xwu7lrug3687gashermnsz6",
+                    "level": 2
+                },
+                {
+                    "voter": "rizon1jxv0u20scum4trha72c7ltfgfqef6nsc3hg7ch",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1jxv0u20scum4trha72c7ltfgfqef6nsczn2l68",
+                    "level": 2
+                },
+                {
+                    "voter": "rizon18z6t5fuuy53za3qdn4v2ysl0k38x4zg46gl5va",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper18z6t5fuuy53za3qdn4v2ysl0k38x4zg4fva4wd",
+                    "level": 2
+                },
+                {
+                    "voter": "rizon1j0p4pmqdrase4rynv4jm8k9enlgym3f5fvyt7n",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1j0p4pmqdrase4rynv4jm8k9enlgym3f56gx2ur",
+                    "level": 1
+                },
+                {
+                    "voter": "rizon1u9tvwl5hzr2nrlhyhyduhfn7vnujx0d7q7gfea",
+                    "tx_hash": "E2DE46CDF686BEA2F9060E1994C677F2F8F02A54B656CCFE5F80FEA2967F9755",
+                    "timestamp": "2023-07-04T20:40:06.029Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9295761,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1u9tvwl5hzr2nrlhyhyduhfn7vnujx0d7n62gmd",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon122awkm2a0ap8ku7cvd0n57z03a4mc6ca5p0rl5",
+                    "tx_hash": "787FDB5692E0259B21C17D531FF48AF79AC38130F9E919E22447D7E72F9D1B22",
+                    "timestamp": "2023-07-04T14:52:44.410Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9292220,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper122awkm2a0ap8ku7cvd0n57z03a4mc6ca89dzay",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon12mvr3xdrgsaasfc4xdtcvwdeqegv97mkjt9jfg",
+                    "tx_hash": "2E47D5959B2F1552494418E58F0BDBC0AC2259ED5241A3C4064DB4BC957AEDF1",
+                    "timestamp": "2023-07-14T06:44:36.027Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9433222,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper12mvr3xdrgsaasfc4xdtcvwdeqegv97mkp08ntc",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon14j63wdmclzckdr9qlgqcrfc4yrh2r2zg5g7gpy",
+                    "tx_hash": "F74D280DE6622BA654C9237BFAF8CFF4CF0182A3CA7825BCD0D4E22A8CB43784",
+                    "timestamp": "2023-07-04T13:41:08.613Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9291501,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper14j63wdmclzckdr9qlgqcrfc4yrh2r2zg8vufr5",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1494l9eavjxecx8faxnfx7k5c4x6xneye88q3gd",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1494l9eavjxecx8faxnfx7k5c4x6xneye5rzs2a",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q4uq3wxa",
+                    "tx_hash": "C87B99C78267F066500B01551E2DA2FB7AD7E32BD04C22D9F4B84AA8DA7541F7",
+                    "timestamp": "2023-07-08T02:48:14.021Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9343348,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q40yn0yd",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1ckcup3mdvztrps2m788lpytxey47fyn9mjzkt7",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1ckcup3mdvztrps2m788lpytxey47fyn9gkqhfw",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon170k335eghnmmjduy9qecwhaslkh63yrr2ugs62",
+                    "tx_hash": "F1EA8E559156E859BF98C407CE0B8522E3A854E3AA6C8C12D5AF1A89372FE5F4",
+                    "timestamp": "2023-07-05T02:54:15.325Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9299542,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper170k335eghnmmjduy9qecwhaslkh63yrrec23c6",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon12w26x2fysgc0w7kjzv77pq338s6aus0ef92jyg",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper12w26x2fysgc0w7kjzv77pq338s6aus0e6pgnxc",
+                    "level": 2
+                },
+                {
+                    "voter": "rizon1c9kkxcw6r6zdrml9ku3k70ec4g5ftn447l8hqc",
+                    "tx_hash": "F1888107950B830E34077DB0B1612B0A96D2665649B0A24A559B1C151D5E2BB0",
+                    "timestamp": "2023-07-07T05:47:02.970Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9330525,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1c9kkxcw6r6zdrml9ku3k70ec4g5ftn44dm9kzg",
+                    "level": 2
+                },
+                {
+                    "voter": "rizon158j32mn4z0xrqauflst7k8zazykfgzhma0fsml",
+                    "tx_hash": "1914FC0190CB34D707416473CBBA2601E599A7864C639BCA7BFFE659E68D746B",
+                    "timestamp": "2023-07-04T17:37:09.383Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9293895,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper158j32mn4z0xrqauflst7k8zazykfgzhmwtt3e0",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon15nfd0494dv7lqhk3ykqvjc2twhl20as389gasg",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper15nfd0494dv7lqhk3ykqvjc2twhl20as35p2ujc",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1vh3pnah460uf7y5xv46d7stkh7trxdw0c7kmq7",
+                    "tx_hash": "BA1491DB1D6EB90A2F36A0B2F2AC5AE1B4BF37243CD5695D40CD459DE2FD8959",
+                    "timestamp": "2023-07-04T09:56:37.410Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9289217,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1vh3pnah460uf7y5xv46d7stkh7trxdw0t656zw",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1jnjg9fl5hflwgjyu9vrht3j52nn68yjerzlpen",
+                    "tx_hash": "8A5ECB1E03907A830FF412E6ED58C7E4E30F1E4A5BC1DA09B0CE913E5C7E6068",
+                    "timestamp": "2023-07-04T13:06:42.280Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9291154,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1jnjg9fl5hflwgjyu9vrht3j52nn68yjesxaqmr",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1gjtvly9lel6zskvwtvlg5vhwpu9c9wawcewxwd",
+                    "tx_hash": "13728876456FB114580FB7C6F1E0078F3E60C3A33BA4942B6CCBA9FC5F396694",
+                    "timestamp": "2023-07-18T04:38:33.096Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9490336,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1gjtvly9lel6zskvwtvlg5vhwpu9c9wawtav8va",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon17kpyk8nqwr0dkv4nz5j4d3r9umfm23weud5xvz",
+                    "tx_hash": "D220CC0C11926526ADA892B8EE97D178AC39467291C25C1B8CB0B51998DC3B0E",
+                    "timestamp": "2023-07-05T04:59:51.288Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9300817,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper17kpyk8nqwr0dkv4nz5j4d3r9umfm23we0fk8wj",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1wr730gckwkr7dxm2ywjltp8ud99lse0ehxzrct",
+                    "tx_hash": "69E7E51846CE6562D71FBA4681FA98BA7210E109A2AC14DAA1A91125F48666CF",
+                    "timestamp": "2023-07-04T07:45:34.666Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9287879,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1wr730gckwkr7dxm2ywjltp8ud99lse0eyzqz6m",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1d97qjthytdwr0qa8w3nc9fwvntr8xsekfxgqku",
+                    "tx_hash": "7BBCED2603A4636F8D40792454946813DB591257CE4CDF340C02ACAF9F3018E0",
+                    "timestamp": "2023-07-04T17:53:38.365Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9294063,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1d97qjthytdwr0qa8w3nc9fwvntr8xsek6z2p5v",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1fnl5dynz3vnteta3eqewuwsvsvcg88rvcjtd70",
+                    "tx_hash": "4E2468DCFCB3120E9C216A988D21DB7A68B400019F8D4FC42F6FEDF6BE8B5FCF",
+                    "timestamp": "2023-07-04T13:09:33.641Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9291183,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1fnl5dynz3vnteta3eqewuwsvsvcg88rvtkfvul",
+                    "level": 2
+                },
+                {
+                    "voter": "rizon1dsvvuwae00te6afpwxfzc2z6dnsdlmxlj5jq5e",
+                    "tx_hash": "F08D5EFAC397E519A71855664536E964EE225CB96BFBCC85E1297E03EE43F52C",
+                    "timestamp": "2023-07-04T11:24:18.071Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9290107,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1dsvvuwae00te6afpwxfzc2z6dnsdlmxlpsspkf",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1h7qgg8p52vdpcqzhxrt6wjsnyyfasaak8r97p8",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1h7qgg8p52vdpcqzhxrt6wjsnyyfasaak588lrh",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1q8vxdwn6zdd5fudtjrx46c0q0a66u7n37z0264",
+                    "tx_hash": "849E0F19099F2FFD8999677781217B02A3D70DA228EBE276FB3411B74F8D32E9",
+                    "timestamp": "2023-07-05T05:51:00.356Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9301333,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1q8vxdwn6zdd5fudtjrx46c0q0a66u7n3dxdtc9",
+                    "level": 2
+                },
+                {
+                    "voter": "rizon1smwdgjhvtznrr60ckxtc3pwzy0hpfrdl5jadkk",
+                    "tx_hash": "D21B153EBC867122890BE57ED042A253F87A8B2C6D15AD4640C9231F425107F1",
+                    "timestamp": "2023-07-04T07:13:08.681Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9287552,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1smwdgjhvtznrr60ckxtc3pwzy0hpfrdl8klv5x",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1a975wv5rkk9j4zlj89pwlmct6y24076ufv5297",
+                    "tx_hash": "549DEF4FF1889A2F7B8C90B4844F0321E9EE5809664F841FF99FDCD9E2C95FFE",
+                    "timestamp": "2023-07-09T08:01:11.209Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9361255,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1a975wv5rkk9j4zlj89pwlmct6y24076u6gkt8w",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1mymucz4pgpqszzdj27n6qvcgsn3jp7kjsdas03",
+                    "tx_hash": "DD7F683799D7B8B9CD2CB8C549197F57286EC0879B99AEEBCAE9EF434AC9D918",
+                    "timestamp": "2023-07-04T09:15:38.529Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9288799,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1mymucz4pgpqszzdj27n6qvcgsn3jp7kjrfl3dp",
+                    "level": 2
+                },
+                {
+                    "voter": "rizon1uhwy40w2jg22m2yup4qepqa420x2tfz07z0p6w",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1uhwy40w2jg22m2yup4qepqa420x2tfz0dxdqc7",
+                    "level": 2
+                },
+                {
+                    "voter": "rizon1uvkmmjtvzxtn9cjhd2c9kdncjfslnql8dshs3k",
+                    "tx_hash": "A93E8F46F24C463517FD4EEAF5FA5BED28DF35AD91C88D6A51E1027F30029DE5",
+                    "timestamp": "2023-07-04T15:46:07.930Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9292764,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1uvkmmjtvzxtn9cjhd2c9kdncjfslnql87543nx",
+                    "level": 2
+                },
+                {
+                    "voter": "rizon1gke47wnpdnqqspju5xe5448gxmz36vt86jjneg",
+                    "tx_hash": "3D4520D89E0F2BC8D1355D76219FADD40C0E83FBE37C923855995E53BB6A0687",
+                    "timestamp": "2023-07-04T12:22:01.905Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9290701,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1gke47wnpdnqqspju5xe5448gxmz36vt8fksjmc",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1km0cx09fe3fjphnt7n9r8urd4h25ptjsf5ugqv",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1km0cx09fe3fjphnt7n9r8urd4h25ptjs6s7fzu",
+                    "level": 2
+                },
+                {
+                    "voter": "rizon1mw8ydmymlw57xr69zly5yg4dcllh7fat7hx3qg",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1mw8ydmymlw57xr69zly5yg4dcllh7fatdnyszc",
+                    "level": 2
+                },
+                {
+                    "voter": "rizon1w7ayxavsjahthtkfdzs8gp75htn30gxr03r6qx",
+                    "tx_hash": "16E638FF50D012C93A632A31360E1777E44B6752B844DA5E6C88FF0B08B29A64",
+                    "timestamp": "2023-07-04T07:16:03.482Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9287582,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1w7ayxavsjahthtkfdzs8gp75htn30gxru4pmzk",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon1swmud649t386j2csz0gah7ku2zpfu0w7c8qzd4",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1swmud649t386j2csz0gah7ku2zpfu0w7trzr09",
+                    "level": 3
+                },
+                {
+                    "voter": "rizon13227ud0cz65pmt6kvkfjt2jkz7z293ddmtjqm8",
+                    "tx_hash": "F242A6EF43ABF4C8F6CA33B797EFFEF9BE15576B34136034E599C101543AD74C",
+                    "timestamp": "2023-07-07T00:10:51.932Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9327107,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper13227ud0cz65pmt6kvkfjt2jkz7z293ddg0speh",
+                    "level": 1
+                },
+                {
+                    "voter": "rizon1f75pzwce79yqk5z4k94qwk84zpkafm2nasngs3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1f75pzwce79yqk5z4k94qwk84zpkafm2nw53fjp",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "3",
+                "tx_hash": "21C4341A7E8E3AC689B0C9BFF086BB1A3FCB39D5D72C10FA6184BBF7CCACEAF4",
+                "proposer": "rizon1qy37cqvlzedmlgzcdw577ex32r4ttfqv8ljfr7",
+                "title": "Issue RCHF",
+                "description": "### Issue RCHF\n\nThis is a proposal to issue a stablecoin, RCHF on RIZON Blockchain.\n\nUnlike other stablecoins that fluctuate in price depending on its underlying cryptocurrencies, RCHF is designed to maintain price equivalence to the Switzerland CHF. In order to increase stability and reliability, RCHF coins are guaranteed by fiat currency reserve from Maerki Baumann : private bank in Z\u00fcrich, Switzerland. RCHF will differentiate from its competitors by implementing the highest level of regulations to secure users' assets. Making it perfect for worldwide payments, capital markets, and global trade.\n\n* Vote YES if you are in favor of issuing RCHF on RIZON blockchain\n* Vote NO if you are opposed of issuing RCHF on RIZON blockchain.\n",
+                "proposal_type": "ParameterChange",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2022-12-06T06:15:44.870Z",
+                "voting_start_time": "2022-12-06T06:15:44.870Z",
+                "voting_end_time": "2022-12-20T06:15:44.870Z",
+                "deposit_end_time": "2022-12-20T06:15:44.870Z",
+                "notification_status": "VotingNotified",
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.params.v1beta1.ParameterChangeProposal",
+                        "title": "Issue RCHF",
+                        "description": "### Issue RCHF\n\nThis is a proposal to issue a stablecoin, RCHF on RIZON Blockchain.\n\nUnlike other stablecoins that fluctuate in price depending on its underlying cryptocurrencies, RCHF is designed to maintain price equivalence to the Switzerland CHF. In order to increase stability and reliability, RCHF coins are guaranteed by fiat currency reserve from Maerki Baumann : private bank in Z\u00fcrich, Switzerland. RCHF will differentiate from its competitors by implementing the highest level of regulations to secure users' assets. Making it perfect for worldwide payments, capital markets, and global trade.\n\n* Vote YES if you are in favor of issuing RCHF on RIZON blockchain\n* Vote NO if you are opposed of issuing RCHF on RIZON blockchain.\n",
+                        "changes": [
+                            {
+                                "subspace": "treasury",
+                                "key": "CurrencyList",
+                                "value": "[{\"denom\":\"urchf\",\"desc\":\"RIZON stable coin of Switzerland CHF\",\"owner\":\"rizon129e9kquhnkjnvy4xxv5p0z50j9j3aee3a4h4r0\",\"mintable\":true}]"
+                            },
+                            {
+                                "subspace": "treasury",
+                                "key": "ParamSequence",
+                                "value": "\"2\""
+                            }
+                        ]
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": "uatolo",
+                    "amount": "1024000000"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uatolo",
+                        "amount": "1024000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "241",
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "984067956118575",
+                    "no_amount": "0",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "0"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "rizon1gyrrvup6x3g732uhxq9x0qd4lyjjcs62pt5v4e",
+                    "tx_hash": "8E50FD8A1B7543F1F1670034064C0829E40AD97ED897E2AD9D97C6E7AA3DD9C3",
+                    "timestamp": "2022-12-06T08:00:02.109Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6246211,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1gyrrvup6x3g732uhxq9x0qd4lyjjcs62j0kdhf"
+                },
+                {
+                    "voter": "rizon1qpgalplval6ynvq2r0afxchmc0x00zmu0tcsdl",
+                    "tx_hash": "FFDE63D04776F43C8CBF45505C5D659E1A67CF9A1222C755764517F735505CF5",
+                    "timestamp": "2022-12-09T02:47:10.181Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6285904,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1qpgalplval6ynvq2r0afxchmc0x00zmuu06300"
+                },
+                {
+                    "voter": "rizon1x97ynk0zsc6u06nghjc6emzp4fmqfjgm48vfqm",
+                    "tx_hash": "58A5AA7C6DAFD44EF61A5BC4C0C3466F8616B36787385E33EB429B487082913E",
+                    "timestamp": "2022-12-07T06:10:34.604Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6259630,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1x97ynk0zsc6u06nghjc6emzp4fmqfjgmxrwgzt"
+                },
+                {
+                    "voter": "rizon1lqlqtze69tdnff3etkmdh2h5glhusz68qg2la0",
+                    "tx_hash": "D4C324DB2B29059A709F164BF19895F14981BD2914287DD9BAD57B44EC720AE4",
+                    "timestamp": "2022-12-07T02:27:33.877Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6257387,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1lqlqtze69tdnff3etkmdh2h5glhusz68nvg7ll"
+                },
+                {
+                    "voter": "rizon1fshqmgvtm0s8t6t9lc4eexs2kaz6lwzyft002t",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1fshqmgvtm0s8t6t9lc4eexs2kaz6lwzy60dwgm"
+                },
+                {
+                    "voter": "rizon1zwxghkuehu26xa9p3fhehqhwzyj35xfn4e3pnp",
+                    "tx_hash": "9775679CF65959318BB8DEF9468CFBCD2E0078BD5782AF8240727F2F376A16C8",
+                    "timestamp": "2022-12-07T04:25:07.478Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6258570,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1zwxghkuehu26xa9p3fhehqhwzyj35xfnxanq33"
+                },
+                {
+                    "voter": "rizon1ngt06cyxnp5cy5hqntdxqzdnnjac393ppzjedl",
+                    "tx_hash": "1C9C2E2EB78458EBA3C9B0DF018A2F15EC46675DD0EB20D12FBCBEEDB54E3633",
+                    "timestamp": "2022-12-06T06:22:46.941Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6245230,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1ngt06cyxnp5cy5hqntdxqzdnnjac393pjxsc00"
+                },
+                {
+                    "voter": "rizon1axa2p2klp4er2z0a29msplf9mtmq7vensl7v5w",
+                    "tx_hash": "D4F082749331D9CAC70B8D058289D95B930B0D153811A4758A5529CB780D7C90",
+                    "timestamp": "2022-12-06T18:17:23.812Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6252437,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1axa2p2klp4er2z0a29msplf9mtmq7venrmudk7"
+                },
+                {
+                    "voter": "rizon1mgufdca5u0jp8gkdjl326ad3l74wkcg97d7yn3",
+                    "tx_hash": "7C422E03A2A92AD7BF5E04EA719AB25D1DF2D783291BB96A32BDFDFF74E849B0",
+                    "timestamp": "2022-12-07T17:20:18.423Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6266361,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1mgufdca5u0jp8gkdjl326ad3l74wkcg9dfu93p"
+                },
+                {
+                    "voter": "rizon1xst7g5cd9puxh3l94tvxch0ar8njks8k8dllx9",
+                    "tx_hash": "CA9BFD5640711023E559D13B29D12FA41BE3C09C2B2F868AC479DFCF27B52506",
+                    "timestamp": "2022-12-07T04:43:13.645Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6258751,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1xst7g5cd9puxh3l94tvxch0ar8njks8k5fa7y4"
+                },
+                {
+                    "voter": "rizon1u4285azprzlrqpq45azsw7464ymmw4jun2vxmt",
+                    "tx_hash": "A8FC0EC62266AD6D451B53D812934C57BA4A2F2B50695AA83AB4B04079743C68",
+                    "timestamp": "2022-12-07T05:30:00.870Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6259222,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1u4285azprzlrqpq45azsw7464ymmw4juqww8em"
+                },
+                {
+                    "voter": "rizon1wgw0c9d3wqs84wttyjkm0n8efgywmv47mmls5v",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1wgw0c9d3wqs84wttyjkm0n8efgywmv47gla3ku"
+                },
+                {
+                    "voter": "rizon1kjz7hqkfvd6uhfl0e0t9cdg9gcgu9p06598lq3",
+                    "tx_hash": "5B562EB5807EAA36BEAC6143546CC8A67992BCA684F9FBAFF0564D43AA03C90C",
+                    "timestamp": "2022-12-06T08:14:29.942Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6246357,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1kjz7hqkfvd6uhfl0e0t9cdg9gcgu9p068p97zp"
+                },
+                {
+                    "voter": "rizon1t7g0jeqhh46jkpyhfjnwsa2fr35k4zjrj4kvqg",
+                    "tx_hash": "375BD0D3A7E8272BF2AE04D13A3C0D70ED3F5A5183B04459A6F8A7B10B72C052",
+                    "timestamp": "2022-12-09T14:56:16.270Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6293262,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1t7g0jeqhh46jkpyhfjnwsa2fr35k4zjrp35dzc"
+                },
+                {
+                    "voter": "rizon1gg6d8c60zt2v8t0h8fsm8mflervpjxlflp8z2w",
+                    "tx_hash": "C2E745744CE61F9BEAF71455C87CD2AA60AF249BAB182570B58210FBF9382AD8",
+                    "timestamp": "2022-12-07T04:16:35.091Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6258484,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1gg6d8c60zt2v8t0h8fsm8mflervpjxlfv99rg7"
+                },
+                {
+                    "voter": "rizon1ukk3cg3uselvaqe97knd68c99ps6l405xmn8dg",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1ukk3cg3uselvaqe97knd68c99ps6l4054l3x0c"
+                },
+                {
+                    "voter": "rizon130sp64ud4v83y4rw4mx697mtahe5ve7a2jcylw",
+                    "tx_hash": "A20E81C3F0EA66B2E39E0470DFF0C36E0B7233E591663F4ABC7E855B3B23F1D7",
+                    "timestamp": "2022-12-06T20:55:06.092Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6254030,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper130sp64ud4v83y4rw4mx697mtahe5ve7aek69a7"
+                },
+                {
+                    "voter": "rizon1hjw7u06z4l8vlg8xwu7lrug3687gashesl33q2",
+                    "tx_hash": "2177C2BBE2126C46D9B99B4975C1D06CAC45A0BC8F42AB093172CA0573FDD37A",
+                    "timestamp": "2022-12-08T12:50:40.257Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6277462,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1hjw7u06z4l8vlg8xwu7lrug3687gashermnsz6"
+                },
+                {
+                    "voter": "rizon1jxv0u20scum4trha72c7ltfgfqef6nsc3hg7ch",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1jxv0u20scum4trha72c7ltfgfqef6nsczn2l68"
+                },
+                {
+                    "voter": "rizon18z6t5fuuy53za3qdn4v2ysl0k38x4zg46gl5va",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper18z6t5fuuy53za3qdn4v2ysl0k38x4zg4fva4wd"
+                },
+                {
+                    "voter": "rizon1j0p4pmqdrase4rynv4jm8k9enlgym3f5fvyt7n",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1j0p4pmqdrase4rynv4jm8k9enlgym3f56gx2ur"
+                },
+                {
+                    "voter": "rizon1u9tvwl5hzr2nrlhyhyduhfn7vnujx0d7q7gfea",
+                    "tx_hash": "06C2BBFB56ED34A978F623C83A8FE85888F7E82725EDF06E7B7107B91F90A69F",
+                    "timestamp": "2022-12-07T09:52:08.697Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6261857,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1u9tvwl5hzr2nrlhyhyduhfn7vnujx0d7n62gmd"
+                },
+                {
+                    "voter": "rizon122awkm2a0ap8ku7cvd0n57z03a4mc6ca5p0rl5",
+                    "tx_hash": "168C2047F4C49578878AEEC69142BD4660CE13C69B7733AD9E8E6C425E7DF699",
+                    "timestamp": "2022-12-06T22:20:09.523Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6254889,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper122awkm2a0ap8ku7cvd0n57z03a4mc6ca89dzay"
+                },
+                {
+                    "voter": "rizon12mvr3xdrgsaasfc4xdtcvwdeqegv97mkjt9jfg",
+                    "tx_hash": "15FECC4BD51442C8E49CB0C05BDCA1F7EE4F9F59BCBB1A356B89BA473549CFD4",
+                    "timestamp": "2022-12-06T09:22:51.489Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6247047,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper12mvr3xdrgsaasfc4xdtcvwdeqegv97mkp08ntc"
+                },
+                {
+                    "voter": "rizon14j63wdmclzckdr9qlgqcrfc4yrh2r2zg5g7gpy",
+                    "tx_hash": "B09C4E33ACC130ECEA09104A9B337A8AEBCF3058D1EC049234C3B82A11C58535",
+                    "timestamp": "2022-12-06T17:59:21.712Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6252255,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper14j63wdmclzckdr9qlgqcrfc4yrh2r2zg8vufr5"
+                },
+                {
+                    "voter": "rizon1494l9eavjxecx8faxnfx7k5c4x6xneye88q3gd",
+                    "tx_hash": "79202084DFDEF18E95641A8579EE5748D05C452068F365C4540D3E206CD353E8",
+                    "timestamp": "2022-12-07T21:42:43.390Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6269004,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1494l9eavjxecx8faxnfx7k5c4x6xneye5rzs2a"
+                },
+                {
+                    "voter": "rizon1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q4uq3wxa",
+                    "tx_hash": "693CF5316B5B55D698AB36F45F1651DD1E9C5B5D72CE2ED108380FD9884E9712",
+                    "timestamp": "2022-12-06T13:57:42.221Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6249817,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q40yn0yd"
+                },
+                {
+                    "voter": "rizon1ckcup3mdvztrps2m788lpytxey47fyn9mjzkt7",
+                    "tx_hash": "AAA8AFC0D8A7AE4923AE4FD7A3BA313F77657604ADB22069C24FA59FF4AC777B",
+                    "timestamp": "2022-12-07T11:20:31.779Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6262745,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1ckcup3mdvztrps2m788lpytxey47fyn9gkqhfw"
+                },
+                {
+                    "voter": "rizon170k335eghnmmjduy9qecwhaslkh63yrr2ugs62",
+                    "tx_hash": "58BC710B92DC84DA9AD32D72473591E45905E0405F9011921A5F587CA05602E4",
+                    "timestamp": "2022-12-11T14:13:28.551Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6321895,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper170k335eghnmmjduy9qecwhaslkh63yrrec23c6"
+                },
+                {
+                    "voter": "rizon12w26x2fysgc0w7kjzv77pq338s6aus0ef92jyg",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper12w26x2fysgc0w7kjzv77pq338s6aus0e6pgnxc"
+                },
+                {
+                    "voter": "rizon1c9kkxcw6r6zdrml9ku3k70ec4g5ftn447l8hqc",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1c9kkxcw6r6zdrml9ku3k70ec4g5ftn44dm9kzg"
+                },
+                {
+                    "voter": "rizon158j32mn4z0xrqauflst7k8zazykfgzhma0fsml",
+                    "tx_hash": "F247250E69C2A3E62CA1347AD784A47895D610C2434964EFD41F14E62A72E3EA",
+                    "timestamp": "2022-12-06T12:04:28.096Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6248676,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper158j32mn4z0xrqauflst7k8zazykfgzhmwtt3e0"
+                },
+                {
+                    "voter": "rizon15nfd0494dv7lqhk3ykqvjc2twhl20as389gasg",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper15nfd0494dv7lqhk3ykqvjc2twhl20as35p2ujc"
+                },
+                {
+                    "voter": "rizon1vh3pnah460uf7y5xv46d7stkh7trxdw0c7kmq7",
+                    "tx_hash": "EDB1679BE0E2392FA78FC46DAC4EED42DE60CF4EEFB414A524B955DA75A019D7",
+                    "timestamp": "2022-12-06T08:01:55.010Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6246230,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1vh3pnah460uf7y5xv46d7stkh7trxdw0t656zw"
+                },
+                {
+                    "voter": "rizon1jnjg9fl5hflwgjyu9vrht3j52nn68yjerzlpen",
+                    "tx_hash": "47EFDAAEDADDA367A7433CBF74FB65A1499E45E7A1960D0D047FD845FCCF9CA6",
+                    "timestamp": "2022-12-08T11:46:41.356Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6276848,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1jnjg9fl5hflwgjyu9vrht3j52nn68yjesxaqmr"
+                },
+                {
+                    "voter": "rizon1gjtvly9lel6zskvwtvlg5vhwpu9c9wawcewxwd",
+                    "tx_hash": "062BFD16981C695474BDCA96739C28A246C27C3F31BDF0B608EC39BE6E097926",
+                    "timestamp": "2022-12-07T16:03:42.894Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6265591,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1gjtvly9lel6zskvwtvlg5vhwpu9c9wawtav8va"
+                },
+                {
+                    "voter": "rizon17kpyk8nqwr0dkv4nz5j4d3r9umfm23weud5xvz",
+                    "tx_hash": "CD8478D58DF03DEC20BC808C2963D3D82E2C0378D65CCFD2291EB1FE26E7826F",
+                    "timestamp": "2022-12-06T07:36:38.338Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6245975,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper17kpyk8nqwr0dkv4nz5j4d3r9umfm23we0fk8wj"
+                },
+                {
+                    "voter": "rizon1wr730gckwkr7dxm2ywjltp8ud99lse0ehxzrct",
+                    "tx_hash": "73D819FBE23E32725EB520BFCE5CB4C3AA60194C1981F198C450349E258EE8B6",
+                    "timestamp": "2022-12-07T08:14:39.527Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6260877,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1wr730gckwkr7dxm2ywjltp8ud99lse0eyzqz6m"
+                },
+                {
+                    "voter": "rizon1d97qjthytdwr0qa8w3nc9fwvntr8xsekfxgqku",
+                    "tx_hash": "DB904A1D4C8FFA0D1708C82BB9AD1F80400EA8627E7032A887F5B7503FC5786A",
+                    "timestamp": "2022-12-06T08:59:05.534Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6246807,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1d97qjthytdwr0qa8w3nc9fwvntr8xsek6z2p5v"
+                },
+                {
+                    "voter": "rizon1fnl5dynz3vnteta3eqewuwsvsvcg88rvcjtd70",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1fnl5dynz3vnteta3eqewuwsvsvcg88rvtkfvul"
+                },
+                {
+                    "voter": "rizon1dsvvuwae00te6afpwxfzc2z6dnsdlmxlj5jq5e",
+                    "tx_hash": "A7881F6182244277C8F1B3274DB78A77FF28E48D1031DB7D675B7B6EAC269394",
+                    "timestamp": "2022-12-06T06:21:24.299Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6245216,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1dsvvuwae00te6afpwxfzc2z6dnsdlmxlpsspkf"
+                },
+                {
+                    "voter": "rizon1h7qgg8p52vdpcqzhxrt6wjsnyyfasaak8r97p8",
+                    "tx_hash": "3DB5D75674A163D2E82B99C7171ECD024BFB6F9AB8C470A458782A01A1BC1439",
+                    "timestamp": "2022-12-06T21:08:16.514Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6254163,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1h7qgg8p52vdpcqzhxrt6wjsnyyfasaak588lrh"
+                },
+                {
+                    "voter": "rizon1q8vxdwn6zdd5fudtjrx46c0q0a66u7n37z0264",
+                    "tx_hash": "58CAA95329CC5EE001E269B150C1743224B856BFE51BD9F0E5F7CF6F72732ECB",
+                    "timestamp": "2022-12-10T21:31:17.057Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6311783,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1q8vxdwn6zdd5fudtjrx46c0q0a66u7n3dxdtc9"
+                },
+                {
+                    "voter": "rizon1smwdgjhvtznrr60ckxtc3pwzy0hpfrdl5jadkk",
+                    "tx_hash": "6E93AD543AECDB794C48F9518BF2127AE962E9EB130270B627DD15F09141C627",
+                    "timestamp": "2022-12-06T15:08:16.662Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6250529,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1smwdgjhvtznrr60ckxtc3pwzy0hpfrdl8klv5x"
+                },
+                {
+                    "voter": "rizon1a975wv5rkk9j4zlj89pwlmct6y24076ufv5297",
+                    "tx_hash": "F451BBF7C75886717FC02B626CA11E7A5CAE892909A9FBDDBCF8B857A6CA4F4E",
+                    "timestamp": "2022-12-07T09:57:36.684Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6261912,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1a975wv5rkk9j4zlj89pwlmct6y24076u6gkt8w"
+                },
+                {
+                    "voter": "rizon1mymucz4pgpqszzdj27n6qvcgsn3jp7kjsdas03",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1mymucz4pgpqszzdj27n6qvcgsn3jp7kjrfl3dp"
+                },
+                {
+                    "voter": "rizon1uhwy40w2jg22m2yup4qepqa420x2tfz07z0p6w",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1uhwy40w2jg22m2yup4qepqa420x2tfz0dxdqc7"
+                },
+                {
+                    "voter": "rizon1uvkmmjtvzxtn9cjhd2c9kdncjfslnql8dshs3k",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1uvkmmjtvzxtn9cjhd2c9kdncjfslnql87543nx"
+                },
+                {
+                    "voter": "rizon1gke47wnpdnqqspju5xe5448gxmz36vt86jjneg",
+                    "tx_hash": "5856A87060765A861E7DC551D2E274AE23A248AC2D58FCBD9C8791360B1ED391",
+                    "timestamp": "2022-12-06T08:47:59.058Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6246695,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1gke47wnpdnqqspju5xe5448gxmz36vt8fksjmc"
+                },
+                {
+                    "voter": "rizon1km0cx09fe3fjphnt7n9r8urd4h25ptjsf5ugqv",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1km0cx09fe3fjphnt7n9r8urd4h25ptjs6s7fzu"
+                },
+                {
+                    "voter": "rizon1mw8ydmymlw57xr69zly5yg4dcllh7fat7hx3qg",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1mw8ydmymlw57xr69zly5yg4dcllh7fatdnyszc"
+                },
+                {
+                    "voter": "rizon1w7ayxavsjahthtkfdzs8gp75htn30gxr03r6qx",
+                    "tx_hash": "0FA301A18F4B701446A7162716093C9FF33AA19FF9BD10B798E9055ED337892B",
+                    "timestamp": "2022-12-06T06:40:37.069Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6245410,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1w7ayxavsjahthtkfdzs8gp75htn30gxru4pmzk"
+                },
+                {
+                    "voter": "rizon1swmud649t386j2csz0gah7ku2zpfu0w7c8qzd4",
+                    "tx_hash": "20A18D28012A27C713B580EAE4FF73BEC7655D8513B9B898E0E326AEBD17A102",
+                    "timestamp": "2022-12-06T07:39:36.584Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6246005,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1swmud649t386j2csz0gah7ku2zpfu0w7trzr09"
+                },
+                {
+                    "voter": "rizon13227ud0cz65pmt6kvkfjt2jkz7z293ddmtjqm8",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper13227ud0cz65pmt6kvkfjt2jkz7z293ddg0speh"
+                },
+                {
+                    "voter": "rizon1f75pzwce79yqk5z4k94qwk84zpkafm2nasngs3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1f75pzwce79yqk5z4k94qwk84zpkafm2nw53fjp"
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "2",
+                "tx_hash": "1EA3E635E36FE91F48D33D219BDA25EF6C560683C1B5E0966B26B52D15334E54",
+                "proposer": "rizon1qy37cqvlzedmlgzcdw577ex32r4ttfqv8ljfr7",
+                "title": "Gargantua Upgrade",
+                "description": "### RIZON Gargantua Upgrade\\n\\nThis onchain software upgrade, called Gargantua, will add a number of upstream version updates, fixes and new modules.\\n* By voting YES to this proposal, you approve of adding this upgrade.\\n* By voting NO to this proposal, you do not approve of this upgrade.\\n\\n### Informations\\n\\n* Upgrade name: Gargantua\\n* Upgrade Block Height: 5113000\\n* Upgrade Time: around 2022-09-19 08:00 (UTC)\\n\\nPlease see more informations [here](https://github.com/rizon-world/mainnet/blob/master/upgrade/Gargantua.md).\\n",
+                "proposal_type": "SoftwareUpgrade",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2022-09-01T09:36:57.627Z",
+                "voting_start_time": "2022-09-01T09:38:20.367Z",
+                "voting_end_time": "2022-09-15T09:38:20.367Z",
+                "deposit_end_time": "2022-09-15T09:36:57.627Z",
+                "notification_status": "VotingNotified",
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.upgrade.v1beta1.SoftwareUpgradeProposal",
+                        "title": "Gargantua Upgrade",
+                        "description": "### RIZON Gargantua Upgrade\\n\\nThis onchain software upgrade, called Gargantua, will add a number of upstream version updates, fixes and new modules.\\n* By voting YES to this proposal, you approve of adding this upgrade.\\n* By voting NO to this proposal, you do not approve of this upgrade.\\n\\n### Informations\\n\\n* Upgrade name: Gargantua\\n* Upgrade Block Height: 5113000\\n* Upgrade Time: around 2022-09-19 08:00 (UTC)\\n\\nPlease see more informations [here](https://github.com/rizon-world/mainnet/blob/master/upgrade/Gargantua.md).\\n",
+                        "plan": {
+                            "name": "Gargantua",
+                            "time": "0001-01-01T00:00:00Z",
+                            "height": "5113000",
+                            "info": "",
+                            "upgraded_client_state": null
+                        }
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": null,
+                    "amount": null
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uatolo",
+                        "amount": "1024000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "165",
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "813458642681720",
+                    "no_amount": "0",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "0"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "rizon1gyrrvup6x3g732uhxq9x0qd4lyjjcs62pt5v4e",
+                    "tx_hash": "0E836396320775B8FAF08B0DBD81DD18AD3C845BC48F5A02FF7CBEDF08C5B6C7",
+                    "timestamp": "2022-09-02T06:39:56.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4872813,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1gyrrvup6x3g732uhxq9x0qd4lyjjcs62j0kdhf"
+                },
+                {
+                    "voter": "rizon1qpgalplval6ynvq2r0afxchmc0x00zmu0tcsdl",
+                    "tx_hash": "8F444EC3C82290A5745B547B6A0880EC2E596CEA184F10FBA071A7ECAFE8CBAD",
+                    "timestamp": "2022-09-02T11:16:36.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4875522,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1qpgalplval6ynvq2r0afxchmc0x00zmuu06300"
+                },
+                {
+                    "voter": "rizon1x97ynk0zsc6u06nghjc6emzp4fmqfjgm48vfqm",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1x97ynk0zsc6u06nghjc6emzp4fmqfjgmxrwgzt"
+                },
+                {
+                    "voter": "rizon1lqlqtze69tdnff3etkmdh2h5glhusz68qg2la0",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1lqlqtze69tdnff3etkmdh2h5glhusz68nvg7ll"
+                },
+                {
+                    "voter": "rizon1fshqmgvtm0s8t6t9lc4eexs2kaz6lwzyft002t",
+                    "tx_hash": "D7F4289863A2D72387EF3990F7499C61368F312BA5072BD34A0BD5A03988E377",
+                    "timestamp": "2022-09-06T03:50:56.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4926608,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1fshqmgvtm0s8t6t9lc4eexs2kaz6lwzy60dwgm"
+                },
+                {
+                    "voter": "rizon1zwxghkuehu26xa9p3fhehqhwzyj35xfn4e3pnp",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1zwxghkuehu26xa9p3fhehqhwzyj35xfnxanq33"
+                },
+                {
+                    "voter": "rizon1ngt06cyxnp5cy5hqntdxqzdnnjac393ppzjedl",
+                    "tx_hash": "8E273C5A591A7E24AEFC56BC4307F5FB1FCF316A27BDB226D7DA1AA78CB1A9B9",
+                    "timestamp": "2022-09-01T10:07:29.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4860693,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1ngt06cyxnp5cy5hqntdxqzdnnjac393pjxsc00"
+                },
+                {
+                    "voter": "rizon1axa2p2klp4er2z0a29msplf9mtmq7vensl7v5w",
+                    "tx_hash": "5F915DC40B5EF43066AEE5FB3DC4B10417C48CF339FA22501C020B468D047FBC",
+                    "timestamp": "2022-09-05T17:06:50.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4920297,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1axa2p2klp4er2z0a29msplf9mtmq7venrmudk7"
+                },
+                {
+                    "voter": "rizon1mgufdca5u0jp8gkdjl326ad3l74wkcg97d7yn3",
+                    "tx_hash": "F77A37800BB95A3F924787B32A9370B233AB5383E8E3BC04C556E062647A531D",
+                    "timestamp": "2022-09-12T05:00:46.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5011369,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1mgufdca5u0jp8gkdjl326ad3l74wkcg9dfu93p"
+                },
+                {
+                    "voter": "rizon1xst7g5cd9puxh3l94tvxch0ar8njks8k8dllx9",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1xst7g5cd9puxh3l94tvxch0ar8njks8k5fa7y4"
+                },
+                {
+                    "voter": "rizon1u4285azprzlrqpq45azsw7464ymmw4jun2vxmt",
+                    "tx_hash": "5928198B5B93D72074CE53066A826C703F23F0EC44312D29A8ED0D8F0EF72204",
+                    "timestamp": "2022-09-02T08:00:39.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4873600,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1u4285azprzlrqpq45azsw7464ymmw4juqww8em"
+                },
+                {
+                    "voter": "rizon1wgw0c9d3wqs84wttyjkm0n8efgywmv47mmls5v",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1wgw0c9d3wqs84wttyjkm0n8efgywmv47gla3ku"
+                },
+                {
+                    "voter": "rizon1kjz7hqkfvd6uhfl0e0t9cdg9gcgu9p06598lq3",
+                    "tx_hash": "B7C58B1E24256AFBD96162CE64E22D2DE0E08E51BF413DF8C8D295A4C46C6AA5",
+                    "timestamp": "2022-09-03T05:18:29.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4886048,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1kjz7hqkfvd6uhfl0e0t9cdg9gcgu9p068p97zp"
+                },
+                {
+                    "voter": "rizon1t7g0jeqhh46jkpyhfjnwsa2fr35k4zjrj4kvqg",
+                    "tx_hash": "54E431D42420B199D1448E90B10A4B099871FEF067A8BD9AA88BC8E150660B1E",
+                    "timestamp": "2022-09-07T07:19:52.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4942787,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1t7g0jeqhh46jkpyhfjnwsa2fr35k4zjrp35dzc"
+                },
+                {
+                    "voter": "rizon1gg6d8c60zt2v8t0h8fsm8mflervpjxlflp8z2w",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1gg6d8c60zt2v8t0h8fsm8mflervpjxlfv99rg7"
+                },
+                {
+                    "voter": "rizon1ukk3cg3uselvaqe97knd68c99ps6l405xmn8dg",
+                    "tx_hash": "216A8C5850BB577795EB50272F428F5C0A3529E739746D641DC039F38D6C19D3",
+                    "timestamp": "2022-09-01T09:44:00.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4860464,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1ukk3cg3uselvaqe97knd68c99ps6l4054l3x0c"
+                },
+                {
+                    "voter": "rizon130sp64ud4v83y4rw4mx697mtahe5ve7a2jcylw",
+                    "tx_hash": "958343FC38C2B16A84C6463E321FC1C65186C424F9801F7C204C8BC042006CBD",
+                    "timestamp": "2022-09-06T03:50:49.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4926607,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper130sp64ud4v83y4rw4mx697mtahe5ve7aek69a7"
+                },
+                {
+                    "voter": "rizon1hjw7u06z4l8vlg8xwu7lrug3687gashesl33q2",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1hjw7u06z4l8vlg8xwu7lrug3687gashermnsz6"
+                },
+                {
+                    "voter": "rizon1jxv0u20scum4trha72c7ltfgfqef6nsc3hg7ch",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1jxv0u20scum4trha72c7ltfgfqef6nsczn2l68"
+                },
+                {
+                    "voter": "rizon18z6t5fuuy53za3qdn4v2ysl0k38x4zg46gl5va",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper18z6t5fuuy53za3qdn4v2ysl0k38x4zg4fva4wd"
+                },
+                {
+                    "voter": "rizon1j0p4pmqdrase4rynv4jm8k9enlgym3f5fvyt7n",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1j0p4pmqdrase4rynv4jm8k9enlgym3f56gx2ur"
+                },
+                {
+                    "voter": "rizon1u9tvwl5hzr2nrlhyhyduhfn7vnujx0d7q7gfea",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1u9tvwl5hzr2nrlhyhyduhfn7vnujx0d7n62gmd"
+                },
+                {
+                    "voter": "rizon122awkm2a0ap8ku7cvd0n57z03a4mc6ca5p0rl5",
+                    "tx_hash": "7699AA8EFCD7977F18F64566738612363929AD33B13E7D569B11B73D22E7A22B",
+                    "timestamp": "2022-09-01T11:48:10.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4861685,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper122awkm2a0ap8ku7cvd0n57z03a4mc6ca89dzay"
+                },
+                {
+                    "voter": "rizon12mvr3xdrgsaasfc4xdtcvwdeqegv97mkjt9jfg",
+                    "tx_hash": "57CCFA66871303ECAC68E567610BE40C898CDD4BF69AFB1A27A0C96B77585199",
+                    "timestamp": "2022-09-01T19:33:28.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4866275,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper12mvr3xdrgsaasfc4xdtcvwdeqegv97mkp08ntc"
+                },
+                {
+                    "voter": "rizon14j63wdmclzckdr9qlgqcrfc4yrh2r2zg5g7gpy",
+                    "tx_hash": "A9797EEE57673889E2315450A85F50098ED1C8EA59D1B00686AC0CB854DD96E3",
+                    "timestamp": "2022-09-01T13:36:31.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4862746,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper14j63wdmclzckdr9qlgqcrfc4yrh2r2zg8vufr5"
+                },
+                {
+                    "voter": "rizon1494l9eavjxecx8faxnfx7k5c4x6xneye88q3gd",
+                    "tx_hash": "1EF1F981BD3A7C644D3AAEAA68D9DBC0A0CB9706D3E87B302F9583A0EDEEDC56",
+                    "timestamp": "2022-09-01T21:49:11.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4867607,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1494l9eavjxecx8faxnfx7k5c4x6xneye5rzs2a"
+                },
+                {
+                    "voter": "rizon1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q4uq3wxa",
+                    "tx_hash": "26318CE94BED0665CF4A43B43797F14192F628F7A36F3F1991F2B87711EDFA3E",
+                    "timestamp": "2022-09-01T13:42:59.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4862811,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q40yn0yd"
+                },
+                {
+                    "voter": "rizon1ckcup3mdvztrps2m788lpytxey47fyn9mjzkt7",
+                    "tx_hash": "2ACFBE52E53C5F8751C8FAC1ED59B60FC478D0EF2BC9019DB19D4F41D363178F",
+                    "timestamp": "2022-09-01T20:40:58.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4866939,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1ckcup3mdvztrps2m788lpytxey47fyn9gkqhfw"
+                },
+                {
+                    "voter": "rizon170k335eghnmmjduy9qecwhaslkh63yrr2ugs62",
+                    "tx_hash": "2D44F3C36FE02D5C7F8A540968573D5B241E346A5A0642C3798A427284A5F931",
+                    "timestamp": "2022-09-02T17:33:28.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4879207,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper170k335eghnmmjduy9qecwhaslkh63yrrec23c6"
+                },
+                {
+                    "voter": "rizon12w26x2fysgc0w7kjzv77pq338s6aus0ef92jyg",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper12w26x2fysgc0w7kjzv77pq338s6aus0e6pgnxc"
+                },
+                {
+                    "voter": "rizon1c9kkxcw6r6zdrml9ku3k70ec4g5ftn447l8hqc",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1c9kkxcw6r6zdrml9ku3k70ec4g5ftn44dm9kzg"
+                },
+                {
+                    "voter": "rizon158j32mn4z0xrqauflst7k8zazykfgzhma0fsml",
+                    "tx_hash": "9F20D1984D6261F50EE53A982C9A84DF4172B3A9CA48854F8E32D66D8B7D1583",
+                    "timestamp": "2022-09-01T09:55:31.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4860579,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper158j32mn4z0xrqauflst7k8zazykfgzhmwtt3e0"
+                },
+                {
+                    "voter": "rizon15nfd0494dv7lqhk3ykqvjc2twhl20as389gasg",
+                    "tx_hash": "7714D9AED51748514989BB02018E643CF407AD60424663BE455403F08AF66CB5",
+                    "timestamp": "2022-09-01T09:41:48.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4860442,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper15nfd0494dv7lqhk3ykqvjc2twhl20as35p2ujc"
+                },
+                {
+                    "voter": "rizon1vh3pnah460uf7y5xv46d7stkh7trxdw0c7kmq7",
+                    "tx_hash": "5DD15B7A7CB974F74DE1D8D10CCDC11C88C5D1A7EDFA06BC165BE239591F1AB6",
+                    "timestamp": "2022-09-01T10:05:32.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4860675,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1vh3pnah460uf7y5xv46d7stkh7trxdw0t656zw"
+                },
+                {
+                    "voter": "rizon1jnjg9fl5hflwgjyu9vrht3j52nn68yjerzlpen",
+                    "tx_hash": "036A4B16E61D2C995CC65835B754A1FD28F22F15EC3C3E86E0B8BF714B043504",
+                    "timestamp": "2022-09-07T10:22:27.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4944572,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1jnjg9fl5hflwgjyu9vrht3j52nn68yjesxaqmr"
+                },
+                {
+                    "voter": "rizon1gjtvly9lel6zskvwtvlg5vhwpu9c9wawcewxwd",
+                    "tx_hash": "6FEAE1EDA9B88194D824DF8EDAA9CAECB3DFFC293F91D4D4B20610B75703AC6C",
+                    "timestamp": "2022-09-11T11:58:43.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5001337,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1gjtvly9lel6zskvwtvlg5vhwpu9c9wawtav8va"
+                },
+                {
+                    "voter": "rizon17kpyk8nqwr0dkv4nz5j4d3r9umfm23weud5xvz",
+                    "tx_hash": "E30395A22200D003FE0E51DFFC988D2171BE541AD1FA381BFFF0D5C2739486A4",
+                    "timestamp": "2022-09-01T11:20:45.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4861414,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper17kpyk8nqwr0dkv4nz5j4d3r9umfm23we0fk8wj"
+                },
+                {
+                    "voter": "rizon1wr730gckwkr7dxm2ywjltp8ud99lse0ehxzrct",
+                    "tx_hash": "31C7DBC33961ADBC58C01C02FCAA439B49F433F6DA955F152838011BAACE2996",
+                    "timestamp": "2022-09-01T10:28:30.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4860899,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1wr730gckwkr7dxm2ywjltp8ud99lse0eyzqz6m"
+                },
+                {
+                    "voter": "rizon1d97qjthytdwr0qa8w3nc9fwvntr8xsekfxgqku",
+                    "tx_hash": "E45582722D12AFE6EE0A7A0645B5E20BCD0EFCB725248479195797DDFC8FA328",
+                    "timestamp": "2022-09-06T20:30:30.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4936410,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1d97qjthytdwr0qa8w3nc9fwvntr8xsek6z2p5v"
+                },
+                {
+                    "voter": "rizon1fnl5dynz3vnteta3eqewuwsvsvcg88rvcjtd70",
+                    "tx_hash": "D24459B1D7BC050C54363F07B29548FE706AD5372BC43F714FEDEFA3495C3DDE",
+                    "timestamp": "2022-09-01T18:42:35.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4865774,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1fnl5dynz3vnteta3eqewuwsvsvcg88rvtkfvul"
+                },
+                {
+                    "voter": "rizon1dsvvuwae00te6afpwxfzc2z6dnsdlmxlj5jq5e",
+                    "tx_hash": "CEEAFDC71D1BC6B99BAE7DF7F5B1E2395D1A7C9FC4CF5392D25AC4D3F7DE72C5",
+                    "timestamp": "2022-09-01T09:56:19.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4860587,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1dsvvuwae00te6afpwxfzc2z6dnsdlmxlpsspkf"
+                },
+                {
+                    "voter": "rizon1h7qgg8p52vdpcqzhxrt6wjsnyyfasaak8r97p8",
+                    "tx_hash": "E9B676D725C8584141859EC84C32A2EA4D8F0166CD8B0C4EBA88D9A4F6C9F1FE",
+                    "timestamp": "2022-09-01T09:55:17.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4860577,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1h7qgg8p52vdpcqzhxrt6wjsnyyfasaak588lrh"
+                },
+                {
+                    "voter": "rizon1q8vxdwn6zdd5fudtjrx46c0q0a66u7n37z0264",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1q8vxdwn6zdd5fudtjrx46c0q0a66u7n3dxdtc9"
+                },
+                {
+                    "voter": "rizon1smwdgjhvtznrr60ckxtc3pwzy0hpfrdl5jadkk",
+                    "tx_hash": "010078A94205BBE119EAC50C55ED4809C6257C09C07E9283E1640E5B8CED80B3",
+                    "timestamp": "2022-09-01T09:45:11.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4860476,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1smwdgjhvtznrr60ckxtc3pwzy0hpfrdl8klv5x"
+                },
+                {
+                    "voter": "rizon1a975wv5rkk9j4zlj89pwlmct6y24076ufv5297",
+                    "tx_hash": "BE2535F985AEC592DCDF70BAA2C8F9D1DDD04679D0957465CAB7CB9EA9622CD1",
+                    "timestamp": "2022-09-01T10:15:26.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4860768,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1a975wv5rkk9j4zlj89pwlmct6y24076u6gkt8w"
+                },
+                {
+                    "voter": "rizon1mymucz4pgpqszzdj27n6qvcgsn3jp7kjsdas03",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1mymucz4pgpqszzdj27n6qvcgsn3jp7kjrfl3dp"
+                },
+                {
+                    "voter": "rizon1uhwy40w2jg22m2yup4qepqa420x2tfz07z0p6w",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1uhwy40w2jg22m2yup4qepqa420x2tfz0dxdqc7"
+                },
+                {
+                    "voter": "rizon1uvkmmjtvzxtn9cjhd2c9kdncjfslnql8dshs3k",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1uvkmmjtvzxtn9cjhd2c9kdncjfslnql87543nx"
+                },
+                {
+                    "voter": "rizon1gke47wnpdnqqspju5xe5448gxmz36vt86jjneg",
+                    "tx_hash": "E257859D9F63C8C27184835E784B4C8C3049A365143C8AD973A173E2FA9FC063",
+                    "timestamp": "2022-09-01T10:11:49.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4860734,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1gke47wnpdnqqspju5xe5448gxmz36vt8fksjmc"
+                },
+                {
+                    "voter": "rizon1km0cx09fe3fjphnt7n9r8urd4h25ptjsf5ugqv",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1km0cx09fe3fjphnt7n9r8urd4h25ptjs6s7fzu"
+                },
+                {
+                    "voter": "rizon1mw8ydmymlw57xr69zly5yg4dcllh7fat7hx3qg",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1mw8ydmymlw57xr69zly5yg4dcllh7fatdnyszc"
+                },
+                {
+                    "voter": "rizon1w7ayxavsjahthtkfdzs8gp75htn30gxr03r6qx",
+                    "tx_hash": "4AEF076F748C9B0712B6F8212B1055B5E524A02E5109B352BD050C7EDEE0E4F3",
+                    "timestamp": "2022-09-01T09:47:52.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4860503,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1w7ayxavsjahthtkfdzs8gp75htn30gxru4pmzk"
+                },
+                {
+                    "voter": "rizon1swmud649t386j2csz0gah7ku2zpfu0w7c8qzd4",
+                    "tx_hash": "BC4A4F35C7FA0697A3A30DE0F60C43BF0F8025131886657F25EA1F9578998964",
+                    "timestamp": "2022-09-03T16:50:40.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4892615,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1swmud649t386j2csz0gah7ku2zpfu0w7trzr09"
+                },
+                {
+                    "voter": "rizon13227ud0cz65pmt6kvkfjt2jkz7z293ddmtjqm8",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper13227ud0cz65pmt6kvkfjt2jkz7z293ddg0speh"
+                },
+                {
+                    "voter": "rizon1f75pzwce79yqk5z4k94qwk84zpkafm2nasngs3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1f75pzwce79yqk5z4k94qwk84zpkafm2nw53fjp"
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "1",
+                "tx_hash": "599246CAD220FBF211732BF1EDC6EF522B3C32F28CE1FAEA22ED031B0AB5D626",
+                "proposer": "rizon1qy37cqvlzedmlgzcdw577ex32r4ttfqv8ljfr7",
+                "title": "Magnus Upgrade",
+                "description": "### RIZON Magnus Upgrade\\n\\nThis onchain software upgrade, called Magnus, will add a number of upstream version updates, fixes and new modules.\\n* By voting YES to this proposal, you approve of adding this upgrade.\\n* By voting NO to this proposal, you do not approve of this upgrade.\\n\\n### Informations\\n\\n* Upgrade name: Magnus\\n* Upgrade Block Height: 2648000\\n* Upgrade Time: around 2022-03-28 08:00 (UTC)\\n\\nPlease see more informations [here](https://github.com/rizon-world/mainnet/blob/master/upgrade/Magnus.md).\\n",
+                "proposal_type": "SoftwareUpgrade",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2022-03-09T08:37:53.128Z",
+                "voting_start_time": "2022-03-09T09:03:57.458Z",
+                "voting_end_time": "2022-03-23T09:03:57.458Z",
+                "deposit_end_time": "2022-03-23T08:37:53.128Z",
+                "notification_status": "VotingNotified",
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.upgrade.v1beta1.SoftwareUpgradeProposal",
+                        "title": "Magnus Upgrade",
+                        "description": "### RIZON Magnus Upgrade\\n\\nThis onchain software upgrade, called Magnus, will add a number of upstream version updates, fixes and new modules.\\n* By voting YES to this proposal, you approve of adding this upgrade.\\n* By voting NO to this proposal, you do not approve of this upgrade.\\n\\n### Informations\\n\\n* Upgrade name: Magnus\\n* Upgrade Block Height: 2648000\\n* Upgrade Time: around 2022-03-28 08:00 (UTC)\\n\\nPlease see more informations [here](https://github.com/rizon-world/mainnet/blob/master/upgrade/Magnus.md).\\n",
+                        "plan": {
+                            "name": "Magnus",
+                            "time": "0001-01-01T00:00:00Z",
+                            "height": "2648000",
+                            "info": "",
+                            "upgraded_client_state": null
+                        }
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": null,
+                    "amount": null
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uatolo",
+                        "amount": "1024000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "336",
+                    "no": "1",
+                    "no_with_veto": "1",
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "754423426867425",
+                    "no_amount": "5000000",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "0"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "rizon1gyrrvup6x3g732uhxq9x0qd4lyjjcs62pt5v4e",
+                    "tx_hash": "49081BAB19F639ACD8F335AB451B31095AEC2E70F14DDD7CA07412B29A7AF4E4",
+                    "timestamp": "2022-03-10T23:50:30.464Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2397739,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1gyrrvup6x3g732uhxq9x0qd4lyjjcs62j0kdhf"
+                },
+                {
+                    "voter": "rizon1qpgalplval6ynvq2r0afxchmc0x00zmu0tcsdl",
+                    "tx_hash": "E284324CEA2C17272BA5AD8B1E5289C6FC39B75595C3BE65C4492DB5B9729BD4",
+                    "timestamp": "2022-03-15T04:22:06.223Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2457242,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1qpgalplval6ynvq2r0afxchmc0x00zmuu06300"
+                },
+                {
+                    "voter": "rizon1x97ynk0zsc6u06nghjc6emzp4fmqfjgm48vfqm",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1x97ynk0zsc6u06nghjc6emzp4fmqfjgmxrwgzt"
+                },
+                {
+                    "voter": "rizon1lqlqtze69tdnff3etkmdh2h5glhusz68qg2la0",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1lqlqtze69tdnff3etkmdh2h5glhusz68nvg7ll"
+                },
+                {
+                    "voter": "rizon1fshqmgvtm0s8t6t9lc4eexs2kaz6lwzyft002t",
+                    "tx_hash": "CB9CBD646940EE86B2DA66843480D8EC1C4C7F3B3631499F2DD702B427A2F61F",
+                    "timestamp": "2022-03-16T10:25:36.297Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2474953,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1fshqmgvtm0s8t6t9lc4eexs2kaz6lwzy60dwgm"
+                },
+                {
+                    "voter": "rizon1zwxghkuehu26xa9p3fhehqhwzyj35xfn4e3pnp",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1zwxghkuehu26xa9p3fhehqhwzyj35xfnxanq33"
+                },
+                {
+                    "voter": "rizon1ngt06cyxnp5cy5hqntdxqzdnnjac393ppzjedl",
+                    "tx_hash": "DA308E7760D24D88CCE57900EA9725C33BBA55768E5950E74F69E552128CA756",
+                    "timestamp": "2022-03-09T09:05:26.452Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2374526,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1ngt06cyxnp5cy5hqntdxqzdnnjac393pjxsc00"
+                },
+                {
+                    "voter": "rizon1axa2p2klp4er2z0a29msplf9mtmq7vensl7v5w",
+                    "tx_hash": "D0A0221C356030A882EE778582FDBD862AE9CCD67C6BC6923E3E41425B0236C4",
+                    "timestamp": "2022-03-14T09:46:25.490Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2446302,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1axa2p2klp4er2z0a29msplf9mtmq7venrmudk7"
+                },
+                {
+                    "voter": "rizon1mgufdca5u0jp8gkdjl326ad3l74wkcg97d7yn3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1mgufdca5u0jp8gkdjl326ad3l74wkcg9dfu93p"
+                },
+                {
+                    "voter": "rizon1xst7g5cd9puxh3l94tvxch0ar8njks8k8dllx9",
+                    "tx_hash": "0AFFE3E597E907621B31CF3620A636EC25CE990110C70E509DAF2E0A7A9B6C36",
+                    "timestamp": "2022-03-18T08:35:12.533Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2502302,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1xst7g5cd9puxh3l94tvxch0ar8njks8k5fa7y4"
+                },
+                {
+                    "voter": "rizon1u4285azprzlrqpq45azsw7464ymmw4jun2vxmt",
+                    "tx_hash": "C9E8E8E5C702F76BC2C1518DE3E34819DCF0E4ACF177693CFC2DDCA9F654B2FA",
+                    "timestamp": "2022-03-09T15:25:14.263Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2378328,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1u4285azprzlrqpq45azsw7464ymmw4juqww8em"
+                },
+                {
+                    "voter": "rizon1wgw0c9d3wqs84wttyjkm0n8efgywmv47mmls5v",
+                    "tx_hash": "D9A8012460968C47F2D1DD980B0F046A98C5DB15B9EC555A4E7E264615E1C38E",
+                    "timestamp": "2022-03-22T05:58:31.122Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2558057,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1wgw0c9d3wqs84wttyjkm0n8efgywmv47gla3ku"
+                },
+                {
+                    "voter": "rizon1kjz7hqkfvd6uhfl0e0t9cdg9gcgu9p06598lq3",
+                    "tx_hash": "D8E6DC284FEF168A475EACAA0B8665F0ED363AF76028658DD2DFE5BE60B3EE4A",
+                    "timestamp": "2022-03-11T14:13:15.878Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2406355,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1kjz7hqkfvd6uhfl0e0t9cdg9gcgu9p068p97zp"
+                },
+                {
+                    "voter": "rizon1t7g0jeqhh46jkpyhfjnwsa2fr35k4zjrj4kvqg",
+                    "tx_hash": "5B822DF8B69B3FD4D75970F1624DC8B3285558CA333F7DD22133356F66012FEC",
+                    "timestamp": "2022-03-12T18:18:10.461Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2423108,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1t7g0jeqhh46jkpyhfjnwsa2fr35k4zjrp35dzc"
+                },
+                {
+                    "voter": "rizon1gg6d8c60zt2v8t0h8fsm8mflervpjxlflp8z2w",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1gg6d8c60zt2v8t0h8fsm8mflervpjxlfv99rg7"
+                },
+                {
+                    "voter": "rizon1ukk3cg3uselvaqe97knd68c99ps6l405xmn8dg",
+                    "tx_hash": "10CE447D8D0C0CC7CBDDCFE39C7637FE116BD3A3854A5A445311C86346A23229",
+                    "timestamp": "2022-03-10T05:31:27.937Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2386776,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1ukk3cg3uselvaqe97knd68c99ps6l4054l3x0c"
+                },
+                {
+                    "voter": "rizon130sp64ud4v83y4rw4mx697mtahe5ve7a2jcylw",
+                    "tx_hash": "A407421EE7B5F55F1A7D956867F4259ED25A353FA8154E4FDEE6B44D922614BA",
+                    "timestamp": "2022-03-11T08:46:17.935Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2403094,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper130sp64ud4v83y4rw4mx697mtahe5ve7aek69a7"
+                },
+                {
+                    "voter": "rizon1hjw7u06z4l8vlg8xwu7lrug3687gashesl33q2",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1hjw7u06z4l8vlg8xwu7lrug3687gashermnsz6"
+                },
+                {
+                    "voter": "rizon1jxv0u20scum4trha72c7ltfgfqef6nsc3hg7ch",
+                    "tx_hash": "EF32DA52F01E2D923C7D021CEB12E617AE5F48BAB13B0B26616EAA6DCF1746AB",
+                    "timestamp": "2022-03-09T13:40:31.111Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2377285,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1jxv0u20scum4trha72c7ltfgfqef6nsczn2l68"
+                },
+                {
+                    "voter": "rizon18z6t5fuuy53za3qdn4v2ysl0k38x4zg46gl5va",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper18z6t5fuuy53za3qdn4v2ysl0k38x4zg4fva4wd"
+                },
+                {
+                    "voter": "rizon1j0p4pmqdrase4rynv4jm8k9enlgym3f5fvyt7n",
+                    "tx_hash": "6C7CE6E7BD0884997EFCF7FC99C1D733390AB473FEF3C5343956DE626D17FEFE",
+                    "timestamp": "2022-03-12T06:24:48.287Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2416030,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1j0p4pmqdrase4rynv4jm8k9enlgym3f56gx2ur"
+                },
+                {
+                    "voter": "rizon1u9tvwl5hzr2nrlhyhyduhfn7vnujx0d7q7gfea",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1u9tvwl5hzr2nrlhyhyduhfn7vnujx0d7n62gmd"
+                },
+                {
+                    "voter": "rizon122awkm2a0ap8ku7cvd0n57z03a4mc6ca5p0rl5",
+                    "tx_hash": "122C0145B8E5CEDB27B779073890A8A268B30F0355E0BBF54AA6B77A45F51B96",
+                    "timestamp": "2022-03-17T14:09:53.857Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2491389,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper122awkm2a0ap8ku7cvd0n57z03a4mc6ca89dzay"
+                },
+                {
+                    "voter": "rizon12mvr3xdrgsaasfc4xdtcvwdeqegv97mkjt9jfg",
+                    "tx_hash": "A851EB372CFDAEC9DE73C54BE80A19C96BFF3D260E3F092133D7C69B578052DC",
+                    "timestamp": "2022-03-11T05:08:20.594Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2400915,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper12mvr3xdrgsaasfc4xdtcvwdeqegv97mkp08ntc"
+                },
+                {
+                    "voter": "rizon14j63wdmclzckdr9qlgqcrfc4yrh2r2zg5g7gpy",
+                    "tx_hash": "0F63BF70237A4150BFFEBE0DAE2E008FE55E6793FC2A630F8FD2986A07D07F87",
+                    "timestamp": "2022-03-13T11:40:58.527Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2433328,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper14j63wdmclzckdr9qlgqcrfc4yrh2r2zg8vufr5"
+                },
+                {
+                    "voter": "rizon1494l9eavjxecx8faxnfx7k5c4x6xneye88q3gd",
+                    "tx_hash": "219272650074B37EF50322B58A1C4AD97F0D84AC3D5F1DD06C2360E1C90D9472",
+                    "timestamp": "2022-03-12T15:19:51.671Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2421342,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1494l9eavjxecx8faxnfx7k5c4x6xneye5rzs2a"
+                },
+                {
+                    "voter": "rizon1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q4uq3wxa",
+                    "tx_hash": "38EA3B2A51D00F5C3AD30BB4239C995583C907F5F97ED9CD6C9E0600EFD53412",
+                    "timestamp": "2022-03-09T13:32:46.358Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2377207,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q40yn0yd"
+                },
+                {
+                    "voter": "rizon1ckcup3mdvztrps2m788lpytxey47fyn9mjzkt7",
+                    "tx_hash": "DCB69AD2179B8E60ACB96E8B98035D9CE137DEDF6F00E3F3F594AB9C11AB9A64",
+                    "timestamp": "2022-03-09T19:27:09.691Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2380745,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1ckcup3mdvztrps2m788lpytxey47fyn9gkqhfw"
+                },
+                {
+                    "voter": "rizon170k335eghnmmjduy9qecwhaslkh63yrr2ugs62",
+                    "tx_hash": "03EC7F4318CFDC90CAB00A8C12EB1393113F5A9E5B9CBB96875CACBBDF8E35F3",
+                    "timestamp": "2022-03-11T07:02:13.263Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2402055,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper170k335eghnmmjduy9qecwhaslkh63yrrec23c6"
+                },
+                {
+                    "voter": "rizon12w26x2fysgc0w7kjzv77pq338s6aus0ef92jyg",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper12w26x2fysgc0w7kjzv77pq338s6aus0e6pgnxc"
+                },
+                {
+                    "voter": "rizon1c9kkxcw6r6zdrml9ku3k70ec4g5ftn447l8hqc",
+                    "tx_hash": "3138A02E5B4B1F803AD4DD0114695A7D5907FF2A59F406CC9C24018F9A7F0B6B",
+                    "timestamp": "2022-03-14T02:44:24.950Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2442153,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1c9kkxcw6r6zdrml9ku3k70ec4g5ftn44dm9kzg"
+                },
+                {
+                    "voter": "rizon158j32mn4z0xrqauflst7k8zazykfgzhma0fsml",
+                    "tx_hash": "4528764F87156CAA62F649AE6D8771E6271C10C5199A58B81293791AA23B50B2",
+                    "timestamp": "2022-03-10T09:37:52.085Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2389232,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper158j32mn4z0xrqauflst7k8zazykfgzhmwtt3e0"
+                },
+                {
+                    "voter": "rizon15nfd0494dv7lqhk3ykqvjc2twhl20as389gasg",
+                    "tx_hash": "2153E7051B85F82498C1F0AC68C12FC5D816D5EDED22751CCFFCB30FB47588F7",
+                    "timestamp": "2022-03-11T08:59:50.274Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2403227,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper15nfd0494dv7lqhk3ykqvjc2twhl20as35p2ujc"
+                },
+                {
+                    "voter": "rizon1vh3pnah460uf7y5xv46d7stkh7trxdw0c7kmq7",
+                    "tx_hash": "B4F82219CFAC4B889D5248F87E7AF4528CE835B6EE3C6E97C301BFA6149D0EAB",
+                    "timestamp": "2022-03-09T18:44:41.524Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2380318,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1vh3pnah460uf7y5xv46d7stkh7trxdw0t656zw"
+                },
+                {
+                    "voter": "rizon1jnjg9fl5hflwgjyu9vrht3j52nn68yjerzlpen",
+                    "tx_hash": "32D866CF68FA6B5B7DF010986E3627AD51A9685B008F03A80E4D41956F8939ED",
+                    "timestamp": "2022-03-11T08:51:31.645Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2403144,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1jnjg9fl5hflwgjyu9vrht3j52nn68yjesxaqmr"
+                },
+                {
+                    "voter": "rizon1gjtvly9lel6zskvwtvlg5vhwpu9c9wawcewxwd",
+                    "tx_hash": "8DEDEDBB8CFD2D1D187D7204A21FEA888A1E269290E08F4CC51D22B04C6F5839",
+                    "timestamp": "2022-03-09T12:17:32.426Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2376453,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1gjtvly9lel6zskvwtvlg5vhwpu9c9wawtav8va"
+                },
+                {
+                    "voter": "rizon17kpyk8nqwr0dkv4nz5j4d3r9umfm23weud5xvz",
+                    "tx_hash": "80E8A1DB45722DFF147570CD8B7D5AFF54DA0D7B9D6913E8460A6C1B209C6F81",
+                    "timestamp": "2022-03-16T11:22:08.260Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2475511,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper17kpyk8nqwr0dkv4nz5j4d3r9umfm23we0fk8wj"
+                },
+                {
+                    "voter": "rizon1wr730gckwkr7dxm2ywjltp8ud99lse0ehxzrct",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1wr730gckwkr7dxm2ywjltp8ud99lse0eyzqz6m"
+                },
+                {
+                    "voter": "rizon1d97qjthytdwr0qa8w3nc9fwvntr8xsekfxgqku",
+                    "tx_hash": "A0DAB2F81739C99FC387BACD42468C7CE350B2D74770BCF83340498ED45C31F6",
+                    "timestamp": "2022-03-12T08:34:31.960Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2417315,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1d97qjthytdwr0qa8w3nc9fwvntr8xsek6z2p5v"
+                },
+                {
+                    "voter": "rizon1fnl5dynz3vnteta3eqewuwsvsvcg88rvcjtd70",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1fnl5dynz3vnteta3eqewuwsvsvcg88rvtkfvul"
+                },
+                {
+                    "voter": "rizon1dsvvuwae00te6afpwxfzc2z6dnsdlmxlj5jq5e",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1dsvvuwae00te6afpwxfzc2z6dnsdlmxlpsspkf"
+                },
+                {
+                    "voter": "rizon1h7qgg8p52vdpcqzhxrt6wjsnyyfasaak8r97p8",
+                    "tx_hash": "D66300666767500869FA7752B27B65BCBF93CF8CE0BD834CB90B5A72CE2D63FA",
+                    "timestamp": "2022-03-09T14:57:10.905Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2378053,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1h7qgg8p52vdpcqzhxrt6wjsnyyfasaak588lrh"
+                },
+                {
+                    "voter": "rizon1q8vxdwn6zdd5fudtjrx46c0q0a66u7n37z0264",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1q8vxdwn6zdd5fudtjrx46c0q0a66u7n3dxdtc9"
+                },
+                {
+                    "voter": "rizon1smwdgjhvtznrr60ckxtc3pwzy0hpfrdl5jadkk",
+                    "tx_hash": "5CEEB0DE01A6C8B4693DA14667C0698CEC780D9DA307E19436EFCFD2A67DF6D9",
+                    "timestamp": "2022-03-23T07:56:10.477Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2573568,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1smwdgjhvtznrr60ckxtc3pwzy0hpfrdl8klv5x"
+                },
+                {
+                    "voter": "rizon1a975wv5rkk9j4zlj89pwlmct6y24076ufv5297",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1a975wv5rkk9j4zlj89pwlmct6y24076u6gkt8w"
+                },
+                {
+                    "voter": "rizon1mymucz4pgpqszzdj27n6qvcgsn3jp7kjsdas03",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1mymucz4pgpqszzdj27n6qvcgsn3jp7kjrfl3dp"
+                },
+                {
+                    "voter": "rizon1uhwy40w2jg22m2yup4qepqa420x2tfz07z0p6w",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1uhwy40w2jg22m2yup4qepqa420x2tfz0dxdqc7"
+                },
+                {
+                    "voter": "rizon1uvkmmjtvzxtn9cjhd2c9kdncjfslnql8dshs3k",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1uvkmmjtvzxtn9cjhd2c9kdncjfslnql87543nx"
+                },
+                {
+                    "voter": "rizon1gke47wnpdnqqspju5xe5448gxmz36vt86jjneg",
+                    "tx_hash": "6A3A9967022EC72A71C76E9CEAE8556022E825DAB9FBB2638394977FE19845E8",
+                    "timestamp": "2022-03-11T09:46:35.830Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2403698,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1gke47wnpdnqqspju5xe5448gxmz36vt8fksjmc"
+                },
+                {
+                    "voter": "rizon1km0cx09fe3fjphnt7n9r8urd4h25ptjsf5ugqv",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1km0cx09fe3fjphnt7n9r8urd4h25ptjs6s7fzu"
+                },
+                {
+                    "voter": "rizon1mw8ydmymlw57xr69zly5yg4dcllh7fat7hx3qg",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1mw8ydmymlw57xr69zly5yg4dcllh7fatdnyszc"
+                },
+                {
+                    "voter": "rizon1w7ayxavsjahthtkfdzs8gp75htn30gxr03r6qx",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1w7ayxavsjahthtkfdzs8gp75htn30gxru4pmzk"
+                },
+                {
+                    "voter": "rizon1swmud649t386j2csz0gah7ku2zpfu0w7c8qzd4",
+                    "tx_hash": "A9F448F8E51A074CB97BCB0508DD314960EA278E0FA46F4A025782EC6A0C2EA3",
+                    "timestamp": "2022-03-19T12:43:39.097Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2519103,
+                    "answer": "yes",
+                    "validatorAddress": "rizonvaloper1swmud649t386j2csz0gah7ku2zpfu0w7trzr09"
+                },
+                {
+                    "voter": "rizon13227ud0cz65pmt6kvkfjt2jkz7z293ddmtjqm8",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper13227ud0cz65pmt6kvkfjt2jkz7z293ddg0speh"
+                },
+                {
+                    "voter": "rizon1f75pzwce79yqk5z4k94qwk84zpkafm2nasngs3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "rizonvaloper1f75pzwce79yqk5z4k94qwk84zpkafm2nw53fjp"
+                }
+            ]
+        }
+    ]
+}

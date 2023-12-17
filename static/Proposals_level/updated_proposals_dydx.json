@@ -1,0 +1,1110 @@
+{
+    "data": [
+        {
+            "detail": {
+                "id": "1",
+                "tx_hash": "2A99DD6404E7D50B55F89804249873D83D4F3875AD2C5349368E84E96EC34C9C",
+                "proposer": "dydx17tecxwpqxpe7egk7rpqyte9ffwhyrwtghyrk4n",
+                "title": "Enable trading on all markets",
+                "description": "Use MsgUpdateClobPair to change the status of all CLOB pairs to ACTIVE. All other fields remain unchanged.",
+                "proposal_type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                "proposal_status": "PROPOSAL_STATUS_VOTING_PERIOD",
+                "submit_time": "2023-11-09T13:44:38.893Z",
+                "voting_start_time": "2023-11-09T13:44:38.893Z",
+                "voting_end_time": "2023-11-13T13:44:38.893Z",
+                "deposit_end_time": "2023-11-11T13:44:38.893Z",
+                "notification_status": "VotingNotified",
+                "metadata": "",
+                "gov_rest_path": "v1",
+                "messages": [
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 0,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 0
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 100000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 1,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 1
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 100000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 2,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 2
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 3,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 3
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 4,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 4
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 5,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 5
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 6,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 6
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 7,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 7
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 8,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 8
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 9,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 9
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 10,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 10
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 11,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 11
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 12,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 12
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 13,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 13
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 14,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 14
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 15,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 15
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 16,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 16
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 17,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 17
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 18,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 18
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 19,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 19
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 20,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 20
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 21,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 21
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 22,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 22
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 23,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 23
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 24,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 24
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 25,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 25
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 26,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 26
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 27,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 27
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 28,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 28
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 29,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 29
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 30,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 30
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 31,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 31
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    },
+                    {
+                        "@type": "/dydxprotocol.clob.MsgUpdateClobPair",
+                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "clob_pair": {
+                            "id": 32,
+                            "perpetual_clob_metadata": {
+                                "perpetual_id": 32
+                            },
+                            "step_base_quantums": "1000000",
+                            "subticks_per_tick": 1000000,
+                            "quantum_conversion_exponent": -9,
+                            "status": "STATUS_ACTIVE"
+                        }
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": "adydx",
+                    "amount": "10000000000000000000000"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "adydx",
+                        "amount": "10000000000000000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "410",
+                    "no": "4",
+                    "no_with_veto": 0,
+                    "abstain": "10",
+                    "weighted": "1",
+                    "yes_amount": "5766585003552003829793457",
+                    "no_amount": "13012668189518377493569",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "37028605612658923879070"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "dydx16pj5gljqnqs0ajxakccfjhu05yczp9870tkh0z",
+                    "tx_hash": "7C0EBB192508F2B5F82C95A81E8B92EC0090507F40E7129FE0D262BB45B2B003",
+                    "timestamp": "2023-11-10T09:07:23.952Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 910039,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper16pj5gljqnqs0ajxakccfjhu05yczp98724qpyn",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1d9e68e7glce5pehh8qk0gcx9l06tjeh0kr5eg7",
+                    "tx_hash": "8A5CFDA8F36AECFBD9890804C8FC4268D277AFF66C96EF23E3F9322DCB2BCB62",
+                    "timestamp": "2023-11-10T15:42:53.640Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 926339,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1d9e68e7glce5pehh8qk0gcx9l06tjeh0naz0r0",
+                    "level": 5
+                },
+                {
+                    "voter": "dydx1ch2h804m80pcuw20efc49ndpsrs4lq4gyhugj5",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "dydxvaloper1ch2h804m80pcuw20efc49ndpsrs4lq4gpf27e9",
+                    "level": 2
+                },
+                {
+                    "voter": "dydx1y29mkku4zqz8phrxc8zgu7jfnw504leqgs65fe",
+                    "tx_hash": "62C814426CC6AF567ACED71F9E15B1ECE14AFF2CAABDBFD154B07B96AEE78729",
+                    "timestamp": "2023-11-10T15:45:02.911Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 926422,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1y29mkku4zqz8phrxc8zgu7jfnw504leqdwvzzg",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1vl5ty47uwpfv4mcutwv4zam09mvvvdgy2m9e59",
+                    "tx_hash": "133E916A180D5EF5726ADACAD938FEFC1529A9E6BEB54F7A0357597E5C01BB14",
+                    "timestamp": "2023-11-09T14:31:10.299Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 860279,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1vl5ty47uwpfv4mcutwv4zam09mvvvdgy09n0l5",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1jvct2ck9hptwyzrr0umfvwxed7n9nhhj2sldxc",
+                    "tx_hash": "F37DF3E56DD4968BC153414C19AD70C370331CF57AA4E4A8A2CF2F6244222E2A",
+                    "timestamp": "2023-11-10T08:11:27.895Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 907609,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1jvct2ck9hptwyzrr0umfvwxed7n9nhhj0wfmdf",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1k2mlt4akhddh8gz9r3227ruuaestgdczrye6t8",
+                    "tx_hash": "D40DCCBFA41A75CF048D7403CF4AFF646841E42EE51A0B99A9E07AD22EF561E5",
+                    "timestamp": "2023-11-09T18:16:50.751Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 869980,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1k2mlt4akhddh8gz9r3227ruuaestgdczx60vqk",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1gf9yvztyvnc3aqrkjd8hfnaf8pk56sl77ultrg",
+                    "tx_hash": "D95822FCA093EEE1F835D3F498052712703542ECD641542D47401DC1E87E7324",
+                    "timestamp": "2023-11-09T14:36:22.506Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 860498,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1gf9yvztyvnc3aqrkjd8hfnaf8pk56sl7mzfage",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx15xgxv2j45uc4er8z9tfz5m0f0e74ymv6rvnfwu",
+                    "tx_hash": "281C873321003368F7F104081EF072138F910EE9A850845DAEE1FB05DF507BC0",
+                    "timestamp": "2023-11-09T19:45:06.249Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 874042,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper15xgxv2j45uc4er8z9tfz5m0f0e74ymv6xj9l9d",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1n56zk7kmv40g5zrz5psx7yysa0gk86mfhk7d8h",
+                    "tx_hash": "735A4472A35958B522EC28A35E3B4C570CA6A3C5E42246C148C3A102E11342AE",
+                    "timestamp": "2023-11-10T21:51:35.231Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 942349,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1n56zk7kmv40g5zrz5psx7yysa0gk86mfjggmvx",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx17krtmh9jm32glkcavr8vmthwv6wlkd2crdxqa5",
+                    "tx_hash": "7436B08572438529FC5F88A2F8A466168428623825095D9E51223E510E7A7A17",
+                    "timestamp": "2023-11-11T06:54:16.779Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 965412,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper17krtmh9jm32glkcavr8vmthwv6wlkd2cxnskk9",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1ddle9tczl87gsvmeva3c48nenyng4n56l9d27j",
+                    "tx_hash": "4901661D83DBAA8453DDA38BE6841A003BED247B6DD16EC141900513C581DD5A",
+                    "timestamp": "2023-11-10T04:05:13.900Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 896851,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1ddle9tczl87gsvmeva3c48nenyng4n566mmu4r",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1j4ljutnh66r55a29jydgca7pfmhd40e3kpwlky",
+                    "tx_hash": "C8894B49161C7643170B7BB247E3BAF25A3350B537529C359CCDEED69F17C355",
+                    "timestamp": "2023-11-09T20:17:00.934Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 875521,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1j4ljutnh66r55a29jydgca7pfmhd40e3nlcfa4",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx103708l5d6fd5vpwpjl59t36mkzs84pz8a5gfp5",
+                    "tx_hash": "526BAB6485CA7A77E43CE06303ECF7F3CB9B62A13ADF9CB58E8593D8D04879A6",
+                    "timestamp": "2023-11-10T09:49:44.488Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 911902,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper103708l5d6fd5vpwpjl59t36mkzs84pz8c27l29",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1u390jhcr6skw6uxfjlm5ccupy3kwg973tue2vf",
+                    "tx_hash": "6A40D911ABADB9F2BEF485F9EAF3820BB6F775AC630C6C1DA861DA6A0BF8B041",
+                    "timestamp": "2023-11-09T14:30:36.379Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 860255,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1u390jhcr6skw6uxfjlm5ccupy3kwg973wz0u8c",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx19ylcqyrgsejrghujsf6utrgw69nukw9q2c0emr",
+                    "tx_hash": "CC2EE63257B99267007D3C423F21C6DCB3B625D27F54795FE998DB947E669EB8",
+                    "timestamp": "2023-11-09T15:23:39.386Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 862398,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper19ylcqyrgsejrghujsf6utrgw69nukw9q0xe0sj",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx19wsh3g3d2vnx68zym4wpw0et2xnfwagzh2rz7d",
+                    "tx_hash": "7258E6CA5AE63E04E984F4D10796B66612DCCFFDDDB6F1421859983D8B633E3D",
+                    "timestamp": "2023-11-10T08:04:37.534Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 907314,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper19wsh3g3d2vnx68zym4wpw0et2xnfwagzj5454u",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1ppvlzjdjqkhc3fltxdfg9ey5gzrw0za0m374lr",
+                    "tx_hash": "9C590DE8092C6BCF46FCE8334537ECF9AADE8EC5478EABC4CBD44BE0FBE6979F",
+                    "timestamp": "2023-11-10T13:24:11.805Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 921140,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1ppvlzjdjqkhc3fltxdfg9ey5gzrw0za070gr5j",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1ql40pjftdwl6qtmgk0fn0r02spvss96ekrjj63",
+                    "tx_hash": "037A52DEE2E829DB0E43C606E81BEDBF2101A86C1BC2AE69E4DB4B5FAEDCB27E",
+                    "timestamp": "2023-11-10T15:46:01.125Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 926460,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1ql40pjftdwl6qtmgk0fn0r02spvss96enayy3q",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1tle46v89xuxaggrq7zvun5ye66c580fzjrjdkq",
+                    "tx_hash": "77CC5D79CB33FDDE8FF8BB264FC75098B9A8C5E7297CFF7B09E0EA310F82D6ED",
+                    "timestamp": "2023-11-10T15:35:18.237Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 926050,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1tle46v89xuxaggrq7zvun5ye66c580fzhayma3",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1pzawntqfr4j82wzkwsm5y3ypzyk3hsswnwxrnu",
+                    "tx_hash": "1F996E3098D867CDF0051E3E15B6D752BCB9FFDEE8309DE96BD6EEB535E6975D",
+                    "timestamp": "2023-11-11T00:26:01.439Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 949025,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1pzawntqfr4j82wzkwsm5y3ypzyk3hsswkss4cd",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q4kyrm2j",
+                    "tx_hash": "CD545C3E80C6CCB06E113336E44FCE267205178835705D5151105A952CB1AD77",
+                    "timestamp": "2023-11-10T16:31:06.226Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 928218,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q4n64dpr",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1mwhwf9rqh64ktr8t8xnz37nhg7vvy42ea2vy9g",
+                    "tx_hash": "DDDEFF293C370FE2BC1BDE9F576B4B34C6A4981B6CC5B4B8BA32B5D9FA5DBFFE",
+                    "timestamp": "2023-11-09T14:30:12.703Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 860238,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1mwhwf9rqh64ktr8t8xnz37nhg7vvy42ec56jwe",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1ml44cenapnawcn4xy3w36jce0rg78dm8cv6j2z",
+                    "tx_hash": "E5DA84F1812C1BB85C4B378B9C82ADB3B47AC5EF088D4D7680CF6877E486BE16",
+                    "timestamp": "2023-11-10T14:05:45.508Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 922690,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1ml44cenapnawcn4xy3w36jce0rg78dm8ajvypn",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1zts523wqvtrhd2a9mznfc83msgs6mgwc8jygal",
+                    "tx_hash": "DE87F80673C6209FFCAC8F8AE7F66DE0AA72530E6C7AD80FD4B6403D97509791",
+                    "timestamp": "2023-11-09T17:10:48.588Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 866951,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1zts523wqvtrhd2a9mznfc83msgs6mgwczvj7kw",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx14859mvsex7xk36je47acwf3cu4cv5jfgnj2wl7",
+                    "tx_hash": "D639E8D447026A13285E1C580E99261F36EEFFDE8286732E11758453AAC39B27",
+                    "timestamp": "2023-11-12T08:43:02.126Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 1029227,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper14859mvsex7xk36je47acwf3cu4cv5jfgkvuc50",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1yp0fhymycmu3vpj6z402r3v6yvjc3j4995e6zn",
+                    "tx_hash": "8A3A1DEF734B5E831087161AAEA9B5A24DC4F5A79151F5D169AD082D88172BDA",
+                    "timestamp": "2023-11-11T09:57:54.800Z",
+                    "option": "VOTE_OPTION_ABSTAIN",
+                    "tx_height": 973062,
+                    "answer": "abstain",
+                    "validatorAddress": "dydxvaloper1yp0fhymycmu3vpj6z402r3v6yvjc3j49q20vfz",
+                    "level": 3
+                },
+                {
+                    "voter": "dydx1hap454jxj4g6w5y99twfj9nqy42zvjmhggkj6w",
+                    "tx_hash": "D66A69FBF58E5B8F0DFB1C112DE0B82A7A7910D56CCC20FE5476E7AED00668AE",
+                    "timestamp": "2023-11-10T17:14:44.079Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 930070,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1hap454jxj4g6w5y99twfj9nqy42zvjmhdkqy3l",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1u6t30wly7kffm0kjtt9p963zcm73zccsrzmpp7",
+                    "tx_hash": "C0592CF0135F901327CC4FD23F41B9404D9F0AAD39707538FD4C54810E300AC8",
+                    "timestamp": "2023-11-11T11:50:36.945Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 977779,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1u6t30wly7kffm0kjtt9p963zcm73zccsxudh20",
+                    "level": 3
+                },
+                {
+                    "voter": "dydx1y6ncfxx8x9sqec97pehjw0k32slw63852paygz",
+                    "tx_hash": "F807570BF1E6F5EE85159306FA65D2D4F4D200583C1FC40BD202055DEE495BC7",
+                    "timestamp": "2023-11-10T09:24:43.657Z",
+                    "option": "VOTE_OPTION_WEIGHTED_VOTE",
+                    "tx_height": 910794,
+                    "answer": "weighted vote",
+                    "validatorAddress": "dydxvaloper1y6ncfxx8x9sqec97pehjw0k32slw63850ltjrn",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1670dvuv348eynr9lsmdrhqu3g7vpmzx9rvkgcy",
+                    "tx_hash": "9435B184C78898F88AEC6D594747E762700380D1C5758EB35E0B10FD686AD769",
+                    "timestamp": "2023-11-09T15:26:12.284Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 862501,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1670dvuv348eynr9lsmdrhqu3g7vpmzx9xjq7n4",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx122weztvqllpd4vzqshj7k8sadmkylva7ph35sg",
+                    "tx_hash": "81AFFEBE668BF897A80D45DDC72F5813C0AC81AF599C7624801033F84FBB088C",
+                    "timestamp": "2023-11-09T19:54:12.240Z",
+                    "option": "VOTE_OPTION_ABSTAIN",
+                    "tx_height": 874464,
+                    "answer": "abstain",
+                    "validatorAddress": "dydxvaloper122weztvqllpd4vzqshj7k8sadmkylva7yf8zme",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1m5df04g2alkn6qe6cxkgnesv7qx8q9rctcl6pe",
+                    "tx_hash": "9B8F833FF494222F8D9782536B7F88AB27DE6A80D257B62994588142A4CB0E41",
+                    "timestamp": "2023-11-10T10:45:40.342Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 914371,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1m5df04g2alkn6qe6cxkgnesv7qx8q9rcwxfv2g",
+                    "level": 3
+                },
+                {
+                    "voter": "dydx1mynf0gkmkzscq39d9et4hcrxmec7levgvya0d7",
+                    "tx_hash": "4AFAC218EAB0B5C13AA04706CA04F4B667D53B25A68A5C7CFA72D514048F1707",
+                    "timestamp": "2023-11-10T16:04:45.439Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 927169,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1mynf0gkmkzscq39d9et4hcrxmec7levgf6tex0",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1a9lm6t9qalz53jrp0q6p50q2cxeqnwshse78q6",
+                    "tx_hash": "1A63F7C364D7D4C1CCE05148536036FCF23DA9B1D01DE61E2E46E97CF91851C9",
+                    "timestamp": "2023-11-10T15:32:57.872Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 925968,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1a9lm6t9qalz53jrp0q6p50q2cxeqnwsh48g3tt",
+                    "level": 3
+                },
+                {
+                    "voter": "dydx1x20lytyf6zkcrv5edpkfkn8sz578qg5suyy80q",
+                    "tx_hash": "798272B11D92D34138BF52C2B3D0422125E835AE6D3A6AC0CBD149F17C2BAB9E",
+                    "timestamp": "2023-11-10T18:51:03.645Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 934423,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1x20lytyf6zkcrv5edpkfkn8sz578qg5se6j3y3",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1r8srurperks9cgwy0untta4cl6xhu6swxch64l",
+                    "tx_hash": "BF7882A5599152151ABFDCE5711E4A8BEE770C2E3684101413455CBADE4DED9B",
+                    "timestamp": "2023-11-10T14:35:59.106Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 923838,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1r8srurperks9cgwy0untta4cl6xhu6swrxpv7w",
+                    "level": 3
+                },
+                {
+                    "voter": "dydx199fjq4rnfvz24cktl8cervx8h8e90ruk5644xz",
+                    "tx_hash": "36CE766BE161FC0968CDCA7158D641FD50175DA5487EEF7119FD496C06AC0328",
+                    "timestamp": "2023-11-12T18:12:32.806Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 1052508,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper199fjq4rnfvz24cktl8cervx8h8e90ruk3yrrdn",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1c4u24hycep9mzp6498ra9j2lm58v2y04mw85k5",
+                    "tx_hash": "CAFAEB1C5159E9F5EC9065D9DAE852CEA9EB103F5031223DA7D6A4BC776CE972",
+                    "timestamp": "2023-11-12T11:37:25.102Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 1036420,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1c4u24hycep9mzp6498ra9j2lm58v2y047s3za9",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1ct3qfgmx74fzkgzehun7ayusjaqv0dyc5rp300",
+                    "tx_hash": "E3A5F136F12DB00CF7F7B913F7313CCE0FAE36157CE39329E752D6309B4AE458",
+                    "timestamp": "2023-11-09T19:51:05.482Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 874320,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1ct3qfgmx74fzkgzehun7ayusjaqv0dyc3ah8y7",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1d8lt7ddnhq9aqjj399e29d275m4vkgcwxddchv",
+                    "tx_hash": "7EC4B8F1A18A01270F87D414DD0C7808FF2B78C26B80ABE727FCC7F758554DFC",
+                    "timestamp": "2023-11-11T11:35:03.942Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 977139,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1d8lt7ddnhq9aqjj399e29d275m4vkgcwrnmwua",
+                    "level": 3
+                },
+                {
+                    "voter": "dydx1ej2es5fjztqjcd4pwa0zyvaevtjd2y5w2tm5yf",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "dydxvaloper1ej2es5fjztqjcd4pwa0zyvaevtjd2y5w04dz0c",
+                    "level": 2
+                },
+                {
+                    "voter": "dydx1u9xeaqdjz3kky2ymdhdsn0ra5uy9tc3e6vuyqg",
+                    "tx_hash": "E09F2E847D2B04CF3A12149F9AA69D66854F40A1F7D6820DD4D55DDDB37EA107",
+                    "timestamp": "2023-11-10T12:34:48.551Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 919094,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1u9xeaqdjz3kky2ymdhdsn0ra5uy9tc3elj2jte",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx140l6y2gp3gxvay6qtn70re7z2s0gn57z9qaqxk",
+                    "tx_hash": "F44BE54073238876A0CDAC6DEAD002C34CD26E269AEB295CD11C4C773BD08EE0",
+                    "timestamp": "2023-11-11T17:27:34.603Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 990962,
+                    "answer": "no",
+                    "validatorAddress": "dydxvaloper140l6y2gp3gxvay6qtn70re7z2s0gn57zq7tkd8",
+                    "level": 3
+                },
+                {
+                    "voter": "dydx17h2x3j7u44qkrq0sk8ul0r2qr440rwgj6yj7yn",
+                    "tx_hash": "55184E96CDA02C9691C8E35FCEDC5AC1EF028C22BE305126D94FAA9450645B6E",
+                    "timestamp": "2023-11-09T15:31:00.755Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 862700,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper17h2x3j7u44qkrq0sk8ul0r2qr440rwgjl6yg0z",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1et3h08wt6y9h0zjkp6jxpr42hm58avcd9mcppt",
+                    "tx_hash": "3AFE6DB077686A59942AC9503A0E2C2DCBDE9F66CBC87697665D42D62F8045B5",
+                    "timestamp": "2023-11-13T05:41:02.942Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 1082082,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1et3h08wt6y9h0zjkp6jxpr42hm58avcdq9wh26",
+                    "level": 3
+                },
+                {
+                    "voter": "dydx1cpz0jtj6rkezzs7z8k5gy6py05sxdkmyfk768x",
+                    "tx_hash": "B621A5E19192D77E8729880427631F50A174C1EC181A6F25F766825A32BF76F3",
+                    "timestamp": "2023-11-10T16:33:43.280Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 928327,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1cpz0jtj6rkezzs7z8k5gy6py05sxdkmyvggvvh",
+                    "level": 3
+                },
+                {
+                    "voter": "dydx1thl5syhmscgnj7whdyrydw3w6vy80044mlmz2n",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "dydxvaloper1thl5syhmscgnj7whdyrydw3w6vy800447pd5pz",
+                    "level": 2
+                },
+                {
+                    "voter": "dydx1w44vfk3jzh69p7yawwqcaazuxz944ve937htzk",
+                    "tx_hash": "407963C18A59FAF854E022ABF60444C3FC0505C6AFD6B57AA93A90D6E5CFEB24",
+                    "timestamp": "2023-11-10T09:51:49.442Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 911994,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1w44vfk3jzh69p7yawwqcaazuxz944ve95qpaf8",
+                    "level": 3
+                },
+                {
+                    "voter": "dydx1w7zmxnra5ckhzs3xhrxyneu0d8cutxhy75wktw",
+                    "tx_hash": "7D38AB1CEDC8957B45A31E84CBEDE0CBAFC128195C4412D9B26456F6926B08DB",
+                    "timestamp": "2023-11-10T06:37:46.056Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 903524,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1w7zmxnra5ckhzs3xhrxyneu0d8cutxhym2cqql",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1grjeh0c5vy6g4fk63tkc7wsux44rzzpx58adnv",
+                    "tx_hash": "5F7FB4D34B8098D758C690A0F51FEFBF036882409909C39DDD013F25D267D42E",
+                    "timestamp": "2023-11-10T23:19:30.689Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 946152,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1grjeh0c5vy6g4fk63tkc7wsux44rzzpx3etmca",
+                    "level": 3
+                },
+                {
+                    "voter": "dydx1psha7k07meue9arj0u03n8zl2vxlgm2mekmz3l",
+                    "tx_hash": "A482CD483167CAFEF7560C8D01C08D7DE46288A9540E4D944D13A6AF082A8DBD",
+                    "timestamp": "2023-11-10T15:52:31.775Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 926713,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1psha7k07meue9arj0u03n8zl2vxlgm2mugd56w",
+                    "level": 3
+                },
+                {
+                    "voter": "dydx1xwk95hxuude0zz4syvymlkrhjmjkqga79cvcpj",
+                    "tx_hash": "B6C4DA269CA6E99D21564F72D6976DF6D96E885A34CDB7D1D5523210729D1BD7",
+                    "timestamp": "2023-11-10T15:44:02.358Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 926384,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1xwk95hxuude0zz4syvymlkrhjmjkqga7qx6w2r",
+                    "level": 3
+                },
+                {
+                    "voter": "dydx160n4rwm854v06ppkly2pt0zc9rpwlm5y0kyjtc",
+                    "tx_hash": "CC1237D7195F68C5B2EF3AD02791DD7CDEC38B977BECF94E8C8A6CB3FB710D0A",
+                    "timestamp": "2023-11-09T14:35:16.288Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 860451,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper160n4rwm854v06ppkly2pt0zc9rpwlm5y2gjyqf",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx15004ysvmqnqzkvt7x6s4cd53flmmvgfvp7qnyx",
+                    "tx_hash": "5E5660D5175008BD649418357903ED1458B51CF611F71CBC970A387787DD2D87",
+                    "timestamp": "2023-11-11T23:40:13.869Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 1006730,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper15004ysvmqnqzkvt7x6s4cd53flmmvgfvyqk90h",
+                    "level": 4
+                },
+                {
+                    "voter": "dydx1symf474wnypes2d3mecllqk6l26rwz8m9l6us5",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "dydxvaloper1symf474wnypes2d3mecllqk6l26rwz8mqpv2m9",
+                    "level": 2
+                },
+                {
+                    "voter": "dydx1rt0wwylfqtkq3dsx82u6gkn4tkugsfkt03k6s4",
+                    "tx_hash": "8D64E695265A1F36EF96984EC1D59026EE4583A12051A409319142D7E5A9C655",
+                    "timestamp": "2023-11-11T17:00:23.443Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 989922,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1rt0wwylfqtkq3dsx82u6gkn4tkugsfkt20qvmy",
+                    "level": 3
+                },
+                {
+                    "voter": "dydx14f2h05uy7kjxn7lu0h48anyfuz6jkdx8k7astm",
+                    "tx_hash": "F8CA514F80E67202D5EE16833C64598A3F80E70E8002D031D04CFB7F739079FE",
+                    "timestamp": "2023-11-10T22:20:58.984Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 943620,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper14f2h05uy7kjxn7lu0h48anyfuz6jkdx8nqtxq2",
+                    "level": 3
+                },
+                {
+                    "voter": "dydx145e2gf0waxds2aq78rt5f4w9lak3dsgw3wmc8z",
+                    "tx_hash": "DDDB83EECF08579633201E4DA76BB569F4A81A7F10F3FCAF6C8F7D5A5886625B",
+                    "timestamp": "2023-11-10T22:44:32.738Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 944642,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper145e2gf0waxds2aq78rt5f4w9lak3dsgw5sdwvn",
+                    "level": 3
+                },
+                {
+                    "voter": "dydx1t8hjjca8kecjtuhs2qy83maurj78fq2z3xrrf9",
+                    "tx_hash": "3F9213E5D67C9521D46FF1ABFA7FB573907387078BA09911634B1C108FC783D8",
+                    "timestamp": "2023-11-10T02:34:22.238Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 892832,
+                    "answer": "yes",
+                    "validatorAddress": "dydxvaloper1t8hjjca8kecjtuhs2qy83maurj78fq2z5c44z5",
+                    "level": 4
+                }
+            ]
+        }
+    ]
+}

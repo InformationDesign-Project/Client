@@ -13,7 +13,7 @@
 	let validatorsData = [];
 	let topChains = []; // 상위 10개 체인을 저장할 배열
 	let validatorsCount = { level1: 0, level2: 0, level3: 0, level4: 0, level5: 0 };
-	let chainName = 'cosmos'; // Filter chain name
+	let chainName = 'asset-mantle'; // Filter chain name
 
 	onMount(async () => {
 		// Fetch chain data
@@ -79,7 +79,7 @@
 		</div>
 		<div class="dashboard-main">
 			<div class="heatmap">
-				<Heatmap />
+				<Heatmap data={validatorsData} />
 			</div>
 			<div class="sidebar">
 				<div class="sorted-by">Sorted By</div>
@@ -231,7 +231,6 @@
 	.heatmap {
 		display: flex;
 		width: 100%;
-		height: 100%;
 	}
 
 	.sidebar {

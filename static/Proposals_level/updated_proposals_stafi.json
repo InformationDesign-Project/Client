@@ -1,0 +1,1166 @@
+{
+    "data": [
+        {
+            "detail": {
+                "id": "6",
+                "tx_hash": "0E8BBBB07E3B2CBF0673C5CE8A3EBB213C0AC9EFE1777C128579A2AABA2C4409",
+                "proposer": "stafi1gy5jtfmxw9nyr0p4mkfh9lakegm3jxn3sjdvea",
+                "title": "Update IBC client",
+                "description": "Update the expired client to an active client",
+                "proposal_type": "/ibc.core.client.v1.ClientUpdateProposal",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2023-10-31T13:01:35.264Z",
+                "voting_start_time": "2023-10-31T13:01:35.264Z",
+                "voting_end_time": "2023-11-05T13:01:35.264Z",
+                "deposit_end_time": "2023-11-09T21:01:35.264Z",
+                "notification_status": "VotingNotified",
+                "metadata": "",
+                "gov_rest_path": "v1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.gov.v1.MsgExecLegacyContent",
+                        "content": {
+                            "@type": "/ibc.core.client.v1.ClientUpdateProposal",
+                            "title": "Update IBC client",
+                            "description": "Update the expired client to an active client",
+                            "subject_client_id": "07-tendermint-5",
+                            "substitute_client_id": "07-tendermint-9"
+                        },
+                        "authority": "stafi10d07y265gmmuvt4z0w9aw880jnsr700jpfr0zt"
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": "ufis",
+                    "amount": "10000000000"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "ufis",
+                        "amount": "10000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "13",
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "2249918003700",
+                    "no_amount": "0",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "0"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "stafi1acevwl8z4qllae7hzepq6y0medl7expqa009f0",
+                    "tx_hash": "87039B12FFA2048733B2BB311F265BDD54DF22AC79578DB0F456F8190DB5A64E",
+                    "timestamp": "2023-11-03T08:03:41.720Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6622915,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1acevwl8z4qllae7hzepq6y0medl7expq95svxx",
+                    "level": 4
+                },
+                {
+                    "voter": "stafi15rlqtsud70djrll5wuk970fpye995apn5gehpv",
+                    "tx_hash": "18A99FC2ED83146CAAE153E96AD219853A04C0A2CEEC78B7BDB1C02FEC211AED",
+                    "timestamp": "2023-10-31T15:38:03.193Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6582578,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper15rlqtsud70djrll5wuk970fpye995apnvnx7w9",
+                    "level": 5
+                },
+                {
+                    "voter": "stafi1c9ye54e3pzwm3e0zpdlel6pnavrj9qqva8r5hg",
+                    "tx_hash": "5631DCCDD97D317EEF763E5EAF6B678983400CFD8D92D6A9BA541D00531B7722",
+                    "timestamp": "2023-11-01T08:11:15.220Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6592960,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1c9ye54e3pzwm3e0zpdlel6pnavrj9qqv9uuacp",
+                    "level": 4
+                },
+                {
+                    "voter": "stafi1pvwqfze548z95sdhun58trrvxhlhfrvkksuvrt",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "stafivaloper1pvwqfze548z95sdhun58trrvxhlhfrvkwtr9vz",
+                    "level": 4
+                },
+                {
+                    "voter": "stafi1ncnwxpdv7tkzd3rxlk5jxagr9l9vup7tppxpds",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "stafivaloper1ncnwxpdv7tkzd3rxlk5jxagr9l9vup7te6egze",
+                    "level": 4
+                },
+                {
+                    "voter": "stafi1gaz7z0cdkd7myegr7c6aaacsh2t33urdeugz6y",
+                    "tx_hash": "98CB2A82CC952B775E67A1959A72DFAE39A388FBD0E11D043EDF982FC3460B6C",
+                    "timestamp": "2023-11-03T06:59:11.968Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6622234,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1gaz7z0cdkd7myegr7c6aaacsh2t33urdp8ht4d",
+                    "level": 5
+                },
+                {
+                    "voter": "stafi10vrhlu3twe3uh03hrm5knczh9x65fj3xuvy5fm",
+                    "tx_hash": "7BA5209FC15A10635E42A7453A827A0070D74622651B1C8B79538BC8DBA51AD3",
+                    "timestamp": "2023-11-01T09:36:59.246Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6593851,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper10vrhlu3twe3uh03hrm5knczh9x65fj3xyhmaxj",
+                    "level": 5
+                },
+                {
+                    "voter": "stafi18em4at7k6qrmhjp804jst72ygj8h6hjz3tjm37",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "stafivaloper18em4at7k6qrmhjp804jst72ygj8h6hjzfsdj7h",
+                    "level": 4
+                },
+                {
+                    "voter": "stafi18nuuhuwywsk8at72pxk94rw27nkkf7pll40ce9",
+                    "tx_hash": "035E8EB3192F70B2656DE844C353522D2FBDFCA4AE742ABAB335E0E39C27AC1D",
+                    "timestamp": "2023-10-31T13:13:26.316Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6581054,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper18nuuhuwywsk8at72pxk94rw27nkkf7pl8ws3kv",
+                    "level": 5
+                },
+                {
+                    "voter": "stafi1c30ypu82a6xgntcl7gf7fewdctw7vf636tvtwu",
+                    "tx_hash": "E0453D6905C7D74879AE85917E7D3EF7D0F4E0D6E44DD9C7A822D974F3CAAF53",
+                    "timestamp": "2023-10-31T13:51:34.589Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6581455,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1c30ypu82a6xgntcl7gf7fewdctw7vf63zsnzp4",
+                    "level": 4
+                },
+                {
+                    "voter": "stafi1zujv6qenxquta0ppys3tysnz79xr2mhlm6jew4",
+                    "tx_hash": "F5E0AA67FCA07370E5727A6F7289C4BF8A40B1DBD4C2EF5D1CE429B66FC0FEFC",
+                    "timestamp": "2023-11-03T06:59:57.047Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6622242,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1zujv6qenxquta0ppys3tysnz79xr2mhlrpdspu",
+                    "level": 5
+                },
+                {
+                    "voter": "stafi15ftet9g4u907jjn75qq6vldpqp96azlthqgae7",
+                    "tx_hash": "91692F39766BF637B26A72C417F0F5A52D2693F76E8C6332845744BF0C0AAF59",
+                    "timestamp": "2023-11-03T06:59:34.513Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6622238,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper15ftet9g4u907jjn75qq6vldpqp96azlt0mh5kh",
+                    "level": 5
+                },
+                {
+                    "voter": "stafi17pvync8ctx6hwj40l5wh68knw0wvym4cplzjkz",
+                    "tx_hash": "5204904DFDF0C4ABBDD18D1124E18281B96FF31E84FF1B3ECCEA1A9C55240E7A",
+                    "timestamp": "2023-11-03T07:00:08.744Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6622244,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper17pvync8ctx6hwj40l5wh68knw0wvym4ceyamet",
+                    "level": 5
+                },
+                {
+                    "voter": "stafi1qwha8y8nvt6zmv6nt9qg6xpqyf9pltftc5trhp",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "stafivaloper1qwha8y8nvt6zmv6nt9qg6xpqyf9pltftq052cg",
+                    "level": 4
+                },
+                {
+                    "voter": "stafi19f0w9svr905fhefusyx4z8sf83j6et0gmqsm05",
+                    "tx_hash": "973749434EB202DA861B9832F742C0FF0E440B885BA67E5CE877662F7F12F890",
+                    "timestamp": "2023-10-31T13:05:49.803Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6580974,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper19f0w9svr905fhefusyx4z8sf83j6et0grm0jqa",
+                    "level": 5
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "5",
+                "tx_hash": "0FBA47AD4DD1B6A433D040C72A31964BD9E8ECA0FE38AFC40F3BB504E3A38BF6",
+                "proposer": "stafi1gy5jtfmxw9nyr0p4mkfh9lakegm3jxn3sjdvea",
+                "title": "Update IBC client",
+                "description": "Update the expired client to an active client",
+                "proposal_type": "/ibc.core.client.v1.ClientUpdateProposal",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2023-10-07T03:04:47.129Z",
+                "voting_start_time": "2023-10-07T03:04:47.129Z",
+                "voting_end_time": "2023-10-12T03:04:47.129Z",
+                "deposit_end_time": "2023-10-16T11:04:47.129Z",
+                "notification_status": "VotingNotified",
+                "metadata": "",
+                "gov_rest_path": "v1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.gov.v1.MsgExecLegacyContent",
+                        "content": {
+                            "@type": "/ibc.core.client.v1.ClientUpdateProposal",
+                            "title": "Update IBC client",
+                            "description": "Update the expired client to an active client",
+                            "subject_client_id": "07-tendermint-2",
+                            "substitute_client_id": "07-tendermint-8"
+                        },
+                        "authority": "stafi10d07y265gmmuvt4z0w9aw880jnsr700jpfr0zt"
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": "ufis",
+                    "amount": "10000000000"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "ufis",
+                        "amount": "10000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "14",
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "2599930503700",
+                    "no_amount": "0",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "0"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "stafi1acevwl8z4qllae7hzepq6y0medl7expqa009f0",
+                    "tx_hash": "28AF42A21253F185AE2196998F87A5C9F2FD837EF7BB24BC633F0458415F9876",
+                    "timestamp": "2023-10-10T08:20:34.416Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6258529,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1acevwl8z4qllae7hzepq6y0medl7expq95svxx"
+                },
+                {
+                    "voter": "stafi15rlqtsud70djrll5wuk970fpye995apn5gehpv",
+                    "tx_hash": "39BC7D58FB5741F7E4E6AE1B4E078BEC83D2FC341017E26601058F016347B23B",
+                    "timestamp": "2023-10-07T06:45:33.025Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6211910,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper15rlqtsud70djrll5wuk970fpye995apnvnx7w9"
+                },
+                {
+                    "voter": "stafi1c9ye54e3pzwm3e0zpdlel6pnavrj9qqva8r5hg",
+                    "tx_hash": "72E2198C4360B12F32322BDD41F780D1E9ED94F1EA3B682DBFD932D09B5C91B0",
+                    "timestamp": "2023-10-09T02:25:19.934Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6239585,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1c9ye54e3pzwm3e0zpdlel6pnavrj9qqv9uuacp"
+                },
+                {
+                    "voter": "stafi1pvwqfze548z95sdhun58trrvxhlhfrvkksuvrt",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "stafivaloper1pvwqfze548z95sdhun58trrvxhlhfrvkwtr9vz"
+                },
+                {
+                    "voter": "stafi1ncnwxpdv7tkzd3rxlk5jxagr9l9vup7tppxpds",
+                    "tx_hash": "1AE7D888DD734E99EBA1B883B3C240864B73FD418FC528F8E315166083B70336",
+                    "timestamp": "2023-10-10T14:40:24.203Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6262529,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1ncnwxpdv7tkzd3rxlk5jxagr9l9vup7te6egze"
+                },
+                {
+                    "voter": "stafi1gaz7z0cdkd7myegr7c6aaacsh2t33urdeugz6y",
+                    "tx_hash": "C731FE1DB57A0C6E2C4CC0F69A74268A6EF8B293AA2D195DF982C8E391449AB1",
+                    "timestamp": "2023-10-10T06:06:54.553Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6257116,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1gaz7z0cdkd7myegr7c6aaacsh2t33urdp8ht4d"
+                },
+                {
+                    "voter": "stafi10vrhlu3twe3uh03hrm5knczh9x65fj3xuvy5fm",
+                    "tx_hash": "E58C954D2A51162135FDC076D61284F8D0036D2E5B89478F5D6A7A10C8B84C22",
+                    "timestamp": "2023-10-12T00:39:01.822Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6284077,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper10vrhlu3twe3uh03hrm5knczh9x65fj3xyhmaxj"
+                },
+                {
+                    "voter": "stafi18em4at7k6qrmhjp804jst72ygj8h6hjz3tjm37",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "stafivaloper18em4at7k6qrmhjp804jst72ygj8h6hjzfsdj7h"
+                },
+                {
+                    "voter": "stafi18nuuhuwywsk8at72pxk94rw27nkkf7pll40ce9",
+                    "tx_hash": "1D9DB6C132C9DBE89CCFDBA103F966164FBE392FE0D48A33EBE539F5C08E3456",
+                    "timestamp": "2023-10-08T18:58:10.142Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6234849,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper18nuuhuwywsk8at72pxk94rw27nkkf7pl8ws3kv"
+                },
+                {
+                    "voter": "stafi1c30ypu82a6xgntcl7gf7fewdctw7vf636tvtwu",
+                    "tx_hash": "61563AF888F3C5E3C2DBAB4BA9081BE36EF7B3D37A0E5E4864059B3A607CB31E",
+                    "timestamp": "2023-10-08T16:53:29.059Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6233533,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1c30ypu82a6xgntcl7gf7fewdctw7vf63zsnzp4"
+                },
+                {
+                    "voter": "stafi1zujv6qenxquta0ppys3tysnz79xr2mhlm6jew4",
+                    "tx_hash": "938C051D17CC75486E3E617D710FBD7BA8090CDF845BAAC48FDB864FA43C05DF",
+                    "timestamp": "2023-10-10T06:07:28.694Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6257122,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1zujv6qenxquta0ppys3tysnz79xr2mhlrpdspu"
+                },
+                {
+                    "voter": "stafi15ftet9g4u907jjn75qq6vldpqp96azlthqgae7",
+                    "tx_hash": "F89E7FA1DB4EA7D9AE745E5824CFCDD33E5E9527F4E04DCCE1D90F95AB61A62B",
+                    "timestamp": "2023-10-10T06:07:11.577Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6257119,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper15ftet9g4u907jjn75qq6vldpqp96azlt0mh5kh"
+                },
+                {
+                    "voter": "stafi17pvync8ctx6hwj40l5wh68knw0wvym4cplzjkz",
+                    "tx_hash": "A08FBC19A5CC7132BC753EBF5449C31A9A3F8DCE5E0758CC8E3910CA30A4C6EB",
+                    "timestamp": "2023-10-10T06:07:45.665Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6257125,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper17pvync8ctx6hwj40l5wh68knw0wvym4ceyamet"
+                },
+                {
+                    "voter": "stafi1qwha8y8nvt6zmv6nt9qg6xpqyf9pltftc5trhp",
+                    "tx_hash": "23EFEAED152916794F05FECDD12718C245704AED896A2D35D41EB0A1DCAA5FD1",
+                    "timestamp": "2023-10-11T17:38:10.481Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6279619,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1qwha8y8nvt6zmv6nt9qg6xpqyf9pltftq052cg"
+                },
+                {
+                    "voter": "stafi19f0w9svr905fhefusyx4z8sf83j6et0gmqsm05",
+                    "tx_hash": "959F452BE9654AC608F2CCA2ACBDA6BAD8C2FC198754BD475F4A1A297BD3C7B7",
+                    "timestamp": "2023-10-07T07:38:58.809Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6212474,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper19f0w9svr905fhefusyx4z8sf83j6et0grm0jqa"
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "4",
+                "tx_hash": "08BC7C35822A24F68AC637A4A2251F3D53F13AF55B66EDC21E1F55F264D31181",
+                "proposer": "stafi1gy5jtfmxw9nyr0p4mkfh9lakegm3jxn3sjdvea",
+                "title": "v0.5.0 Software Upgrade",
+                "description": "### Upgrade to v0.5.0\\nThis governance proposal is for an on-chain upgrade to StaFiHub **v0.5.0** to support receiving liquid staked ATOM shares and then minting corresponding amount of rATOMs for user, which is implemented by using Cosmos LSM.\\n\\n### Proposal Details\\n- At block **5868372** StaFiHub will be upgraded to **v0.5.0**\\n- See changes from **v0.4.3 -> v0.5.0** [here](https://github.com/stafihub/stafihub/compare/v0.4.3...v0.5.0)\\n- commit hash: **920922cd686a94664f736bd604093a305475d0dc**\\n\\n### Actionables\\n\\nIf this proposal is successful, all validators and full node operators should upgrade to **v0.5.0** exactly at the upgrade block.\\nUsing cosmovisor is **highly recommended.**\\n\\nYou can find the upgrade countdown [here](https://www.mintscan.io/stafi/blocks/5868372)\\n\\nAnd upgrade instruction [here](https://github.com/stafihub/stafihub/tree/main/app/upgrades/v050)\\n\\n- By voting **YES** you agree to move forward with the network upgrade\\n- By voting **NO** you disagree to move forward with the network upgrade.",
+                "proposal_type": "/cosmos.upgrade.v1beta1.SoftwareUpgradeProposal",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2023-09-09T11:54:52.249Z",
+                "voting_start_time": "2023-09-09T11:54:52.249Z",
+                "voting_end_time": "2023-09-14T11:54:52.249Z",
+                "deposit_end_time": "2023-09-18T19:54:52.249Z",
+                "notification_status": "VotingNotified",
+                "metadata": "",
+                "gov_rest_path": "v1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.gov.v1.MsgExecLegacyContent",
+                        "content": {
+                            "@type": "/cosmos.upgrade.v1beta1.SoftwareUpgradeProposal",
+                            "title": "v0.5.0 Software Upgrade",
+                            "description": "### Upgrade to v0.5.0\\nThis governance proposal is for an on-chain upgrade to StaFiHub **v0.5.0** to support receiving liquid staked ATOM shares and then minting corresponding amount of rATOMs for user, which is implemented by using Cosmos LSM.\\n\\n### Proposal Details\\n- At block **5868372** StaFiHub will be upgraded to **v0.5.0**\\n- See changes from **v0.4.3 -> v0.5.0** [here](https://github.com/stafihub/stafihub/compare/v0.4.3...v0.5.0)\\n- commit hash: **920922cd686a94664f736bd604093a305475d0dc**\\n\\n### Actionables\\n\\nIf this proposal is successful, all validators and full node operators should upgrade to **v0.5.0** exactly at the upgrade block.\\nUsing cosmovisor is **highly recommended.**\\n\\nYou can find the upgrade countdown [here](https://www.mintscan.io/stafi/blocks/5868372)\\n\\nAnd upgrade instruction [here](https://github.com/stafihub/stafihub/tree/main/app/upgrades/v050)\\n\\n- By voting **YES** you agree to move forward with the network upgrade\\n- By voting **NO** you disagree to move forward with the network upgrade.",
+                            "plan": {
+                                "name": "v050",
+                                "time": "0001-01-01T00:00:00Z",
+                                "height": "5868372",
+                                "info": "v0.5.0 Software Upgrade",
+                                "upgraded_client_state": null
+                            }
+                        },
+                        "authority": "stafi10d07y265gmmuvt4z0w9aw880jnsr700jpfr0zt"
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": "ufis",
+                    "amount": "10000000000"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "ufis",
+                        "amount": "10000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "12",
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "2449921003700",
+                    "no_amount": "0",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "0"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "stafi1acevwl8z4qllae7hzepq6y0medl7expqa009f0",
+                    "tx_hash": "EA3AD158E2F0A7DE7B41C2B56152290A98344850901856DEDAEB970AAEC7E366",
+                    "timestamp": "2023-09-10T02:32:42.456Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5799409,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1acevwl8z4qllae7hzepq6y0medl7expq95svxx"
+                },
+                {
+                    "voter": "stafi15rlqtsud70djrll5wuk970fpye995apn5gehpv",
+                    "tx_hash": "F12F6811D51C5E2227BF91F215B5AE719B23CC4B14D8857ACCD3B12275F25C2D",
+                    "timestamp": "2023-09-09T15:26:25.290Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5792413,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper15rlqtsud70djrll5wuk970fpye995apnvnx7w9"
+                },
+                {
+                    "voter": "stafi1c9ye54e3pzwm3e0zpdlel6pnavrj9qqva8r5hg",
+                    "tx_hash": "71F7F38E14D067E6B5E8D023658AF4AC6E5074044DF8758A4906DA426D0D4A48",
+                    "timestamp": "2023-09-12T07:09:43.573Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5832457,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1c9ye54e3pzwm3e0zpdlel6pnavrj9qqv9uuacp"
+                },
+                {
+                    "voter": "stafi1pvwqfze548z95sdhun58trrvxhlhfrvkksuvrt",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "stafivaloper1pvwqfze548z95sdhun58trrvxhlhfrvkwtr9vz"
+                },
+                {
+                    "voter": "stafi1ncnwxpdv7tkzd3rxlk5jxagr9l9vup7tppxpds",
+                    "tx_hash": "E20335A8C38DA9E276B794F52D345BC7FA8D64E4EB47586F6DDBDE8DB74F8BDF",
+                    "timestamp": "2023-09-14T10:02:55.475Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5864426,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1ncnwxpdv7tkzd3rxlk5jxagr9l9vup7te6egze"
+                },
+                {
+                    "voter": "stafi1gaz7z0cdkd7myegr7c6aaacsh2t33urdeugz6y",
+                    "tx_hash": "0AFCBABBC4B26858C2644EA51235347EFEF850200FA6477C822B4D025544C468",
+                    "timestamp": "2023-09-14T01:17:58.145Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5858927,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1gaz7z0cdkd7myegr7c6aaacsh2t33urdp8ht4d"
+                },
+                {
+                    "voter": "stafi10vrhlu3twe3uh03hrm5knczh9x65fj3xuvy5fm",
+                    "tx_hash": "A637451133A006E68B30216E2358F064FC62A7BEC903A2FC004FBD4F85460384",
+                    "timestamp": "2023-09-10T16:12:56.454Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5808005,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper10vrhlu3twe3uh03hrm5knczh9x65fj3xyhmaxj"
+                },
+                {
+                    "voter": "stafi18em4at7k6qrmhjp804jst72ygj8h6hjz3tjm37",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "stafivaloper18em4at7k6qrmhjp804jst72ygj8h6hjzfsdj7h"
+                },
+                {
+                    "voter": "stafi18nuuhuwywsk8at72pxk94rw27nkkf7pll40ce9",
+                    "tx_hash": "22C28D11281FFB57AEA94C9682F1F62A4D4B0E6C2AA8C0818742BF3D5E542159",
+                    "timestamp": "2023-09-11T05:05:55.512Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5816103,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper18nuuhuwywsk8at72pxk94rw27nkkf7pl8ws3kv"
+                },
+                {
+                    "voter": "stafi1c30ypu82a6xgntcl7gf7fewdctw7vf636tvtwu",
+                    "tx_hash": "0461B925071B0AD5B96FA475F6EF4DD5581ED543D8BCF52A5DAA4A6DA976F2A3",
+                    "timestamp": "2023-09-10T19:54:41.666Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5810333,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1c30ypu82a6xgntcl7gf7fewdctw7vf63zsnzp4"
+                },
+                {
+                    "voter": "stafi1zujv6qenxquta0ppys3tysnz79xr2mhlm6jew4",
+                    "tx_hash": "9A59ED02954D384C3C605DCA8BFA26A8B5CC3733B4B6B3CDE882875BBA048ECE",
+                    "timestamp": "2023-09-14T01:18:32.193Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5858933,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1zujv6qenxquta0ppys3tysnz79xr2mhlrpdspu"
+                },
+                {
+                    "voter": "stafi15ftet9g4u907jjn75qq6vldpqp96azlthqgae7",
+                    "tx_hash": "93BFF7971A31AE8A38D1A071C3255B89E1ADD682D73524CEA47D2E8163ED314E",
+                    "timestamp": "2023-09-14T01:18:15.161Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5858930,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper15ftet9g4u907jjn75qq6vldpqp96azlt0mh5kh"
+                },
+                {
+                    "voter": "stafi17pvync8ctx6hwj40l5wh68knw0wvym4cplzjkz",
+                    "tx_hash": "9E3839E884F692BDE590387FB6BB3B9925DA66D37A78B9E77E1883220D14F91D",
+                    "timestamp": "2023-09-14T01:18:55.314Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5858937,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper17pvync8ctx6hwj40l5wh68knw0wvym4ceyamet"
+                },
+                {
+                    "voter": "stafi1qwha8y8nvt6zmv6nt9qg6xpqyf9pltftc5trhp",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "stafivaloper1qwha8y8nvt6zmv6nt9qg6xpqyf9pltftq052cg"
+                },
+                {
+                    "voter": "stafi19f0w9svr905fhefusyx4z8sf83j6et0gmqsm05",
+                    "tx_hash": "8422BFFA0311B8B5C1ECA6E5FF940FD1C99A2C51FB2D9FDBE7617C5019C248E0",
+                    "timestamp": "2023-09-09T12:18:37.405Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5790440,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper19f0w9svr905fhefusyx4z8sf83j6et0grm0jqa"
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "3",
+                "tx_hash": "AAE19E981EA794BC36A4D2187E0EB840F63609BCCE7EB3CE07EF6892EBD5E880",
+                "proposer": "stafi1gy5jtfmxw9nyr0p4mkfh9lakegm3jxn3sjdvea",
+                "title": "Update IBC client",
+                "description": "Update the expired client to an active client",
+                "proposal_type": "/ibc.core.client.v1.ClientUpdateProposal",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2023-08-23T07:36:38.912Z",
+                "voting_start_time": "2023-08-23T07:36:38.912Z",
+                "voting_end_time": "2023-08-28T07:36:38.912Z",
+                "deposit_end_time": "2023-09-01T15:36:38.912Z",
+                "notification_status": "VotingNotified",
+                "metadata": "",
+                "gov_rest_path": "v1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.gov.v1.MsgExecLegacyContent",
+                        "content": {
+                            "@type": "/ibc.core.client.v1.ClientUpdateProposal",
+                            "title": "Update IBC client",
+                            "description": "Update the expired client to an active client",
+                            "subject_client_id": "07-tendermint-4",
+                            "substitute_client_id": "07-tendermint-6"
+                        },
+                        "authority": "stafi10d07y265gmmuvt4z0w9aw880jnsr700jpfr0zt"
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": "ufis",
+                    "amount": "10000000000"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "ufis",
+                        "amount": "10000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "11",
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "2229920003700",
+                    "no_amount": "0",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "0"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "stafi1acevwl8z4qllae7hzepq6y0medl7expqa009f0",
+                    "tx_hash": "A81E07B16320409CFEE3943C824EFC135136E1C76ECBF650D2ECDB3AC8FE8472",
+                    "timestamp": "2023-08-24T10:05:19.239Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5547082,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1acevwl8z4qllae7hzepq6y0medl7expq95svxx"
+                },
+                {
+                    "voter": "stafi15rlqtsud70djrll5wuk970fpye995apn5gehpv",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "stafivaloper15rlqtsud70djrll5wuk970fpye995apnvnx7w9"
+                },
+                {
+                    "voter": "stafi1c9ye54e3pzwm3e0zpdlel6pnavrj9qqva8r5hg",
+                    "tx_hash": "3B03CC7BB884D8A270C1353066C798C6787DD8DE9B232489CD39EB38D998D2FA",
+                    "timestamp": "2023-08-25T05:31:02.657Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5559348,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1c9ye54e3pzwm3e0zpdlel6pnavrj9qqv9uuacp"
+                },
+                {
+                    "voter": "stafi1pvwqfze548z95sdhun58trrvxhlhfrvkksuvrt",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "stafivaloper1pvwqfze548z95sdhun58trrvxhlhfrvkwtr9vz"
+                },
+                {
+                    "voter": "stafi1ncnwxpdv7tkzd3rxlk5jxagr9l9vup7tppxpds",
+                    "tx_hash": "AD1FB261E130DCF6C2C0E6D69506973661412DB0CCE2E75A3064A5402EDFB7A4",
+                    "timestamp": "2023-08-24T09:47:00.603Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5546889,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1ncnwxpdv7tkzd3rxlk5jxagr9l9vup7te6egze"
+                },
+                {
+                    "voter": "stafi1gaz7z0cdkd7myegr7c6aaacsh2t33urdeugz6y",
+                    "tx_hash": "F74E1DFCEF4F8A7105021093D3F25565FEB7083E5EAC18FAFEAEFC39FD8246AD",
+                    "timestamp": "2023-08-26T00:28:59.262Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5571295,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1gaz7z0cdkd7myegr7c6aaacsh2t33urdp8ht4d"
+                },
+                {
+                    "voter": "stafi10vrhlu3twe3uh03hrm5knczh9x65fj3xuvy5fm",
+                    "tx_hash": "3594FBD30EA33220C563A07EE7E738FC9A5ADBBDB8B09FCE56D48CA6F8E10C83",
+                    "timestamp": "2023-08-25T01:58:01.511Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5557108,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper10vrhlu3twe3uh03hrm5knczh9x65fj3xyhmaxj"
+                },
+                {
+                    "voter": "stafi18em4at7k6qrmhjp804jst72ygj8h6hjz3tjm37",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "stafivaloper18em4at7k6qrmhjp804jst72ygj8h6hjzfsdj7h"
+                },
+                {
+                    "voter": "stafi18nuuhuwywsk8at72pxk94rw27nkkf7pll40ce9",
+                    "tx_hash": "B46794965BE5FB3FCFC47095E17014704FD9FE38A7D0175412FF43F34B49ADF3",
+                    "timestamp": "2023-08-23T16:49:16.739Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5536179,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper18nuuhuwywsk8at72pxk94rw27nkkf7pl8ws3kv"
+                },
+                {
+                    "voter": "stafi1c30ypu82a6xgntcl7gf7fewdctw7vf636tvtwu",
+                    "tx_hash": "FEE1358DFEA19615677B7DABB03D8043FE20A3AA3FCF79F9C3C818787F7FF121",
+                    "timestamp": "2023-08-23T19:09:16.317Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5537652,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1c30ypu82a6xgntcl7gf7fewdctw7vf63zsnzp4"
+                },
+                {
+                    "voter": "stafi1zujv6qenxquta0ppys3tysnz79xr2mhlm6jew4",
+                    "tx_hash": "616E63CE48AE7E45551B6F800D07E21F4692F96BA042B3AEF30819E9A7ADE6E6",
+                    "timestamp": "2023-08-26T00:27:45.341Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5571282,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1zujv6qenxquta0ppys3tysnz79xr2mhlrpdspu"
+                },
+                {
+                    "voter": "stafi15ftet9g4u907jjn75qq6vldpqp96azlthqgae7",
+                    "tx_hash": "BC620822C5E4C80DCBA1EF4651C85D0A535B37690D26C20F5CC515B5862345B4",
+                    "timestamp": "2023-08-26T00:26:53.917Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5571273,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper15ftet9g4u907jjn75qq6vldpqp96azlt0mh5kh"
+                },
+                {
+                    "voter": "stafi17pvync8ctx6hwj40l5wh68knw0wvym4cplzjkz",
+                    "tx_hash": "B1A44D3D3684B4BCEDF31D1233068C6738759318485BEDAE60392478A0E8EA47",
+                    "timestamp": "2023-08-26T00:28:13.693Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5571287,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper17pvync8ctx6hwj40l5wh68knw0wvym4ceyamet"
+                },
+                {
+                    "voter": "stafi1qwha8y8nvt6zmv6nt9qg6xpqyf9pltftc5trhp",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "stafivaloper1qwha8y8nvt6zmv6nt9qg6xpqyf9pltftq052cg"
+                },
+                {
+                    "voter": "stafi19f0w9svr905fhefusyx4z8sf83j6et0gmqsm05",
+                    "tx_hash": "BA6E7F8FE250F98C9A39ABCC6FC1CF9DD72C7D5D161742771BE7049EEC437516",
+                    "timestamp": "2023-08-23T09:47:25.706Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5531747,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper19f0w9svr905fhefusyx4z8sf83j6et0grm0jqa"
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "2",
+                "tx_hash": "ADE9E5344DE1902A5D1EE967F4CA32CBE216553E9B5731508B586CE4A8723B84",
+                "proposer": "stafi1gy5jtfmxw9nyr0p4mkfh9lakegm3jxn3sjdvea",
+                "title": "Upgrade v0.4.0",
+                "description": "### Upgrade to v0.4.0\\nThis governance proposal is for an on-chain upgrade to StaFiHub **v0.4.0** to bump up SDK version.\\n\\nVersion bumps:\\n- ibc v5.2.0\\n- cosmos-sdk v0.46.12\\n\\n### Proposal Details\\n- At block **3766566** StaFiHub will be upgraded to **v0.4.0**\\n- See changes from **v0.3.0 -> v0.4.0** [here](https://github.com/stafihub/stafihub/compare/v0.3.0...v0.4.0)\\n- commit hash: **d989bf1c03397b33750ce6db1cd94a1ca3042d02**\\n\\n### Actionables\\n\\nIf this proposal is successful, all validators and full node operators should upgrade to **v0.4.0** exactly at the upgrade block.\\nUsing cosmovisor is **highly recommended.**\\n\\nYou can find the upgrade countdown [here](https://www.mintscan.io/stafi/blocks/3766566)\\n\\nAnd upgrade instruction [here](https://github.com/stafihub/stafihub/tree/main/app/upgrades/v040)\\n\\n- By voting **YES** you agree to move forward with the network upgrade\\n- By voting **NO** you disagree to move forward with the network upgrade.",
+                "proposal_type": "SoftwareUpgrade",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2023-04-23T04:00:50.081Z",
+                "voting_start_time": "2023-04-23T04:00:50.081Z",
+                "voting_end_time": "2023-04-28T04:00:50.081Z",
+                "deposit_end_time": "2023-05-02T12:00:50.081Z",
+                "notification_status": "VotingNotified",
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.upgrade.v1beta1.SoftwareUpgradeProposal",
+                        "title": "Upgrade v0.4.0",
+                        "description": "### Upgrade to v0.4.0\\nThis governance proposal is for an on-chain upgrade to StaFiHub **v0.4.0** to bump up SDK version.\\n\\nVersion bumps:\\n- ibc v5.2.0\\n- cosmos-sdk v0.46.12\\n\\n### Proposal Details\\n- At block **3766566** StaFiHub will be upgraded to **v0.4.0**\\n- See changes from **v0.3.0 -> v0.4.0** [here](https://github.com/stafihub/stafihub/compare/v0.3.0...v0.4.0)\\n- commit hash: **d989bf1c03397b33750ce6db1cd94a1ca3042d02**\\n\\n### Actionables\\n\\nIf this proposal is successful, all validators and full node operators should upgrade to **v0.4.0** exactly at the upgrade block.\\nUsing cosmovisor is **highly recommended.**\\n\\nYou can find the upgrade countdown [here](https://www.mintscan.io/stafi/blocks/3766566)\\n\\nAnd upgrade instruction [here](https://github.com/stafihub/stafihub/tree/main/app/upgrades/v040)\\n\\n- By voting **YES** you agree to move forward with the network upgrade\\n- By voting **NO** you disagree to move forward with the network upgrade.",
+                        "plan": {
+                            "name": "v040",
+                            "time": "0001-01-01T00:00:00Z",
+                            "height": "3766566",
+                            "info": "SDK version bumps up",
+                            "upgraded_client_state": null
+                        }
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": "ufis",
+                    "amount": "10000000000"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "ufis",
+                        "amount": "10000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "14",
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "2849926503700",
+                    "no_amount": "0",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "0"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "stafi1acevwl8z4qllae7hzepq6y0medl7expqa009f0",
+                    "tx_hash": "F955C5E0D3233400C4C2E7F6B4FD5F7533958D07E8AD941BCBA274B4D36CF3B6",
+                    "timestamp": "2023-04-24T06:27:05.821Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 3706572,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1acevwl8z4qllae7hzepq6y0medl7expq95svxx"
+                },
+                {
+                    "voter": "stafi15rlqtsud70djrll5wuk970fpye995apn5gehpv",
+                    "tx_hash": "2AA85C3FDD17F789FAF8DB4B49052C58F02E68EE8E697FF3E7A820C9AF210C9C",
+                    "timestamp": "2023-04-23T06:52:36.025Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 3692156,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper15rlqtsud70djrll5wuk970fpye995apnvnx7w9"
+                },
+                {
+                    "voter": "stafi1c9ye54e3pzwm3e0zpdlel6pnavrj9qqva8r5hg",
+                    "tx_hash": "9F0E07417D40CE98E52F2225CB6A846DD4BE65DF3675D1E71339B982B2C221D7",
+                    "timestamp": "2023-04-25T01:07:52.842Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 3717879,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1c9ye54e3pzwm3e0zpdlel6pnavrj9qqv9uuacp"
+                },
+                {
+                    "voter": "stafi1pvwqfze548z95sdhun58trrvxhlhfrvkksuvrt",
+                    "tx_hash": "249A93D4F3E99A4E07C4F5D198F7FA9E6B8A6BD4AFD49A0F4B7DE89FF8CBE5EA",
+                    "timestamp": "2023-04-25T07:24:43.645Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 3721634,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1pvwqfze548z95sdhun58trrvxhlhfrvkwtr9vz"
+                },
+                {
+                    "voter": "stafi1ncnwxpdv7tkzd3rxlk5jxagr9l9vup7tppxpds",
+                    "tx_hash": "FBF4D98C80C765146722218A1BC2AA1FCC35ABBDF3CD87DDB45B311DB82D5BBC",
+                    "timestamp": "2023-04-26T14:03:14.633Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 3739796,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1ncnwxpdv7tkzd3rxlk5jxagr9l9vup7te6egze"
+                },
+                {
+                    "voter": "stafi1gaz7z0cdkd7myegr7c6aaacsh2t33urdeugz6y",
+                    "tx_hash": "699F665966527686F34C56ADBB6D337DDDF8CA9440EA82EF7019384204E4519C",
+                    "timestamp": "2023-04-23T06:14:22.789Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 3691761,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1gaz7z0cdkd7myegr7c6aaacsh2t33urdp8ht4d"
+                },
+                {
+                    "voter": "stafi10vrhlu3twe3uh03hrm5knczh9x65fj3xuvy5fm",
+                    "tx_hash": "A68377269E55C02119E49042CDE87EC8AD44DA34FAC9C0C5155F6588033D775F",
+                    "timestamp": "2023-04-27T12:51:03.605Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 3753119,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper10vrhlu3twe3uh03hrm5knczh9x65fj3xyhmaxj"
+                },
+                {
+                    "voter": "stafi18em4at7k6qrmhjp804jst72ygj8h6hjz3tjm37",
+                    "tx_hash": "30E04CFCD2BC386712F26AFDD144C54E719AE8EA2966B10928569474E79ECF5C",
+                    "timestamp": "2023-04-24T15:01:52.181Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 3711783,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper18em4at7k6qrmhjp804jst72ygj8h6hjzfsdj7h"
+                },
+                {
+                    "voter": "stafi18nuuhuwywsk8at72pxk94rw27nkkf7pll40ce9",
+                    "tx_hash": "4B63C1CA588BA153C6777FCEAA044D506B198450FB5BED3C9B4C5AFA293088B8",
+                    "timestamp": "2023-04-24T06:14:57.265Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 3706447,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper18nuuhuwywsk8at72pxk94rw27nkkf7pl8ws3kv"
+                },
+                {
+                    "voter": "stafi1c30ypu82a6xgntcl7gf7fewdctw7vf636tvtwu",
+                    "tx_hash": "D63815DC0BF43530A99356C909FE68F145B17FFA2DAA0FAA2DE36A056DAD738F",
+                    "timestamp": "2023-04-24T07:50:37.821Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 3707422,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1c30ypu82a6xgntcl7gf7fewdctw7vf63zsnzp4"
+                },
+                {
+                    "voter": "stafi1zujv6qenxquta0ppys3tysnz79xr2mhlm6jew4",
+                    "tx_hash": "219B67ECEA071CD61AFE3A2A94182A293E9A2ADE4DEA4F818B0EF6EEB91637D5",
+                    "timestamp": "2023-04-23T06:15:13.980Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 3691770,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1zujv6qenxquta0ppys3tysnz79xr2mhlrpdspu"
+                },
+                {
+                    "voter": "stafi15ftet9g4u907jjn75qq6vldpqp96azlthqgae7",
+                    "tx_hash": "B2D97C89C208DDDB6D9C86837150B236DEC7E96D51884235CDB1D13371BE8016",
+                    "timestamp": "2023-04-23T06:14:05.733Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 3691758,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper15ftet9g4u907jjn75qq6vldpqp96azlt0mh5kh"
+                },
+                {
+                    "voter": "stafi17pvync8ctx6hwj40l5wh68knw0wvym4cplzjkz",
+                    "tx_hash": "9800E960C172133EA8F28E081AE2F41511113C839B9A5F7D753150475D25145C",
+                    "timestamp": "2023-04-23T06:15:37.583Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 3691774,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper17pvync8ctx6hwj40l5wh68knw0wvym4ceyamet"
+                },
+                {
+                    "voter": "stafi1qwha8y8nvt6zmv6nt9qg6xpqyf9pltftc5trhp",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "stafivaloper1qwha8y8nvt6zmv6nt9qg6xpqyf9pltftq052cg"
+                },
+                {
+                    "voter": "stafi19f0w9svr905fhefusyx4z8sf83j6et0gmqsm05",
+                    "tx_hash": "7D2538133C5D8EEB758496EDFC0D27624553F016F56F2E99546C7C760612D0DC",
+                    "timestamp": "2023-04-23T18:30:02.035Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 3699298,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper19f0w9svr905fhefusyx4z8sf83j6et0grm0jqa"
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "1",
+                "tx_hash": "96E43336ACAAB8BE009169432DE6F74791D26DAC830DC1EDA953EC4B39FCA25E",
+                "proposer": "stafi1gy5jtfmxw9nyr0p4mkfh9lakegm3jxn3sjdvea",
+                "title": "Upgrade v0.3.0 - Ledger support",
+                "description": "### Upgrade to v0.3.0 - Ledger support\\nThis governance proposal is for an on-chain upgrade to StaFiHub **v0.3.0** to support Ledger.\\n\\nIt also includes version bumps:\\n- ibc v3.4.0\\n- cosmos-sdk v0.45.11\\n\\n### Proposal Details\\n- At block **2626590** StaFiHub will be upgraded to **v0.3.0**\\n- See changes from **v0.2.3 -> v0.3.0** [here](https://github.com/stafihub/stafihub/compare/v0.2.3...v0.3.0)\\n- commit hash: **fd0c05441ce8e6bddd681fa6cb4090697db84c53**\\n\\n### Actionables\\n\\nIf this proposal is successful, all validators and full node operators should upgrade to **v0.3.0** exactly at the upgrade block.\\nUsing cosmovisor is **highly recommended.**\\n\\nYou can find the upgrade countdown [here](https://www.mintscan.io/stafi/blocks/2626590)\\n\\nAnd upgrade instruction [here](https://github.com/stafihub/stafihub/tree/main/app/upgrades/v030)\\n\\n- By voting **YES** you agree to move forward with the network upgrade\\n- By voting **NO** you disagree to move forward with the network upgrade.",
+                "proposal_type": "SoftwareUpgrade",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2023-02-03T06:42:33.836Z",
+                "voting_start_time": "2023-02-03T06:42:33.836Z",
+                "voting_end_time": "2023-02-08T06:42:33.836Z",
+                "deposit_end_time": "2023-02-12T14:42:33.836Z",
+                "notification_status": "VotingNotified",
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.upgrade.v1beta1.SoftwareUpgradeProposal",
+                        "title": "Upgrade v0.3.0 - Ledger support",
+                        "description": "### Upgrade to v0.3.0 - Ledger support\\nThis governance proposal is for an on-chain upgrade to StaFiHub **v0.3.0** to support Ledger.\\n\\nIt also includes version bumps:\\n- ibc v3.4.0\\n- cosmos-sdk v0.45.11\\n\\n### Proposal Details\\n- At block **2626590** StaFiHub will be upgraded to **v0.3.0**\\n- See changes from **v0.2.3 -> v0.3.0** [here](https://github.com/stafihub/stafihub/compare/v0.2.3...v0.3.0)\\n- commit hash: **fd0c05441ce8e6bddd681fa6cb4090697db84c53**\\n\\n### Actionables\\n\\nIf this proposal is successful, all validators and full node operators should upgrade to **v0.3.0** exactly at the upgrade block.\\nUsing cosmovisor is **highly recommended.**\\n\\nYou can find the upgrade countdown [here](https://www.mintscan.io/stafi/blocks/2626590)\\n\\nAnd upgrade instruction [here](https://github.com/stafihub/stafihub/tree/main/app/upgrades/v030)\\n\\n- By voting **YES** you agree to move forward with the network upgrade\\n- By voting **NO** you disagree to move forward with the network upgrade.",
+                        "plan": {
+                            "name": "v030",
+                            "time": "0001-01-01T00:00:00Z",
+                            "height": "2626590",
+                            "info": "Ledger support and SDK version bumps up",
+                            "upgraded_client_state": null
+                        }
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": "ufis",
+                    "amount": "10000000000"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "ufis",
+                        "amount": "10000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "21",
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "3000015999900",
+                    "no_amount": "0",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "0"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "stafi1acevwl8z4qllae7hzepq6y0medl7expqa009f0",
+                    "tx_hash": "71111F6EABAF20AF9191A9E467FEA1C8E28F011324814A1886D9EB111378BF50",
+                    "timestamp": "2023-02-07T04:49:51.191Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2591772,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1acevwl8z4qllae7hzepq6y0medl7expq95svxx"
+                },
+                {
+                    "voter": "stafi15rlqtsud70djrll5wuk970fpye995apn5gehpv",
+                    "tx_hash": "E40205E66DB1270C6A19ABE1EB3F48989A1D77F74EF7C98AF7078D43D4BFE816",
+                    "timestamp": "2023-02-03T09:28:36.216Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2534057,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper15rlqtsud70djrll5wuk970fpye995apnvnx7w9"
+                },
+                {
+                    "voter": "stafi1c9ye54e3pzwm3e0zpdlel6pnavrj9qqva8r5hg",
+                    "tx_hash": "689CAC30E5780CF970FC273A49392F1A58EBA1696ED9E4C1088C926BA4AAF60A",
+                    "timestamp": "2023-02-08T06:29:07.799Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2607979,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1c9ye54e3pzwm3e0zpdlel6pnavrj9qqv9uuacp"
+                },
+                {
+                    "voter": "stafi1pvwqfze548z95sdhun58trrvxhlhfrvkksuvrt",
+                    "tx_hash": "B67075043FBC9B70C7CB43D555A4273FE0575979BBD52959DA5A20BF00248D54",
+                    "timestamp": "2023-02-07T16:43:44.655Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2599290,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1pvwqfze548z95sdhun58trrvxhlhfrvkwtr9vz"
+                },
+                {
+                    "voter": "stafi1ncnwxpdv7tkzd3rxlk5jxagr9l9vup7tppxpds",
+                    "tx_hash": "487D1CB6CC5B2EDB6A47D3F16DA0DFB021667C8C0A563AE2788743FEBA6DF820",
+                    "timestamp": "2023-02-07T11:34:20.141Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2596032,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1ncnwxpdv7tkzd3rxlk5jxagr9l9vup7te6egze"
+                },
+                {
+                    "voter": "stafi1gaz7z0cdkd7myegr7c6aaacsh2t33urdeugz6y",
+                    "tx_hash": "0EFB5466ED743857DA4A2518E685429541CCE6719B4FAD1612A0BC88243FCC91",
+                    "timestamp": "2023-02-03T08:03:30.417Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2533162,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1gaz7z0cdkd7myegr7c6aaacsh2t33urdp8ht4d"
+                },
+                {
+                    "voter": "stafi10vrhlu3twe3uh03hrm5knczh9x65fj3xuvy5fm",
+                    "tx_hash": "A9E71F92C96A4A8AD7DD52EBA555C3DFD0B22BEE2A3FEEA41FB6899900E655E1",
+                    "timestamp": "2023-02-07T02:54:03.388Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2590552,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper10vrhlu3twe3uh03hrm5knczh9x65fj3xyhmaxj"
+                },
+                {
+                    "voter": "stafi18em4at7k6qrmhjp804jst72ygj8h6hjz3tjm37",
+                    "tx_hash": "A2F8E692F5A09523A61941837FDCB1F756D766C6E0227904D2E5B779DFC8D173",
+                    "timestamp": "2023-02-05T10:43:14.303Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2565162,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper18em4at7k6qrmhjp804jst72ygj8h6hjzfsdj7h"
+                },
+                {
+                    "voter": "stafi18nuuhuwywsk8at72pxk94rw27nkkf7pll40ce9",
+                    "tx_hash": "333F616F66E0BEC01B03DBD7E4EE87C87240ADC148912D494BDC61098F69792D",
+                    "timestamp": "2023-02-03T06:57:11.702Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2532465,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper18nuuhuwywsk8at72pxk94rw27nkkf7pl8ws3kv"
+                },
+                {
+                    "voter": "stafi1c30ypu82a6xgntcl7gf7fewdctw7vf636tvtwu",
+                    "tx_hash": "0D248BB04545E73C4AD101F10ADEE73C1FAC859D6B9244D02E15014DF39E2CC6",
+                    "timestamp": "2023-02-06T06:23:40.682Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2577594,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1c30ypu82a6xgntcl7gf7fewdctw7vf63zsnzp4"
+                },
+                {
+                    "voter": "stafi1zujv6qenxquta0ppys3tysnz79xr2mhlm6jew4",
+                    "tx_hash": "2C96CAD22A2A026B19C29BBE651B4F3AC3C7B904A621B2F24207241C6C9F6C71",
+                    "timestamp": "2023-02-03T08:06:27.352Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2533193,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1zujv6qenxquta0ppys3tysnz79xr2mhlrpdspu"
+                },
+                {
+                    "voter": "stafi15ftet9g4u907jjn75qq6vldpqp96azlthqgae7",
+                    "tx_hash": "7F07DF2EFB6BF530811D6E0E1B1C10F957501C0999C91A904D7546930200B7AD",
+                    "timestamp": "2023-02-03T08:04:15.692Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2533170,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper15ftet9g4u907jjn75qq6vldpqp96azlt0mh5kh"
+                },
+                {
+                    "voter": "stafi17pvync8ctx6hwj40l5wh68knw0wvym4cplzjkz",
+                    "tx_hash": "056B5563B51E751E90EFCB5088E80C4A5E24DED940D72990AA3643DF1234C345",
+                    "timestamp": "2023-02-03T08:04:49.995Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2533176,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper17pvync8ctx6hwj40l5wh68knw0wvym4ceyamet"
+                },
+                {
+                    "voter": "stafi1qwha8y8nvt6zmv6nt9qg6xpqyf9pltftc5trhp",
+                    "tx_hash": "45B0F53425721B0BF9BA2E77B56D6305AFBC92282F9F95B2866EBD88A4F6FF94",
+                    "timestamp": "2023-02-06T17:22:05.782Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2584528,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper1qwha8y8nvt6zmv6nt9qg6xpqyf9pltftq052cg"
+                },
+                {
+                    "voter": "stafi19f0w9svr905fhefusyx4z8sf83j6et0gmqsm05",
+                    "tx_hash": "817D1A830B816041F3062E0F87E7DDAF3E3BC83DB4E2EFE25FA477F4063467F7",
+                    "timestamp": "2023-02-03T07:29:37.410Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 2532806,
+                    "answer": "yes",
+                    "validatorAddress": "stafivaloper19f0w9svr905fhefusyx4z8sf83j6et0grm0jqa"
+                }
+            ]
+        }
+    ]
+}
