@@ -8,48 +8,47 @@
 	export let validatorData;
 	export let chainName;
 
-
-
+	let filteredChain;
 	let topChains = []; // 상위 10개 체인을 저장할 배열
 	let validatorsCount = { level1: 0, level2: 0, level3: 0, level4: 0, level5: 0 };
 
 	afterUpdate(async () => {
+		console.log(chainData, '값이야');
 
-		console.log(chainData,'값이야')
-
-		if(chainData.length>0){
+		if (chainData.length > 0) {
 			topChains = [...chainData] // 배열을 복사합니다.
-			.sort((a, b) => b.level - a.level) // level에 따라 내림차순 정렬
-			.slice(0, 10); // 상위 10개 항목 추출
+				.sort((a, b) => b.level - a.level) // level에 따라 내림차순 정렬
+				.slice(0, 10); // 상위 10개 항목 추출
 
-		// Count validators per level
-		const count ={ level1: 0, level2: 0, level3: 0, level4: 0, level5: 0 };
-		validatorData.forEach((validator) => {
-			switch (validator.level) {
-				case 1:
-					count.level1++;
-					break;
-				case 2:
-					count.level2++;
-					break;
-				case 3:
-					count.level3++;
-					break;
-				case 4:
-					count.level4++;
-					break;
-				case 5:
-					count.level5++;
-					break;
-			}
-		});
-		validatorsCount = count
-	}
+			// Count validators per level
+			const count = { level1: 0, level2: 0, level3: 0, level4: 0, level5: 0 };
+			validatorData.forEach((validator) => {
+				switch (validator.level) {
+					case 1:
+						count.level1++;
+						break;
+					case 2:
+						count.level2++;
+						break;
+					case 3:
+						count.level3++;
+						break;
+					case 4:
+						count.level4++;
+						break;
+					case 5:
+						count.level5++;
+						break;
+				}
+			});
+			validatorsCount = count;
+		}
 	});
-	$: filteredChain = chainData.find(
-		(chain) => chain.chain.toLowerCase() === chainName.toLowerCase()
-	);
-
+	$: if (chainData && chainName) {
+		filteredChain = chainData.find(
+			(chain) => chain.chain.toLowerCase() === chainName.toLowerCase()
+		);
+	}
 </script>
 
 <div class="dashboard-container">

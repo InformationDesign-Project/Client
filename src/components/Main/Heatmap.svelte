@@ -57,10 +57,10 @@
 		position: absolute;
 		display: none;
 		padding: 10px;
-		background: #191B27;
+		background: #191b27;
 		border-radius: 10px;
 		pointer-events: none;
 		font-size: 12px;
-		color: #7987A8;
+		color: #7987a8;
 	}
 </style>
