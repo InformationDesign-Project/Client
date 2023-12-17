@@ -2,6 +2,7 @@
 	import { afterUpdate, onMount } from 'svelte';
 	import DropdownMenu from './DropdownMenu.svelte';
 	import Heatmap from './Heatmap.svelte';
+	import RadarChart from './RadarChart.svelte';
 
 	export let chainData=[];
 	export let validatorData=[];
@@ -121,14 +122,9 @@
 			{/each}
 		</div>
 
-		<div class="rader-chart">
-			<img
-				width="100%;"
-				src="/layout/rader-chart.png"
-				alt="rader-chart"
-				style="margin-top: 25px;"
-			/>
-		</div>
+		{#if filteredChain}
+			<RadarChart data={filteredChain} />
+		{/if}
 	</div>
 </div>
 
@@ -262,7 +258,7 @@
 	.coin-list-section {
 		flex-grow: 1;
 		height: 250px;
-		width: 70%;
+		width: 82%;
 		border-radius: 10px;
 		background-color: #11141b;
 		color: #fff;

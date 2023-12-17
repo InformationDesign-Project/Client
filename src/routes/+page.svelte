@@ -8,7 +8,7 @@
 
 	onMount(async()=>{
 		chainName='cosmos'
-		const chainResponse = await fetch('/allchain_with_level.json');
+		const chainResponse = await fetch('/allchain_with_level_updated.json');
 		const chainDatas = await chainResponse.json();
 		chainData =chainDatas.data;
 		console.log(chainData,'chainData')

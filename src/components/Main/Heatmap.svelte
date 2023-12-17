@@ -5,7 +5,7 @@
 	let tooltip; // 툴팁 요소
 
 	function drawHeatmap() {
-		const containerWidth = 1000; // 가로 방향 20개 블록 * 50px
+		const containerWidth = 750; // 가로 방향 20개 블록 * 50px
 		const containerHeight = 400;
 
 		const container = d3
@@ -23,9 +23,9 @@
 			.data(data)
 			.enter()
 			.append('rect')
-			.attr('x', (d, i) => (i % 20) * 55) // 가로 방향 20개 블록
-			.attr('y', (d, i) => Math.floor(i / 20) * 40) // 블록의 행 계산
-			.attr('width', 50) // 블록 너비
+			.attr('x', (d, i) => (i % 15) * 50) // 가로 방향 20개 블록
+			.attr('y', (d, i) => Math.floor(i / 15) * 40) // 블록의 행 계산
+			.attr('width', 45) // 블록 너비
 			.attr('height', 35) // 블록 높이
 			.attr('fill', (d) => colorScale(d.level))
 			.on('mouseover', (event, d) => {
@@ -56,12 +56,11 @@
 	.tooltip {
 		position: absolute;
 		display: none;
-		padding: 4px 8px;
-		background: white;
-		border: 1px solid #ccc;
-		border-radius: 4px;
+		padding: 10px;
+		background: #191B27;
+		border-radius: 10px;
 		pointer-events: none;
 		font-size: 12px;
-		color: black;
+		color: #7987A8;
 	}
 </style>
