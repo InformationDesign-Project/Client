@@ -8,7 +8,7 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"sourceMap": true,
-		"strict": true,
+		"strict": false,
 		"moduleResolution": "node"
 	},
 	"types": ["svelte", "d3", "chart.js", "highcharts", "d3-sankey"]

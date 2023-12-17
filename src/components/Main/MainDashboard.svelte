@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-
 	import DropdownMenu from './DropdownMenu.svelte';
+	import Heatmap from './Heatmap.svelte';
 
 	let chainsData: {
 		chain: string;
@@ -21,8 +21,10 @@
 		const chainData = await chainResponse.json();
 		chainsData = chainData.data;
 
-		topChains = chainsData.sort((a, b) => b.level - a.level).slice(0, 10);
-		// Fetch validators data
+		// level에 따라 내림차순 정렬 후 상위 10개 추출
+		topChains = [...chainsData] // 배열을 복사합니다.
+            .sort((a, b) => b.level - a.level) // level에 따라 내림차순 정렬
+            .slice(0, 10); // 상위 10개 항목 추출
 		const validatorsResponse = await fetch(
 			`/valitdators_level/output_validators_${chainName}.json`
 		);
@@ -77,7 +79,7 @@
 		</div>
 		<div class="dashboard-main">
 			<div class="heatmap">
-				<img width="100%;" src="/layout/heatmap.png" alt="heatmap" />
+				<Heatmap />
 			</div>
 			<div class="sidebar">
 				<div class="sorted-by">Sorted By</div>

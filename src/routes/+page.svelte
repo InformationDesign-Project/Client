@@ -5,6 +5,5 @@
 
 <body>
 	<MainHeader />
-
 	<MainDashboard />
 </body>
