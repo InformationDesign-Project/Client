@@ -1,38 +1,28 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { afterUpdate, onMount } from 'svelte';
 	import DropdownMenu from './DropdownMenu.svelte';
 	import Heatmap from './Heatmap.svelte';
 
-	let chainsData: {
-		chain: string;
-		level: number;
-		HealthyScore: number;
-		Decentralization: number;
-		validators?: { total: number };
-	}[] = [];
-	let validatorsData = [];
+	export let chainData=[];
+	export let validatorData=[];
+	export let chainName;
+
+
+
 	let topChains = []; // 상위 10개 체인을 저장할 배열
 	let validatorsCount = { level1: 0, level2: 0, level3: 0, level4: 0, level5: 0 };
-	let chainName = 'kyve'; // Filter chain name
 
-	onMount(async () => {
-		// Fetch chain data
-		const chainResponse = await fetch('/allchain_with_level.json');
-		const chainData = await chainResponse.json();
-		chainsData = chainData.data;
+	afterUpdate(async () => {
 
-		// level에 따라 내림차순 정렬 후 상위 10개 추출
-		topChains = [...chainsData] // 배열을 복사합니다.
+		console.log(chainData,'값이야')
+
+		if(chainData.length>0){
+			topChains = [...chainData] // 배열을 복사합니다.
 			.sort((a, b) => b.level - a.level) // level에 따라 내림차순 정렬
 			.slice(0, 10); // 상위 10개 항목 추출
-		const validatorsResponse = await fetch(
-			`/valitdators_level/output_validators_${chainName}.json`
-		);
-		const validatorsJson = await validatorsResponse.json();
-		validatorsData = validatorsJson.data;
 
 		// Count validators per level
-		validatorsData.forEach((validator) => {
+		validatorData.forEach((validator) => {
 			switch (validator.level) {
 				case 1:
 					validatorsCount.level1++;
@@ -51,11 +41,12 @@
 					break;
 			}
 		});
+	}
 	});
-
-	$: filteredChain = chainsData.find(
+	$: filteredChain = chainData.find(
 		(chain) => chain.chain.toLowerCase() === chainName.toLowerCase()
 	);
+
 </script>
 
 <div class="dashboard-container">
@@ -79,7 +70,7 @@
 		</div>
 		<div class="dashboard-main">
 			<div class="heatmap">
-				<Heatmap data={validatorsData} />
+				<Heatmap data={validatorData} />
 			</div>
 			<div class="sidebar">
 				<div class="sorted-by">Sorted By</div>
