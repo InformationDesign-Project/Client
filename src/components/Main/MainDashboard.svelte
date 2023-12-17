@@ -13,7 +13,7 @@
 	let validatorsData = [];
 	let topChains = []; // 상위 10개 체인을 저장할 배열
 	let validatorsCount = { level1: 0, level2: 0, level3: 0, level4: 0, level5: 0 };
-	let chainName = 'asset-mantle'; // Filter chain name
+	let chainName = 'kyve'; // Filter chain name
 
 	onMount(async () => {
 		// Fetch chain data
@@ -23,8 +23,8 @@
 
 		// level에 따라 내림차순 정렬 후 상위 10개 추출
 		topChains = [...chainsData] // 배열을 복사합니다.
-            .sort((a, b) => b.level - a.level) // level에 따라 내림차순 정렬
-            .slice(0, 10); // 상위 10개 항목 추출
+			.sort((a, b) => b.level - a.level) // level에 따라 내림차순 정렬
+			.slice(0, 10); // 상위 10개 항목 추출
 		const validatorsResponse = await fetch(
 			`/valitdators_level/output_validators_${chainName}.json`
 		);
@@ -152,7 +152,7 @@
 	}
 
 	.dashboard {
-		width: 70%;
+		width: 65%;
 		height: 500px;
 		padding: 20px;
 		border-radius: 10px;
@@ -188,11 +188,11 @@
 
 		.dashboard-main {
 			display: flex;
-			width: 100%;
+			width: 109%;
 
 			.sidebar {
 				flex-basis: 30%;
-				margin-left: 5%;
+				margin-left: 3%;
 			}
 		}
 	}
@@ -230,14 +230,8 @@
 
 	.heatmap {
 		display: flex;
-		width: 100%;
+		width: 65%;
 	}
-
-	.sidebar {
-		flex-basis: 30%;
-		margin-left: 5%;
-	}
-
 	.sorted-by {
 		font-size: 12px;
 		font-style: normal;

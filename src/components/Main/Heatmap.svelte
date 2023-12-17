@@ -1,39 +1,67 @@
 <script>
-  import * as d3 from 'd3';
+	import * as d3 from 'd3';
 
-  export let data = [];
+	export let data = [];
+	let tooltip; // 툴팁 요소
 
-  function drawHeatmap() {
-    const container = d3.select('#heatmap')
-      .html('') 
-      .attr('width', 600)  // 너비 조정
-      .attr('height', 400); // 높이 조정
+	function drawHeatmap() {
+		const containerWidth = 1000; // 가로 방향 20개 블록 * 50px
+		const containerHeight = 400;
 
-    const colorScale = d3.scaleSequential()
-      .domain([1, 5])
-      .interpolator(d3.interpolateBlues);
+		const container = d3
+			.select('#heatmap')
+			.html('')
+			.attr('width', containerWidth)
+			.attr('height', containerHeight);
 
-    container.selectAll('rect')
-      .data(data)
-      .enter()
-      .append('rect')
-      .attr('x', (d, i) => (i % 10) * 50) // 변경된 컬럼 간격
-      .attr('y', (d, i) => Math.floor(i / 10) * 40) // 변경된 행 간격
-      .attr('width', 45) // 블록 너비 조정
-      .attr('height', 35) // 블록 높이 조정
-      .attr('fill', d => colorScale(d.level))
-      .on('mouseover', (event, d) => {
-        // 툴팁 구현
-      });
-  }
+		const colorScale = d3.scaleSequential().domain([1, 5]).interpolator(d3.interpolateBlues);
 
-  $: if (data && data.length > 0) {
-    drawHeatmap();
-  }
+		tooltip = d3.select('.tooltip');
+
+		container
+			.selectAll('rect')
+			.data(data)
+			.enter()
+			.append('rect')
+			.attr('x', (d, i) => (i % 20) * 55) // 가로 방향 20개 블록
+			.attr('y', (d, i) => Math.floor(i / 20) * 40) // 블록의 행 계산
+			.attr('width', 50) // 블록 너비
+			.attr('height', 35) // 블록 높이
+			.attr('fill', (d) => colorScale(d.level))
+			.on('mouseover', (event, d) => {
+				tooltip.style('display', 'block');
+				tooltip
+					.html(
+						`Moniker: ${d.moniker}<br>Level: ${d.level}<br> Vp: ${d.votingPower}<br>Rank: ${d.rank}`
+					)
+					.style('left', `${event.pageX}px`)
+					.style('top', `${event.pageY - 28}px`);
+			})
+			.on('mouseout', () => {
+				tooltip.style('display', 'none');
+			});
+	}
+
+	$: if (data && data.length > 0) {
+		drawHeatmap();
+	}
 </script>
 
 <svg id="heatmap"></svg>
+<div class="tooltip"></div>
+
+<!-- 툴팁 요소 추가 -->
 
 <style>
-  /* 추가 스타일 */
+	.tooltip {
+		position: absolute;
+		display: none;
+		padding: 4px 8px;
+		background: white;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		pointer-events: none;
+		font-size: 12px;
+		color: black;
+	}
 </style>
