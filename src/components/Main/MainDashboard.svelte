@@ -1,18 +1,55 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+
 	import DropdownMenu from './DropdownMenu.svelte';
 
-	let chainsData = [];
+	let chainsData: {
+		chain: string;
+		level: number;
+		HealthyScore: number;
+		Decentralization: number;
+		validators?: { total: number };
+	}[] = [];
 	let validatorsData = [];
+	let topChains = []; // 상위 10개 체인을 저장할 배열
 	let validatorsCount = { level1: 0, level2: 0, level3: 0, level4: 0, level5: 0 };
+	let chainName = 'cosmos'; // Filter chain name
 
 	onMount(async () => {
-		const response = await fetch('/allchain_with_level.json');
-		const data = await response.json();
-		chainsData = data.data;
+		// Fetch chain data
+		const chainResponse = await fetch('/allchain_with_level.json');
+		const chainData = await chainResponse.json();
+		chainsData = chainData.data;
+
+		topChains = chainsData.sort((a, b) => b.level - a.level).slice(0, 10);
+		// Fetch validators data
+		const validatorsResponse = await fetch(
+			`/valitdators_level/output_validators_${chainName}.json`
+		);
+		const validatorsJson = await validatorsResponse.json();
+		validatorsData = validatorsJson.data;
+
+		// Count validators per level
+		validatorsData.forEach((validator) => {
+			switch (validator.level) {
+				case 1:
+					validatorsCount.level1++;
+					break;
+				case 2:
+					validatorsCount.level2++;
+					break;
+				case 3:
+					validatorsCount.level3++;
+					break;
+				case 4:
+					validatorsCount.level4++;
+					break;
+				case 5:
+					validatorsCount.level5++;
+					break;
+			}
+		});
 	});
-	//필터링할 체인 이름
-	let chainName = 'cosmos';
 
 	$: filteredChain = chainsData.find(
 		(chain) => chain.chain.toLowerCase() === chainName.toLowerCase()
@@ -55,23 +92,23 @@
 					</div>
 					<div class="validators-info-item">
 						<div class="validators-info-label">Level 1</div>
-						<div class="validators-info-number">10</div>
+						<div class="validators-info-number">{validatorsCount.level1}</div>
 					</div>
 					<div class="validators-info-item">
 						<div class="validators-info-label">Level 2</div>
-						<div class="validators-info-number">15</div>
+						<div class="validators-info-number">{validatorsCount.level2}</div>
 					</div>
 					<div class="validators-info-item">
 						<div class="validators-info-label">Level 3</div>
-						<div class="validators-info-number">20</div>
+						<div class="validators-info-number">{validatorsCount.level3}</div>
 					</div>
 					<div class="validators-info-item">
 						<div class="validators-info-label">Level 4</div>
-						<div class="validators-info-number">12</div>
+						<div class="validators-info-number">{validatorsCount.level4}</div>
 					</div>
 					<div class="validators-info-item">
 						<div class="validators-info-label">Level 5</div>
-						<div class="validators-info-number">8</div>
+						<div class="validators-info-number">{validatorsCount.level5}</div>
 					</div>
 				</div>
 			</div>
@@ -84,16 +121,11 @@
 				<div class="coin-list-top">Top 10 Healthy Chains</div>
 			</div>
 			<div class="coin-list-divider"></div>
-			<div class="coin-list">
-				<img width="90%;" src="/layout/cosmosFrame.png" alt="cosmos-freame" />
-				<!-- <div class="coin-list-left">
-                    
-                    <div>01 COSMOS</div>
-        
-                </div>
-                <div class="coin-list-right">
-                </div> -->
-			</div>
+			{#each topChains as chain, index (chain.chain)}
+				<div class="coin-list">
+					<div>{index + 1} {chain.chain}</div>
+				</div>
+			{/each}
 		</div>
 
 		<div class="rader-chart">

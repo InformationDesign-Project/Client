@@ -14,13 +14,13 @@
 		<div class="top-coin month">
 			<div class="time-period">Month</div>
 			<div class="coin-name">
-				<!-- 이번 달의 최고 건강도 코인 이름 -->COSMOS
+				<!-- 이번 달의 최고 건강도 코인 이름 -->KAVA
 			</div>
 			<div class="title">Best Healthy Chain this Month</div>
 		</div>
 		<div class="top-coin year">
 			<div class="time-period">Year</div>
-			<div class="coin-name"><!-- 올해의 최고 건강도 코인 이름 -->COSMOS</div>
+			<div class="coin-name"><!-- 올해의 최고 건강도 코인 이름 -->BAND</div>
 			<div class="title">Best Healthy Chain this Year</div>
 		</div>
 	</div>

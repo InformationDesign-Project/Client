@@ -26,9 +26,11 @@
 	"type": "module",
 	"dependencies": {
 		"@types/highcharts": "^7.0.0",
+		"apexcharts": "^3.45.0",
 		"chart.js": "^4.4.1",
 		"d3": "^7.8.5",
 		"d3-sankey": "^0.12.3",
-		"highcharts": "^11.2.0"
+		"highcharts": "^11.2.0",
+		"svelte-apexcharts": "^1.0.2"
 	}
 }
