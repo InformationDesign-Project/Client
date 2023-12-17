@@ -4,8 +4,8 @@
 	import Heatmap from './Heatmap.svelte';
 	import RadarChart from './RadarChart.svelte';
 
-	export let chainData=[];
-	export let validatorData=[];
+	export let chainData;
+	export let validatorData;
 	export let chainName;
 
 
@@ -23,25 +23,27 @@
 			.slice(0, 10); // 상위 10개 항목 추출
 
 		// Count validators per level
+		const count ={ level1: 0, level2: 0, level3: 0, level4: 0, level5: 0 };
 		validatorData.forEach((validator) => {
 			switch (validator.level) {
 				case 1:
-					validatorsCount.level1++;
+					count.level1++;
 					break;
 				case 2:
-					validatorsCount.level2++;
+					count.level2++;
 					break;
 				case 3:
-					validatorsCount.level3++;
+					count.level3++;
 					break;
 				case 4:
-					validatorsCount.level4++;
+					count.level4++;
 					break;
 				case 5:
-					validatorsCount.level5++;
+					count.level5++;
 					break;
 			}
 		});
+		validatorsCount = count
 	}
 	});
 	$: filteredChain = chainData.find(

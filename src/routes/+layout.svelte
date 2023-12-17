@@ -94,6 +94,7 @@
 		flex-direction: column;
 		flex: 14;
 		width: 100%;
+		overflow: scroll;
 	}
 	.iconBox {
 		justify-content: center;
