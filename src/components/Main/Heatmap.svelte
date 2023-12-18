@@ -27,6 +27,8 @@
 			.attr('y', (d, i) => Math.floor(i / 15) * 40) // 블록의 행 계산
 			.attr('width', 45) // 블록 너비
 			.attr('height', 35) // 블록 높이
+			.attr('rx', 3)
+			.attr('ry', 3)
 			.attr('fill', (d) => colorScale(d.level))
 			.on('mouseover', (event, d) => {
 				tooltip.style('display', 'block');
