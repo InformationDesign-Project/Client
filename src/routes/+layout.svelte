@@ -95,6 +95,11 @@
 		flex: 14;
 		width: 100%;
 		overflow: scroll;
+		ms-overflow-style: none; 
+   		scrollbar-width: none; 
+		&::-webkit-scrollbar{
+  display:none;
+}
 	}
 	.iconBox {
 		justify-content: center;
