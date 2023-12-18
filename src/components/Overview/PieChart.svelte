@@ -79,6 +79,15 @@
 	}
 </script>
 
-<div>
+<div class="chart-box">
 	<canvas bind:this={pieChartContainer}></canvas>
 </div>
+
+<style>
+	.chart-box {
+		width: 32%;
+		border-radius: 10px;
+		background: var(--03, #191b27);
+		padding: 20px;
+	}
+</style>

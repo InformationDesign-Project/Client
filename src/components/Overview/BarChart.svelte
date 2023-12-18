@@ -3,7 +3,6 @@
 	import Chart from 'chart.js/auto';
 
 	export let proposalsData = [];
-
 	let chart = null;
 	let chartContainer;
 
@@ -41,6 +40,14 @@
 		const yesPercentages = percentages.map((d) => d.yesPercent);
 		const noPercentages = percentages.map((d) => -d.noPercent);
 
+		const yesGradient = ctx.createLinearGradient(0, 0, 0, 200);
+		yesGradient.addColorStop(0, '#4CB870');
+		yesGradient.addColorStop(1, '#208C44');
+
+		const noGradient = ctx.createLinearGradient(0, 0, 0, 200);
+		noGradient.addColorStop(0, '#E05757');
+		noGradient.addColorStop(1, '#C33939');
+
 		chart = new Chart(ctx, {
 			type: 'bar',
 			data: {
@@ -49,12 +56,14 @@
 					{
 						label: 'Yes Votes (%)',
 						data: yesPercentages,
-						backgroundColor: 'green'
+						backgroundColor: yesGradient,
+						borderRadius: 9
 					},
 					{
 						label: 'No Votes (%)',
 						data: noPercentages,
-						backgroundColor: 'red'
+						backgroundColor: noGradient,
+						borderRadius: 9
 					}
 				]
 			},
@@ -105,3 +114,6 @@
 <div style="width:50%;">
 	<canvas bind:this={chartContainer} id="bar-chart"></canvas>
 </div>
+
+<style>
+</style>
