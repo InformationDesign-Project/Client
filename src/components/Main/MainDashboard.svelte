@@ -9,52 +9,54 @@
 	export let chainName;
 
 	let filteredChain;
-	let topChains = []; // 상위 10개 체인을 저장할 배열
+	let topChains = [];
 	let validatorsCount = { level1: 0, level2: 0, level3: 0, level4: 0, level5: 0 };
 
 	afterUpdate(async () => {
-		console.log(chainData, '값이야');
-
 		if (chainData.length > 0) {
-			topChains = [...chainData] // 배열을 복사합니다.
-				.sort((a, b) => b.level - a.level) // level에 따라 내림차순 정렬
-				.slice(0, 10); // 상위 10개 항목 추출
-
-			// Count validators per level
+			topChains = [...chainData].sort((a, b) => b.level - a.level).slice(0, 10);
 			const count = { level1: 0, level2: 0, level3: 0, level4: 0, level5: 0 };
 			validatorData.forEach((validator) => {
-				switch (validator.level) {
-					case 1:
-						count.level1++;
-						break;
-					case 2:
-						count.level2++;
-						break;
-					case 3:
-						count.level3++;
-						break;
-					case 4:
-						count.level4++;
-						break;
-					case 5:
-						count.level5++;
-						break;
-				}
+				count[`level${validator.level}`]++;
 			});
 			validatorsCount = count;
 		}
 	});
+
 	$: if (chainData && chainName) {
 		filteredChain = chainData.find(
 			(chain) => chain.chain.toLowerCase() === chainName.toLowerCase()
 		);
 	}
+
+	function countValidators() {
+		const count = { level1: 0, level2: 0, level3: 0, level4: 0, level5: 0 };
+		validatorData.forEach((validator) => {
+			count['level' + validator.level]++;
+		});
+		validatorsCount = count;
+	}
+
+	function handleSortEvent(event) {
+		sortValidators(event.detail.sortBy);
+	}
+
+	function sortValidators(sortBy) {
+		if (sortBy === 'votingPower') {
+			validatorData = [...validatorData].sort((a, b) => b.votingPower - a.votingPower);
+		} else if (sortBy === 'level') {
+			validatorData = [...validatorData].sort((a, b) => b.level - a.level);
+		}
+		countValidators();
+	}
 </script>
 
 <div class="dashboard-container">
 	<div class="dashboard">
+		<!-- Dashboard Top Line -->
 		<div class="dashboard-top-line">
 			{#if filteredChain}
+				<!-- Dashboard Metrics -->
 				<div class="dashboard-coin">{filteredChain.chain}</div>
 				<div class="dashboard-metric">
 					<div class="metric-value">{Math.round(filteredChain.level)}</div>
@@ -70,46 +72,32 @@
 				</div>
 			{/if}
 		</div>
+
+		<!-- Dashboard Main Content -->
 		<div class="dashboard-main">
 			<div class="heatmap">
 				<Heatmap data={validatorData} />
 			</div>
 			<div class="sidebar">
 				<div class="sorted-by">Sorted By</div>
-				<DropdownMenu />
-
+				<DropdownMenu on:sort={handleSortEvent} />
+				<!-- Validator Info -->
 				<div class="validators-info">
-					<div class="validators-info-item">
-						{#if filteredChain}
-							<div class="validators-info-label">Total Validators</div>
-							<div class="validators-info-number">{Math.round(filteredChain.validators.total)}</div>
-						{/if}
-					</div>
-					<div class="validators-info-item">
-						<div class="validators-info-label">Level 1</div>
-						<div class="validators-info-number">{validatorsCount.level1}</div>
-					</div>
-					<div class="validators-info-item">
-						<div class="validators-info-label">Level 2</div>
-						<div class="validators-info-number">{validatorsCount.level2}</div>
-					</div>
-					<div class="validators-info-item">
-						<div class="validators-info-label">Level 3</div>
-						<div class="validators-info-number">{validatorsCount.level3}</div>
-					</div>
-					<div class="validators-info-item">
-						<div class="validators-info-label">Level 4</div>
-						<div class="validators-info-number">{validatorsCount.level4}</div>
-					</div>
-					<div class="validators-info-item">
-						<div class="validators-info-label">Level 5</div>
-						<div class="validators-info-number">{validatorsCount.level5}</div>
-					</div>
+					<!-- Validator Count By Level -->
+					{#each Object.entries(validatorsCount) as [level, count]}
+						<div class="validators-info-item">
+							<div class="validators-info-label">Level {level.slice(-1)}</div>
+							<div class="validators-info-number">{count}</div>
+						</div>
+					{/each}
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<!-- Right Section -->
 	<div class="right-section">
+		<!-- Coin List Section -->
 		<div class="coin-list-section">
 			<div class="coin-list-header">
 				<img src="/layout/Vector.png" alt="vector" />
@@ -122,7 +110,6 @@
 				</div>
 			{/each}
 		</div>
-
 		{#if filteredChain}
 			<RadarChart data={filteredChain} />
 		{/if}
