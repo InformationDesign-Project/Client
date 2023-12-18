@@ -46,13 +46,13 @@
 		justify-content: center;
 		align-items: center;
 		padding-top: 15px;
-		//margin-right: 170px;
 	}
 
 	.top-coin {
 		background-color: #11141b;
 		color: #ffffff;
-		padding: 28px;
+		padding: 30px;
+		padding-bottom: 40px;
 		border-radius: 10px;
 		margin: 0 15px;
 		width: 20%;
@@ -78,5 +78,6 @@
 		font-size: 11px;
 		font-weight: normal;
 		opacity: 0.6;
+		white-space: nowrap;
 	}
 </style>
