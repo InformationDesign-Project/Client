@@ -1,7 +1,18 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import BarChart from '../../../components/Overview/BarChart.svelte';
 	import PieChart from '../../../components/Overview/PieChart.svelte';
 	import ProposalBox from '../../../components/Overview/ProposalBox.svelte';
+
+	let chainName = 'cosmos';
+	let proposalsData = [];
+
+	onMount(async () => {
+		const proposalsResponse = await fetch(`/Proposals_level/proposals_cosmos.json`);
+		const proposalsJson = await proposalsResponse.json();
+		proposalsData = proposalsJson.data;
+		console.log(proposalsData, 'proposalsData');
+	});
 </script>
 
 <div class="main-container">
@@ -15,8 +26,8 @@
 	</div>
 
 	<div class="charts-section">
-		<BarChart />
-		<PieChart />
+		<BarChart {proposalsData} />
+		<PieChart {proposalsData} />
 	</div>
 
 	<div class="proposals-section">
@@ -52,8 +63,8 @@
 
 	.charts-section {
 		display: flex;
-		justify-content: space-between;
 		margin-top: 30px;
+		height: 300px;
 	}
 
 	.proposals-section {

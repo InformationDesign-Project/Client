@@ -1,11 +1,107 @@
 <script>
-	// 바 차트 로직
+	import { onMount } from 'svelte';
+	import Chart from 'chart.js/auto';
+
+	export let proposalsData = [];
+
+	let chart = null;
+	let chartContainer;
+
+	onMount(() => {
+		if (proposalsData && proposalsData.length > 0) {
+			createChart();
+		}
+	});
+
+	$: if (proposalsData && proposalsData.length > 0 && chartContainer) {
+		createChart();
+	}
+
+	function calculatePercentages(data) {
+		return data.map((d) => {
+			const yes = Number(d.detail.voteMeta.yes);
+			const no = Number(d.detail.voteMeta.no);
+			const total = yes + no;
+			return {
+				yesPercent: (yes / total) * 100,
+				noPercent: (no / total) * 100
+			};
+		});
+	}
+
+	function createChart() {
+		if (chart) {
+			chart.destroy();
+		}
+
+		const ctx = chartContainer.getContext('2d');
+		const limitedData = proposalsData.slice(0, 20);
+		const percentages = calculatePercentages(limitedData);
+		const labels = limitedData.map((d) => d.detail.title);
+		const yesPercentages = percentages.map((d) => d.yesPercent);
+		const noPercentages = percentages.map((d) => -d.noPercent);
+
+		chart = new Chart(ctx, {
+			type: 'bar',
+			data: {
+				labels: labels,
+				datasets: [
+					{
+						label: 'Yes Votes (%)',
+						data: yesPercentages,
+						backgroundColor: 'green'
+					},
+					{
+						label: 'No Votes (%)',
+						data: noPercentages,
+						backgroundColor: 'red'
+					}
+				]
+			},
+			options: {
+				indexAxis: 'x',
+				scales: {
+					y: {
+						beginAtZero: true,
+						stacked: true,
+						ticks: {
+							callback: (value) => Math.abs(value) + '%'
+						}
+					},
+					x: {
+						stacked: true,
+						ticks: {
+							display: false
+						},
+						grid: {
+							display: false
+						}
+					}
+				},
+				maintainAspectRatio: false,
+				plugins: {
+					legend: {
+						display: false
+					},
+					tooltip: {
+						callbacks: {
+							label: function (context) {
+								let label = context.dataset.label || '';
+								if (label) {
+									label += ': ';
+								}
+								const value = Math.abs(context.raw);
+								label += value.toFixed(2) + '%';
+								return label;
+							}
+						}
+					}
+				}
+			}
+		});
+	}
 </script>
 
-<div class="bar-chart">
-	<!-- 차트 구현 전-->
-	<img width="85%;" src="/layout/bar-chart.png" alt="블록체인 이미지" />
+<div style="width:50%;">
+	<canvas bind:this={chartContainer} id="bar-chart"></canvas>
 </div>
-
-<style lang="scss">
-</style>
