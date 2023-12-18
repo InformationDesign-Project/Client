@@ -259,7 +259,7 @@
 	.coin-list-section {
 		flex-grow: 1;
 		height: 250px;
-		width: 82%;
+		width: 100%;
 		border-radius: 10px;
 		background-color: #11141b;
 		color: #fff;

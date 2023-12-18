@@ -76,11 +76,11 @@
             tooltip: {
               backgroundColor: 'rgba(0, 0, 0, 0.8)',
               titleFont: {
-                size: 16,
+                size: 0,
                 weight: 'bold'
               },
               bodyFont: {
-                size: 14
+                size: 18
               },
               displayColors: false,
               xAlign: 'center',
@@ -121,7 +121,7 @@
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    width: fit-content;
+   // width: fit-content;
   }
 
   .radar-chart {
