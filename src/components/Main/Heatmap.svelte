@@ -3,24 +3,27 @@
 
 	export let data = [];
 	let tooltip; // 툴팁 요소
-
 	function drawHeatmap() {
 		const containerWidth = 675;
 		const containerHeight = 400;
-
+		const baseColor = d3.rgb('#267AF9');
 		const container = d3
 			.select('#heatmap')
 			.html('')
 			.attr('width', containerWidth)
 			.attr('height', containerHeight);
 
-		const colorScale = d3.scaleSequential().domain([1, 5]).interpolator(d3.interpolateBlues);
-
+		const colorScale = d3
+			.scaleSequential((t) => {
+				return d3.interpolateHsl(baseColor.darker(10 * t), baseColor.brighter(1 * (1 - t)))(t);
+			})
+			.domain([1, 4]);
 		tooltip = d3.select('.tooltip');
 
 		container
 			.selectAll('rect')
 			.data(data)
+
 			.enter()
 			.append('rect')
 			.attr('x', (d, i) => (i % 15) * 50) // 가로 방향 20개 블록
