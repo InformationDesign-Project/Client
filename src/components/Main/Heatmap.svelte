@@ -5,7 +5,7 @@
 	let tooltip; // 툴팁 요소
 
 	function drawHeatmap() {
-		const containerWidth = 750; // 가로 방향 20개 블록 * 50px
+		const containerWidth = 675;
 		const containerHeight = 400;
 
 		const container = d3
