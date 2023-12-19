@@ -16,9 +16,6 @@
 			const ctx = chartCanvas.getContext('2d');
 			const { width, height } = ctx.canvas;
 
-			// Create a radial gradient
-			// The inner circle is at x=50%, y=46.59% and the outer circle is at the same x,y
-			// The outer circle radius is scaled based on the canvas width
 			const gradient = ctx.createRadialGradient(
 				width * 0.4926,
 				height * 0.4659,
@@ -55,7 +52,7 @@
 							label: '',
 							data: formattedData,
 							fill: true,
-							backgroundColor: gradient, // Use the gradient here
+							backgroundColor: gradient,
 							borderColor: 'rgba(255, 255, 255, 0.7)',
 							pointBorderColor: '#7987A8',
 							pointBackgroundColor: '#FFF',
