@@ -3,8 +3,40 @@
 
 	export let chainData;
 	export let changeName;
-
+	function compareByScore(a, b) {
+  // 비교를 위해 프로퍼티 값을 가져와서 비교
+  return b.HealthyScore - a.HealthyScore;
+}
+function compareByLevel(a, b) {
+  // 비교를 위해 프로퍼티 값을 가져와서 비교
+  return b.level - a.level;
+}
+function compareByDecent(a, b) {
+  // 비교를 위해 프로퍼티 값을 가져와서 비교
+  return b.Decentralization- a.Decentralization;
+}
+function compareByParicipant(a, b) {
+  // 비교를 위해 프로퍼티 값을 가져와서 비교
+  return b.average_participation- a.average_participation;
+}
+function compareByMiss(a, b) {
+  // 비교를 위해 프로퍼티 값을 가져와서 비교
+  return b.average_windowMissCount - a.average_windowMissCount;
+}
+function compareByCommission(a, b) {
+  // 비교를 위해 프로퍼티 값을 가져와서 비교
+  return b.average_commissionScore - a.average_commissionScore;
+}
+function compareByAverage(a, b) {
+  // 비교를 위해 프로퍼티 값을 가져와서 비교
+  return b.average_totalScore - a.average_totalScore;
+}
+const sortScore = (fnc) => {
+    const sortedArray = [...chainData].sort(fnc);
+    chainData = sortedArray
+}
 	afterUpdate(() => {});
+	
 </script>
 
 <main>
@@ -12,35 +44,35 @@
 		<div class="dashboard">
 			<div>
 				<div class="tableContent label">
-					<div class="chainName tooltip-container">
+					<div class="tooltip-container" style='width:200px;'>
 						Chain
 						<span class="tooltip">Name of Chain</span>
 					</div>
-					<div class="chainInfo tooltip-container">
+					<div on:click={()=>{sortScore(compareByLevel);}} class="chainInfo tooltip-container">
 						Healthy Level
 						<span class="tooltip">Health Level of Chain (1 to 5)</span>
 					</div>
-					<div class="chainInfo tooltip-container">
+					<div on:click={()=>{sortScore(compareByScore);}} class="chainInfo tooltip-container">
 						Healthy Score
 						<span class="tooltip">Health Score of Chain (Maximum:100)</span>
 					</div>
-					<div class="chainInfo tooltip-container">
+					<div on:click={()=>{sortScore(compareByDecent);}} class="chainInfo tooltip-container">
 						Decentralization Score
 						<span class="tooltip">Decentralization Score of Chain (Maximum:100)</span>
 					</div>
-					<div class="chainInfo tooltip-container">
+					<div on:click={()=>{sortScore(compareByAverage);}} class="chainInfo tooltip-container">
 						Average Score
 						<span class="tooltip">Average Health Score Of Validators (Maximum:100)</span>
 					</div>
-					<div class="chainInfo tooltip-container">
+					<div on:click={()=>{sortScore(compareByParicipant);}} class="chainInfo tooltip-container">
 						Participation Score
 						<span class="tooltip">Average Participation Score Of Validators (Maximum:100)</span>
 					</div>
-					<div class="chainInfo tooltip-container">
+					<div on:click={()=>{sortScore(compareByMiss);}} class="chainInfo tooltip-container">
 						Misscount Score
 						<span class="tooltip">Average MissCount Score Of Validators (Maximum:100)</span>
 					</div>
-					<div class="chainInfo tooltip-container">
+					<div on:click={()=>{sortScore(compareByCommission);}} class="chainInfo tooltip-container">
 						Commission Score
 						<span class="tooltip">Average Commission Score Of Validators (Maximum:100)</span>
 					</div>
@@ -55,10 +87,11 @@
 								changeName(data.chain);
 							}}
 						>
-							{data.chain}
+						<div style='width:30%;'><img src={data.tokenImg} style='width:20px;'/></div>
+						<div style='width:70%;text-align:start;'>{data.chain}</div>
 						</div>
 						<div class="chainInfo">{data.level}</div>
-						<div class="chainInfo">{data.HealthyScore.toFixed(2)}</div>
+						<div class="chainInfo" style='color:#267AF9;'>{data.HealthyScore.toFixed(2)}</div>
 						<div class="chainInfo">{data.Decentralization.toFixed(2)}</div>
 						<div class="chainInfo">{data.average_totalScore.toFixed(2)}</div>
 						<div class="chainInfo">{data.average_participation.toFixed(2)}</div>
@@ -88,11 +121,16 @@
 	.tableContent {
 		display: flex;
 		align-items: center;
-		height: 40px;
-		text-align: center;
+		height: 60px;
+		text-align:center;
+		border-bottom: 1px solid #98A2AE;
 		.chainName {
 			width: 200px;
+			height:100%;
 			cursor: pointer;
+			display: flex;
+			align-items: center;
+			background-color: #13151A;
 			.pointer {
 				cursor: pointer;
 			}
@@ -107,6 +145,9 @@
 	.tooltip-container {
 		position: relative;
 		display: inline-block;
+		&:hover{
+			cursor: pointer;
+		}
 	}
 
 	.tooltip {
@@ -121,5 +162,6 @@
 	}
 	.tooltip-container:hover .tooltip {
 		visibility: visible;
+		
 	}
 </style>

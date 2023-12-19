@@ -91,7 +91,8 @@
 			"average_participation": 27.262600946811478,
 			"average_windowMissCount": 73.43068783068782,
 			"average_commissionScore": 58.80952380952381,
-			"average_totalScore": 53.167604195674464
+			"average_totalScore": 53.167604195674464,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "archway",
@@ -184,7 +185,8 @@
 			"average_participation": 45.0,
 			"average_windowMissCount": 81.66282051282047,
 			"average_commissionScore": 31.07371794871795,
-			"average_totalScore": 52.578846153846136
+			"average_totalScore": 52.578846153846136,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/archway/asset/arch.png"
 		},
 		{
 			"chain": "asset-mantle",
@@ -277,7 +279,8 @@
 			"average_participation": 23.7537638006022,
 			"average_windowMissCount": 77.69426229508197,
 			"average_commissionScore": 35.49057377049181,
-			"average_totalScore": 45.64619995539197
+			"average_totalScore": 45.64619995539197,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "omniflix",
@@ -370,7 +373,8 @@
 			"average_participation": 50.82417582417582,
 			"average_windowMissCount": 83.28839285714285,
 			"average_commissionScore": 60.64196428571428,
-			"average_totalScore": 64.91817765567758
+			"average_totalScore": 64.91817765567758,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/osmosis/asset/osmo.png"
 		},
 		{
 			"chain": "osmosis",
@@ -463,7 +467,8 @@
 			"average_participation": 17.70877761665104,
 			"average_windowMissCount": 63.2865789473684,
 			"average_commissionScore": 32.028684210526315,
-			"average_totalScore": 37.67468025818198
+			"average_totalScore": 37.67468025818198,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "mars-protocol",
@@ -556,7 +561,8 @@
 			"average_participation": 23.83838383838384,
 			"average_windowMissCount": 74.91180555555556,
 			"average_commissionScore": 29.01979166666667,
-			"average_totalScore": 42.58999368686866
+			"average_totalScore": 42.58999368686866,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/osmosis/asset/osmo.png"
 		},
 		{
 			"chain": "quicksilver",
@@ -649,7 +655,8 @@
 			"average_participation": 36.0,
 			"average_windowMissCount": 77.83981900452488,
 			"average_commissionScore": 15.465972850678734,
-			"average_totalScore": 43.10193061840124
+			"average_totalScore": 43.10193061840124,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "lum",
@@ -742,7 +749,8 @@
 			"average_participation": 17.15796774752905,
 			"average_windowMissCount": 70.54430379746834,
 			"average_commissionScore": 9.63119349005423,
-			"average_totalScore": 32.444488345017284
+			"average_totalScore": 32.444488345017284,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "tgrade",
@@ -835,7 +843,8 @@
 			"average_participation": 0.0,
 			"average_windowMissCount": 84.18367346938776,
 			"average_commissionScore": 0.0,
-			"average_totalScore": 28.06122448979587
+			"average_totalScore": 28.06122448979587,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "secret",
@@ -928,7 +937,8 @@
 			"average_participation": 10.498486012563834,
 			"average_windowMissCount": 64.72477064220183,
 			"average_commissionScore": 24.7445871559633,
-			"average_totalScore": 33.32261460357632
+			"average_totalScore": 33.32261460357632,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "coreum",
@@ -1021,7 +1031,8 @@
 			"average_participation": 37.239583333333336,
 			"average_windowMissCount": 89.88125000000002,
 			"average_commissionScore": 36.022578125,
-			"average_totalScore": 54.38113715277778
+			"average_totalScore": 54.38113715277778,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "stafi",
@@ -1114,7 +1125,8 @@
 			"average_participation": 84.44444444444444,
 			"average_windowMissCount": 98.76666666666667,
 			"average_commissionScore": 86.66666666666667,
-			"average_totalScore": 89.95925925925924
+			"average_totalScore": 89.95925925925924,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/atom.png"
 		},
 		{
 			"chain": "desmos",
@@ -1207,7 +1219,8 @@
 			"average_participation": 29.01554404145079,
 			"average_windowMissCount": 72.89326424870465,
 			"average_commissionScore": 12.637248128958003,
-			"average_totalScore": 38.18201880637111
+			"average_totalScore": 38.18201880637111,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "crescent",
@@ -1300,7 +1313,8 @@
 			"average_participation": 19.84251968503937,
 			"average_windowMissCount": 66.51481481481481,
 			"average_commissionScore": 33.931481481481484,
-			"average_totalScore": 40.09627199377853
+			"average_totalScore": 40.09627199377853,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "juno",
@@ -1393,7 +1407,8 @@
 			"average_participation": 26.37193242076705,
 			"average_windowMissCount": 65.73921568627449,
 			"average_commissionScore": 10.59311357393197,
-			"average_totalScore": 34.23475389365793
+			"average_totalScore": 34.23475389365793,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "bitcanna",
@@ -1486,7 +1501,8 @@
 			"average_participation": 19.706284153005456,
 			"average_windowMissCount": 66.63811475409835,
 			"average_commissionScore": 35.18252049180328,
-			"average_totalScore": 40.50897313296906
+			"average_totalScore": 40.50897313296906,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/osmosis/asset/osmo.png"
 		},
 		{
 			"chain": "cosmos",
@@ -1579,7 +1595,8 @@
 			"average_participation": 13.496478961481586,
 			"average_windowMissCount": 62.97773851590105,
 			"average_commissionScore": 14.3885663806159,
-			"average_totalScore": 30.28759461933266
+			"average_totalScore": 30.28759461933266,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "rizon",
@@ -1672,7 +1689,8 @@
 			"average_participation": 23.7012987012987,
 			"average_windowMissCount": 64.5487012987013,
 			"average_commissionScore": 16.695310245310264,
-			"average_totalScore": 34.98177008177007
+			"average_totalScore": 34.98177008177007,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/osmosis/asset/osmo.png"
 		},
 		{
 			"chain": "axelar",
@@ -1765,7 +1783,8 @@
 			"average_participation": 25.966921119592868,
 			"average_windowMissCount": 75.76717557251908,
 			"average_commissionScore": 42.278625954198475,
-			"average_totalScore": 48.00424088210346
+			"average_totalScore": 48.00424088210346,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/ethereum/asset/aave.png"
 		},
 		{
 			"chain": "noble",
@@ -1858,7 +1877,8 @@
 			"average_participation": 0.0,
 			"average_windowMissCount": 97.5,
 			"average_commissionScore": 80.0,
-			"average_totalScore": 59.16666666666667
+			"average_totalScore": 59.16666666666667,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "persistence",
@@ -1951,7 +1971,8 @@
 			"average_participation": 27.198228128460677,
 			"average_windowMissCount": 72.05714285714285,
 			"average_commissionScore": 13.064497354497371,
-			"average_totalScore": 37.43995611336691
+			"average_totalScore": 37.43995611336691,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "stride",
@@ -2049,7 +2070,8 @@
 			"average_participation": 0.0,
 			"average_windowMissCount": 50.0,
 			"average_commissionScore": 14.3885663806159,
-			"average_totalScore": 21.46285546020521
+			"average_totalScore": 21.46285546020521,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "iris",
@@ -2142,7 +2164,8 @@
 			"average_participation": 16.260899895361007,
 			"average_windowMissCount": 64.05213114754099,
 			"average_commissionScore": 13.454645902558594,
-			"average_totalScore": 31.25589231515352
+			"average_totalScore": 31.25589231515352,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "shentu",
@@ -2235,7 +2258,8 @@
 			"average_participation": 5.431818181818182,
 			"average_windowMissCount": 80.2715,
 			"average_commissionScore": 42.48133333333331,
-			"average_totalScore": 42.728217171717134
+			"average_totalScore": 42.728217171717134,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "comdex",
@@ -2328,7 +2352,8 @@
 			"average_participation": 23.497219132369292,
 			"average_windowMissCount": 76.79161290322578,
 			"average_commissionScore": 40.8894623655914,
-			"average_totalScore": 47.059431467062105
+			"average_totalScore": 47.059431467062105,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/osmosis/asset/osmo.png"
 		},
 		{
 			"chain": "band",
@@ -2421,7 +2446,8 @@
 			"average_participation": 10.143097643097642,
 			"average_windowMissCount": 64.35138888888889,
 			"average_commissionScore": 34.43881944444444,
-			"average_totalScore": 36.31110199214363
+			"average_totalScore": 36.31110199214363,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/osmosis/asset/ion.png"
 		},
 		{
 			"chain": "terra",
@@ -2514,7 +2540,8 @@
 			"average_participation": 34.79848702230337,
 			"average_windowMissCount": 84.1128342245989,
 			"average_commissionScore": 36.55101604278075,
-			"average_totalScore": 51.820779096561026
+			"average_totalScore": 51.820779096561026,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "fetchai",
@@ -2607,7 +2634,8 @@
 			"average_participation": 23.87267904509283,
 			"average_windowMissCount": 79.1612068965517,
 			"average_commissionScore": 28.041243717650534,
-			"average_totalScore": 43.691709886431696
+			"average_totalScore": 43.691709886431696,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/fetchai/asset/fet.png"
 		},
 		{
 			"chain": "cudos",
@@ -2700,7 +2728,8 @@
 			"average_participation": 30.952380952380956,
 			"average_windowMissCount": 92.70238095238096,
 			"average_commissionScore": 43.49206349206349,
-			"average_totalScore": 55.715608465608454
+			"average_totalScore": 55.715608465608454,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cudos/asset/cudos.png"
 		},
 		{
 			"chain": "starname",
@@ -2793,7 +2822,8 @@
 			"average_participation": 10.92436974789916,
 			"average_windowMissCount": 50.0,
 			"average_commissionScore": 58.03180952380955,
-			"average_totalScore": 39.65205975723624
+			"average_totalScore": 39.65205975723624,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/osmosis/asset/osmo.png"
 		},
 		{
 			"chain": "regen",
@@ -2886,7 +2916,8 @@
 			"average_participation": 35.78817733990149,
 			"average_windowMissCount": 79.22068965517244,
 			"average_commissionScore": 16.147931034482756,
-			"average_totalScore": 43.71893267651888
+			"average_totalScore": 43.71893267651888,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/regen/asset/nct.png"
 		},
 		{
 			"chain": "neutron",
@@ -2984,7 +3015,8 @@
 			"average_participation": 0.0,
 			"average_windowMissCount": 50.0,
 			"average_commissionScore": 14.3885663806159,
-			"average_totalScore": 21.46285546020521
+			"average_totalScore": 21.46285546020521,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "onomy-protocol",
@@ -3077,7 +3109,8 @@
 			"average_participation": 66.83673469387755,
 			"average_windowMissCount": 92.85714285714286,
 			"average_commissionScore": 59.857142857142854,
-			"average_totalScore": 73.18367346938774
+			"average_totalScore": 73.18367346938774,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/onomy-protocol/asset/nom.png"
 		},
 		{
 			"chain": "sommelier",
@@ -3170,7 +3203,8 @@
 			"average_participation": 23.982279693486586,
 			"average_windowMissCount": 78.65977011494252,
 			"average_commissionScore": 30.366091954022988,
-			"average_totalScore": 44.33604725415073
+			"average_totalScore": 44.33604725415073,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "sentinel",
@@ -3263,7 +3297,8 @@
 			"average_participation": 21.428571428571427,
 			"average_windowMissCount": 71.29302325581396,
 			"average_commissionScore": 22.269071688372094,
-			"average_totalScore": 38.330222124252415
+			"average_totalScore": 38.330222124252415,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "xpla",
@@ -3356,7 +3391,8 @@
 			"average_participation": 24.74132684114424,
 			"average_windowMissCount": 95.41612903225806,
 			"average_commissionScore": 76.69354838709677,
-			"average_totalScore": 65.61700142016635
+			"average_totalScore": 65.61700142016635,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/xpla/asset/xpla.png"
 		},
 		{
 			"chain": "stargaze",
@@ -3449,7 +3485,8 @@
 			"average_participation": 31.291158991303547,
 			"average_windowMissCount": 78.49269406392693,
 			"average_commissionScore": 36.112328767123174,
-			"average_totalScore": 48.63206060745112
+			"average_totalScore": 48.63206060745112,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/stargaze/asset/dust.png"
 		},
 		{
 			"chain": "kava",
@@ -3542,7 +3579,8 @@
 			"average_participation": 7.333538621882179,
 			"average_windowMissCount": 68.46872586872587,
 			"average_commissionScore": 20.094208494208495,
-			"average_totalScore": 31.965490994938836
+			"average_totalScore": 31.965490994938836,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/bnb-beacon-chain/asset/bnb.png"
 		},
 		{
 			"chain": "ki-chain",
@@ -3635,7 +3673,8 @@
 			"average_participation": 25.564971751412436,
 			"average_windowMissCount": 72.88926553672316,
 			"average_commissionScore": 32.07533898305085,
-			"average_totalScore": 43.50985875706209
+			"average_totalScore": 43.50985875706209,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "canto",
@@ -3728,7 +3767,8 @@
 			"average_participation": 3.746761862639792,
 			"average_windowMissCount": 63.65075187969924,
 			"average_commissionScore": 6.97555251765779,
-			"average_totalScore": 24.791022086665514
+			"average_totalScore": 24.791022086665514,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/canto/asset/canto.png"
 		},
 		{
 			"chain": "passage",
@@ -3821,7 +3861,8 @@
 			"average_participation": 48.63387978142076,
 			"average_windowMissCount": 90.47295081967209,
 			"average_commissionScore": 39.03688524590162,
-			"average_totalScore": 59.38123861566482
+			"average_totalScore": 59.38123861566482,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "medibloc",
@@ -3914,7 +3955,8 @@
 			"average_participation": 13.244147157190637,
 			"average_windowMissCount": 70.64173913043479,
 			"average_commissionScore": 19.052048309178748,
-			"average_totalScore": 34.31264486560142
+			"average_totalScore": 34.31264486560142,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/osmosis/asset/osmo.png"
 		},
 		{
 			"chain": "dydx",
@@ -4007,7 +4049,8 @@
 			"average_participation": 43.41085271317829,
 			"average_windowMissCount": 65.75193798449612,
 			"average_commissionScore": 54.84496124031008,
-			"average_totalScore": 54.6692506459947
+			"average_totalScore": 54.6692506459947,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/dydx/asset/dydx.png"
 		},
 		{
 			"chain": "evmos",
@@ -4100,7 +4143,8 @@
 			"average_participation": 23.147745396549222,
 			"average_windowMissCount": 40.93443526170799,
 			"average_commissionScore": 28.46969696969697,
-			"average_totalScore": 30.85062587598475
+			"average_totalScore": 30.85062587598475,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/evmos/asset/evmos.png"
 		},
 		{
 			"chain": "teritori",
@@ -4193,7 +4237,8 @@
 			"average_participation": 25.248677248677257,
 			"average_windowMissCount": 77.5862857142857,
 			"average_commissionScore": 30.32857142857143,
-			"average_totalScore": 44.387844797178104
+			"average_totalScore": 44.387844797178104,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "humans",
@@ -4286,7 +4331,8 @@
 			"average_participation": 0.0,
 			"average_windowMissCount": 97.95098039215685,
 			"average_commissionScore": 59.95490196078431,
-			"average_totalScore": 52.635294117647064
+			"average_totalScore": 52.635294117647064,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/humans/asset/humans.png"
 		},
 		{
 			"chain": "umee",
@@ -4379,7 +4425,8 @@
 			"average_participation": 30.086633663366324,
 			"average_windowMissCount": 70.34416666666662,
 			"average_commissionScore": 10.3109375,
-			"average_totalScore": 36.913912610010975
+			"average_totalScore": 36.913912610010975,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/ethereum/asset/weth.png"
 		},
 		{
 			"chain": "ixo",
@@ -4472,7 +4519,8 @@
 			"average_participation": 2.8094333649889207,
 			"average_windowMissCount": 77.89358974358974,
 			"average_commissionScore": 67.52307692307693,
-			"average_totalScore": 49.40870001055188
+			"average_totalScore": 49.40870001055188,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "crypto-org",
@@ -4565,7 +4613,8 @@
 			"average_participation": 12.788259958071286,
 			"average_windowMissCount": 62.604582210242576,
 			"average_commissionScore": 9.004652696234562,
-			"average_totalScore": 28.132498288182877
+			"average_totalScore": 28.132498288182877,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/crypto-org/asset/cro.png"
 		},
 		{
 			"chain": "quasar",
@@ -4658,7 +4707,8 @@
 			"average_participation": 38.125,
 			"average_windowMissCount": 88.13166666666667,
 			"average_commissionScore": 25.195833333333333,
-			"average_totalScore": 50.48416666666665
+			"average_totalScore": 50.48416666666665,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/osmosis/asset/osmo.png"
 		},
 		{
 			"chain": "likecoin",
@@ -4751,7 +4801,8 @@
 			"average_participation": 5.8999081726354445,
 			"average_windowMissCount": 65.86363636363636,
 			"average_commissionScore": 32.996496212121215,
-			"average_totalScore": 34.92001358279767
+			"average_totalScore": 34.92001358279767,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "bitsong",
@@ -4844,7 +4895,8 @@
 			"average_participation": 20.802469135802465,
 			"average_windowMissCount": 74.97388888888888,
 			"average_commissionScore": 37.465833333333336,
-			"average_totalScore": 44.414063786008185
+			"average_totalScore": 44.414063786008185,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "celestia",
@@ -4937,7 +4989,8 @@
 			"average_participation": 0.0,
 			"average_windowMissCount": 79.71333333333332,
 			"average_commissionScore": 32.36333333333333,
-			"average_totalScore": 37.35888888888886
+			"average_totalScore": 37.35888888888886,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/celestia/asset/tia.png"
 		},
 		{
 			"chain": "akash",
@@ -5030,7 +5083,8 @@
 			"average_participation": 19.394557823129247,
 			"average_windowMissCount": 69.41673469387753,
 			"average_commissionScore": 16.31624149659864,
-			"average_totalScore": 35.04251133786848
+			"average_totalScore": 35.04251133786848,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "gravity-bridge",
@@ -5123,7 +5177,8 @@
 			"average_participation": 29.906120023767073,
 			"average_windowMissCount": 60.1435294117647,
 			"average_commissionScore": 50.35294117647059,
-			"average_totalScore": 46.80086353733431
+			"average_totalScore": 46.80086353733431,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "provenance",
@@ -5216,7 +5271,8 @@
 			"average_participation": 6.9281811085089755,
 			"average_windowMissCount": 60.7047619047619,
 			"average_commissionScore": 22.469761904761906,
-			"average_totalScore": 30.03423497267756
+			"average_totalScore": 30.03423497267756,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "chihuahua",
@@ -5309,7 +5365,8 @@
 			"average_participation": 24.486725663716815,
 			"average_windowMissCount": 74.07389380530974,
 			"average_commissionScore": 9.31441580094911,
-			"average_totalScore": 35.95834508999171
+			"average_totalScore": 35.95834508999171,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "nyx",
@@ -5402,7 +5459,8 @@
 			"average_participation": 5.7057057057057055,
 			"average_windowMissCount": 94.37027027027028,
 			"average_commissionScore": 42.567567567567565,
-			"average_totalScore": 47.54784784784785
+			"average_totalScore": 47.54784784784785,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "sei",
@@ -5495,7 +5553,8 @@
 			"average_participation": 52.009844134536515,
 			"average_windowMissCount": 48.764150943396224,
 			"average_commissionScore": 20.211549456832454,
-			"average_totalScore": 40.32851484492176
+			"average_totalScore": 40.32851484492176,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "injective",
@@ -5588,7 +5647,8 @@
 			"average_participation": 14.325127334465193,
 			"average_windowMissCount": 29.26842105263158,
 			"average_commissionScore": 68.8187969924812,
-			"average_totalScore": 37.47078179319265
+			"average_totalScore": 37.47078179319265,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/cosmos/asset/unknown.png"
 		},
 		{
 			"chain": "emoney",
@@ -5681,7 +5741,8 @@
 			"average_participation": 0.0,
 			"average_windowMissCount": 70.91503267973856,
 			"average_commissionScore": 34.340522875816994,
-			"average_totalScore": 35.085185185185175
+			"average_totalScore": 35.085185185185175,
+			"tokenImg": "//raw.githubusercontent.com/cosmostation/chainlist/master/chain/emoney/asset/echf.png"
 		}
 	]
 }
