@@ -128,7 +128,7 @@
 
 	.dashboard {
 		width: 65%;
-		height: 500px;
+		height: 530px;
 		padding: 20px;
 		border-radius: 10px;
 		background-color: #11141b;

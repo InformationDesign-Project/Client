@@ -13,6 +13,23 @@
 		}
 
 		if (data && chartCanvas) {
+			const ctx = chartCanvas.getContext('2d');
+			const { width, height } = ctx.canvas;
+
+			// Create a radial gradient
+			// The inner circle is at x=50%, y=46.59% and the outer circle is at the same x,y
+			// The outer circle radius is scaled based on the canvas width
+			const gradient = ctx.createRadialGradient(
+				width * 0.4926,
+				height * 0.4659,
+				0,
+				width * 0.4926,
+				height * 0.4659,
+				width * 0.5613
+			);
+			gradient.addColorStop(0, 'rgba(38, 122, 249, 0.00)');
+			gradient.addColorStop(1, 'rgba(38, 122, 249, 0.50)');
+
 			const formattedData = [
 				data.average_participation,
 				data.average_windowMissCount,
@@ -22,7 +39,7 @@
 				data.HealthyScore
 			].map(Math.round);
 
-			chart = new Chart(chartCanvas.getContext('2d'), {
+			chart = new Chart(ctx, {
 				type: 'radar',
 				data: {
 					labels: [
@@ -38,12 +55,15 @@
 							label: '',
 							data: formattedData,
 							fill: true,
-							backgroundColor: 'rgba(38, 122, 249, 0.2)',
-							borderColor: '#267AF9',
+							backgroundColor: gradient, // Use the gradient here
+							borderColor: 'rgba(255, 255, 255, 0.7)',
 							pointBorderColor: '#7987A8',
-							pointBackgroundColor: '#267AF9',
+							pointBackgroundColor: '#FFF',
 							pointHoverBackgroundColor: '#ffffff',
-							pointHoverBorderColor: '#267AF9'
+							pointHoverBorderColor: '#267AF9',
+							pointRadius: 2,
+							pointHitRadius: 2,
+							pointHoverRadius: 2
 						}
 					]
 				},
@@ -51,10 +71,10 @@
 					scales: {
 						r: {
 							angleLines: {
-								color: 'rgba(255, 255, 255, 0.5)'
+								color: '#7987A84D'
 							},
 							grid: {
-								color: 'rgba(255, 255, 255, 0.2)'
+								color: '#7987A84D'
 							},
 							pointLabels: {
 								color: '#7987A8',
@@ -121,13 +141,12 @@
 		align-items: center;
 		background-color: #11141b;
 		border-radius: 10px;
-		padding: 20px;
 		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 		// width: fit-content;
 	}
 
 	.radar-chart {
-		max-width: 230px;
-		max-height: 230px;
+		max-width: 300px;
+		max-height: 300px;
 	}
 </style>
