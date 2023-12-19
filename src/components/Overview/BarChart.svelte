@@ -17,20 +17,26 @@
 	}
 
 	function calculatePercentages(data) {
-		return data.map((d) => {
+		return data.reduce((acc, d) => {
 			const yes = Number(d.detail.voteMeta.yes);
 			const no = Number(d.detail.voteMeta.no);
 			const yesAmount = Number(d.detail.voteMeta.yes_amount);
 			const noAmount = Number(d.detail.voteMeta.no_amount);
 			const totalVotes = yes + no;
 			const totalAmount = yesAmount + noAmount;
-			return {
-				yesPercent: (yes / totalVotes) * 100,
-				noPercent: (no / totalVotes) * 100,
-				yesAmountPercent: (yesAmount / totalAmount) * 100,
-				noAmountPercent: (noAmount / totalAmount) * 100
-			};
-		});
+
+			if (totalVotes > 0 && totalAmount > 0) {
+				// Check if totalVotes and totalAmount are not zero
+				acc.push({
+					title: d.detail.title,
+					yesPercent: (yes / totalVotes) * 100,
+					noPercent: (no / totalVotes) * 100,
+					yesAmountPercent: (yesAmount / totalAmount) * 100,
+					noAmountPercent: (noAmount / totalAmount) * 100
+				});
+			}
+			return acc;
+		}, []);
 	}
 
 	function createChart() {
@@ -39,14 +45,40 @@
 		}
 
 		const ctx = chartContainer.getContext('2d');
-		const limitedData = proposalsData.slice(0, 20);
-		const percentages = calculatePercentages(limitedData);
-		const labels = limitedData.map((d) => d.detail.title);
+		let count = 0; // Keep track of non-zero entries processed
+		let index = 0; // Index of the current data entry being processed
+		const percentages = [];
+
+		// Process data until you have 20 non-zero entries or run out of data
+		while (count < 20 && index < proposalsData.length) {
+			const entry = proposalsData[index];
+			const yes = Number(entry.detail.voteMeta.yes);
+			const no = Number(entry.detail.voteMeta.no);
+			const yesAmount = Number(entry.detail.voteMeta.yes_amount);
+			const noAmount = Number(entry.detail.voteMeta.no_amount);
+			const totalVotes = yes + no;
+			const totalAmount = yesAmount + noAmount;
+
+			if (totalVotes > 0 && totalAmount > 0) {
+				// Check for non-zero data
+				percentages.push({
+					title: entry.detail.title,
+					yesPercent: (yes / totalVotes) * 100,
+					noPercent: (no / totalVotes) * 100,
+					yesAmountPercent: (yesAmount / totalAmount) * 100,
+					noAmountPercent: (noAmount / totalAmount) * 100
+				});
+				count++; // Increment non-zero entry count
+			}
+			index++; // Always move to the next data entry
+		}
+
+		// Now percentages contains up to 20 non-zero data entries
+		const labels = percentages.map((d) => d.title);
 		const yesPercentages = percentages.map((d) => d.yesPercent);
 		const noPercentages = percentages.map((d) => -d.noPercent);
 		const yesAmountPercentages = percentages.map((d) => d.yesAmountPercent);
 		const noAmountPercentages = percentages.map((d) => -d.noAmountPercent);
-
 		const yesGradient = ctx.createLinearGradient(0, 0, 0, 200);
 		yesGradient.addColorStop(0, '#4CB870');
 		yesGradient.addColorStop(1, '#208C44');
