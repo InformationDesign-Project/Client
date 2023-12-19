@@ -517,7 +517,7 @@
 			.attr('rx', 10)
 			.attr('ry', 10)
 			.on('mouseover', function (event, d) {
-				svg.selectAll('path').attr('stroke-opacity', (link) => {
+				svg.selectAll('path').attr('opacity', (link) => {
 					if (typeof link.source === 'object' && link.source.index === d.index) {
 						return 1;
 					} else if (typeof link.target === 'object' && link.target.index === d.index) {
@@ -528,7 +528,7 @@
 				});
 			})
 			.on('mouseout', function () {
-				svg.selectAll('path').attr('stroke-opacity', 0.5);
+				svg.selectAll('path').attr('opacity', 0.2);
 			});
 
 		svg
@@ -547,7 +547,7 @@
 						? '#174284'
 						: '#7987A8'
 			)
-			.attr('stroke-opacity', 0.7)
+			.attr('opacity', 0.2)
 			.attr('stroke-width', (d) => Math.max(1, d.width));
 
 		svg.append('g').selectAll('text').data(nodes);
