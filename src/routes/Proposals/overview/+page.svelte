@@ -63,7 +63,7 @@
 		'umee',
 		'xpla'
 	]; // 사용 가능한 체인 목록
-
+	let showVotes;
 	onMount(async () => {
 		await loadData(chainName);
 	});
@@ -83,6 +83,9 @@
 		chainName = event.target.value;
 		loadData(chainName);
 	}
+	function toggleChart() {
+		showVotes = !showVotes;
+	}
 </script>
 
 <div class="main-container">
@@ -93,10 +96,11 @@
 			초록색의 비율이 많을 수록 건강한 블록체인임을 나타내고 있습니다.
 		</div>
 		<div class="info-box">Decentralization</div>
+		<button on:click={toggleChart}>차트 전환</button>
 	</div>
 
 	<div class="charts-section">
-		<BarChart {proposalsData} />
+		<BarChart {proposalsData} {showVotes} />
 		<PieChart {proposalsData} />
 	</div>
 

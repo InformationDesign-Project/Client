@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import Chart from 'chart.js/auto';
-
+	export let showVotes;
 	export let proposalsData = [];
 	let chart = null;
 	let chartContainer;
@@ -12,7 +12,7 @@
 		}
 	});
 
-	$: if (proposalsData && proposalsData.length > 0 && chartContainer) {
+	$: if ((proposalsData && proposalsData.length > 0 && chartContainer) || showVotes !== undefined) {
 		createChart();
 	}
 
@@ -20,10 +20,15 @@
 		return data.map((d) => {
 			const yes = Number(d.detail.voteMeta.yes);
 			const no = Number(d.detail.voteMeta.no);
-			const total = yes + no;
+			const yesAmount = Number(d.detail.voteMeta.yes_amount);
+			const noAmount = Number(d.detail.voteMeta.no_amount);
+			const totalVotes = yes + no;
+			const totalAmount = yesAmount + noAmount;
 			return {
-				yesPercent: (yes / total) * 100,
-				noPercent: (no / total) * 100
+				yesPercent: (yes / totalVotes) * 100,
+				noPercent: (no / totalVotes) * 100,
+				yesAmountPercent: (yesAmount / totalAmount) * 100,
+				noAmountPercent: (noAmount / totalAmount) * 100
 			};
 		});
 	}
@@ -39,6 +44,8 @@
 		const labels = limitedData.map((d) => d.detail.title);
 		const yesPercentages = percentages.map((d) => d.yesPercent);
 		const noPercentages = percentages.map((d) => -d.noPercent);
+		const yesAmountPercentages = percentages.map((d) => d.yesAmountPercent);
+		const noAmountPercentages = percentages.map((d) => -d.noAmountPercent);
 
 		const yesGradient = ctx.createLinearGradient(0, 0, 0, 200);
 		yesGradient.addColorStop(0, '#4CB870');
@@ -48,27 +55,50 @@
 		noGradient.addColorStop(0, '#E05757');
 		noGradient.addColorStop(1, '#C33939');
 
+		const voteDataset = [
+			{
+				label: 'Yes Votes (%)',
+				data: yesPercentages,
+				backgroundColor: showVotes ? yesGradient : 'rgba(70, 130, 180, 0.7)',
+				borderRadius: 9,
+				shadowOffsetX: showVotes ? 0 : 3,
+				shadowOffsetY: showVotes ? 0 : 3,
+				shadowBlur: showVotes ? 0 : 5,
+				shadowColor: showVotes ? 'rgba(0, 0, 0, 0)' : 'rgba(0, 0, 0, 2)'
+			},
+			{
+				label: 'No Votes (%)',
+				data: noPercentages,
+				backgroundColor: showVotes ? noGradient : 'rgba(255, 69, 0, 0.7)',
+				borderRadius: 9
+			}
+		];
+
+		const amountDataset = [
+			{
+				label: 'Yes Amount (%)',
+				data: yesAmountPercentages,
+				backgroundColor: showVotes ? 'rgba(70, 130, 180, 0.7)' : yesGradient,
+				borderRadius: 9
+			},
+			{
+				label: 'No Amount (%)',
+				data: noAmountPercentages,
+				backgroundColor: showVotes ? 'rgba(255, 69, 0, 0.7)' : noGradient,
+				borderRadius: 9
+			}
+		];
+
+		const datasets = showVotes ? voteDataset : amountDataset;
+
 		chart = new Chart(ctx, {
 			type: 'bar',
 			data: {
 				labels: labels,
-				datasets: [
-					{
-						label: 'Yes Votes (%)',
-						data: yesPercentages,
-						backgroundColor: yesGradient,
-						borderRadius: 9
-					},
-					{
-						label: 'No Votes (%)',
-						data: noPercentages,
-						backgroundColor: noGradient,
-						borderRadius: 9
-					}
-				]
+				datasets: datasets
 			},
 			options: {
-				indexAxis: 'x', // 수평 바 차트
+				indexAxis: 'x', // 수평 바 차트 유지
 				scales: {
 					x: {
 						stacked: true,
@@ -96,7 +126,7 @@
 				maintainAspectRatio: false,
 				plugins: {
 					legend: {
-						display: false
+						display: true
 					},
 					tooltip: {
 						callbacks: {
