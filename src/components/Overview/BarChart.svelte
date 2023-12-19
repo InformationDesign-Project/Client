@@ -89,7 +89,6 @@
 				},
 				maintainAspectRatio: false,
 				plugins: {
-					
 					legend: {
 						display: false
 					},

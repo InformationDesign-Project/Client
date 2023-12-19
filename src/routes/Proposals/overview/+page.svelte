@@ -4,23 +4,90 @@
 	import PieChart from '../../../components/Overview/PieChart.svelte';
 	import ProposalBox from '../../../components/Overview/ProposalBox.svelte';
 
-	let chainName = 'cosmos';
-	let proposalsData = [];
+	let chainName = 'cosmos'; // 기본 체인 이름
+	let proposalsData = []; // 제안 데이터
+	let availableChains = [
+		'akash',
+		'archway',
+		'asset-mantle',
+		'axelar',
+		'band',
+		'bitcanna',
+		'bitsong',
+		'canto',
+		'chihuahua',
+		'comdex',
+		'coreum',
+		'cosmos',
+		'crescent',
+		'crypto-org',
+		'cudos',
+		'demos',
+		'dydx',
+		'evmos',
+		'fetchai',
+		'gravity-bridge',
+		'injective',
+		'iris',
+		'ixo',
+		'juno',
+		'kava',
+		'ki-chain',
+		'kyve',
+		'likecoin',
+		'lum',
+		'mars-protocol',
+		'medibloc',
+		'nyx',
+		'omniflix',
+		'onomy-protocol',
+		'osmosis',
+		'passage',
+		'persistence',
+		'provenance',
+		'quasar',
+		'quicksilver',
+		'regen',
+		'rizon',
+		'secret',
+		'sei',
+		'sentinel',
+		'shentu',
+		'sommelier',
+		'stafi',
+		'stargaze',
+		'starname',
+		'stride',
+		'teritori',
+		'terra',
+		'umee',
+		'xpla'
+	]; // 사용 가능한 체인 목록
 
-	onMount(async () => {
-		const proposalsResponse = await fetch(`/Proposals_level/proposals_medibloc.json`);
-		const proposalsJson = await proposalsResponse.json();
-		proposalsData = proposalsJson.data;
-		console.log(proposalsData, 'proposalsData');
+	onMount(() => {
+		loadData(chainName);
 	});
+
+	async function loadData(selectedChain) {
+		const response = await fetch(`/Proposals_level/proposals_${selectedChain}.json`);
+		const json = await response.json();
+		proposalsData = json.data;
+		console.log(proposalsData, 'proposalsData');
+	}
+
+	function handleChainChange(event) {
+		const selectedChain = event.target.value;
+		chainName = selectedChain;
+		loadData(selectedChain);
+	}
 </script>
 
 <div class="main-container">
 	<div class="top-section">
-		<img src="/layout/proposals-overview-logo.png" alt="블록체인 이미지" />
+		<img src="/layout/proposals-overview-logo.png" alt="Blockchain image" />
 		<div class="text-description">
-			블록체인들의 투표 기록을 막대 차트로 시각화 하였습니다.<br />
-			초록색의 비율이 많을 수록 건강한 블록체인임을 나타내고 있습니다.
+			Visualizing the voting records of blockchains with a bar chart.<br />
+			A higher percentage of green indicates a healthier blockchain.
 		</div>
 		<div class="info-box">Decentralization</div>
 	</div>
@@ -30,9 +97,20 @@
 		<PieChart {proposalsData} />
 	</div>
 
+	<div class="dropdown-container">
+		<label for="chain-select">Choose a blockchain:</label>
+		<select id="chain-select" on:change={handleChainChange}>
+			{#each availableChains as chain}
+				<option value={chain}>{chain}</option>
+			{/each}
+		</select>
+	</div>
+
 	<div class="proposals-section">
-		{#each Array(15) as _, index}
-			<ProposalBox {index} />
+		{#each proposalsData as proposal, index (proposal.detail.id)}
+			{#if index < 15}
+				<ProposalBox {proposal} />
+			{/if}
 		{/each}
 	</div>
 </div>
@@ -48,28 +126,28 @@
 		display: flex;
 		align-items: center;
 		gap: 2%;
-		.text-description {
-			font-size: 14px;
-			color: var(--04, #7987a8);
+		// Other styles...
+	}
+
+	.dropdown-container {
+		margin-top: 20px;
+		select {
+			padding: 10px;
+			border-radius: 5px;
+			// Other styles...
 		}
-		.info-box {
-			padding: 20px;
-			border-radius: 10px;
-			background: var(--02, #161b26);
-			color: #fff;
-			opacity: 0.6;
+		option {
+			height: 30px;
 		}
 	}
 
 	.charts-section {
 		display: flex;
-		justify-content: space-between; /* 각 차트 사이의 간격을 조절 */
-		margin-top: 30px;
-		height: 300px; /* 차트 섹션의 높이 설정 */
-
-		/* 차트 컴포넌트의 클래스가 필요하면 추가합니다 */
+		justify-content: space-between;
+		margin-top: 70px;
+		height: 300px;
 		> * {
-			flex: 1; /* flex 아이템이 차지할 수 있는 공간을 동등하게 설정 */
+			flex: 1;
 		}
 	}
 
