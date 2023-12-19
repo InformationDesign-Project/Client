@@ -68,15 +68,8 @@
 				]
 			},
 			options: {
-				indexAxis: 'x',
+				indexAxis: 'x', // 수평 바 차트
 				scales: {
-					y: {
-						beginAtZero: true,
-						stacked: true,
-						ticks: {
-							callback: (value) => Math.abs(value) + '%'
-						}
-					},
 					x: {
 						stacked: true,
 						ticks: {
@@ -85,11 +78,23 @@
 						grid: {
 							display: false
 						}
+					},
+					y: {
+						beginAtZero: true,
+						stacked: true,
+						min: -100,
+						max: 100,
+						ticks: {
+							callback: (value) => Math.abs(value) + '%' // 음수 값을 양수로 변환하여 표시
+						},
+						grid: {
+							display: true,
+							color: 'rgba(255, 255, 255, 0.1)'
+						}
 					}
 				},
 				maintainAspectRatio: false,
 				plugins: {
-					
 					legend: {
 						display: false
 					},

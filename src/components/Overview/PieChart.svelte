@@ -24,10 +24,21 @@
 			return acc;
 		}, {});
 
-		return Object.entries(typeCounts).map(([type, count]) => ({
-			type,
-			count
-		}));
+		const sortedTypes = Object.entries(typeCounts)
+			.map(([type, count]) => ({
+				type,
+				count
+			}))
+			.sort((a, b) => b.count - a.count);
+
+		const topTypes = sortedTypes.slice(0, 4); // 상위 4개 항목 선택
+		const otherCount = sortedTypes.slice(4).reduce((sum, item) => sum + item.count, 0); // 나머지 항목들의 개수 합산
+
+		if (otherCount > 0) {
+			topTypes.push({ type: 'Other items', count: otherCount }); // 'Other items' 항목 추가
+		}
+
+		return topTypes;
 	}
 
 	function createPieChart() {
@@ -55,8 +66,8 @@
 			},
 			options: {
 				responsive: true,
-				maintainAspectRatio: false, 
-       			 aspectRatio: 1, 
+				maintainAspectRatio: false,
+				aspectRatio: 1,
 				plugins: {
 					legend: {
 						position: 'right',
@@ -85,7 +96,7 @@
 	<canvas bind:this={pieChartContainer}></canvas>
 </div>
 
-<style lang ="scss">
+<style lang="scss">
 	.chart-box {
 		width: 100%;
 		max-width: 400px; /* 최대 너비를 400px로 설정 */
@@ -97,5 +108,3 @@
 		margin: auto; /* 중앙 정렬 */
 	}
 </style>
-
-
