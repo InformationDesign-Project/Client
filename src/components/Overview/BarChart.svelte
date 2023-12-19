@@ -89,6 +89,7 @@
 				},
 				maintainAspectRatio: false,
 				plugins: {
+					
 					legend: {
 						display: false
 					},
@@ -111,7 +112,7 @@
 	}
 </script>
 
-<div style="width:50%;">
+<div style="width:65%;">
 	<canvas bind:this={chartContainer} id="bar-chart"></canvas>
 </div>
 

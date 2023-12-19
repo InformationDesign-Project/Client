@@ -55,6 +55,8 @@
 			},
 			options: {
 				responsive: true,
+				maintainAspectRatio: false, 
+       			 aspectRatio: 1, 
 				plugins: {
 					legend: {
 						position: 'right',
@@ -83,11 +85,17 @@
 	<canvas bind:this={pieChartContainer}></canvas>
 </div>
 
-<style>
+<style lang ="scss">
 	.chart-box {
-		width: 32%;
+		width: 100%;
+		max-width: 400px; /* 최대 너비를 400px로 설정 */
+		height: 300px; /* 높이를 300px로 설정 */
 		border-radius: 10px;
 		background: var(--03, #191b27);
 		padding: 20px;
+		box-sizing: border-box;
+		margin: auto; /* 중앙 정렬 */
 	}
 </style>
+
+

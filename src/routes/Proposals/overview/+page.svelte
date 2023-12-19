@@ -8,7 +8,7 @@
 	let proposalsData = [];
 
 	onMount(async () => {
-		const proposalsResponse = await fetch(`/Proposals_level/proposals_cosmos.json`);
+		const proposalsResponse = await fetch(`/Proposals_level/proposals_medibloc.json`);
 		const proposalsJson = await proposalsResponse.json();
 		proposalsData = proposalsJson.data;
 		console.log(proposalsData, 'proposalsData');
@@ -63,9 +63,14 @@
 
 	.charts-section {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-between; /* 각 차트 사이의 간격을 조절 */
 		margin-top: 30px;
-		height: 300px;
+		height: 300px; /* 차트 섹션의 높이 설정 */
+
+		/* 차트 컴포넌트의 클래스가 필요하면 추가합니다 */
+		> * {
+			flex: 1; /* flex 아이템이 차지할 수 있는 공간을 동등하게 설정 */
+		}
 	}
 
 	.proposals-section {

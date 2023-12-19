@@ -122,7 +122,7 @@
 		flex-direction: row;
 		justify-content: start;
 		align-items: flex-start;
-		padding: 20px;
+		padding: 10px;
 		gap: 20px;
 	}
 
