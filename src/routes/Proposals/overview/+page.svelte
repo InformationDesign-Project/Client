@@ -96,7 +96,10 @@
 			초록색의 비율이 많을 수록 건강한 블록체인임을 나타내고 있습니다.
 		</div>
 		<div class="info-box">Decentralization</div>
-		<button on:click={toggleChart}>차트 전환</button>
+		<div class="button-group">
+			<button on:click={toggleChart} class:active={!showVotes}>V.P</button>
+			<button on:click={toggleChart} class:active={showVotes}>Node</button>
+		</div>
 	</div>
 
 	<div class="charts-section">
@@ -174,5 +177,31 @@
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 10px;
 		margin-top: 50px;
+	}
+	.button-group {
+		display: flex;
+		margin-left: 30%;
+		background-color: #161b26;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	.button-group button {
+		background-color: transparent;
+		color: #fff;
+		border: none;
+		padding: 10px 20px;
+		cursor: pointer;
+		transition:
+			background-color 0.3s,
+			color 0.3s;
+
+		&:hover {
+			background-color: #2a2f3a;
+		}
+
+		&.active {
+			border: 1px solid #fff;
+		}
 	}
 </style>
