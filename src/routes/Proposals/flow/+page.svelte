@@ -4,38 +4,485 @@
 	import { sankey, sankeyLinkHorizontal } from 'd3-sankey';
 	import type { SankeyNode, SankeyLink } from './index.ts';
 
-	let width = 900;
-	let height = 500;
+	//타켓코인
+	let chainName = 'cosmos';
+	//타겟 체인 데이타
+	let chainData = [];
+	//타겟 코인 발리데이터
+	let validatorData = [];
+	let width=1000;
+	let height=1200;
+	let json = {
+    level1:{
+        total:0,
+        yes:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        no:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        abstain:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        veto:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        notVote:0
+    },
+    level2:{
+        total:0,
+        yes:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        no:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        abstain:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        veto:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        notVote:0
+    },
+    level3:{
+        total:0,
+        yes:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        no:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        abstain:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        veto:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        notVote:0
+    },
+    level4:{
+        total:0,
+        yes:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        no:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        abstain:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        veto:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        notVote:0
+    },
+    level5:{
+        total:0,
+        yes:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        no:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        abstain:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        veto:{
+			total:0,
+			passed:0,
+			rejected:0
+		},
+        notVote:0
+    },
+	
 
-	onMount(() => {
+}
+	const changeName = async (name) => {
+		chainName = name;
+		const chainResponse = await fetch('/allchain_with_level_updated.json');
+		const chainDatas = await chainResponse.json();
+		chainData = chainDatas.data;
+		console.log(chainData, 'chainData');
+
+		const validatorsResponse = await fetch(`/valitdators_level/output_validators_${name}.json`);
+		const validatorsJson = await validatorsResponse.json();
+		validatorData = validatorsJson.data;
+		console.log(validatorData, 'validatorsdata');
+	};
+
+	onMount(async() => {
+		// const chainResponse = await fetch('/allchain_with_level_updated.json');
+		// const chainDatas = await chainResponse.json();
+		// chainData = chainDatas.data;
+		// console.log(chainData, 'chainData');
+
+		// const validatorsResponse = await fetch(
+		// 	`/valitdators_level/output_validators_${chainName}.json`
+		// );
+		// const validatorsJson = await validatorsResponse.json();
+		// validatorData = validatorsJson.data;
+		// console.log(validatorData, 'validatorsdata');
+
+		const  proposalJson = await fetch('/Proposals_level/proposals_akash.json');
+		const proposalData = await proposalJson.json();
+		proposalData.data.forEach((proposals)=>{
+			proposals.validatorVotes.forEach((el)=>{
+				if(el.level ==1){
+        json.level1.total ++
+        if(el.answer=="yes"){
+			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level1.yes.passed ++
+				json.level1.yes.total ++
+			}
+			else{
+				json.level1.yes.rejected ++
+				json.level1.yes.total ++
+			}
+        }
+        else if(el.answer=='no'){
+            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level1.no.passed ++
+				json.level1.no.total ++
+			}
+			else{
+				json.level1.no.rejected ++
+				json.level1.no.total ++
+			}
+        }
+        else if(el.answer=='no with veto'){
+            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level1.veto.passed ++
+				json.level1.veto.total ++
+			}
+			else{
+				json.level1.veto.rejected ++
+				json.level1.veto.total ++
+			}
+        }
+        else if(el.answer=='abstain'){
+			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level1.abstain.passed ++
+				json.level1.abstain.total ++
+			}
+			else{
+				json.level1.abstain.rejected ++
+				json.level1.abstain.total ++
+			}
+        }
+        else{
+            json.level1.notVote ++
+        }
+    }
+    else if(el.level ==2){
+		json.level2.total ++
+        if(el.answer=="yes"){
+			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level2.yes.passed ++
+				json.level2.yes.total ++
+			}
+			else{
+				json.level2.yes.rejected ++
+				json.level2.yes.total ++
+			}
+        }
+        else if(el.answer=='no'){
+            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level2.no.passed ++
+				json.level2.no.total ++
+			}
+			else{
+				json.level2.no.rejected ++
+				json.level2.no.total ++
+			}
+        }
+        else if(el.answer=='no with veto'){
+            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level2.veto.passed ++
+				json.level2.veto.total ++
+			}
+			else{
+				json.level2.veto.rejected ++
+				json.level2.veto.total ++
+			}
+        }
+        else if(el.answer=='abstain'){
+			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level2.abstain.passed ++
+				json.level2.abstain.total ++
+			}
+			else{
+				json.level2.abstain.rejected ++
+				json.level2.abstain.total ++
+			}
+        }
+        else{
+            json.level2.notVote ++
+        }
+    }
+    else if(el.level ==3){
+		json.level3.total ++
+        if(el.answer=="yes"){
+			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level3.yes.passed ++
+				json.level3.yes.total ++
+			}
+			else{
+				json.level3.yes.rejected ++
+				json.level3.yes.total ++
+			}
+        }
+        else if(el.answer=='no'){
+            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level3.no.passed ++
+				json.level3.no.total ++
+			}
+			else{
+				json.level3.no.rejected ++
+				json.level3.no.total ++
+			}
+        }
+        else if(el.answer=='no with veto'){
+            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level3.veto.passed ++
+				json.level3.veto.total ++
+			}
+			else{
+				json.level3.veto.rejected ++
+				json.level3.veto.total ++
+			}
+        }
+        else if(el.answer=='abstain'){
+			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level3.abstain.passed ++
+				json.level3.abstain.total ++
+			}
+			else{
+				json.level3.abstain.rejected ++
+				json.level3.abstain.total ++
+			}
+        }
+        else{
+            json.level3.notVote ++
+        }
+    }
+    else if(el.level ==4){
+		json.level4.total ++
+        if(el.answer=="yes"){
+			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level4.yes.passed ++
+				json.level4.yes.total ++
+			}
+			else{
+				json.level4.yes.rejected ++
+				json.level4.yes.total ++
+			}
+        }
+        else if(el.answer=='no'){
+            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level4.no.passed ++
+				json.level4.no.total ++
+			}
+			else{
+				json.level4.no.rejected ++
+				json.level4.no.total ++
+			}
+        }
+        else if(el.answer=='no with veto'){
+            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level4.veto.passed ++
+				json.level4.veto.total ++
+			}
+			else{
+				json.level4.veto.rejected ++
+				json.level4.veto.total ++
+			}
+        }
+        else if(el.answer=='abstain'){
+			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level4.abstain.passed ++
+				json.level4.abstain.total ++
+			}
+			else{
+				json.level4.abstain.rejected ++
+				json.level4.abstain.total ++
+			}
+        }
+        else{
+            json.level4.notVote ++
+        }
+    }
+    else if(el.level ==5){
+         json.level5.total ++
+        if(el.answer=="yes"){
+			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level5.yes.passed ++
+				json.level5.yes.total ++
+			}
+			else{
+				json.level5.yes.rejected ++
+				json.level5.yes.total ++
+			}
+        }
+        else if(el.answer=='no'){
+            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level5.no.passed ++
+				json.level5.no.total ++
+			}
+			else{
+				json.level5.no.rejected ++
+				json.level5.no.total ++
+			}
+        }
+        else if(el.answer=='no with veto'){
+            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level5.veto.passed ++
+				json.level5.veto.total ++
+			}
+			else{
+				json.level5.veto.rejected ++
+				json.level5.veto.total ++
+			}
+        }
+        else if(el.answer=='abstain'){
+			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
+				json.level5.abstain.passed ++
+				json.level5.abstain.total ++
+			}
+			else{
+				json.level5.abstain.rejected ++
+				json.level5.abstain.total ++
+			}
+        }
+        else{
+            json.level5.notVote ++
+        }
+    }
+
+			})
+})
+console.log(json,'결과는~~?')
+
+
+
 		const data = {
 			nodes: [
-				{ name: 'Proposal 1' }, // 0
-				{ name: 'Proposal 2' }, // 1
-				{ name: 'Proposal 3' }, // 2
-				{ name: 'Proposal 4' }, // 3
-				{ name: 'Yes' }, // 4
-				{ name: 'No' }, // 5
-				{ name: 'Veto' }, // 6
-				{ name: 'Abstain' }, // 7
-				{ name: 'Passed' }, // 8
-				{ name: 'Rejected' } // 9
+				{ name: 'Level 5' }, // 0
+				{ name: 'Level 4' }, // 1
+				{ name: 'Level 3' }, // 2
+				{ name: 'Level 2' }, // 3
+				{ name: 'Level 1' }, // 4
+				{ name: 'Yes' }, // 5
+				{ name: 'No' }, // 6
+				{ name: 'Veto' }, // 7
+				{ name: 'Abstained' }, // 8
+				{ name: 'Passed'},//9
+				{ name: 'Rejected'}//10
+
+
 			],
 			links: [
-				{ source: 0, target: 4, value: 3 },
-				{ source: 0, target: 5, value: 1 },
-				{ source: 0, target: 6, value: 1 },
-				{ source: 0, target: 7, value: 1 },
-				{ source: 1, target: 4, value: 2 },
-				{ source: 1, target: 5, value: 2 },
-				{ source: 2, target: 4, value: 2 },
-				{ source: 2, target: 5, value: 2 },
-				{ source: 3, target: 4, value: 2 },
-				{ source: 3, target: 5, value: 2 },
-				{ source: 4, target: 8, value: 9 },
-				{ source: 5, target: 9, value: 3 },
-				{ source: 6, target: 9, value: 2 },
-				{ source: 7, target: 8, value: 3 }
+				{ source: 0, target: 5, value: json.level5.yes.total },
+				{ source: 0, target: 6, value: json.level5.no.total },
+				{ source: 0, target: 7, value: json.level5.veto.total },
+				{ source: 0, target: 8, value: json.level5.abstain.total },
+				{ source: 1, target: 5, value: json.level4.yes.total },
+				{ source: 1, target: 6, value: json.level4.no.total },
+				{ source: 1, target: 7, value: json.level4.veto.total },
+				{ source: 1, target: 8, value: json.level4.abstain.total },
+				{ source: 2, target: 5, value: json.level3.yes.total },
+				{ source: 2, target: 6, value: json.level3.no.total },
+				{ source: 2, target: 7, value: json.level3.veto.total },
+				{ source: 2, target: 8, value: json.level3.abstain.total },
+				{ source: 3, target: 5, value: json.level2.yes.total },
+				{ source: 3, target: 6, value: json.level2.no.total },
+				{ source: 3, target: 7, value: json.level2.veto.total },
+				{ source: 3, target: 8, value: json.level2.abstain.total },
+				{ source: 4, target: 5, value: json.level1.yes.total },
+				{ source: 4, target: 6, value: json.level1.no.total },
+				{ source: 4, target: 7, value: json.level1.veto.total },
+				{ source: 4, target: 8, value: json.level1.abstain.total },
+				{ source: 5, target: 9, value: json.level5.yes.passed},
+				{ source: 5, target: 9, value: json.level4.yes.passed},
+				{ source: 5, target: 9, value: json.level3.yes.passed},
+				{ source: 5, target: 9, value: json.level2.yes.passed},
+				{ source: 5, target: 9, value: json.level1.yes.passed},
+				{ source: 5, target: 10, value: json.level5.yes.rejected},
+				{ source: 5, target: 10, value: json.level4.yes.rejected},
+				{ source: 5, target: 10, value: json.level3.yes.rejected},
+				{ source: 5, target: 10, value: json.level2.yes.rejected},
+				{ source: 5, target: 10, value: json.level1.yes.rejected},
+				{ source: 6, target: 9, value: json.level5.no.passed},
+				{ source: 6, target: 9, value: json.level4.no.passed},
+				{ source: 6, target: 9, value: json.level3.no.passed},
+				{ source: 6, target: 9, value: json.level2.no.passed},
+				{ source: 6, target: 9, value: json.level1.no.passed},
+				{ source: 6, target: 10, value: json.level5.no.rejected},
+				{ source: 6, target: 10, value: json.level4.no.rejected},
+				{ source: 6, target: 10, value: json.level3.no.rejected},
+				{ source: 6, target: 10, value:json.level2.no.rejected},
+				{ source: 6, target: 10, value: json.level1.no.rejected},
+				{ source: 7, target: 9, value: json.level5.veto.passed},
+				{ source: 7, target: 9, value: json.level4.veto.passed},
+				{ source: 7, target: 9, value: json.level3.veto.passed},
+				{ source: 7, target: 9, value: json.level2.veto.passed},
+				{ source: 7, target: 9, value: json.level1.veto.passed},
+				{ source: 7, target: 10, value: json.level5.veto.rejected},
+				{ source: 7, target: 10, value: json.level4.veto.rejected},
+				{ source: 7, target: 10, value: json.level3.veto.rejected},
+				{ source: 7, target: 10, value: json.level2.veto.rejected},
+				{ source: 7, target: 10, value: json.level1.veto.rejected},
+				{ source: 8, target: 9, value: json.level5.abstain.passed},
+				{ source: 8, target: 9, value: json.level4.abstain.passed},
+				{ source: 8, target: 9, value: json.level3.abstain.passed},
+				{ source: 8, target: 9, value: json.level2.abstain.passed},
+				{ source: 8, target: 9, value: json.level1.abstain.passed},
+				{ source: 8, target: 10, value: json.level5.abstain.rejected},
+				{ source: 8, target: 10, value: json.level4.abstain.rejected},
+				{ source: 8, target: 10, value: json.level3.abstain.rejected},
+				{ source: 8, target: 10, value: json.level2.abstain.rejected},
+				{ source: 8, target: 10, value: json.level1.abstain.rejected},
+
+
+
 			]
 		};
 

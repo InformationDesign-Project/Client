@@ -5,7 +5,6 @@
 	export let changeName;
 
 	afterUpdate(() => {
-		console.log(chainData, '내 컴포넌트');
 	});
 </script>
 
@@ -111,20 +110,17 @@
 		display: inline-block;
 	}
 
-	/* 툴팁의 스타일 */
-	.tooltip {
-		visibility: hidden; /* 초기에는 보이지 않게 설정 */
-		position: absolute;
-		background-color: #333;
-		color: #fff;
-		padding: 5px;
-		border-radius: 3px;
-		z-index: 1;
-		white-space: nowrap;
-	}
-
-	/* hover 시 툴팁을 보이도록 설정 */
-	.tooltip-container:hover .tooltip {
-		visibility: visible;
-	}
+        .tooltip {
+            visibility: hidden; 
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            border-radius: 3px;
+            z-index: 1;
+            white-space: nowrap;
+        }
+        .tooltip-container:hover .tooltip {
+            visibility: visible;
+        }
 </style>
