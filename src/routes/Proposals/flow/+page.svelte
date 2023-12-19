@@ -6,402 +6,394 @@
 
 	//타켓코인
 	let chainName = 'cosmos';
+	let svg;
 	//타겟 체인 데이타
 	let chainData = [];
 	//타겟 코인 발리데이터
 	let validatorData = [];
-	let width=1000;
-	let height=1200;
+	let availableChains = [
+		'akash',
+		'archway',
+		'asset-mantle',
+		'axelar',
+		'band',
+		'bitcanna',
+		'bitsong',
+		'canto',
+		'chihuahua',
+		'comdex',
+		'coreum',
+		'cosmos',
+		'crescent',
+		'crypto-org',
+		'cudos',
+		'demos',
+		'dydx',
+		'evmos',
+		'fetchai',
+		'gravity-bridge',
+		'injective',
+		'iris',
+		'ixo',
+		'juno',
+		'kava',
+		'ki-chain',
+		'kyve',
+		'likecoin',
+		'lum',
+		'mars-protocol',
+		'medibloc',
+		'nyx',
+		'omniflix',
+		'onomy-protocol',
+		'osmosis',
+		'passage',
+		'persistence',
+		'provenance',
+		'quasar',
+		'quicksilver',
+		'regen',
+		'rizon',
+		'secret',
+		'sei',
+		'sentinel',
+		'shentu',
+		'sommelier',
+		'stafi',
+		'stargaze',
+		'starname',
+		'stride',
+		'teritori',
+		'terra',
+		'umee',
+		'xpla'
+	];
+	let width = 2500;
+	let height = 1200;
 	let json = {
-    level1:{
-        total:0,
-        yes:{
-			total:0,
-			passed:0,
-			rejected:0
+		level1: {
+			total: 0,
+			yes: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			no: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			abstain: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			veto: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			notVote: 0
 		},
-        no:{
-			total:0,
-			passed:0,
-			rejected:0
+		level2: {
+			total: 0,
+			yes: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			no: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			abstain: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			veto: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			notVote: 0
 		},
-        abstain:{
-			total:0,
-			passed:0,
-			rejected:0
+		level3: {
+			total: 0,
+			yes: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			no: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			abstain: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			veto: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			notVote: 0
 		},
-        veto:{
-			total:0,
-			passed:0,
-			rejected:0
+		level4: {
+			total: 0,
+			yes: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			no: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			abstain: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			veto: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			notVote: 0
 		},
-        notVote:0
-    },
-    level2:{
-        total:0,
-        yes:{
-			total:0,
-			passed:0,
-			rejected:0
-		},
-        no:{
-			total:0,
-			passed:0,
-			rejected:0
-		},
-        abstain:{
-			total:0,
-			passed:0,
-			rejected:0
-		},
-        veto:{
-			total:0,
-			passed:0,
-			rejected:0
-		},
-        notVote:0
-    },
-    level3:{
-        total:0,
-        yes:{
-			total:0,
-			passed:0,
-			rejected:0
-		},
-        no:{
-			total:0,
-			passed:0,
-			rejected:0
-		},
-        abstain:{
-			total:0,
-			passed:0,
-			rejected:0
-		},
-        veto:{
-			total:0,
-			passed:0,
-			rejected:0
-		},
-        notVote:0
-    },
-    level4:{
-        total:0,
-        yes:{
-			total:0,
-			passed:0,
-			rejected:0
-		},
-        no:{
-			total:0,
-			passed:0,
-			rejected:0
-		},
-        abstain:{
-			total:0,
-			passed:0,
-			rejected:0
-		},
-        veto:{
-			total:0,
-			passed:0,
-			rejected:0
-		},
-        notVote:0
-    },
-    level5:{
-        total:0,
-        yes:{
-			total:0,
-			passed:0,
-			rejected:0
-		},
-        no:{
-			total:0,
-			passed:0,
-			rejected:0
-		},
-        abstain:{
-			total:0,
-			passed:0,
-			rejected:0
-		},
-        veto:{
-			total:0,
-			passed:0,
-			rejected:0
-		},
-        notVote:0
-    },
-	
-
-}
-	const changeName = async (name) => {
-		chainName = name;
-		const chainResponse = await fetch('/allchain_with_level_updated.json');
-		const chainDatas = await chainResponse.json();
-		chainData = chainDatas.data;
-		console.log(chainData, 'chainData');
-
-		const validatorsResponse = await fetch(`/valitdators_level/output_validators_${name}.json`);
-		const validatorsJson = await validatorsResponse.json();
-		validatorData = validatorsJson.data;
-		console.log(validatorData, 'validatorsdata');
+		level5: {
+			total: 0,
+			yes: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			no: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			abstain: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			veto: {
+				total: 0,
+				passed: 0,
+				rejected: 0
+			},
+			notVote: 0
+		}
 	};
+	onMount(async () => {
+		// 초기 체인 데이터로드 및 SVG 차트 생성
+		svg = d3.select('#sankey-chart');
+		await loadData(chainName);
+	});
 
-	onMount(async() => {
-		// const chainResponse = await fetch('/allchain_with_level_updated.json');
-		// const chainDatas = await chainResponse.json();
-		// chainData = chainDatas.data;
-		// console.log(chainData, 'chainData');
-
-		// const validatorsResponse = await fetch(
-		// 	`/valitdators_level/output_validators_${chainName}.json`
-		// );
-		// const validatorsJson = await validatorsResponse.json();
-		// validatorData = validatorsJson.data;
-		// console.log(validatorData, 'validatorsdata');
-
-		const  proposalJson = await fetch('/Proposals_level/proposals_akash.json');
+	async function loadData(selectedChain) {
+		svg.selectAll('*').remove();
+		const proposalJson = await fetch(`/Proposals_level/proposals_${selectedChain}.json`);
 		const proposalData = await proposalJson.json();
-		proposalData.data.forEach((proposals)=>{
-			proposals.validatorVotes.forEach((el)=>{
-				if(el.level ==1){
-        json.level1.total ++
-        if(el.answer=="yes"){
-			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level1.yes.passed ++
-				json.level1.yes.total ++
-			}
-			else{
-				json.level1.yes.rejected ++
-				json.level1.yes.total ++
-			}
-        }
-        else if(el.answer=='no'){
-            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level1.no.passed ++
-				json.level1.no.total ++
-			}
-			else{
-				json.level1.no.rejected ++
-				json.level1.no.total ++
-			}
-        }
-        else if(el.answer=='no with veto'){
-            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level1.veto.passed ++
-				json.level1.veto.total ++
-			}
-			else{
-				json.level1.veto.rejected ++
-				json.level1.veto.total ++
-			}
-        }
-        else if(el.answer=='abstain'){
-			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level1.abstain.passed ++
-				json.level1.abstain.total ++
-			}
-			else{
-				json.level1.abstain.rejected ++
-				json.level1.abstain.total ++
-			}
-        }
-        else{
-            json.level1.notVote ++
-        }
-    }
-    else if(el.level ==2){
-		json.level2.total ++
-        if(el.answer=="yes"){
-			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level2.yes.passed ++
-				json.level2.yes.total ++
-			}
-			else{
-				json.level2.yes.rejected ++
-				json.level2.yes.total ++
-			}
-        }
-        else if(el.answer=='no'){
-            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level2.no.passed ++
-				json.level2.no.total ++
-			}
-			else{
-				json.level2.no.rejected ++
-				json.level2.no.total ++
-			}
-        }
-        else if(el.answer=='no with veto'){
-            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level2.veto.passed ++
-				json.level2.veto.total ++
-			}
-			else{
-				json.level2.veto.rejected ++
-				json.level2.veto.total ++
-			}
-        }
-        else if(el.answer=='abstain'){
-			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level2.abstain.passed ++
-				json.level2.abstain.total ++
-			}
-			else{
-				json.level2.abstain.rejected ++
-				json.level2.abstain.total ++
-			}
-        }
-        else{
-            json.level2.notVote ++
-        }
-    }
-    else if(el.level ==3){
-		json.level3.total ++
-        if(el.answer=="yes"){
-			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level3.yes.passed ++
-				json.level3.yes.total ++
-			}
-			else{
-				json.level3.yes.rejected ++
-				json.level3.yes.total ++
-			}
-        }
-        else if(el.answer=='no'){
-            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level3.no.passed ++
-				json.level3.no.total ++
-			}
-			else{
-				json.level3.no.rejected ++
-				json.level3.no.total ++
-			}
-        }
-        else if(el.answer=='no with veto'){
-            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level3.veto.passed ++
-				json.level3.veto.total ++
-			}
-			else{
-				json.level3.veto.rejected ++
-				json.level3.veto.total ++
-			}
-        }
-        else if(el.answer=='abstain'){
-			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level3.abstain.passed ++
-				json.level3.abstain.total ++
-			}
-			else{
-				json.level3.abstain.rejected ++
-				json.level3.abstain.total ++
-			}
-        }
-        else{
-            json.level3.notVote ++
-        }
-    }
-    else if(el.level ==4){
-		json.level4.total ++
-        if(el.answer=="yes"){
-			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level4.yes.passed ++
-				json.level4.yes.total ++
-			}
-			else{
-				json.level4.yes.rejected ++
-				json.level4.yes.total ++
-			}
-        }
-        else if(el.answer=='no'){
-            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level4.no.passed ++
-				json.level4.no.total ++
-			}
-			else{
-				json.level4.no.rejected ++
-				json.level4.no.total ++
-			}
-        }
-        else if(el.answer=='no with veto'){
-            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level4.veto.passed ++
-				json.level4.veto.total ++
-			}
-			else{
-				json.level4.veto.rejected ++
-				json.level4.veto.total ++
-			}
-        }
-        else if(el.answer=='abstain'){
-			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level4.abstain.passed ++
-				json.level4.abstain.total ++
-			}
-			else{
-				json.level4.abstain.rejected ++
-				json.level4.abstain.total ++
-			}
-        }
-        else{
-            json.level4.notVote ++
-        }
-    }
-    else if(el.level ==5){
-         json.level5.total ++
-        if(el.answer=="yes"){
-			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level5.yes.passed ++
-				json.level5.yes.total ++
-			}
-			else{
-				json.level5.yes.rejected ++
-				json.level5.yes.total ++
-			}
-        }
-        else if(el.answer=='no'){
-            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level5.no.passed ++
-				json.level5.no.total ++
-			}
-			else{
-				json.level5.no.rejected ++
-				json.level5.no.total ++
-			}
-        }
-        else if(el.answer=='no with veto'){
-            if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level5.veto.passed ++
-				json.level5.veto.total ++
-			}
-			else{
-				json.level5.veto.rejected ++
-				json.level5.veto.total ++
-			}
-        }
-        else if(el.answer=='abstain'){
-			if(proposals.detail.proposal_status=="PROPOSAL_STATUS_PASSED"){
-				json.level5.abstain.passed ++
-				json.level5.abstain.total ++
-			}
-			else{
-				json.level5.abstain.rejected ++
-				json.level5.abstain.total ++
-			}
-        }
-        else{
-            json.level5.notVote ++
-        }
-    }
 
-			})
-})
-console.log(json,'결과는~~?')
-
-
+		proposalData.data.forEach((proposals) => {
+			proposals.validatorVotes.forEach((el) => {
+				if (el.level == 1) {
+					json.level1.total++;
+					if (el.answer == 'yes') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level1.yes.passed++;
+							json.level1.yes.total++;
+						} else {
+							json.level1.yes.rejected++;
+							json.level1.yes.total++;
+						}
+					} else if (el.answer == 'no') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level1.no.passed++;
+							json.level1.no.total++;
+						} else {
+							json.level1.no.rejected++;
+							json.level1.no.total++;
+						}
+					} else if (el.answer == 'no with veto') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level1.veto.passed++;
+							json.level1.veto.total++;
+						} else {
+							json.level1.veto.rejected++;
+							json.level1.veto.total++;
+						}
+					} else if (el.answer == 'abstain') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level1.abstain.passed++;
+							json.level1.abstain.total++;
+						} else {
+							json.level1.abstain.rejected++;
+							json.level1.abstain.total++;
+						}
+					} else {
+						json.level1.notVote++;
+					}
+				} else if (el.level == 2) {
+					json.level2.total++;
+					if (el.answer == 'yes') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level2.yes.passed++;
+							json.level2.yes.total++;
+						} else {
+							json.level2.yes.rejected++;
+							json.level2.yes.total++;
+						}
+					} else if (el.answer == 'no') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level2.no.passed++;
+							json.level2.no.total++;
+						} else {
+							json.level2.no.rejected++;
+							json.level2.no.total++;
+						}
+					} else if (el.answer == 'no with veto') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level2.veto.passed++;
+							json.level2.veto.total++;
+						} else {
+							json.level2.veto.rejected++;
+							json.level2.veto.total++;
+						}
+					} else if (el.answer == 'abstain') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level2.abstain.passed++;
+							json.level2.abstain.total++;
+						} else {
+							json.level2.abstain.rejected++;
+							json.level2.abstain.total++;
+						}
+					} else {
+						json.level2.notVote++;
+					}
+				} else if (el.level == 3) {
+					json.level3.total++;
+					if (el.answer == 'yes') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level3.yes.passed++;
+							json.level3.yes.total++;
+						} else {
+							json.level3.yes.rejected++;
+							json.level3.yes.total++;
+						}
+					} else if (el.answer == 'no') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level3.no.passed++;
+							json.level3.no.total++;
+						} else {
+							json.level3.no.rejected++;
+							json.level3.no.total++;
+						}
+					} else if (el.answer == 'no with veto') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level3.veto.passed++;
+							json.level3.veto.total++;
+						} else {
+							json.level3.veto.rejected++;
+							json.level3.veto.total++;
+						}
+					} else if (el.answer == 'abstain') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level3.abstain.passed++;
+							json.level3.abstain.total++;
+						} else {
+							json.level3.abstain.rejected++;
+							json.level3.abstain.total++;
+						}
+					} else {
+						json.level3.notVote++;
+					}
+				} else if (el.level == 4) {
+					json.level4.total++;
+					if (el.answer == 'yes') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level4.yes.passed++;
+							json.level4.yes.total++;
+						} else {
+							json.level4.yes.rejected++;
+							json.level4.yes.total++;
+						}
+					} else if (el.answer == 'no') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level4.no.passed++;
+							json.level4.no.total++;
+						} else {
+							json.level4.no.rejected++;
+							json.level4.no.total++;
+						}
+					} else if (el.answer == 'no with veto') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level4.veto.passed++;
+							json.level4.veto.total++;
+						} else {
+							json.level4.veto.rejected++;
+							json.level4.veto.total++;
+						}
+					} else if (el.answer == 'abstain') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level4.abstain.passed++;
+							json.level4.abstain.total++;
+						} else {
+							json.level4.abstain.rejected++;
+							json.level4.abstain.total++;
+						}
+					} else {
+						json.level4.notVote++;
+					}
+				} else if (el.level == 5) {
+					json.level5.total++;
+					if (el.answer == 'yes') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level5.yes.passed++;
+							json.level5.yes.total++;
+						} else {
+							json.level5.yes.rejected++;
+							json.level5.yes.total++;
+						}
+					} else if (el.answer == 'no') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level5.no.passed++;
+							json.level5.no.total++;
+						} else {
+							json.level5.no.rejected++;
+							json.level5.no.total++;
+						}
+					} else if (el.answer == 'no with veto') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level5.veto.passed++;
+							json.level5.veto.total++;
+						} else {
+							json.level5.veto.rejected++;
+							json.level5.veto.total++;
+						}
+					} else if (el.answer == 'abstain') {
+						if (proposals.detail.proposal_status == 'PROPOSAL_STATUS_PASSED') {
+							json.level5.abstain.passed++;
+							json.level5.abstain.total++;
+						} else {
+							json.level5.abstain.rejected++;
+							json.level5.abstain.total++;
+						}
+					} else {
+						json.level5.notVote++;
+					}
+				}
+			});
+		});
+		console.log(json, '결과는~~?');
 
 		const data = {
 			nodes: [
@@ -414,10 +406,8 @@ console.log(json,'결과는~~?')
 				{ name: 'No' }, // 6
 				{ name: 'Veto' }, // 7
 				{ name: 'Abstained' }, // 8
-				{ name: 'Passed'},//9
-				{ name: 'Rejected'}//10
-
-
+				{ name: 'Passed' }, //9
+				{ name: 'Rejected' } //10
 			],
 			links: [
 				{ source: 0, target: 5, value: json.level5.yes.total },
@@ -440,56 +430,70 @@ console.log(json,'결과는~~?')
 				{ source: 4, target: 6, value: json.level1.no.total },
 				{ source: 4, target: 7, value: json.level1.veto.total },
 				{ source: 4, target: 8, value: json.level1.abstain.total },
-				{ source: 5, target: 9, value: json.level5.yes.passed},
-				{ source: 5, target: 9, value: json.level4.yes.passed},
-				{ source: 5, target: 9, value: json.level3.yes.passed},
-				{ source: 5, target: 9, value: json.level2.yes.passed},
-				{ source: 5, target: 9, value: json.level1.yes.passed},
-				{ source: 5, target: 10, value: json.level5.yes.rejected},
-				{ source: 5, target: 10, value: json.level4.yes.rejected},
-				{ source: 5, target: 10, value: json.level3.yes.rejected},
-				{ source: 5, target: 10, value: json.level2.yes.rejected},
-				{ source: 5, target: 10, value: json.level1.yes.rejected},
-				{ source: 6, target: 9, value: json.level5.no.passed},
-				{ source: 6, target: 9, value: json.level4.no.passed},
-				{ source: 6, target: 9, value: json.level3.no.passed},
-				{ source: 6, target: 9, value: json.level2.no.passed},
-				{ source: 6, target: 9, value: json.level1.no.passed},
-				{ source: 6, target: 10, value: json.level5.no.rejected},
-				{ source: 6, target: 10, value: json.level4.no.rejected},
-				{ source: 6, target: 10, value: json.level3.no.rejected},
-				{ source: 6, target: 10, value:json.level2.no.rejected},
-				{ source: 6, target: 10, value: json.level1.no.rejected},
-				{ source: 7, target: 9, value: json.level5.veto.passed},
-				{ source: 7, target: 9, value: json.level4.veto.passed},
-				{ source: 7, target: 9, value: json.level3.veto.passed},
-				{ source: 7, target: 9, value: json.level2.veto.passed},
-				{ source: 7, target: 9, value: json.level1.veto.passed},
-				{ source: 7, target: 10, value: json.level5.veto.rejected},
-				{ source: 7, target: 10, value: json.level4.veto.rejected},
-				{ source: 7, target: 10, value: json.level3.veto.rejected},
-				{ source: 7, target: 10, value: json.level2.veto.rejected},
-				{ source: 7, target: 10, value: json.level1.veto.rejected},
-				{ source: 8, target: 9, value: json.level5.abstain.passed},
-				{ source: 8, target: 9, value: json.level4.abstain.passed},
-				{ source: 8, target: 9, value: json.level3.abstain.passed},
-				{ source: 8, target: 9, value: json.level2.abstain.passed},
-				{ source: 8, target: 9, value: json.level1.abstain.passed},
-				{ source: 8, target: 10, value: json.level5.abstain.rejected},
-				{ source: 8, target: 10, value: json.level4.abstain.rejected},
-				{ source: 8, target: 10, value: json.level3.abstain.rejected},
-				{ source: 8, target: 10, value: json.level2.abstain.rejected},
-				{ source: 8, target: 10, value: json.level1.abstain.rejected},
-
-
-
+				{ source: 5, target: 9, value: json.level5.yes.passed },
+				{ source: 5, target: 9, value: json.level4.yes.passed },
+				{ source: 5, target: 9, value: json.level3.yes.passed },
+				{ source: 5, target: 9, value: json.level2.yes.passed },
+				{ source: 5, target: 9, value: json.level1.yes.passed },
+				{ source: 5, target: 10, value: json.level5.yes.rejected },
+				{ source: 5, target: 10, value: json.level4.yes.rejected },
+				{ source: 5, target: 10, value: json.level3.yes.rejected },
+				{ source: 5, target: 10, value: json.level2.yes.rejected },
+				{ source: 5, target: 10, value: json.level1.yes.rejected },
+				{ source: 6, target: 9, value: json.level5.no.passed },
+				{ source: 6, target: 9, value: json.level4.no.passed },
+				{ source: 6, target: 9, value: json.level3.no.passed },
+				{ source: 6, target: 9, value: json.level2.no.passed },
+				{ source: 6, target: 9, value: json.level1.no.passed },
+				{ source: 6, target: 10, value: json.level5.no.rejected },
+				{ source: 6, target: 10, value: json.level4.no.rejected },
+				{ source: 6, target: 10, value: json.level3.no.rejected },
+				{ source: 6, target: 10, value: json.level2.no.rejected },
+				{ source: 6, target: 10, value: json.level1.no.rejected },
+				{ source: 7, target: 9, value: json.level5.veto.passed },
+				{ source: 7, target: 9, value: json.level4.veto.passed },
+				{ source: 7, target: 9, value: json.level3.veto.passed },
+				{ source: 7, target: 9, value: json.level2.veto.passed },
+				{ source: 7, target: 9, value: json.level1.veto.passed },
+				{ source: 7, target: 10, value: json.level5.veto.rejected },
+				{ source: 7, target: 10, value: json.level4.veto.rejected },
+				{ source: 7, target: 10, value: json.level3.veto.rejected },
+				{ source: 7, target: 10, value: json.level2.veto.rejected },
+				{ source: 7, target: 10, value: json.level1.veto.rejected },
+				{ source: 8, target: 9, value: json.level5.abstain.passed },
+				{ source: 8, target: 9, value: json.level4.abstain.passed },
+				{ source: 8, target: 9, value: json.level3.abstain.passed },
+				{ source: 8, target: 9, value: json.level2.abstain.passed },
+				{ source: 8, target: 9, value: json.level1.abstain.passed },
+				{ source: 8, target: 10, value: json.level5.abstain.rejected },
+				{ source: 8, target: 10, value: json.level4.abstain.rejected },
+				{ source: 8, target: 10, value: json.level3.abstain.rejected },
+				{ source: 8, target: 10, value: json.level2.abstain.rejected },
+				{ source: 8, target: 10, value: json.level1.abstain.rejected }
 			]
 		};
 
 		createSankeyChart(data);
-	});
+	}
 
 	function createSankeyChart(data: { nodes: SankeyNode[]; links: SankeyLink[] }) {
+		const MIN_VALUE = 500;
+
+		data.links.forEach((link) => {
+			if ([0, 1, 2, 3, 4].includes(link.source)) {
+				link.value = Math.max(link.value, MIN_VALUE);
+			}
+		});
+
+		data.nodes.forEach((node) => {
+			let height = node.y1 - node.y0;
+			if (height < MIN_VALUE) {
+				let diff = MIN_VALUE - height;
+				node.y1 = node.y1 + diff / 2;
+				node.y0 = node.y0 - diff / 2;
+			}
+		});
+
 		const svg = d3.select('#sankey-chart').attr('viewBox', [0, 0, width, height]);
 
 		const { nodes, links } = sankey<SankeyNode, SankeyLink>()
@@ -505,11 +509,11 @@ console.log(json,'결과는~~?')
 			.selectAll('rect')
 			.data(nodes)
 			.join('rect')
-			.attr('x', (d) => (d.x0 ?? 0) + 10)
-			.attr('y', (d) => (d.y0 ?? 0) + 10)
-			.attr('height', (d) => (d.y1 ?? 0) - (d.y0 ?? 0) - 20)
-			.attr('width', (d) => (d.x1 ?? 0) - (d.x0 ?? 0) - 20)
-			.attr('fill', 'var(--point, #267AF9)')
+			.attr('x', (d) => d.x0 ?? 0)
+			.attr('y', (d) => d.y0 ?? 0)
+			.attr('height', (d) => (d.y1 ?? 0) - (d.y0 ?? 0))
+			.attr('width', (d) => (d.x1 ?? 0) - (d.x0 ?? 0) - 5)
+			.attr('fill', (d) => (d.name === 'No' ? '#763033' : 'var(--point, #267AF9)'))
 			.attr('rx', 10)
 			.attr('ry', 10)
 			.on('mouseover', function (event, d) {
@@ -535,10 +539,17 @@ console.log(json,'결과는~~?')
 			.join('path')
 			.attr('d', sankeyLinkHorizontal())
 			.attr('stroke', (d) =>
-				typeof d.source === 'object' && d.source.name.startsWith('Proposal') ? '#7987A8' : '#7987A8'
+				(typeof d.source === 'object' && d.source.name === 'No') ||
+				(typeof d.target === 'object' && d.target.name === 'No')
+					? '#763033'
+					: (typeof d.source === 'object' && d.source.name === 'Yes') ||
+						  (typeof d.target === 'object' && d.target.name === 'Yes')
+						? '#174284'
+						: '#7987A8'
 			)
-			.attr('stroke-opacity', 0.5)
+			.attr('stroke-opacity', 0.7)
 			.attr('stroke-width', (d) => Math.max(1, d.width));
+
 		svg.append('g').selectAll('text').data(nodes);
 
 		svg
@@ -551,7 +562,30 @@ console.log(json,'결과는~~?')
 			.attr('text-anchor', 'center')
 			.text((d) => d.name)
 			.attr('fill', 'white')
-			.style('font-size', '14px');
+			.style('font-size', '15px');
+
+		svg
+			.append('g')
+			.selectAll('text.total')
+			.data(nodes.filter((d) => d.name.startsWith('Level')))
+			.join('text')
+			.attr('class', 'total')
+			.attr('x', (d) => (d.x0 ?? 0) + ((d.x1 ?? 0) - (d.x0 ?? 0)) / 2)
+			.attr('y', (d) => (d.y0 ?? 0) + ((d.y1 ?? 0) - (d.y0 ?? 0)) / 2)
+			.attr('dy', '0.35em') // To vertically center the text
+			.attr('text-anchor', 'middle')
+			.text((d) => {
+				// Extract the level number from the node name
+				const levelNum = d.name.split(' ')[1];
+				// Access the total votes for this level from the json variable
+				return json[`level${levelNum}`].total;
+			})
+			.attr('fill', 'white')
+			.style('font-size', '25px');
+	}
+	function handleChainChange(event) {
+		chainName = event.target.value;
+		loadData(chainName);
 	}
 </script>
 
@@ -562,7 +596,13 @@ console.log(json,'결과는~~?')
 		<div>result</div>
 	</div>
 </header>
-
+<div class="dropdown-container">
+	<select id="chain-select" on:change={handleChainChange}>
+		{#each availableChains as chain}
+			<option value={chain}>{chain}</option>
+		{/each}
+	</select>
+</div>
 <main>
 	<svg id="sankey-chart"></svg>
 </main>
@@ -588,6 +628,23 @@ console.log(json,'결과는~~?')
 		margin: 25px;
 	}
 
+	.dropdown-container {
+		margin-top: 40px;
+
+		select {
+			width: 10%;
+			height: 36px;
+			padding: 10px;
+			border-radius: 5px;
+			background-color: #161b26;
+			color: #afb7c0;
+			border: none;
+			margin-left: 50px;
+		}
+		option {
+			height: 30px;
+		}
+	}
 	main {
 		display: flex;
 		justify-content: center;

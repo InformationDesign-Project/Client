@@ -4,8 +4,7 @@
 	export let chainData;
 	export let changeName;
 
-	afterUpdate(() => {
-	});
+	afterUpdate(() => {});
 </script>
 
 <main>
@@ -110,17 +109,17 @@
 		display: inline-block;
 	}
 
-        .tooltip {
-            visibility: hidden; 
-            position: absolute;
-            background-color: #333;
-            color: #fff;
-            padding: 5px;
-            border-radius: 3px;
-            z-index: 1;
-            white-space: nowrap;
-        }
-        .tooltip-container:hover .tooltip {
-            visibility: visible;
-        }
+	.tooltip {
+		visibility: hidden;
+		position: absolute;
+		background-color: #333;
+		color: #fff;
+		padding: 5px;
+		border-radius: 3px;
+		z-index: 1;
+		white-space: nowrap;
+	}
+	.tooltip-container:hover .tooltip {
+		visibility: visible;
+	}
 </style>
