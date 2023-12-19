@@ -86,8 +86,8 @@
 	<div class="top-section">
 		<img src="/layout/proposals-overview-logo.png" alt="Blockchain image" />
 		<div class="text-description">
-			Visualizing the voting records of blockchains with a bar chart.<br />
-			A higher percentage of green indicates a healthier blockchain.
+			블록체인들의 투표 기록을 막대 차트로 시각화 하였습니다.<br />
+			초록색의 비율이 많을 수록 건강한 블록체인임을 나타내고 있습니다.
 		</div>
 		<div class="info-box">Decentralization</div>
 	</div>
@@ -98,7 +98,6 @@
 	</div>
 
 	<div class="dropdown-container">
-		<label for="chain-select">Choose a blockchain:</label>
 		<select id="chain-select" on:change={handleChainChange}>
 			{#each availableChains as chain}
 				<option value={chain}>{chain}</option>
@@ -126,15 +125,29 @@
 		display: flex;
 		align-items: center;
 		gap: 2%;
-		// Other styles...
+		.text-description {
+			font-size: 14px;
+			color: var(--04, #7987a8);
+		}
+		.info-box {
+			padding: 20px;
+			border-radius: 10px;
+			background: var(--02, #161b26);
+			color: #fff;
+			opacity: 0.6;
+		}
 	}
-
 	.dropdown-container {
-		margin-top: 20px;
+		margin-top: 40px;
+
 		select {
+			width: 15%;
+			height: 36px;
 			padding: 10px;
 			border-radius: 5px;
-			// Other styles...
+			background-color: #161b26;
+			color: #afb7c0;
+			border: none;
 		}
 		option {
 			height: 30px;
