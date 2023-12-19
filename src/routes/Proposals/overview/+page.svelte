@@ -64,21 +64,24 @@
 		'xpla'
 	]; // 사용 가능한 체인 목록
 
-	onMount(() => {
-		loadData(chainName);
+	onMount(async () => {
+		await loadData(chainName);
 	});
 
 	async function loadData(selectedChain) {
 		const response = await fetch(`/Proposals_level/proposals_${selectedChain}.json`);
-		const json = await response.json();
-		proposalsData = json.data;
-		console.log(proposalsData, 'proposalsData');
+		if (response.ok) {
+			const json = await response.json();
+			proposalsData = json.data;
+		} else {
+			console.error('Failed to load data:', response.status);
+			proposalsData = [];
+		}
 	}
 
 	function handleChainChange(event) {
-		const selectedChain = event.target.value;
-		chainName = selectedChain;
-		loadData(selectedChain);
+		chainName = event.target.value;
+		loadData(chainName);
 	}
 </script>
 
@@ -106,10 +109,8 @@
 	</div>
 
 	<div class="proposals-section">
-		{#each proposalsData as proposal, index (proposal.detail.id)}
-			{#if index < 15}
-				<ProposalBox {proposal} />
-			{/if}
+		{#each proposalsData as proposal}
+			<ProposalBox {proposal} />
 		{/each}
 	</div>
 </div>
