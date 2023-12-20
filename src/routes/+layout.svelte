@@ -3,25 +3,21 @@
 <script lang="ts">
 	const btns = [
 		{
-			title: 'EXPLORER',
+			title: 'Home',
 			url: '/layout/explorer.png',
-			route: '/Explorer'
+			route: '/'
 		},
+		
 		{
-			title: 'OVERVIEW',
-			url: '/layout/overview.png',
-			route: '/Overview'
-		},
-		{
-			title: 'PROPOSALS',
+			title: 'Proposals Flow',
 			url: '/layout/proposals.png',
-			route: '/Proposals'
+			route: '/Proposals/flow'
 		},
 		{
-			title: 'HEALTHY STATUS',
-			url: '/layout/healthyStatus.png',
-			route: '/HealthyStatus'
-		}
+			title: 'Proposals Overview',
+			url: '/layout/proposalOverview.png',
+			route: '/Proposals/overview'
+		},
 	];
 
 	function navigateTo(route: string) {
