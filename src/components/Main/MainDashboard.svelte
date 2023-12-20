@@ -67,7 +67,7 @@
 				<div class="dashboard-coin">
 					<div class="chain-name-status">
 						<select id="chain-select" on:change={handleChainChange}>
-							{#each chainData as chain}
+							{#each chainData.sort(compareByScore) as chain}
 								<option value={chain.chain}>{chain.chain}</option>
 							{/each}
 						</select>
