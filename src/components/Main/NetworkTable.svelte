@@ -129,12 +129,12 @@
 								changeName(data.chain);
 							}}
 						>
-						<div style="display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;color:white;background-color:{levelColor[data.level]}">{index+1}</div>
+						<div style="display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;color:{levelColor[data.level]}">{index+1}</div>
 							<div style="width:30%;"><img src={data.tokenImg} style="width:20px;" /></div>
 							<div style="width:40%;text-align:start;">{data.chain}</div>
 						</div>
 						<div class="chainInfo">{data.level}</div>
-						<div class="chainInfo" style="color:#267AF9;">{data.HealthyScore.toFixed(2)}</div>
+						<div class="chainInfo" style="color:{levelColor[data.level]};">{data.HealthyScore.toFixed(2)}</div>
 						<div class="chainInfo">{data.Decentralization.toFixed(2)}</div>
 						<div class="chainInfo">{data.average_totalScore.toFixed(2)}</div>
 						<div class="chainInfo">{data.average_participation.toFixed(2)}</div>
