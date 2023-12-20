@@ -112,7 +112,7 @@
 					</div>
 				</div>
 			</div>
-			{#each chainData as data}
+			{#each chainData as data,index}
 				<div>
 					<div class="tableContent">
 						<div
@@ -121,8 +121,9 @@
 								changeName(data.chain);
 							}}
 						>
+						<div style="width:30%;color:#267AF9;">{index+1}</div>
 							<div style="width:30%;"><img src={data.tokenImg} style="width:20px;" /></div>
-							<div style="width:70%;text-align:start;">{data.chain}</div>
+							<div style="width:40%;text-align:start;">{data.chain}</div>
 						</div>
 						<div class="chainInfo">{data.level}</div>
 						<div class="chainInfo" style="color:#267AF9;">{data.HealthyScore.toFixed(2)}</div>
