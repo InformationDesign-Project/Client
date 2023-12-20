@@ -513,10 +513,36 @@
 			.attr('y', (d) => d.y0 ?? 0)
 			.attr('height', (d) => (d.y1 ?? 0) - (d.y0 ?? 0))
 			.attr('width', (d) => (d.x1 ?? 0) - (d.x0 ?? 0) - 5)
-			.attr('fill', (d) => (d.name === 'No' ? '#763033' : 'var(--point, #267AF9)'))
+			.attr('fill', (d) => {
+				// 'Level'로 시작하는 노드에 특별한 색상 적용
+				if (d.name.startsWith('Level')) {
+					return '#191B27';
+				} else if (d.name === 'No' || d.name === 'Rejected') {
+					return '#E05757'; // 'No'와 'Rejected'에 대한 색상
+				} else if (d.name === 'Veto' || d.name === 'Abstained') {
+					return '#191B27'; // 'Veto'와 'Abstained'에 대한 색상
+				}
+				return 'var(--point, #267AF9)'; // 그 외 노드들에 대한 기본 색상
+			})
 			.attr('rx', 10)
 			.attr('ry', 10)
 			.on('mouseover', function (event, d) {
+				if (d.name.startsWith('Level')) {
+					d3.select(this).attr('fill', '#267AF9');
+
+					// 해당 노드와 연결된 링크들의 투명도 변경
+					svg.selectAll('path').attr('opacity', (link) => {
+						// link.source와 link.target은 노드 객체 또는 노드 인덱스일 수 있음
+						const sourceIndex = typeof link.source === 'object' ? link.source.index : link.source;
+						const targetIndex = typeof link.target === 'object' ? link.target.index : link.target;
+
+						if (sourceIndex === d.index || targetIndex === d.index) {
+							return 1; // 연결된 링크는 투명도를 1로 설정
+						}
+						return 0.1; // 그 외 링크는 투명도를 낮춤
+					});
+				}
+
 				svg.selectAll('path').attr('opacity', (link) => {
 					if (typeof link.source === 'object' && link.source.index === d.index) {
 						return 1;
@@ -527,7 +553,18 @@
 					}
 				});
 			})
-			.on('mouseout', function () {
+			.on('mouseout', function (d) {
+				// 원래 색상으로 되돌리기
+				d3.select(this).attr('fill', (d) => {
+					if (d.name.startsWith('Level')) {
+						return '#191B27';
+					} else if (d.name === 'No' || d.name === 'Rejected') {
+						return '#E05757';
+					} else if (d.name === 'Veto' || d.name === 'Abstained') {
+						return '#191B27';
+					}
+					return 'var(--point, #267AF9)';
+				});
 				svg.selectAll('path').attr('opacity', 0.2);
 			});
 
@@ -632,19 +669,23 @@
 		margin-top: 40px;
 
 		select {
-			width: 10%;
+			width: 13%;
 			height: 36px;
 			padding: 10px;
 			border-radius: 5px;
 			background-color: #161b26;
 			color: #afb7c0;
 			border: none;
-			margin-left: 50px;
+			margin-left: 35px;
+			-webkit-appearance: none; /* 크롬, 사파리에서 기본 화살표 제거 */
+			-moz-appearance: none; /* 파이어폭스에서 기본 화살표 제거 */
+			appearance: none;
 		}
 		option {
 			height: 30px;
 		}
 	}
+
 	main {
 		display: flex;
 		justify-content: center;
