@@ -590,35 +590,63 @@
 		svg.append('g').selectAll('text').data(nodes);
 
 		svg
-			.append('g')
-			.selectAll('text')
-			.data(nodes)
-			.join('text')
-			.attr('x', (d) => (d.x0 ?? 0) + 20)
-			.attr('y', (d) => (d.y0 ?? 0) + 30)
-			.attr('text-anchor', 'center')
-			.text((d) => d.name)
-			.attr('fill', 'white')
-			.style('font-size', '15px');
+    .append('g')
+    .selectAll('text.levelLabel')
+    .data(nodes.filter((d) => d.name.startsWith('Level')))
+    .join('text')
+    .attr('class', 'levelLabel')
+    .attr('x', (d) => (d.x0 ?? 0) + ((d.x1 ?? 0) - (d.x0 ?? 0)) / 2)
+    .attr('y', (d) => (d.y0 ?? 0) + 30)
+    .attr('text-anchor', 'middle')
+    .text('Level')
+    .attr('fill', 'white')
+    .style('font-size', '25px');
 
-		svg
-			.append('g')
-			.selectAll('text.total')
-			.data(nodes.filter((d) => d.name.startsWith('Level')))
-			.join('text')
-			.attr('class', 'total')
-			.attr('x', (d) => (d.x0 ?? 0) + ((d.x1 ?? 0) - (d.x0 ?? 0)) / 2)
-			.attr('y', (d) => (d.y0 ?? 0) + ((d.y1 ?? 0) - (d.y0 ?? 0)) / 2)
-			.attr('dy', '0.35em') // To vertically center the text
-			.attr('text-anchor', 'middle')
-			.text((d) => {
-				// Extract the level number from the node name
-				const levelNum = d.name.split(' ')[1];
-				// Access the total votes for this level from the json variable
-				return json[`level${levelNum}`].total;
-			})
-			.attr('fill', 'white')
-			.style('font-size', '25px');
+svg
+    .append('g')
+    .selectAll('text.levelNumber')
+    .data(nodes.filter((d) => d.name.startsWith('Level')))
+    .join('text')
+    .attr('class', 'levelNumber')
+    .attr('x', (d) => (d.x0 ?? 0) + ((d.x1 ?? 0) - (d.x0 ?? 0)) / 2)
+    .attr('y', (d) => (d.y0 ?? 0) + 50)
+    .attr('text-anchor', 'middle')
+    .text((d) => d.name.split(' ')[1].padStart(2, '0'))
+    .attr('fill', 'white')
+    .style('font-size', '25px');
+
+// 다른 모든 노드들에 대한 텍스트
+svg
+    .append('g')
+    .selectAll('text.otherNodeText')
+    .data(nodes.filter((d) => !d.name.startsWith('Level')))
+    .join('text')
+    .attr('class', 'otherNodeText')
+    .attr('x', (d) => (d.x0 ?? 0) + 20)
+    .attr('y', (d) => (d.y0 ?? 0) + 30)
+    .attr('text-anchor', 'center')
+    .text((d) => d.name)
+    .attr('fill', 'white')
+    .style('font-size', '16px');
+
+
+	svg
+    .append('g')
+    .selectAll('text.total')
+    .data(nodes.filter((d) => d.name.startsWith('Level')))
+    .join('text')
+    .attr('class', 'total')
+    .attr('x', (d) => (d.x0 ?? 0) + ((d.x1 ?? 0) - (d.x0 ?? 0)) / 2)
+    .attr('y', (d) => (d.y1 ?? 0) - 10) // 하단 위치 설정
+    .attr('text-anchor', 'middle')
+    .text((d) => {
+        // Extract the level number from the node name
+        const levelNum = d.name.split(' ')[1];
+        // Access the total votes for this level from the json variable
+        return json[`level${levelNum}`].total;
+    })
+    .attr('fill', 'white')
+    .style('font-size', '25px');
 	}
 	function handleChainChange(event) {
 		chainName = event.target.value;
