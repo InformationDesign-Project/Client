@@ -39,6 +39,6 @@
 
 <body>
 	<MainHeader />
-	<MainDashboard {chainData} {validatorData} {chainName}  {changeName}/>
+	<MainDashboard {chainData} {validatorData} {chainName} {changeName} />
 	<NetworkTable {chainData} {changeName} />
 </body>

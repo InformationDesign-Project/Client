@@ -27,13 +27,11 @@
 			validatorsCount = count;
 		}
 		if (chainData && chainName) {
-		filteredChain = chainData.find(
-			(chain) => chain.chain.toLowerCase() === chainName.toLowerCase()
-		);
-	}	
+			filteredChain = chainData.find(
+				(chain) => chain.chain.toLowerCase() === chainName.toLowerCase()
+			);
+		}
 	});
-
-
 
 	function countValidators() {
 		const count = { level1: 0, level2: 0, level3: 0, level4: 0, level5: 0 };
@@ -56,10 +54,8 @@
 		countValidators();
 	}
 	function handleChainChange(event) {
-		changeName(event.target.value)
-		
+		changeName(event.target.value);
 	}
-	
 </script>
 
 <div class="dashboard-container">
@@ -69,11 +65,15 @@
 			{#if filteredChain}
 				<!-- Dashboard Metrics -->
 				<div class="dashboard-coin">
-					<select id="chain-select" on:change={handleChainChange}>
-						{#each chainData as chain}
-							<option value={chain.chain}>{chain.chain}</option>
-						{/each}
-					</select>
+					<div class="chain-name-status">
+						<select id="chain-select" on:change={handleChainChange}>
+							{#each chainData as chain}
+								<option value={chain.chain}>{chain.chain}</option>
+							{/each}
+						</select>
+						<div class="chain-status">▲ 10%</div>
+					</div>
+					<div class="chain-compare">Compared to $21,490 last year</div>
 				</div>
 				<div class="dashboard-metric">
 					<div class="metric-value">Level {Math.round(filteredChain.level)}</div>
@@ -115,33 +115,36 @@
 	<!-- Right Section -->
 	<div class="right-section">
 		<!-- Coin List Section -->
-		<div class="coin-list-section" style='display:flex; flex-direction:column;align-items:center;'>
+		<div class="coin-list-section" style="display:flex; flex-direction:column;align-items:center;">
 			<div style="width:90%;height:20%;align-items:center;display:flex;">
 				<img src="/layout/Vector.png" alt="vector" />
-				<div class="coin-list-top" style='margin-left:10px;'>Top 10 Healthy Chains</div>
+				<div class="coin-list-top" style="margin-left:10px;">Top 10 Healthy Chains</div>
 			</div>
-			<div style='width:90%;height:80%;display:flex;flex-wrap:wrap;align-items:center; text-align'>
+			<div style="width:90%;height:80%;display:flex;flex-wrap:wrap;align-items:center; text-align">
 				{#each topChains as chain, index (chain.chain)}
-					<div style='width:50%;display:flex; align-items:center;'>
-						{#if index==0}
-						<div style="color:#267AF9; width:30px;justify-content:flex-start;display:flex;">
-							<div>0{index + 1}</div></div>
-					  {:else if index>8}
-					  <div style="color:#7987A8; width:30px;justify-content:flex-start;display:flex;">
-						<div>{index + 1}</div></div>
+					<div style="width:50%;display:flex; align-items:center;">
+						{#if index == 0}
+							<div style="color:#267AF9; width:30px;justify-content:flex-start;display:flex;">
+								<div>0{index + 1}</div>
+							</div>
+						{:else if index > 8}
+							<div style="color:#7987A8; width:30px;justify-content:flex-start;display:flex;">
+								<div>{index + 1}</div>
+							</div>
 						{:else}
-						<div style="color:#7987A8; width:30px;justify-content:flex-start;display:flex;">
-							<div>0{index + 1}</div></div>
-					  {/if}
-						
-						<img src={chain.tokenImg} style="width:24px;margin:0 12px 0px 0px;padding-bottom:0px; "  />
+							<div style="color:#7987A8; width:30px;justify-content:flex-start;display:flex;">
+								<div>0{index + 1}</div>
+							</div>
+						{/if}
+
+						<img
+							src={chain.tokenImg}
+							style="width:24px;margin:0 12px 0px 0px;padding-bottom:0px; "
+						/>
 						<div>{chain.chain}</div>
-						</div>
-					{/each}
+					</div>
+				{/each}
 			</div>
-
-
-
 		</div>
 		{#if filteredChain}
 			<RadarChart data={filteredChain} />
@@ -201,6 +204,19 @@
 		}
 	}
 
+	#chain-select {
+		background: none;
+		border: none;
+		width: 150px;
+		border-radius: 5px;
+		color: #ffffff;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		font-size: 24px;
+		text-transform: uppercase;
+	}
+
 	.dashboard-coin {
 		background-color: #161b26;
 		padding: 22px;
@@ -208,19 +224,15 @@
 		width: auto;
 		color: #ffffff;
 		display: flex;
-		align-items: left;
+		text-align: left;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: flex-start;
 	}
 
 	.chain-name-status {
 		display: flex;
 		align-items: center;
-	}
-	.chain-name {
-		font-size: 24px;
-		font-weight: bold;
-		text-transform: uppercase;
+		justify-content: flex-start;
 	}
 
 	.chain-status {
@@ -234,7 +246,7 @@
 		font-size: 14px;
 		color: #7987a8;
 		margin-top: 12px;
-		text-align: center;
+		text-align: left;
 	}
 
 	.dashboard-metric {
@@ -314,7 +326,7 @@
 		.coin-list-header {
 			display: flex;
 			align-items: center;
-			width:90%;
+			width: 90%;
 
 			.coin-list-top {
 				color: #ffffff;
@@ -323,15 +335,15 @@
 		}
 
 		.coin-list-divider {
-			width:100%;
-			height:100%;
+			width: 100%;
+			height: 100%;
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
 		}
 
 		.coin-list {
-			width:50%;
+			width: 50%;
 
 			.coin-list-left,
 			.coin-list-right {
