@@ -57,9 +57,15 @@
 		<div class="dashboard-top-line">
 			{#if filteredChain}
 				<!-- Dashboard Metrics -->
-				<div class="dashboard-coin">{filteredChain.chain}</div>
+				<div class="dashboard-coin">
+					<div class="chain-name-status">
+						<div class="chain-name">{filteredChain.chain}</div>
+						<div class="chain-status">▲ 10%</div>
+					</div>
+					<div class="chain-compare">Compared to $21,490 last year</div>
+				</div>
 				<div class="dashboard-metric">
-					<div class="metric-value">{Math.round(filteredChain.level)}</div>
+					<div class="metric-value">Level {Math.round(filteredChain.level)}</div>
 					<div class="metric-label">Healthy Level</div>
 				</div>
 				<div class="dashboard-metric">
@@ -123,7 +129,6 @@
 		justify-content: start;
 		align-items: flex-start;
 		padding: 10px;
-		gap: 20px;
 	}
 
 	.dashboard {
@@ -138,13 +143,10 @@
 		.dashboard-top-line {
 			display: flex;
 			justify-content: space-between;
-			width: 85%;
+			align-items: center;
+			width: 90%;
 			margin-bottom: 20px;
 			.dashboard-metric {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-
 				.metric-value {
 					font-size: 50px;
 					font-weight: bold;
@@ -174,12 +176,38 @@
 
 	.dashboard-coin {
 		background-color: #161b26;
-		padding: 15px 15px;
+		padding: 22px;
 		border-radius: 10px;
-		width: 150px;
-		height: 50px;
-		font-size: 24px;
+		width: auto;
 		color: #ffffff;
+		display: flex;
+		align-items: left;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.chain-name-status {
+		display: flex;
+		align-items: center;
+	}
+	.chain-name {
+		font-size: 24px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.chain-status {
+		font-size: 14px;
+		color: #267af9;
+		margin-top: 4px;
+		margin-left: 10px;
+	}
+
+	.chain-compare {
+		font-size: 14px;
+		color: #7987a8;
+		margin-top: 12px;
+		text-align: center;
 	}
 
 	.dashboard-metric {
@@ -218,6 +246,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: left;
+		margin-bottom: 13px;
+		margin-top: 10px;
 	}
 
 	.validators-info-label {
@@ -232,6 +262,9 @@
 		font-size: 24px;
 		font-weight: bold;
 		color: #ffffff;
+	}
+	.validators-info-item:first-child .validators-info-number {
+		color: #267af9;
 	}
 
 	.right-section {

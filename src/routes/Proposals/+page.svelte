@@ -35,6 +35,7 @@
 
 <style lang="scss">
 	main {
+		margin-top: 50px;
 		margin-left: 80px;
 		.image-container {
 			text-align: left;

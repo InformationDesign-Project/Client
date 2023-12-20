@@ -157,7 +157,7 @@
 		align-items: center;
 		height: 60px;
 		text-align: center;
-		border-bottom: 1px solid #98a2ae;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 		.chainName {
 			width: 200px;
 			height: 100%;
@@ -174,6 +174,7 @@
 		}
 	}
 	.label {
+		color: #7987a8;
 		font-size: 12px;
 	}
 	.tooltip-container {

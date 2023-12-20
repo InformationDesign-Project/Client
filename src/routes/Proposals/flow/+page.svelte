@@ -593,7 +593,7 @@
 	<div class="inner-header">
 		<div>Proposals</div>
 		<div>Progress</div>
-		<div>result</div>
+		<div>Result</div>
 	</div>
 </header>
 <div class="dropdown-container">

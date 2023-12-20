@@ -32,6 +32,7 @@
 		justify-content: space-between;
 		align-items: center;
 		width: 98.5%;
+		margin-top: 50px;
 	}
 
 	.logo {
@@ -51,11 +52,13 @@
 	.top-coin {
 		background-color: #11141b;
 		color: #ffffff;
-		padding: 30px;
+		padding-top: 30px;
+		padding-left: 30px;
+		padding-right: 70px;
 		padding-bottom: 40px;
 		border-radius: 10px;
 		margin: 0 15px;
-		width: 20%;
+		width: 50%;
 		height: 50px;
 		display: flex;
 		flex-direction: column;

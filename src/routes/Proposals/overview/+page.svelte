@@ -132,6 +132,7 @@
 	.top-section {
 		display: flex;
 		align-items: center;
+		margin-top: 50px;
 		gap: 2%;
 		.text-description {
 			font-size: 14px;

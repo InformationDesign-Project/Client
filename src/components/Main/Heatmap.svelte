@@ -2,22 +2,17 @@
 	import * as d3 from 'd3';
 
 	export let data = [];
-	let tooltip; // 툴팁 요소
+	let tooltip;
 	function drawHeatmap() {
-		const containerWidth = 675;
+		const containerWidth = 600;
 		const containerHeight = 400;
-		const baseColor = d3.rgb('#267AF9');
 		const container = d3
 			.select('#heatmap')
 			.html('')
 			.attr('width', containerWidth)
 			.attr('height', containerHeight);
 
-		const colorScale = d3
-			.scaleSequential((t) => {
-				return d3.interpolateHsl(baseColor.darker(10 * t), baseColor.brighter(1 * (1 - t)))(t);
-			})
-			.domain([1, 4]);
+		const colorScale = d3.scaleSequential().domain([5, 1]).interpolator(d3.interpolateBlues);
 		tooltip = d3.select('.tooltip');
 
 		container
@@ -26,12 +21,12 @@
 
 			.enter()
 			.append('rect')
-			.attr('x', (d, i) => (i % 15) * 50) // 가로 방향 20개 블록
-			.attr('y', (d, i) => Math.floor(i / 15) * 40) // 블록의 행 계산
+			.attr('x', (d, i) => (i % 14) * 50) // 가로 방향 20개 블록
+			.attr('y', (d, i) => Math.floor(i / 14) * 40) // 블록의 행 계산
 			.attr('width', 45) // 블록 너비
 			.attr('height', 35) // 블록 높이
-			.attr('rx', 3)
-			.attr('ry', 3)
+			.attr('rx', 1)
+			.attr('ry', 1)
 			.attr('fill', (d) => colorScale(d.level))
 			.on('mouseover', (event, d) => {
 				tooltip.style('display', 'block');
@@ -41,9 +36,15 @@
 					)
 					.style('left', `${event.pageX}px`)
 					.style('top', `${event.pageY - 28}px`);
+
+				d3.select(event.currentTarget) // 현재 마우스 오버된 요소에 접근
+					.style('stroke', 'white') // 테두리 색상을 흰색으로 설정
+					.style('stroke-width', '1'); // 테두리 너비를 2px로 설정
 			})
-			.on('mouseout', () => {
+			.on('mouseout', (event) => {
 				tooltip.style('display', 'none');
+				d3.select(event.currentTarget) // 현재 마우스가 벗어난 요소에 접근
+					.style('stroke', 'none'); // 테두리를 제거하거나 원래 스타일로 되돌립니다
 			});
 	}
 

@@ -54,7 +54,6 @@
 			</div>
 		</div>
 		<div class="rightSection">
-			<div class="topSection"></div>
 			<div class="bottomSection">
 				<slot />
 			</div>

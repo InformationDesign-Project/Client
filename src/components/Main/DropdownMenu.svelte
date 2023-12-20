@@ -30,7 +30,7 @@
 
 	function handleOptionClick(sortBy) {
 		if (dropdownButton) {
-			dropdownButton.textContent = sortBy === 'votingPower' ? 'VotingPower' : 'Level';
+			dropdownButton.textContent = sortBy === 'votingPower' ? 'VotingPower' : 'Healthy Level';
 			dropdownContent.style.display = 'none';
 		}
 		dispatch('sort', { sortBy });
@@ -59,7 +59,6 @@
 		background-color: #161b26;
 		color: #afb7c0;
 		border: none;
-		margin-bottom: 10px;
 		justify-content: space-between;
 		align-items: center;
 		cursor: pointer;
@@ -72,10 +71,8 @@
 
 	.dropdown-content {
 		display: none;
-		position: fixed;
 		background-color: #161b26;
-		min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		width: 50px;
 		z-index: 1;
 	}
 </style>
