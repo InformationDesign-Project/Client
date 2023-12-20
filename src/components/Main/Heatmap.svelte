@@ -12,7 +12,14 @@
 			.attr('width', containerWidth)
 			.attr('height', containerHeight);
 
-		const colorScale = d3.scaleSequential().domain([5, 1]).interpolator(d3.interpolateBlues);
+		const colorScale = d3
+			.scaleSequential((t) => {
+				return d3.interpolateRgb(
+					d3.rgb('#1B4D9B').darker(2 * (1 - t)),
+					d3.rgb('#2064CA').brighter(2 * t)
+				)(t);
+			})
+			.domain([1, 5]);
 		tooltip = d3.select('.tooltip');
 
 		container

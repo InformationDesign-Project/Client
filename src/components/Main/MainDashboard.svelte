@@ -177,7 +177,10 @@
 			width: 90%;
 			margin-bottom: 20px;
 			.dashboard-metric {
+				display: grid;
+				justify-items: start;
 				.metric-value {
+					font-family: 'Audiowide';
 					font-size: 50px;
 					font-weight: bold;
 				}
