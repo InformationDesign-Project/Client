@@ -5,7 +5,7 @@
 	let tooltip;
 	function drawHeatmap() {
 		const containerWidth = 600;
-		const containerHeight = 400;
+		const containerHeight = 2000;
 		const container = d3
 			.select('#heatmap')
 			.html('')

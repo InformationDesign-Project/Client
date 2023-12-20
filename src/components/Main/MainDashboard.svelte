@@ -66,7 +66,7 @@
 				<!-- Dashboard Metrics -->
 				<div class="dashboard-coin">
 					<div class="chain-name-status">
-						<select id="chain-select" on:change={handleChainChange}>
+						<select id="chain-select" on:change={handleChainChange} value={chainName}>
 							{#each chainData.sort(compareByScore) as chain}
 								<option value={chain.chain}>{chain.chain}</option>
 							{/each}
@@ -276,6 +276,13 @@
 	.heatmap {
 		display: flex;
 		width: 65%;
+		height:400px;
+		overflow: scroll;
+		ms-overflow-style: none;
+		scrollbar-width: none;
+		&::-webkit-scrollbar {
+			display: none;
+		}
 	}
 	.sorted-by {
 		font-size: 12px;

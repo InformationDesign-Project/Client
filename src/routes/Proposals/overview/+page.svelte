@@ -6,6 +6,7 @@
 
 	let chainName = 'cosmos'; // 기본 체인 이름
 	let proposalsData = []; // 제안 데이터
+	let decentralization = 0;
 	let availableChains = [
 		'akash',
 		'archway',
@@ -66,6 +67,7 @@
 	let showVotes;
 	onMount(async () => {
 		await loadData(chainName);
+
 	});
 
 	async function loadData(selectedChain) {
