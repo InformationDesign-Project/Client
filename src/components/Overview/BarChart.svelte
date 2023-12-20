@@ -26,7 +26,6 @@
 			const totalAmount = yesAmount + noAmount;
 
 			if (totalVotes > 0 && totalAmount > 0) {
-				// Check if totalVotes and totalAmount are not zero
 				acc.push({
 					title: d.detail.title,
 					yesPercent: (yes / totalVotes) * 100,
@@ -45,11 +44,10 @@
 		}
 
 		const ctx = chartContainer.getContext('2d');
-		let count = 0; // Keep track of non-zero entries processed
-		let index = 0; // Index of the current data entry being processed
+		let count = 0;
+		let index = 0;
 		const percentages = [];
 
-		// Process data until you have 20 non-zero entries or run out of data
 		while (count < 20 && index < proposalsData.length) {
 			const entry = proposalsData[index];
 			const yes = Number(entry.detail.voteMeta.yes);
@@ -60,7 +58,6 @@
 			const totalAmount = yesAmount + noAmount;
 
 			if (totalVotes > 0 && totalAmount > 0) {
-				// Check for non-zero data
 				percentages.push({
 					title: entry.detail.title,
 					yesPercent: (yes / totalVotes) * 100,
@@ -68,12 +65,11 @@
 					yesAmountPercent: (yesAmount / totalAmount) * 100,
 					noAmountPercent: (noAmount / totalAmount) * 100
 				});
-				count++; // Increment non-zero entry count
+				count++;
 			}
-			index++; // Always move to the next data entry
+			index++;
 		}
 
-		// Now percentages contains up to 20 non-zero data entries
 		const labels = percentages.map((d) => d.title);
 		const yesPercentages = percentages.map((d) => d.yesPercent);
 		const noPercentages = percentages.map((d) => -d.noPercent);
@@ -122,6 +118,9 @@
 		];
 
 		const datasets = showVotes ? voteDataset : amountDataset;
+		datasets.forEach((dataset) => {
+			dataset.barThickness = 30; // 막대의 두께를 40픽셀로 설정
+		});
 
 		chart = new Chart(ctx, {
 			type: 'bar',

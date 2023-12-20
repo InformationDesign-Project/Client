@@ -18,16 +18,33 @@
 	const getStatus = () => {
 		switch (proposal.detail.proposal_status) {
 			case 'PROPOSAL_STATUS_PASSED':
-				return 'Passed';
+				return '/layout/Passed.png'; // 여기에 'Passed' 상태에 해당하는 이미지 경로
 			case 'PROPOSAL_STATUS_REJECTED':
-				return 'Rejected';
+				return '/layout/Rejected.png'; // 여기에 'Rejected' 상태에 해당하는 이미지 경로
 			default:
-				return 'Voting Period';
+				return '/layout/votingPeriod.png'; // 여기에 'Voting Period' 상태에 해당하는 이미지 경로
 		}
 	};
 
 	const statusLabel = getStatus();
 	const statusClass = statusLabel.toLowerCase();
+
+	const formatVotingEndTime = () => {
+		const options = {
+			year: 'numeric',
+			month: '2-digit',
+			day: '2-digit',
+			hour: '2-digit',
+			minute: '2-digit',
+			second: '2-digit',
+			hour12: false
+		};
+		return new Date(proposal.detail.voting_end_time)
+			.toLocaleString('ko-KR', options)
+			.replace('오전', '')
+			.replace('오후', '')
+			.trim();
+	};
 </script>
 
 <div class="proposal-box">
@@ -43,13 +60,8 @@
 		<div class="progress no" style="width: {calculateNoPercentage()}%"></div>
 	</div>
 	<div class="footer">
-		<div class={`proposal-status ${statusClass}`}>
-			<span class="status-icon"></span>
-			{statusLabel}
-		</div>
-		<div class="voting-end-time">
-			Voting End on {new Date(proposal.detail.voting_end_time).toLocaleString()}
-		</div>
+		<img src={getStatus()} alt="Proposal Status" />
+		<div class="voting-end-time">Voting End on {formatVotingEndTime()}</div>
 	</div>
 </div>
 
@@ -64,7 +76,7 @@
 		overflow: hidden;
 		font-family: 'Arial', sans-serif;
 		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-		position: relative; /* 추가 */
+		position: relative;
 	}
 
 	.proposal-info {
@@ -78,21 +90,25 @@
 		margin-left: 15px;
 		margin-bottom: 15px;
 		margin-top: 15px;
-		font-size: 18px;
+		font-size: 14px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		max-width: 100%;
 	}
 
 	.proposal-id-type {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		position: absolute; /* 추가 */
-		top: 16px; /* 수정 */
-		left: 16px; /* 추가 */
-		right: 16px; /* 추가 */
+		position: absolute;
+		top: 16px;
+		left: 16px;
+		right: 16px;
 	}
 
 	.proposal-id {
-		color: #ec5757;
+		color: #fff;
 	}
 
 	.proposal-type {
@@ -127,13 +143,15 @@
 	.progress-bar {
 		margin-left: 15px;
 		margin-right: 15px;
-		height: 6px;
-		background-color: #ddd;
+		height: 4px;
+		border-radius: 5px;
+		background-color: rgba(255, 255, 255, 0.2);
 		position: relative;
 	}
 
 	.progress {
 		position: absolute;
+		border-radius: 5px;
 		top: 0;
 		height: 100%;
 	}

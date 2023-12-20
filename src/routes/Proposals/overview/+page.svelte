@@ -183,7 +183,6 @@
 		display: flex;
 		margin-left: 30%;
 		background-color: #161b26;
-		border-radius: 5px;
 		overflow: hidden;
 	}
 

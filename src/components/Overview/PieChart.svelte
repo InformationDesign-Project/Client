@@ -31,11 +31,11 @@
 			}))
 			.sort((a, b) => b.count - a.count);
 
-		const topTypes = sortedTypes.slice(0, 4); // 상위 4개 항목 선택
-		const otherCount = sortedTypes.slice(4).reduce((sum, item) => sum + item.count, 0); // 나머지 항목들의 개수 합산
+		const topTypes = sortedTypes.slice(0, 4);
+		const otherCount = sortedTypes.slice(4).reduce((sum, item) => sum + item.count, 0);
 
 		if (otherCount > 0) {
-			topTypes.push({ type: 'Other items', count: otherCount }); // 'Other items' 항목 추가
+			topTypes.push({ type: 'ETC', count: otherCount });
 		}
 
 		return topTypes;
@@ -50,6 +50,7 @@
 		const proposalTypes = aggregateProposalTypes(proposalsData);
 		const labels = proposalTypes.map((pt) => pt.type);
 		const counts = proposalTypes.map((pt) => pt.count);
+		const backgroundColors = proposalTypes.map((pt) => getColorForType(pt.type));
 
 		pieChart = new Chart(ctx, {
 			type: 'pie',
@@ -58,7 +59,7 @@
 				datasets: [
 					{
 						data: counts,
-						backgroundColor: ['#3498db', '#e74c3c', '#f1c40f', '#2ecc71', '#9b59b6', '#34495e'],
+						backgroundColor: backgroundColors,
 						hoverOffset: 4,
 						borderColor: 'rgba(0, 0, 0, 0)'
 					}
@@ -73,7 +74,8 @@
 						position: 'right',
 						labels: {
 							usePointStyle: true,
-							padding: 20
+							padding: 20,
+							color: '#fff'
 						}
 					},
 					tooltip: {
@@ -90,6 +92,22 @@
 			}
 		});
 	}
+	function getColorForType(type) {
+		const colorMap = {
+			CommunityPoolSpend: '#267AF9',
+			ParameterChange: '#E05757',
+			SoftwareUpgrade: '#FFBD5A',
+			ClientUpdate: '#4CB870',
+			Text: '#FF8A36',
+			ETC: '#7987A8'
+		};
+		return colorMap[type] || getRandomColor();
+	}
+
+	function getRandomColor() {
+		const colors = ['#3498db', '#e74c3c', '#f1c40f', '#2ecc71', '#9b59b6', '#34495e'];
+		return colors[Math.floor(Math.random() * colors.length)];
+	}
 </script>
 
 <div class="chart-box">
@@ -99,12 +117,12 @@
 <style lang="scss">
 	.chart-box {
 		width: 100%;
-		max-width: 400px; /* 최대 너비를 400px로 설정 */
-		height: 300px; /* 높이를 300px로 설정 */
+		max-width: 400px;
+		height: 300px;
 		border-radius: 10px;
 		background: var(--03, #191b27);
-		padding: 20px;
+		padding: 35px;
 		box-sizing: border-box;
-		margin: auto; /* 중앙 정렬 */
+		margin-left: 20px;
 	}
 </style>
