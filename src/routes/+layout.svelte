@@ -1,21 +1,27 @@
 <!-- +layout.svelte -->
 
 <script lang="ts">
+	import { onMount } from "svelte";
+
+	let pathname='';
 	const btns = [
 		{
 			title: 'Home',
 			url: '/layout/explorer.png',
+			activeUrl:'/layout/explorerActive.png',
 			route: '/'
 		},
 		
 		{
 			title: 'Proposals Flow',
 			url: '/layout/proposals.png',
+			activeUrl:'/layout/proposalsActive.png',
 			route: '/Proposals/flow'
 		},
 		{
 			title: 'Proposals Overview',
 			url: '/layout/proposalOverview.png',
+			activeUrl:'/layout/proposalsOverviewActive.png',
 			route: '/Proposals/overview'
 		},
 	];
@@ -23,6 +29,10 @@
 	function navigateTo(route: string) {
 		location.href = route;
 	}
+	onMount(()=>{
+		 pathname = window.location.pathname;
+    console.log("Current URL:", pathname);
+	})
 </script>
 
 <main>
@@ -39,10 +49,17 @@
 					<div class="menuBtn" on:click={() => navigateTo(btn.route)}>
 						<div class="menuInner">
 							<div style="display:flex; align-items:center;">
+								{#if pathname ==btn.route}
+								<img width="18px;" src={btn.activeUrl} />
+								<div style="margin-left:10px; font-size:14px; margin-top:2px;color:#267AF9">
+									{btn.title}
+								</div>
+								{:else}
 								<img width="18px;" src={btn.url} />
 								<div style="margin-left:10px; font-size:14px; margin-top:2px;">
 									{btn.title}
 								</div>
+								{/if}
 							</div>
 						</div>
 					</div>
