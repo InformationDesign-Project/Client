@@ -97,7 +97,6 @@
 			블록체인들의 투표 기록을 막대 차트로 시각화 하였습니다.<br />
 			초록색의 비율이 많을 수록 건강한 블록체인임을 나타내고 있습니다.
 		</div>
-		<div class="info-box">Decentralization</div>
 		<div class="button-group">
 			<button on:click={toggleChart} class:active={!showVotes}>V.P</button>
 			<button on:click={toggleChart} class:active={showVotes}>Node</button>
