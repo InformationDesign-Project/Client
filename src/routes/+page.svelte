@@ -4,7 +4,7 @@
 	import MainHeader from '../components/Main/MainHeader.svelte';
 	import NetworkTable from '../components/Main/NetworkTable.svelte';
 	//타켓코인
-	let chainName = 'cosmos';
+	let chainName = 'crescent';
 	//타겟 체인 데이타
 	let chainData = [];
 	//타겟 코인 발리데이터

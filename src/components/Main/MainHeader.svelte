@@ -8,19 +8,19 @@
 	<div class="top-coins">
 		<div class="top-coin today">
 			<div class="time-period">Today</div>
-			<div class="coin-name"><!-- 오늘의 최고 건강도 코인 이름 -->COSMOS</div>
+			<div class="coin-name"><!-- 오늘의 최고 건강도 코인 이름 -->CRESCENT</div>
 			<div class="title">Best Healthy Chain Today</div>
 		</div>
 		<div class="top-coin month">
 			<div class="time-period">Month</div>
 			<div class="coin-name">
-				<!-- 이번 달의 최고 건강도 코인 이름 -->KAVA
+				<!-- 이번 달의 최고 건강도 코인 이름 -->KYVE
 			</div>
 			<div class="title">Best Healthy Chain this Month</div>
 		</div>
 		<div class="top-coin year">
 			<div class="time-period">Year</div>
-			<div class="coin-name"><!-- 올해의 최고 건강도 코인 이름 -->BAND</div>
+			<div class="coin-name"><!-- 올해의 최고 건강도 코인 이름 -->DYDX</div>
 			<div class="title">Best Healthy Chain this Year</div>
 		</div>
 	</div>
