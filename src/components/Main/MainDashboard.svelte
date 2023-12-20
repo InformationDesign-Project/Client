@@ -7,27 +7,33 @@
 	export let chainData;
 	export let validatorData;
 	export let chainName;
+	export let changeName;
 
 	let filteredChain;
 	let topChains = [];
 	let validatorsCount = { level1: 0, level2: 0, level3: 0, level4: 0, level5: 0 };
+	function compareByScore(a, b) {
+		// 비교를 위해 프로퍼티 값을 가져와서 비교
+		return b.HealthyScore - a.HealthyScore;
+	}
 
 	afterUpdate(async () => {
 		if (chainData.length > 0) {
-			topChains = [...chainData].sort((a, b) => b.level - a.level).slice(0, 10);
+			topChains = chainData.sort(compareByScore).slice(0, 10);
 			const count = { level1: 0, level2: 0, level3: 0, level4: 0, level5: 0 };
 			validatorData.forEach((validator) => {
 				count[`level${validator.level}`]++;
 			});
 			validatorsCount = count;
 		}
-	});
-
-	$: if (chainData && chainName) {
+		if (chainData && chainName) {
 		filteredChain = chainData.find(
 			(chain) => chain.chain.toLowerCase() === chainName.toLowerCase()
 		);
-	}
+	}	
+	});
+
+
 
 	function countValidators() {
 		const count = { level1: 0, level2: 0, level3: 0, level4: 0, level5: 0 };
@@ -49,6 +55,11 @@
 		}
 		countValidators();
 	}
+	function handleChainChange(event) {
+		changeName(event.target.value)
+		
+	}
+	
 </script>
 
 <div class="dashboard-container">
@@ -58,11 +69,11 @@
 			{#if filteredChain}
 				<!-- Dashboard Metrics -->
 				<div class="dashboard-coin">
-					<div class="chain-name-status">
-						<div class="chain-name">{filteredChain.chain}</div>
-						<div class="chain-status">▲ 10%</div>
-					</div>
-					<div class="chain-compare">Compared to $21,490 last year</div>
+					<select id="chain-select" on:change={handleChainChange}>
+						{#each chainData as chain}
+							<option value={chain.chain}>{chain.chain}</option>
+						{/each}
+					</select>
 				</div>
 				<div class="dashboard-metric">
 					<div class="metric-value">Level {Math.round(filteredChain.level)}</div>
@@ -104,17 +115,33 @@
 	<!-- Right Section -->
 	<div class="right-section">
 		<!-- Coin List Section -->
-		<div class="coin-list-section">
-			<div class="coin-list-header">
+		<div class="coin-list-section" style='display:flex; flex-direction:column;align-items:center;'>
+			<div style="width:90%;height:20%;align-items:center;display:flex;">
 				<img src="/layout/Vector.png" alt="vector" />
-				<div class="coin-list-top">Top 10 Healthy Chains</div>
+				<div class="coin-list-top" style='margin-left:10px;'>Top 10 Healthy Chains</div>
 			</div>
-			<div class="coin-list-divider"></div>
-			{#each topChains as chain, index (chain.chain)}
-				<div class="coin-list">
-					<div>{index + 1} {chain.chain}</div>
-				</div>
-			{/each}
+			<div style='width:90%;height:80%;display:flex;flex-wrap:wrap;align-items:center; text-align'>
+				{#each topChains as chain, index (chain.chain)}
+					<div style='width:50%;display:flex; align-items:center;'>
+						{#if index==0}
+						<div style="color:#267AF9; width:30px;justify-content:flex-start;display:flex;">
+							<div>0{index + 1}</div></div>
+					  {:else if index>8}
+					  <div style="color:#7987A8; width:30px;justify-content:flex-start;display:flex;">
+						<div>{index + 1}</div></div>
+						{:else}
+						<div style="color:#7987A8; width:30px;justify-content:flex-start;display:flex;">
+							<div>0{index + 1}</div></div>
+					  {/if}
+						
+						<img src={chain.tokenImg} style="width:24px;margin:0 12px 0px 0px;padding-bottom:0px; "  />
+						<div>{chain.chain}</div>
+						</div>
+					{/each}
+			</div>
+
+
+
 		</div>
 		{#if filteredChain}
 			<RadarChart data={filteredChain} />
@@ -287,8 +314,7 @@
 		.coin-list-header {
 			display: flex;
 			align-items: center;
-			gap: 10px; // 필요에 따라 조정
-			margin: 20px;
+			width:90%;
 
 			.coin-list-top {
 				color: #ffffff;
@@ -297,14 +323,15 @@
 		}
 
 		.coin-list-divider {
-			border-top: 1px solid rgba(121, 135, 168, 0.15);
-			margin: 0 20px;
+			width:100%;
+			height:100%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
 		}
 
 		.coin-list {
-			display: flex;
-			justify-content: space-between;
-			margin-left: 25px;
+			width:50%;
 
 			.coin-list-left,
 			.coin-list-right {
