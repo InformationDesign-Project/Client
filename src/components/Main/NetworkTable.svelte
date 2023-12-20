@@ -3,6 +3,14 @@
 
 	export let chainData;
 	export let changeName;
+
+	const levelColor={
+		5:'#0F1F3F',
+		4:'#14366E',
+		3:'#1B4D9B',
+		2:'#2064CA',
+		1:'#267AF9'
+	}
 	function compareByScore(a, b) {
 		// 비교를 위해 프로퍼티 값을 가져와서 비교
 		return b.HealthyScore - a.HealthyScore;
@@ -121,7 +129,7 @@
 								changeName(data.chain);
 							}}
 						>
-						<div style="width:30%;color:#267AF9;">{index+1}</div>
+						<div style="display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;color:white;background-color:{levelColor[data.level]}">{index+1}</div>
 							<div style="width:30%;"><img src={data.tokenImg} style="width:20px;" /></div>
 							<div style="width:40%;text-align:start;">{data.chain}</div>
 						</div>
