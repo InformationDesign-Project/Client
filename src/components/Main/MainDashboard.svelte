@@ -101,7 +101,7 @@
 				<!-- Validator Info -->
 				<div class="validators-info">
 					<!-- Validator Count By Level -->
-					{#each Object.entries(validatorsCount) as [level, count]}
+					{#each Object.entries(validatorsCount).reverse() as [level, count]}
 						<div class="validators-info-item">
 							<div class="validators-info-label">Level {level.slice(-1)}</div>
 							<div class="validators-info-number">{count}</div>
@@ -276,7 +276,7 @@
 	.heatmap {
 		display: flex;
 		width: 65%;
-		height:400px;
+		height: 400px;
 		overflow: scroll;
 		ms-overflow-style: none;
 		scrollbar-width: none;

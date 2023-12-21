@@ -4,13 +4,13 @@
 	export let chainData;
 	export let changeName;
 
-	const levelColor={
-		5:'#0F1F3F',
-		4:'#14366E',
-		3:'#1B4D9B',
-		2:'#2064CA',
-		1:'#267AF9'
-	}
+	const levelColor = {
+		5: '#0F1F3F',
+		4: '#14366E',
+		3: '#1B4D9B',
+		2: '#2064CA',
+		1: '#267AF9'
+	};
 	function compareByScore(a, b) {
 		// 비교를 위해 프로퍼티 값을 가져와서 비교
 		return b.HealthyScore - a.HealthyScore;
@@ -120,7 +120,7 @@
 					</div>
 				</div>
 			</div>
-			{#each chainData as data,index}
+			{#each chainData as data, index}
 				<div>
 					<div class="tableContent">
 						<div
@@ -129,12 +129,20 @@
 								changeName(data.chain);
 							}}
 						>
-						<div style="display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;color:{levelColor[data.level]}">{index+1}</div>
+							<div
+								style="display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;color:{levelColor[
+									data.level
+								]}"
+							>
+								{index + 1}
+							</div>
 							<div style="width:30%;"><img src={data.tokenImg} style="width:20px;" /></div>
 							<div style="width:40%;text-align:start;">{data.chain}</div>
 						</div>
 						<div class="chainInfo">{data.level}</div>
-						<div class="chainInfo" style="color:{levelColor[data.level]};">{data.HealthyScore.toFixed(2)}</div>
+						<div class="chainInfo" style="color:{levelColor[data.level]};">
+							{data.HealthyScore.toFixed(2)}
+						</div>
 						<div class="chainInfo">{data.Decentralization.toFixed(2)}</div>
 						<div class="chainInfo">{data.average_totalScore.toFixed(2)}</div>
 						<div class="chainInfo">{data.average_participation.toFixed(2)}</div>

@@ -67,7 +67,6 @@
 	let showVotes;
 	onMount(async () => {
 		await loadData(chainName);
-
 	});
 
 	async function loadData(selectedChain) {
