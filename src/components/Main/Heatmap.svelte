@@ -45,13 +45,13 @@
 					.style('top', `${event.pageY - 28}px`);
 
 				d3.select(event.currentTarget) // 현재 마우스 오버된 요소에 접근
-					.style('stroke', 'white') // 테두리 색상을 흰색으로 설정
-					.style('stroke-width', '1'); // 테두리 너비를 2px로 설정
+					.style('stroke', 'white') 
+					.style('stroke-width', '1'); 
 			})
 			.on('mouseout', (event) => {
 				tooltip.style('display', 'none');
-				d3.select(event.currentTarget) // 현재 마우스가 벗어난 요소에 접근
-					.style('stroke', 'none'); // 테두리를 제거하거나 원래 스타일로 되돌립니다
+				d3.select(event.currentTarget) 
+					.style('stroke', 'none'); 
 			});
 	}
 
@@ -63,7 +63,6 @@
 <svg id="heatmap"></svg>
 <div class="tooltip"></div>
 
-<!-- 툴팁 요소 추가 -->
 
 <style>
 	.tooltip {

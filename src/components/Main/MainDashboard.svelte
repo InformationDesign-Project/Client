@@ -100,7 +100,12 @@
 				<DropdownMenu on:sort={handleSortEvent} />
 				<!-- Validator Info -->
 				<div class="validators-info">
-					<!-- Validator Count By Level -->
+					<div class="validators-info-item">
+						{#if filteredChain}
+							<div class="validators-info-label">Total Validators</div>
+							<div class="validators-info-number">{Math.round(filteredChain.validators.total)}</div>
+						{/if}
+					</div>
 					{#each Object.entries(validatorsCount).reverse() as [level, count]}
 						<div class="validators-info-item">
 							<div class="validators-info-label">Level {level.slice(-1)}</div>
@@ -312,9 +317,9 @@
 		font-weight: bold;
 		color: #ffffff;
 	}
-	.validators-info-item:first-child .validators-info-number {
-		color: #267af9;
-	}
+	.validators-info-item:nth-child(2) .validators-info-number {
+    color: #267af9;
+}
 
 	.right-section {
 		display: flex;
