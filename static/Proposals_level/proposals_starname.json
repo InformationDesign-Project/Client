@@ -1,0 +1,3499 @@
+{
+    "data": [
+        {
+            "detail": {
+                "id": "18",
+                "tx_hash": "57D469D800213D48ADE3CE4256A11C7F10B16938F1299EEEA0DE454F2A296CCE",
+                "proposer": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                "title": "IBC Client Substitute",
+                "description": "Due to an unforeseen relayer issue that resulted in the subject client exceeding the trusting period, the IBC client 07-tendermint-55 used by channel-19 for IOV transfers from Starname to IRIShub is currently in an expired state. If accepted, this proposal will update client 07-tendermint-55 with the data from 07-tendermint-58 which is created newly, so that users may continue to take advantage of both the established channel.",
+                "proposal_type": "ClientUpdate",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2023-02-21T03:30:49.869Z",
+                "voting_start_time": "2023-02-21T03:30:49.869Z",
+                "voting_end_time": "2023-02-25T03:30:49.869Z",
+                "deposit_end_time": "2023-02-23T03:30:49.869Z",
+                "notification_status": "VotingNotified",
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/ibc.core.client.v1.ClientUpdateProposal",
+                        "title": "IBC Client Substitute",
+                        "description": "Due to an unforeseen relayer issue that resulted in the subject client exceeding the trusting period, the IBC client 07-tendermint-55 used by channel-19 for IOV transfers from Starname to IRIShub is currently in an expired state. If accepted, this proposal will update client 07-tendermint-55 with the data from 07-tendermint-58 which is created newly, so that users may continue to take advantage of both the established channel.",
+                        "subject_client_id": "07-tendermint-55",
+                        "substitute_client_id": "07-tendermint-58"
+                    }
+                ],
+                "moniker": "IRISnet",
+                "initial_deposit": {
+                    "denom": "uiov",
+                    "amount": "1000000000"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uiov",
+                        "amount": "1000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "301",
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": "4",
+                    "weighted": "0",
+                    "yes_amount": "49911906426489",
+                    "no_amount": "0",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "2969071692"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "star1yz88gx2pkqqfrnwslleve43uq0r95al5dhgnpf",
+                    "tx_hash": "9AE0E7D891E671BC39A7CE96B02833E4C802866D64F56F4C63E70BEDC362FC85",
+                    "timestamp": "2023-02-22T14:55:19.952Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 13192899,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1yz88gx2pkqqfrnwslleve43uq0r95al5guvrdq",
+                    "level": 2
+                },
+                {
+                    "voter": "star1vlqztrl5pwnw8v8vd2ejwge86y5zrguamgzw2m",
+                    "tx_hash": "E6906C8F4CD534BD67822C41CD14639E7010E67F0F4090AC922E328CF3706D94",
+                    "timestamp": "2023-02-24T02:51:09.744Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 13214382,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1vlqztrl5pwnw8v8vd2ejwge86y5zrgua7rx7xj",
+                    "level": 3
+                },
+                {
+                    "voter": "star180s323zw79duje02tqwt0pzz7tmtf5t3n7gqdr",
+                    "tx_hash": "F5226A50CF5356412CBE327AC3EB6AA5B7136EC850DE417D77CF2D41E172F30A",
+                    "timestamp": "2023-02-23T03:15:07.989Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 13200271,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper180s323zw79duje02tqwt0pzz7tmtf5t3k4vsp2",
+                    "level": 3
+                },
+                {
+                    "voter": "star1mw08m28g2gt62py9yufdwduz52al0wn3vs8ckt",
+                    "tx_hash": "0B955A08593D76EE8D394DCDE856120030B5DEB19C80AE7436FA30907E4915E8",
+                    "timestamp": "2023-02-22T19:26:11.122Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 13195597,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1mw08m28g2gt62py9yufdwduz52al0wn3fmrg6z",
+                    "level": 2
+                },
+                {
+                    "voter": "star1htdspw9ta77dy25at076ea8xfff5z99kjg3ap3",
+                    "tx_hash": "B6DFB8FB7FCD8D7545C04B05BA2D80254C3F49236EF1EDAC400580583F5B1127",
+                    "timestamp": "2023-02-21T22:36:50.280Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 13183150,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1htdspw9ta77dy25at076ea8xfff5z99khr4ddc",
+                    "level": 1
+                },
+                {
+                    "voter": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                    "tx_hash": "EFCF7A3754CA93FB0C3058EE26C0C98381E6DC1A5CA00243678555E4E8F4F419",
+                    "timestamp": "2023-02-23T05:42:58.911Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 13201745,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper17syw5hyjapftg3hslelqsqtch0jwgxzhuk7pvn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1euslp8c2qadgs6jy6klwv6f332mj426qhj7uu6",
+                    "tx_hash": "BD95E002EF822D09D20AC16FF1E62CF4F0E700A6C807508B9C1DA144F43ADC44",
+                    "timestamp": "2023-02-24T18:51:44.180Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 13223952,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1euslp8c2qadgs6jy6klwv6f332mj426qje6vsn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1y0w5qhdf6aj90u7knykdetqus4nc2axgng0hq6",
+                    "tx_hash": "98D0E9A638FB415E8ABFBC050F6E11AEB4511E08BEA6868CBBB5BE72541AFE65",
+                    "timestamp": "2023-02-23T08:42:01.512Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 13203529,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1y0w5qhdf6aj90u7knykdetqus4nc2axgkrt8vn",
+                    "level": 2
+                },
+                {
+                    "voter": "star1zs66yh6daua3tjsanq7pqjffryrn65std6efjc",
+                    "tx_hash": "8884EA43A50E1B716FEBFDC7ABBF6C0331124B0453FBA3415084DEA1D7F297FB",
+                    "timestamp": "2023-02-22T11:07:38.831Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 13190628,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1zs66yh6daua3tjsanq7pqjffryrn65stg3ae73",
+                    "level": 3
+                },
+                {
+                    "voter": "star1c8p90su0tdz67xdhx5470lzvs2lw8twqtwklqq",
+                    "tx_hash": "79C6BCCC830C7639B0C6E84F2A11203EE92A7B63F72C270E0A06A7929FB390B6",
+                    "timestamp": "2023-02-21T03:58:42.410Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 13172007,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1c8p90su0tdz67xdhx5470lzvs2lw8twqw9j0vf",
+                    "level": 2
+                },
+                {
+                    "voter": "star18pk70ynegvzqy7hw74uqq9xs9jz5s5a679cp33",
+                    "tx_hash": "AC6EDF24A86AFD52D1F439B5761B08966C4791DB09C1C7AEA08B8156C3D57593",
+                    "timestamp": "2023-02-25T01:42:25.992Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 13228047,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper18pk70ynegvzqy7hw74uqq9xs9jz5s5a6mwu3ac",
+                    "level": 2
+                },
+                {
+                    "voter": "star1symf474wnypes2d3mecllqk6l26rwz8mdu6380",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1symf474wnypes2d3mecllqk6l26rwz8mgh7ptx",
+                    "level": 1
+                },
+                {
+                    "voter": "star1pdqlmncych8uzsfdnsptv7s0wpazc0rgf4xgk7",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h",
+                    "level": 2
+                },
+                {
+                    "voter": "star1734yczdw25efy0q604ydu2prfwt89mnadyvyq2",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1734yczdw25efy0q604ydu2prfwt89mnag0g5vr",
+                    "level": 2
+                },
+                {
+                    "voter": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper10nzzug4p95qtzy2rat79uvq6zrt3jk9emsjqpl",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "17",
+                "tx_hash": "8CAAC9B96B12A00F69753917E7AC77F9C7F5BD7260377BEE4A935A5C91D724C0",
+                "proposer": "star1qw953jeja8fzs7szug7mu5j75alt3axk4wst2w",
+                "title": "Starname 11: Chain Major Upgrade",
+                "description": "Starname v0.11.6 : Production release\n\nThis version contains significant changes from all previous versions.\n\n- Rebase from wasmd project\n- Update to cosmos v0.45.9\n- Update the IBC v3\n- Starname modules: \n  - Add the escrow module\n  - Add the burner module\n\n**Full Changelog**: https://github.com/iov-one/starnamed/compare/v0.29.2...v0.11.6",
+                "proposal_type": "SoftwareUpgrade",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2022-12-10T11:02:06.870Z",
+                "voting_start_time": "2022-12-10T11:12:59.876Z",
+                "voting_end_time": "2022-12-14T11:12:59.876Z",
+                "deposit_end_time": "2022-12-12T11:02:06.870Z",
+                "notification_status": "VotingNotified",
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.upgrade.v1beta1.SoftwareUpgradeProposal",
+                        "title": "Starname 11: Chain Major Upgrade",
+                        "description": "Starname v0.11.6 : Production release\n\nThis version contains significant changes from all previous versions.\n\n- Rebase from wasmd project\n- Update to cosmos v0.45.9\n- Update the IBC v3\n- Starname modules: \n  - Add the escrow module\n  - Add the burner module\n\n**Full Changelog**: https://github.com/iov-one/starnamed/compare/v0.29.2...v0.11.6",
+                        "plan": {
+                            "name": "starname-version-11",
+                            "time": "2022-12-15T12:00:00Z",
+                            "height": "0",
+                            "info": "https://github.com/iov-one/starnamed/blob/v0.11.6/upgrades/v011/v011_binaries.json",
+                            "upgraded_client_state": null
+                        }
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": null,
+                    "amount": null
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uiov",
+                        "amount": "4000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "226",
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": "1",
+                    "weighted": "0",
+                    "yes_amount": "53638329157516",
+                    "no_amount": "0",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "40000000"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "star1yz88gx2pkqqfrnwslleve43uq0r95al5dhgnpf",
+                    "tx_hash": "1086AC8031F6E9168C0C71E81E6D8C473BAF0D38772086454B67A71519002061",
+                    "timestamp": "2022-12-10T21:39:08.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 12111075,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1yz88gx2pkqqfrnwslleve43uq0r95al5guvrdq",
+                    "level": 2
+                },
+                {
+                    "voter": "star1vlqztrl5pwnw8v8vd2ejwge86y5zrguamgzw2m",
+                    "tx_hash": "93688A1A436EF1D42B023A09A248617515BD02B105C6852D3703370178DFCA08",
+                    "timestamp": "2022-12-13T04:23:11.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 12145441,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1vlqztrl5pwnw8v8vd2ejwge86y5zrgua7rx7xj",
+                    "level": 3
+                },
+                {
+                    "voter": "star180s323zw79duje02tqwt0pzz7tmtf5t3n7gqdr",
+                    "tx_hash": "1713BA402050CE80210F961BEE40E09389F5DEABC161445FC6E23E1901AE43E1",
+                    "timestamp": "2022-12-10T13:59:33.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 12106262,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper180s323zw79duje02tqwt0pzz7tmtf5t3k4vsp2",
+                    "level": 3
+                },
+                {
+                    "voter": "star1mw08m28g2gt62py9yufdwduz52al0wn3vs8ckt",
+                    "tx_hash": "C22B8E16853FF942714F07C924EFE0BC646760FD930EFB7985B2FB73E7F1EC09",
+                    "timestamp": "2022-12-11T22:39:28.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 12126776,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1mw08m28g2gt62py9yufdwduz52al0wn3fmrg6z",
+                    "level": 2
+                },
+                {
+                    "voter": "star1htdspw9ta77dy25at076ea8xfff5z99kjg3ap3",
+                    "tx_hash": "EB2FF212E59EA766816CBFAE20C37FBCDCFE3712CD47753CEECD91661A2551F8",
+                    "timestamp": "2022-12-11T21:35:53.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 12126111,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1htdspw9ta77dy25at076ea8xfff5z99khr4ddc",
+                    "level": 1
+                },
+                {
+                    "voter": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                    "tx_hash": "7E33301DBCD7046291682FC2FB68EAD68595268DC15E4C880428A4676063EEC0",
+                    "timestamp": "2022-12-11T14:23:30.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 12121587,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper17syw5hyjapftg3hslelqsqtch0jwgxzhuk7pvn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1euslp8c2qadgs6jy6klwv6f332mj426qhj7uu6",
+                    "tx_hash": "AE19173D6F8E4E0FA517870130A3013B7320FCEE16288FD596A06F5E41FD69BA",
+                    "timestamp": "2022-12-11T21:35:08.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 12126103,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1euslp8c2qadgs6jy6klwv6f332mj426qje6vsn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1y0w5qhdf6aj90u7knykdetqus4nc2axgng0hq6",
+                    "tx_hash": "E11343C0A9CB0DFF2552F8D0D48401A4F0B36FFA7F346E153473917369F10C4B",
+                    "timestamp": "2022-12-13T12:12:25.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 12150350,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1y0w5qhdf6aj90u7knykdetqus4nc2axgkrt8vn",
+                    "level": 2
+                },
+                {
+                    "voter": "star1zs66yh6daua3tjsanq7pqjffryrn65std6efjc",
+                    "tx_hash": "4F37A048D9531C2FB16A738874A61472BC438A038DF8F7B3F763F900642EBE63",
+                    "timestamp": "2022-12-12T09:23:36.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 12133516,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1zs66yh6daua3tjsanq7pqjffryrn65stg3ae73",
+                    "level": 3
+                },
+                {
+                    "voter": "star1c8p90su0tdz67xdhx5470lzvs2lw8twqtwklqq",
+                    "tx_hash": "5CF2C66DD6A9798CA8A072B76C5F22E9EEA745954B3BDD73FC27606751B2E3BF",
+                    "timestamp": "2022-12-12T09:47:51.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 12133770,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1c8p90su0tdz67xdhx5470lzvs2lw8twqw9j0vf",
+                    "level": 2
+                },
+                {
+                    "voter": "star18pk70ynegvzqy7hw74uqq9xs9jz5s5a679cp33",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper18pk70ynegvzqy7hw74uqq9xs9jz5s5a6mwu3ac",
+                    "level": 2
+                },
+                {
+                    "voter": "star1symf474wnypes2d3mecllqk6l26rwz8mdu6380",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1symf474wnypes2d3mecllqk6l26rwz8mgh7ptx",
+                    "level": 1
+                },
+                {
+                    "voter": "star1pdqlmncych8uzsfdnsptv7s0wpazc0rgf4xgk7",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h",
+                    "level": 2
+                },
+                {
+                    "voter": "star1734yczdw25efy0q604ydu2prfwt89mnadyvyq2",
+                    "tx_hash": "B48E9984D4EF4755C7B27AA9BC3AFBABF4730D19033E801AE0FE1B5958A251E4",
+                    "timestamp": "2022-12-10T18:22:00.000Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 12109010,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1734yczdw25efy0q604ydu2prfwt89mnag0g5vr",
+                    "level": 2
+                },
+                {
+                    "voter": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper10nzzug4p95qtzy2rat79uvq6zrt3jk9emsjqpl",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "16",
+                "tx_hash": "172D5A68FEC407349E2261B22CD20557055D56792EF7A84DAFC04AB58AE6902C",
+                "proposer": "star1qw953jeja8fzs7szug7mu5j75alt3axk4wst2w",
+                "title": "Chain Upgrade: Starname 11",
+                "description": "Starname v0.11.6 : Production release\n\nThis version contains significant changes from all previous versions.\n\n- Rebase from wasmd project\n- Update to cosmos v0.45.9\n- Update the IBC v3\n- Starname modules: \n  - Add the escrow module\n  - Add the burner module\n\n**Full Changelog**: https://github.com/iov-one/starnamed/compare/v0.29.2...v0.11.6",
+                "proposal_type": "SoftwareUpgrade",
+                "proposal_status": "PROPOSAL_STATUS_REJECTED",
+                "submit_time": "2022-12-10T10:36:20.380Z",
+                "voting_start_time": "2022-12-10T10:41:12.101Z",
+                "voting_end_time": "2022-12-14T10:41:12.101Z",
+                "deposit_end_time": "2022-12-12T10:36:20.380Z",
+                "notification_status": "VotingNotified",
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.upgrade.v1beta1.SoftwareUpgradeProposal",
+                        "title": "Chain Upgrade: Starname 11",
+                        "description": "Starname v0.11.6 : Production release\n\nThis version contains significant changes from all previous versions.\n\n- Rebase from wasmd project\n- Update to cosmos v0.45.9\n- Update the IBC v3\n- Starname modules: \n  - Add the escrow module\n  - Add the burner module\n\n**Full Changelog**: https://github.com/iov-one/starnamed/compare/v0.29.2...v0.11.6",
+                        "plan": {
+                            "name": "starname-version-11",
+                            "time": "2022-12-10T12:00:00Z",
+                            "height": "0",
+                            "info": "https://github.com/iov-one/starnamed/blob/v0.11.6/upgrades/v011/v011_binaries.json",
+                            "upgraded_client_state": null
+                        }
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": null,
+                    "amount": null
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uiov",
+                        "amount": "4000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "45",
+                    "no": "115",
+                    "no_with_veto": "7",
+                    "abstain": "19",
+                    "weighted": "0",
+                    "yes_amount": "1352215635215",
+                    "no_amount": "52004043538608",
+                    "no_with_veto_amount": "120048933529",
+                    "abstain_amount": "25240886376"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "star1yz88gx2pkqqfrnwslleve43uq0r95al5dhgnpf",
+                    "tx_hash": "66F26DD929EB6B2106859067CE7E9BD618139B00101BAFD06781064B15ED59D6",
+                    "timestamp": "2022-12-10T21:38:39.000Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 12111070,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper1yz88gx2pkqqfrnwslleve43uq0r95al5guvrdq",
+                    "level": 2
+                },
+                {
+                    "voter": "star1vlqztrl5pwnw8v8vd2ejwge86y5zrguamgzw2m",
+                    "tx_hash": "93688A1A436EF1D42B023A09A248617515BD02B105C6852D3703370178DFCA08",
+                    "timestamp": "2022-12-13T04:23:11.000Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 12145441,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper1vlqztrl5pwnw8v8vd2ejwge86y5zrgua7rx7xj",
+                    "level": 3
+                },
+                {
+                    "voter": "star180s323zw79duje02tqwt0pzz7tmtf5t3n7gqdr",
+                    "tx_hash": "B94C8D13EA47163094D38F508AC41E77DD802AA21006E2C30FECE56B9044518D",
+                    "timestamp": "2022-12-10T14:20:08.000Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 12106477,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper180s323zw79duje02tqwt0pzz7tmtf5t3k4vsp2",
+                    "level": 3
+                },
+                {
+                    "voter": "star1mw08m28g2gt62py9yufdwduz52al0wn3vs8ckt",
+                    "tx_hash": "250B7470BE04A83888E09DDEE79ECB4C75DC4BCBBCB60E42EA2D10C3AE7ADD3F",
+                    "timestamp": "2022-12-11T22:39:10.000Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 12126773,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper1mw08m28g2gt62py9yufdwduz52al0wn3fmrg6z",
+                    "level": 2
+                },
+                {
+                    "voter": "star1htdspw9ta77dy25at076ea8xfff5z99kjg3ap3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1htdspw9ta77dy25at076ea8xfff5z99khr4ddc",
+                    "level": 1
+                },
+                {
+                    "voter": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                    "tx_hash": "3F0BA4C747EB05F4DD3E2568B5B2C09B285F74C29DF107540F53C8AE73EB179B",
+                    "timestamp": "2022-12-11T14:22:44.000Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 12121579,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper17syw5hyjapftg3hslelqsqtch0jwgxzhuk7pvn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1euslp8c2qadgs6jy6klwv6f332mj426qhj7uu6",
+                    "tx_hash": "3AA5EFCF0272AC47060031F6006166E92E6E97512BBB318029A86FED447A8BD7",
+                    "timestamp": "2022-12-11T21:34:34.000Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 12126097,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper1euslp8c2qadgs6jy6klwv6f332mj426qje6vsn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1y0w5qhdf6aj90u7knykdetqus4nc2axgng0hq6",
+                    "tx_hash": "07203EF3DAF4108089A60BD2F203DE58BEE1C0B36323C44FC9435E52ACCFBDCE",
+                    "timestamp": "2022-12-13T12:11:45.000Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 12150343,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper1y0w5qhdf6aj90u7knykdetqus4nc2axgkrt8vn",
+                    "level": 2
+                },
+                {
+                    "voter": "star1zs66yh6daua3tjsanq7pqjffryrn65std6efjc",
+                    "tx_hash": "C8AAA42CD105455A42B02EDE30CAC8F7005DF529EDE3923284E215FF7F1F0ED7",
+                    "timestamp": "2022-12-12T09:22:56.000Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 12133509,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper1zs66yh6daua3tjsanq7pqjffryrn65stg3ae73",
+                    "level": 3
+                },
+                {
+                    "voter": "star1c8p90su0tdz67xdhx5470lzvs2lw8twqtwklqq",
+                    "tx_hash": "502C8FB2E902A6125435CAC7A3D8719A0B058EDADDB027BA3C69353C4BE60EEE",
+                    "timestamp": "2022-12-12T09:47:05.000Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 12133762,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper1c8p90su0tdz67xdhx5470lzvs2lw8twqw9j0vf",
+                    "level": 2
+                },
+                {
+                    "voter": "star18pk70ynegvzqy7hw74uqq9xs9jz5s5a679cp33",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper18pk70ynegvzqy7hw74uqq9xs9jz5s5a6mwu3ac",
+                    "level": 2
+                },
+                {
+                    "voter": "star1symf474wnypes2d3mecllqk6l26rwz8mdu6380",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1symf474wnypes2d3mecllqk6l26rwz8mgh7ptx",
+                    "level": 1
+                },
+                {
+                    "voter": "star1pdqlmncych8uzsfdnsptv7s0wpazc0rgf4xgk7",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h",
+                    "level": 2
+                },
+                {
+                    "voter": "star1734yczdw25efy0q604ydu2prfwt89mnadyvyq2",
+                    "tx_hash": "52848B44B554477926F22BD57B007259F7C580E502191E81A222BD0EDA61DFEC",
+                    "timestamp": "2022-12-10T18:22:23.000Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 12109014,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper1734yczdw25efy0q604ydu2prfwt89mnag0g5vr",
+                    "level": 2
+                },
+                {
+                    "voter": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper10nzzug4p95qtzy2rat79uvq6zrt3jk9emsjqpl",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "15",
+                "tx_hash": "7E4AFF60FF364A8D1C7DF90212A27E4DAE5B2E2C9484C2918180095AD122F08F",
+                "proposer": "star1kj4w756vypwpqwjdjsvnlmmuvfekhrq0gpv2z2",
+                "title": "Parameter changes for incress the number of validators",
+                "description": "We want to increase the number of spots for validating our chain from 16 to 19.\nThis is important for the network because it's good for its health and its continued growth.\n We always have had a great active set of validators and we believe that the quality of the cosmos validators network can easily complement our active set with 3 new spots.\n One of these spots will be taken by our own Starname.me validator ran under the Starname company.\n This is also the first validator of a series of validators that will contribute to other  protocols of the Cosmos ecosystems.",
+                "proposal_type": "ParameterChange",
+                "proposal_status": "PROPOSAL_STATUS_REJECTED",
+                "submit_time": "2022-06-09T10:15:55.828Z",
+                "voting_start_time": "2022-06-09T10:15:55.828Z",
+                "voting_end_time": "2022-06-13T10:15:55.828Z",
+                "deposit_end_time": "2022-06-11T10:15:55.828Z",
+                "notification_status": "VotingNotified",
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.params.v1beta1.ParameterChangeProposal",
+                        "title": "Parameter changes for incress the number of validators",
+                        "description": "We want to increase the number of spots for validating our chain from 16 to 19.\nThis is important for the network because it's good for its health and its continued growth.\n We always have had a great active set of validators and we believe that the quality of the cosmos validators network can easily complement our active set with 3 new spots.\n One of these spots will be taken by our own Starname.me validator ran under the Starname company.\n This is also the first validator of a series of validators that will contribute to other  protocols of the Cosmos ecosystems.",
+                        "changes": [
+                            {
+                                "subspace": "staking",
+                                "key": "MaxValidators",
+                                "value": "19"
+                            }
+                        ]
+                    }
+                ],
+                "moniker": "Starname.me Validator",
+                "initial_deposit": {
+                    "denom": "uiov",
+                    "amount": "1000000000"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uiov",
+                        "amount": "1000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "316",
+                    "no": "18",
+                    "no_with_veto": "2",
+                    "abstain": "18",
+                    "weighted": "0",
+                    "yes_amount": "10771913882143",
+                    "no_amount": "1001506623658",
+                    "no_with_veto_amount": "3848738057",
+                    "abstain_amount": "4670669999412"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "star1yz88gx2pkqqfrnwslleve43uq0r95al5dhgnpf",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1yz88gx2pkqqfrnwslleve43uq0r95al5guvrdq",
+                    "level": 2
+                },
+                {
+                    "voter": "star1vlqztrl5pwnw8v8vd2ejwge86y5zrguamgzw2m",
+                    "tx_hash": "1FE606094F21F387CC7A9698DB788C0ABA56A6142379F4F3B732C050C12851C9",
+                    "timestamp": "2022-06-10T07:26:39.869Z",
+                    "option": "VOTE_OPTION_ABSTAIN",
+                    "tx_height": 9360364,
+                    "answer": "abstain",
+                    "validatorAddress": "starvaloper1vlqztrl5pwnw8v8vd2ejwge86y5zrgua7rx7xj",
+                    "level": 3
+                },
+                {
+                    "voter": "star180s323zw79duje02tqwt0pzz7tmtf5t3n7gqdr",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper180s323zw79duje02tqwt0pzz7tmtf5t3k4vsp2",
+                    "level": 3
+                },
+                {
+                    "voter": "star1mw08m28g2gt62py9yufdwduz52al0wn3vs8ckt",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1mw08m28g2gt62py9yufdwduz52al0wn3fmrg6z",
+                    "level": 2
+                },
+                {
+                    "voter": "star1htdspw9ta77dy25at076ea8xfff5z99kjg3ap3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1htdspw9ta77dy25at076ea8xfff5z99khr4ddc",
+                    "level": 1
+                },
+                {
+                    "voter": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                    "tx_hash": "ACD9E2582403A10CD205A124BAAD5DFDCFECAFBC660C35D2962C0A958823FD67",
+                    "timestamp": "2022-06-10T11:08:29.345Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9362676,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper17syw5hyjapftg3hslelqsqtch0jwgxzhuk7pvn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1euslp8c2qadgs6jy6klwv6f332mj426qhj7uu6",
+                    "tx_hash": "0096E7388D793D32FAE7999E69CC09C4F50695B27319CFD18928560DD6F8D945",
+                    "timestamp": "2022-06-09T22:24:31.203Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9354712,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1euslp8c2qadgs6jy6klwv6f332mj426qje6vsn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1y0w5qhdf6aj90u7knykdetqus4nc2axgng0hq6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1y0w5qhdf6aj90u7knykdetqus4nc2axgkrt8vn",
+                    "level": 2
+                },
+                {
+                    "voter": "star1zs66yh6daua3tjsanq7pqjffryrn65std6efjc",
+                    "tx_hash": "58580BC343BFC421F84084B473F84C712689288D4CE6ED14349877A4644B6802",
+                    "timestamp": "2022-06-09T10:59:06.214Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 9347572,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper1zs66yh6daua3tjsanq7pqjffryrn65stg3ae73",
+                    "level": 3
+                },
+                {
+                    "voter": "star1c8p90su0tdz67xdhx5470lzvs2lw8twqtwklqq",
+                    "tx_hash": "735F910CC001FFF7FF864B149EC07440C608E6734827C12F1BEBBE00A187DFE4",
+                    "timestamp": "2022-06-10T12:20:25.829Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9363426,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1c8p90su0tdz67xdhx5470lzvs2lw8twqw9j0vf",
+                    "level": 2
+                },
+                {
+                    "voter": "star18pk70ynegvzqy7hw74uqq9xs9jz5s5a679cp33",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper18pk70ynegvzqy7hw74uqq9xs9jz5s5a6mwu3ac",
+                    "level": 2
+                },
+                {
+                    "voter": "star1symf474wnypes2d3mecllqk6l26rwz8mdu6380",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1symf474wnypes2d3mecllqk6l26rwz8mgh7ptx",
+                    "level": 1
+                },
+                {
+                    "voter": "star1pdqlmncych8uzsfdnsptv7s0wpazc0rgf4xgk7",
+                    "tx_hash": "E7FEE728E8FD3DCC1900EDC75B9D80582C933B310509074A962578C596F049AE",
+                    "timestamp": "2022-06-10T01:04:32.062Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 9356380,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h",
+                    "level": 2
+                },
+                {
+                    "voter": "star1734yczdw25efy0q604ydu2prfwt89mnadyvyq2",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1734yczdw25efy0q604ydu2prfwt89mnag0g5vr",
+                    "level": 2
+                },
+                {
+                    "voter": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper10nzzug4p95qtzy2rat79uvq6zrt3jk9emsjqpl",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "14",
+                "tx_hash": "6ECFFF3B30EEF53180E37589BD568059AEB239C7DACC326483C39B8A527EE416",
+                "proposer": "star10n2j62h558xzm9mgae8q3p3lweznp55nywjzwn",
+                "title": "Community pool allocation for Creator\u00b4s Economy",
+                "description": "Full description here: https://medium.com/iov-internet-of-values",
+                "proposal_type": "CommunityPoolSpend",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2021-12-21T12:38:14.215Z",
+                "voting_start_time": "2021-12-21T12:38:14.215Z",
+                "voting_end_time": "2021-12-25T12:38:14.215Z",
+                "deposit_end_time": "2021-12-23T12:38:14.215Z",
+                "notification_status": "VotingNotified",
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.distribution.v1beta1.CommunityPoolSpendProposal",
+                        "title": "Community pool allocation for Creator\u00b4s Economy",
+                        "description": "Full description here: https://medium.com/iov-internet-of-values",
+                        "recipient": "star13ngm4xynfdvk0qsx6pcleca8uu8vfll4kz93kt",
+                        "amount": [
+                            {
+                                "denom": "uiov",
+                                "amount": "6000000000000"
+                            }
+                        ]
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": "uiov",
+                    "amount": "1000000000"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uiov",
+                        "amount": "1000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "157",
+                    "no": "8",
+                    "no_with_veto": 0,
+                    "abstain": "12",
+                    "weighted": "0",
+                    "yes_amount": "25586676139613",
+                    "no_amount": "8388921155537",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "8030648443"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "star1yz88gx2pkqqfrnwslleve43uq0r95al5dhgnpf",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1yz88gx2pkqqfrnwslleve43uq0r95al5guvrdq",
+                    "level": 2
+                },
+                {
+                    "voter": "star1vlqztrl5pwnw8v8vd2ejwge86y5zrguamgzw2m",
+                    "tx_hash": "25010777950C18D95DE1A7BBA43A0BDE8F48F30DB9EE05E91869A9420092CE25",
+                    "timestamp": "2021-12-23T09:26:07.772Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6840578,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1vlqztrl5pwnw8v8vd2ejwge86y5zrgua7rx7xj",
+                    "level": 3
+                },
+                {
+                    "voter": "star180s323zw79duje02tqwt0pzz7tmtf5t3n7gqdr",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper180s323zw79duje02tqwt0pzz7tmtf5t3k4vsp2",
+                    "level": 3
+                },
+                {
+                    "voter": "star1mw08m28g2gt62py9yufdwduz52al0wn3vs8ckt",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1mw08m28g2gt62py9yufdwduz52al0wn3fmrg6z",
+                    "level": 2
+                },
+                {
+                    "voter": "star1htdspw9ta77dy25at076ea8xfff5z99kjg3ap3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1htdspw9ta77dy25at076ea8xfff5z99khr4ddc",
+                    "level": 1
+                },
+                {
+                    "voter": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper17syw5hyjapftg3hslelqsqtch0jwgxzhuk7pvn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1euslp8c2qadgs6jy6klwv6f332mj426qhj7uu6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1euslp8c2qadgs6jy6klwv6f332mj426qje6vsn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1y0w5qhdf6aj90u7knykdetqus4nc2axgng0hq6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1y0w5qhdf6aj90u7knykdetqus4nc2axgkrt8vn",
+                    "level": 2
+                },
+                {
+                    "voter": "star1zs66yh6daua3tjsanq7pqjffryrn65std6efjc",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1zs66yh6daua3tjsanq7pqjffryrn65stg3ae73",
+                    "level": 3
+                },
+                {
+                    "voter": "star1c8p90su0tdz67xdhx5470lzvs2lw8twqtwklqq",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1c8p90su0tdz67xdhx5470lzvs2lw8twqw9j0vf",
+                    "level": 2
+                },
+                {
+                    "voter": "star18pk70ynegvzqy7hw74uqq9xs9jz5s5a679cp33",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper18pk70ynegvzqy7hw74uqq9xs9jz5s5a6mwu3ac",
+                    "level": 2
+                },
+                {
+                    "voter": "star1symf474wnypes2d3mecllqk6l26rwz8mdu6380",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1symf474wnypes2d3mecllqk6l26rwz8mgh7ptx",
+                    "level": 1
+                },
+                {
+                    "voter": "star1pdqlmncych8uzsfdnsptv7s0wpazc0rgf4xgk7",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h",
+                    "level": 2
+                },
+                {
+                    "voter": "star1734yczdw25efy0q604ydu2prfwt89mnadyvyq2",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1734yczdw25efy0q604ydu2prfwt89mnag0g5vr",
+                    "level": 2
+                },
+                {
+                    "voter": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper10nzzug4p95qtzy2rat79uvq6zrt3jk9emsjqpl",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "13",
+                "tx_hash": "F92B34E2E81AAFF0DD366720A191BD48DED84FD6AF559EF247F83B0B4DA517BA",
+                "proposer": "star10n2j62h558xzm9mgae8q3p3lweznp55nywjzwn",
+                "title": "Change inflation to 9%",
+                "description": "Full description here: https://medium.com/iov-internet-of-values",
+                "proposal_type": "ParameterChange",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2021-12-21T12:12:26.423Z",
+                "voting_start_time": "2021-12-21T12:12:26.423Z",
+                "voting_end_time": "2021-12-25T12:12:26.423Z",
+                "deposit_end_time": "2021-12-23T12:12:26.423Z",
+                "notification_status": "VotingNotified",
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.params.v1beta1.ParameterChangeProposal",
+                        "title": "Change inflation to 9%",
+                        "description": "Full description here: https://medium.com/iov-internet-of-values",
+                        "changes": [
+                            {
+                                "subspace": "mint",
+                                "key": "InflationMax",
+                                "value": "\"0.090000000000000000\""
+                            },
+                            {
+                                "subspace": "mint",
+                                "key": "InflationMin",
+                                "value": "\"0.090000000000000000\""
+                            }
+                        ]
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": "uiov",
+                    "amount": "1000000000"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uiov",
+                        "amount": "1000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "136",
+                    "no": "14",
+                    "no_with_veto": 0,
+                    "abstain": "4",
+                    "weighted": "0",
+                    "yes_amount": "25634632494261",
+                    "no_amount": "8381687255537",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "981245522"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "star1yz88gx2pkqqfrnwslleve43uq0r95al5dhgnpf",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1yz88gx2pkqqfrnwslleve43uq0r95al5guvrdq",
+                    "level": 2
+                },
+                {
+                    "voter": "star1vlqztrl5pwnw8v8vd2ejwge86y5zrguamgzw2m",
+                    "tx_hash": "BC524CB666320578DFB4F6CD99CF3240C26D067D149971AE4B38B20CB5B4DE55",
+                    "timestamp": "2021-12-23T09:25:31.962Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 6840572,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1vlqztrl5pwnw8v8vd2ejwge86y5zrgua7rx7xj",
+                    "level": 3
+                },
+                {
+                    "voter": "star180s323zw79duje02tqwt0pzz7tmtf5t3n7gqdr",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper180s323zw79duje02tqwt0pzz7tmtf5t3k4vsp2",
+                    "level": 3
+                },
+                {
+                    "voter": "star1mw08m28g2gt62py9yufdwduz52al0wn3vs8ckt",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1mw08m28g2gt62py9yufdwduz52al0wn3fmrg6z",
+                    "level": 2
+                },
+                {
+                    "voter": "star1htdspw9ta77dy25at076ea8xfff5z99kjg3ap3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1htdspw9ta77dy25at076ea8xfff5z99khr4ddc",
+                    "level": 1
+                },
+                {
+                    "voter": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper17syw5hyjapftg3hslelqsqtch0jwgxzhuk7pvn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1euslp8c2qadgs6jy6klwv6f332mj426qhj7uu6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1euslp8c2qadgs6jy6klwv6f332mj426qje6vsn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1y0w5qhdf6aj90u7knykdetqus4nc2axgng0hq6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1y0w5qhdf6aj90u7knykdetqus4nc2axgkrt8vn",
+                    "level": 2
+                },
+                {
+                    "voter": "star1zs66yh6daua3tjsanq7pqjffryrn65std6efjc",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1zs66yh6daua3tjsanq7pqjffryrn65stg3ae73",
+                    "level": 3
+                },
+                {
+                    "voter": "star1c8p90su0tdz67xdhx5470lzvs2lw8twqtwklqq",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1c8p90su0tdz67xdhx5470lzvs2lw8twqw9j0vf",
+                    "level": 2
+                },
+                {
+                    "voter": "star18pk70ynegvzqy7hw74uqq9xs9jz5s5a679cp33",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper18pk70ynegvzqy7hw74uqq9xs9jz5s5a6mwu3ac",
+                    "level": 2
+                },
+                {
+                    "voter": "star1symf474wnypes2d3mecllqk6l26rwz8mdu6380",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1symf474wnypes2d3mecllqk6l26rwz8mgh7ptx",
+                    "level": 1
+                },
+                {
+                    "voter": "star1pdqlmncych8uzsfdnsptv7s0wpazc0rgf4xgk7",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h",
+                    "level": 2
+                },
+                {
+                    "voter": "star1734yczdw25efy0q604ydu2prfwt89mnadyvyq2",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1734yczdw25efy0q604ydu2prfwt89mnag0g5vr",
+                    "level": 2
+                },
+                {
+                    "voter": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper10nzzug4p95qtzy2rat79uvq6zrt3jk9emsjqpl",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "12",
+                "tx_hash": "FDE4B67C195E3451DE7213045EC445E49E320C4FFD09251AFEA6A346B3ED6D39",
+                "proposer": "star19cx56quwsd03s4xfzkx39je4ag9c5lcvnuhp09",
+                "title": "Increase MaxValidators value",
+                "description": "MaxValidators=16 to MaxValidators=22 / This proposal is a redo of the proposal #11 https://www.mintscan.io/starname/proposals/11 - as most of the validator didn't get time to vote on it. We added 2 more seats from the last proposal as we think we need to push more communication and onboard more validator to Starname. Starname is already connected to IBC and implemented in Emeris/Osmosis and deserve more visibility.",
+                "proposal_type": "ParameterChange",
+                "proposal_status": "PROPOSAL_STATUS_REJECTED",
+                "submit_time": "2021-09-18T13:50:01.424Z",
+                "voting_start_time": "2021-09-18T13:57:15.017Z",
+                "voting_end_time": "2021-09-22T13:57:15.017Z",
+                "deposit_end_time": "2021-09-20T13:50:01.424Z",
+                "notification_status": "VotingNotified",
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.params.v1beta1.ParameterChangeProposal",
+                        "title": "Increase MaxValidators value",
+                        "description": "MaxValidators=16 to MaxValidators=22 / This proposal is a redo of the proposal #11 https://www.mintscan.io/starname/proposals/11 - as most of the validator didn't get time to vote on it. We added 2 more seats from the last proposal as we think we need to push more communication and onboard more validator to Starname. Starname is already connected to IBC and implemented in Emeris/Osmosis and deserve more visibility.",
+                        "changes": [
+                            {
+                                "subspace": "staking",
+                                "key": "MaxValidators",
+                                "value": "22"
+                            }
+                        ]
+                    }
+                ],
+                "moniker": "StakeLab",
+                "initial_deposit": {
+                    "denom": "uiov",
+                    "amount": "250000000"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uiov",
+                        "amount": "1000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "101",
+                    "no": "7",
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "20203416106531",
+                    "no_amount": "25517153778703",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "0"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "star1yz88gx2pkqqfrnwslleve43uq0r95al5dhgnpf",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1yz88gx2pkqqfrnwslleve43uq0r95al5guvrdq",
+                    "level": 2
+                },
+                {
+                    "voter": "star1vlqztrl5pwnw8v8vd2ejwge86y5zrguamgzw2m",
+                    "tx_hash": "3E04B8E3C8F1D0984A9E4DBA0196EE7631F4145714086A552B34A3EF1DC30297",
+                    "timestamp": "2021-09-21T15:17:05.733Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5506874,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1vlqztrl5pwnw8v8vd2ejwge86y5zrgua7rx7xj",
+                    "level": 3
+                },
+                {
+                    "voter": "star180s323zw79duje02tqwt0pzz7tmtf5t3n7gqdr",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper180s323zw79duje02tqwt0pzz7tmtf5t3k4vsp2",
+                    "level": 3
+                },
+                {
+                    "voter": "star1mw08m28g2gt62py9yufdwduz52al0wn3vs8ckt",
+                    "tx_hash": "478FCC507AE25598460E2601426801CB7CB7C2BA5AF3E7995CF6468D6359035B",
+                    "timestamp": "2021-09-22T10:05:24.476Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 5518122,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper1mw08m28g2gt62py9yufdwduz52al0wn3fmrg6z",
+                    "level": 2
+                },
+                {
+                    "voter": "star1htdspw9ta77dy25at076ea8xfff5z99kjg3ap3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1htdspw9ta77dy25at076ea8xfff5z99khr4ddc",
+                    "level": 1
+                },
+                {
+                    "voter": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                    "tx_hash": "58F7BC11BB9EE6A79F4BDDF63FA7B154D63F442CDDECF8114B1833311A1FBF79",
+                    "timestamp": "2021-09-22T12:53:54.908Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5519799,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper17syw5hyjapftg3hslelqsqtch0jwgxzhuk7pvn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1euslp8c2qadgs6jy6klwv6f332mj426qhj7uu6",
+                    "tx_hash": "D7B59130E5B3156A18443E576EBC2B89560213E1D4DBA158C033436114B08524",
+                    "timestamp": "2021-09-22T09:24:09.302Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5517712,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1euslp8c2qadgs6jy6klwv6f332mj426qje6vsn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1y0w5qhdf6aj90u7knykdetqus4nc2axgng0hq6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1y0w5qhdf6aj90u7knykdetqus4nc2axgkrt8vn",
+                    "level": 2
+                },
+                {
+                    "voter": "star1zs66yh6daua3tjsanq7pqjffryrn65std6efjc",
+                    "tx_hash": "7509B4E801F1A32982D2A3992B85470AB76370029301222308FB33661E6F9367",
+                    "timestamp": "2021-09-22T13:44:18.491Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 5520292,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper1zs66yh6daua3tjsanq7pqjffryrn65stg3ae73",
+                    "level": 3
+                },
+                {
+                    "voter": "star1c8p90su0tdz67xdhx5470lzvs2lw8twqtwklqq",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1c8p90su0tdz67xdhx5470lzvs2lw8twqw9j0vf",
+                    "level": 2
+                },
+                {
+                    "voter": "star18pk70ynegvzqy7hw74uqq9xs9jz5s5a679cp33",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper18pk70ynegvzqy7hw74uqq9xs9jz5s5a6mwu3ac",
+                    "level": 2
+                },
+                {
+                    "voter": "star1symf474wnypes2d3mecllqk6l26rwz8mdu6380",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1symf474wnypes2d3mecllqk6l26rwz8mgh7ptx",
+                    "level": 1
+                },
+                {
+                    "voter": "star1pdqlmncych8uzsfdnsptv7s0wpazc0rgf4xgk7",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h",
+                    "level": 2
+                },
+                {
+                    "voter": "star1734yczdw25efy0q604ydu2prfwt89mnadyvyq2",
+                    "tx_hash": "5AF2909F8BF38BB9DB3A8B1EDAF21C6B9F1C17D893099EE22E49089AEB4133ED",
+                    "timestamp": "2021-09-20T21:26:00.300Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5496190,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1734yczdw25efy0q604ydu2prfwt89mnag0g5vr",
+                    "level": 2
+                },
+                {
+                    "voter": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                    "tx_hash": "982369F05D886B5A753526BD023143B922F741F9FD80B06E191800C2F56F7E98",
+                    "timestamp": "2021-09-18T15:01:43.813Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5463655,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper10nzzug4p95qtzy2rat79uvq6zrt3jk9emsjqpl",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "11",
+                "tx_hash": "C88400B29069084FDE6A0893D60190F82E1934FC1FAFEC6EAEE16BA1A9312441",
+                "proposer": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                "title": "Staking Param Change",
+                "description": "Update max validators from the current set to 20. As the network grows this would allow for increased decentralization also with short term price protection for those validators out of the active set with large stakes being allowed to be reincluded as active",
+                "proposal_type": "ParameterChange",
+                "proposal_status": "PROPOSAL_STATUS_REJECTED",
+                "submit_time": "2021-09-13T22:27:02.260Z",
+                "voting_start_time": "2021-09-13T22:41:32.518Z",
+                "voting_end_time": "2021-09-17T22:41:32.518Z",
+                "deposit_end_time": "2021-09-15T22:27:02.260Z",
+                "notification_status": "VotingNotified",
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.params.v1beta1.ParameterChangeProposal",
+                        "title": "Staking Param Change",
+                        "description": "Update max validators from the current set to 20. As the network grows this would allow for increased decentralization also with short term price protection for those validators out of the active set with large stakes being allowed to be reincluded as active",
+                        "changes": [
+                            {
+                                "subspace": "staking",
+                                "key": "MaxValidators",
+                                "value": "20"
+                            }
+                        ]
+                    }
+                ],
+                "moniker": "Anchor Staking",
+                "initial_deposit": {
+                    "denom": "uiov",
+                    "amount": "1"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uiov",
+                        "amount": "1000001001"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "82",
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": "1",
+                    "weighted": "0",
+                    "yes_amount": "5029969873039",
+                    "no_amount": "0",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "230000000"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "star1yz88gx2pkqqfrnwslleve43uq0r95al5dhgnpf",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1yz88gx2pkqqfrnwslleve43uq0r95al5guvrdq",
+                    "level": 2
+                },
+                {
+                    "voter": "star1vlqztrl5pwnw8v8vd2ejwge86y5zrguamgzw2m",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1vlqztrl5pwnw8v8vd2ejwge86y5zrgua7rx7xj",
+                    "level": 3
+                },
+                {
+                    "voter": "star180s323zw79duje02tqwt0pzz7tmtf5t3n7gqdr",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper180s323zw79duje02tqwt0pzz7tmtf5t3k4vsp2",
+                    "level": 3
+                },
+                {
+                    "voter": "star1mw08m28g2gt62py9yufdwduz52al0wn3vs8ckt",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1mw08m28g2gt62py9yufdwduz52al0wn3fmrg6z",
+                    "level": 2
+                },
+                {
+                    "voter": "star1htdspw9ta77dy25at076ea8xfff5z99kjg3ap3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1htdspw9ta77dy25at076ea8xfff5z99khr4ddc",
+                    "level": 1
+                },
+                {
+                    "voter": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper17syw5hyjapftg3hslelqsqtch0jwgxzhuk7pvn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1euslp8c2qadgs6jy6klwv6f332mj426qhj7uu6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1euslp8c2qadgs6jy6klwv6f332mj426qje6vsn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1y0w5qhdf6aj90u7knykdetqus4nc2axgng0hq6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1y0w5qhdf6aj90u7knykdetqus4nc2axgkrt8vn",
+                    "level": 2
+                },
+                {
+                    "voter": "star1zs66yh6daua3tjsanq7pqjffryrn65std6efjc",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1zs66yh6daua3tjsanq7pqjffryrn65stg3ae73",
+                    "level": 3
+                },
+                {
+                    "voter": "star1c8p90su0tdz67xdhx5470lzvs2lw8twqtwklqq",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1c8p90su0tdz67xdhx5470lzvs2lw8twqw9j0vf",
+                    "level": 2
+                },
+                {
+                    "voter": "star18pk70ynegvzqy7hw74uqq9xs9jz5s5a679cp33",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper18pk70ynegvzqy7hw74uqq9xs9jz5s5a6mwu3ac",
+                    "level": 2
+                },
+                {
+                    "voter": "star1symf474wnypes2d3mecllqk6l26rwz8mdu6380",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1symf474wnypes2d3mecllqk6l26rwz8mgh7ptx",
+                    "level": 1
+                },
+                {
+                    "voter": "star1pdqlmncych8uzsfdnsptv7s0wpazc0rgf4xgk7",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h",
+                    "level": 2
+                },
+                {
+                    "voter": "star1734yczdw25efy0q604ydu2prfwt89mnadyvyq2",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1734yczdw25efy0q604ydu2prfwt89mnag0g5vr",
+                    "level": 2
+                },
+                {
+                    "voter": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                    "tx_hash": "E315832312398598A889B89A08C22E796AC9B8AC2A0D5318C3186FFEF92BE4C0",
+                    "timestamp": "2021-09-14T00:23:44.060Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 5397401,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper10nzzug4p95qtzy2rat79uvq6zrt3jk9emsjqpl",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "10",
+                "tx_hash": "AF352DE22BDC5E6A2409B2795F4ED8A2D64347D743D42096CD3AABFE619A6966",
+                "proposer": "star1478t4fltj689nqu83vsmhz27quk7uggjwe96yk",
+                "title": "Token Burn 5 of 6 And The Next Software Upgrade",
+                "description": "Prior to `iov-mainnet-ibc` (Stargate), token 'burns' sent tokens to blackhole\\*iov where they remained locked until they were truly burned by the migration to `iov-mainnet-ibc`.  Locking tokens in blackhole\\*iov is equivalent to a burn from the perspective of delegators and rewards; however, to new comers to the chain, blackhole\\*iov appears to be a `whale` account that could sell the tokens at any time, which is not good.  Moreover, the total circulating supply reported on coingecko.com and coinmarketcap.com is not accurate when tokens are locked in blackhole\\*iov.\n\n  The technology to truly burn tokens sent to blackhole\\*iov can be implemented and deployed with the next software upgrade, which should happen around the end of September, 2021.\n\n  Vote `No` to keep Burn 5 of 6 tokens locked in the community fund until they can truly be burned and an accurate token circulating supply can be reported.\n\n  Send the tokens to blackhole\\*iov (https://big-dipper.iov-mainnet-ibc.iov.one/account/star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3) where they will not be able to be truly burned, even with a software upgrade, by voting `Yes`.\n\n  See https://medium.com/iov-internet-of-values/iov-token-donation-schedule-248f9ade08fc for details about the modernization of the Starname (IOV) chain tokenomics.",
+                "proposal_type": "CommunityPoolSpend",
+                "proposal_status": "PROPOSAL_STATUS_REJECTED",
+                "submit_time": "2021-07-26T15:57:59.803Z",
+                "voting_start_time": "2021-07-26T15:57:59.803Z",
+                "voting_end_time": "2021-07-30T15:57:59.803Z",
+                "deposit_end_time": "2021-07-28T15:57:59.803Z",
+                "notification_status": "VotingNotified",
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.distribution.v1beta1.CommunityPoolSpendProposal",
+                        "title": "Token Burn 5 of 6 And The Next Software Upgrade",
+                        "description": "Prior to `iov-mainnet-ibc` (Stargate), token 'burns' sent tokens to blackhole\\*iov where they remained locked until they were truly burned by the migration to `iov-mainnet-ibc`.  Locking tokens in blackhole\\*iov is equivalent to a burn from the perspective of delegators and rewards; however, to new comers to the chain, blackhole\\*iov appears to be a `whale` account that could sell the tokens at any time, which is not good.  Moreover, the total circulating supply reported on coingecko.com and coinmarketcap.com is not accurate when tokens are locked in blackhole\\*iov.\n\n  The technology to truly burn tokens sent to blackhole\\*iov can be implemented and deployed with the next software upgrade, which should happen around the end of September, 2021.\n\n  Vote `No` to keep Burn 5 of 6 tokens locked in the community fund until they can truly be burned and an accurate token circulating supply can be reported.\n\n  Send the tokens to blackhole\\*iov (https://big-dipper.iov-mainnet-ibc.iov.one/account/star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3) where they will not be able to be truly burned, even with a software upgrade, by voting `Yes`.\n\n  See https://medium.com/iov-internet-of-values/iov-token-donation-schedule-248f9ade08fc for details about the modernization of the Starname (IOV) chain tokenomics.",
+                        "recipient": "star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3",
+                        "amount": [
+                            {
+                                "denom": "uiov",
+                                "amount": "4233332000000"
+                            }
+                        ]
+                    }
+                ],
+                "moniker": "Intentionally jailed - no delegators were slashed",
+                "initial_deposit": {
+                    "denom": "uiov",
+                    "amount": "1000000000"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uiov",
+                        "amount": "1000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "6",
+                    "no": "37",
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "3844785838101",
+                    "no_amount": "31885880203390",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "0"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "star1yz88gx2pkqqfrnwslleve43uq0r95al5dhgnpf",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1yz88gx2pkqqfrnwslleve43uq0r95al5guvrdq",
+                    "level": 2
+                },
+                {
+                    "voter": "star1vlqztrl5pwnw8v8vd2ejwge86y5zrguamgzw2m",
+                    "tx_hash": "42959CA6E2070AC559A27157B5D15234FFDB47903684AE53E12536F3AE4C5F17",
+                    "timestamp": "2021-07-27T07:21:03.128Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 4698529,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper1vlqztrl5pwnw8v8vd2ejwge86y5zrgua7rx7xj",
+                    "level": 3
+                },
+                {
+                    "voter": "star180s323zw79duje02tqwt0pzz7tmtf5t3n7gqdr",
+                    "tx_hash": "A54B2630B2999F37F80BC2F3E76241B455772332CC53ADF8A8E55ED7D7C3245B",
+                    "timestamp": "2021-07-27T02:59:26.331Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 4695913,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper180s323zw79duje02tqwt0pzz7tmtf5t3k4vsp2",
+                    "level": 3
+                },
+                {
+                    "voter": "star1mw08m28g2gt62py9yufdwduz52al0wn3vs8ckt",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1mw08m28g2gt62py9yufdwduz52al0wn3fmrg6z",
+                    "level": 2
+                },
+                {
+                    "voter": "star1htdspw9ta77dy25at076ea8xfff5z99kjg3ap3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1htdspw9ta77dy25at076ea8xfff5z99khr4ddc",
+                    "level": 1
+                },
+                {
+                    "voter": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper17syw5hyjapftg3hslelqsqtch0jwgxzhuk7pvn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1euslp8c2qadgs6jy6klwv6f332mj426qhj7uu6",
+                    "tx_hash": "365595AD19D31DBC5AAFC13F9C8C8CB6157061324A31A1473B609A4EB35A6FA6",
+                    "timestamp": "2021-07-27T00:31:48.345Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 4694437,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper1euslp8c2qadgs6jy6klwv6f332mj426qje6vsn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1y0w5qhdf6aj90u7knykdetqus4nc2axgng0hq6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1y0w5qhdf6aj90u7knykdetqus4nc2axgkrt8vn",
+                    "level": 2
+                },
+                {
+                    "voter": "star1zs66yh6daua3tjsanq7pqjffryrn65std6efjc",
+                    "tx_hash": "2374EF990A8C7AEA7320F2F09A9A74C4BB32D847F87D9AD74521BFB9E47A3124",
+                    "timestamp": "2021-07-27T13:07:17.569Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 4701981,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper1zs66yh6daua3tjsanq7pqjffryrn65stg3ae73",
+                    "level": 3
+                },
+                {
+                    "voter": "star1c8p90su0tdz67xdhx5470lzvs2lw8twqtwklqq",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1c8p90su0tdz67xdhx5470lzvs2lw8twqw9j0vf",
+                    "level": 2
+                },
+                {
+                    "voter": "star18pk70ynegvzqy7hw74uqq9xs9jz5s5a679cp33",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper18pk70ynegvzqy7hw74uqq9xs9jz5s5a6mwu3ac",
+                    "level": 2
+                },
+                {
+                    "voter": "star1symf474wnypes2d3mecllqk6l26rwz8mdu6380",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1symf474wnypes2d3mecllqk6l26rwz8mgh7ptx",
+                    "level": 1
+                },
+                {
+                    "voter": "star1pdqlmncych8uzsfdnsptv7s0wpazc0rgf4xgk7",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h",
+                    "level": 2
+                },
+                {
+                    "voter": "star1734yczdw25efy0q604ydu2prfwt89mnadyvyq2",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1734yczdw25efy0q604ydu2prfwt89mnag0g5vr",
+                    "level": 2
+                },
+                {
+                    "voter": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                    "tx_hash": "644CBA073496283113D655F9F417786E92D2D98E6C00CF578493A4310E3DED74",
+                    "timestamp": "2021-07-26T18:10:15.904Z",
+                    "option": "VOTE_OPTION_NO",
+                    "tx_height": 4690630,
+                    "answer": "no",
+                    "validatorAddress": "starvaloper10nzzug4p95qtzy2rat79uvq6zrt3jk9emsjqpl",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "9",
+                "tx_hash": "BF28359FB49CAAA9FAA15707C1685D0E3A7E80B382BFDC2F8B62DE32F6664712",
+                "proposer": "star1aq4ts05tgkvzz24kr25jlz432sz8d8zx62ar5r",
+                "title": "Make multisig accounts work",
+                "description": "The public keys for multisig accounts were not migrated from the exported state of iov-mainnet-2 into iov-mainnet-ibc.  Vote 'yes' to inject the multisig public keys into the app state and make multisig accounts work. See https://github.com/iov-one/starnamed/pull/93/files.",
+                "proposal_type": "SoftwareUpgrade",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2021-07-15T16:06:28.000Z",
+                "voting_start_time": "2021-07-15T16:06:28.000Z",
+                "voting_end_time": "2021-07-19T16:06:28.000Z",
+                "deposit_end_time": "2021-07-17T16:06:28.000Z",
+                "notification_status": "VotingNotified",
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.upgrade.v1beta1.SoftwareUpgradeProposal",
+                        "title": "Make multisig accounts work",
+                        "description": "The public keys for multisig accounts were not migrated from the exported state of iov-mainnet-2 into iov-mainnet-ibc.  Vote 'yes' to inject the multisig public keys into the app state and make multisig accounts work. See https://github.com/iov-one/starnamed/pull/93/files.",
+                        "plan": {
+                            "name": "fix-cosmos-sdk-migrate-bug",
+                            "time": "0001-01-01T00:00:00Z",
+                            "height": "4598000",
+                            "info": "v0.10.13-9c4ac24779bfb4d52bb5920db1fa0cde0ec811b6",
+                            "upgraded_client_state": null
+                        }
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": "uiov",
+                    "amount": "1000000000"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uiov",
+                        "amount": "1000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "51",
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "44724669460691",
+                    "no_amount": "0",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "0"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "star1yz88gx2pkqqfrnwslleve43uq0r95al5dhgnpf",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1yz88gx2pkqqfrnwslleve43uq0r95al5guvrdq",
+                    "level": 2
+                },
+                {
+                    "voter": "star1vlqztrl5pwnw8v8vd2ejwge86y5zrguamgzw2m",
+                    "tx_hash": "EC8A0A75209F239CCAE4B3F908E00AAF1987C5077A7C55B2B65862BB2EC14756",
+                    "timestamp": "2021-07-16T04:38:02.922Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4537996,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1vlqztrl5pwnw8v8vd2ejwge86y5zrgua7rx7xj",
+                    "level": 3
+                },
+                {
+                    "voter": "star180s323zw79duje02tqwt0pzz7tmtf5t3n7gqdr",
+                    "tx_hash": "D1038AF25F867440E0DE125A8BC742BEE795D475F282776BFFC02D2A01ABAE1F",
+                    "timestamp": "2021-07-16T03:49:20.917Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4537505,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper180s323zw79duje02tqwt0pzz7tmtf5t3k4vsp2",
+                    "level": 3
+                },
+                {
+                    "voter": "star1mw08m28g2gt62py9yufdwduz52al0wn3vs8ckt",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1mw08m28g2gt62py9yufdwduz52al0wn3fmrg6z",
+                    "level": 2
+                },
+                {
+                    "voter": "star1htdspw9ta77dy25at076ea8xfff5z99kjg3ap3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1htdspw9ta77dy25at076ea8xfff5z99khr4ddc",
+                    "level": 1
+                },
+                {
+                    "voter": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                    "tx_hash": "60FFC6FA5519A4FBB47598624F8FD8642B2E115BE561BAA42D0E1D11ACBE69C9",
+                    "timestamp": "2021-07-16T12:55:21.700Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4543010,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper17syw5hyjapftg3hslelqsqtch0jwgxzhuk7pvn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1euslp8c2qadgs6jy6klwv6f332mj426qhj7uu6",
+                    "tx_hash": "B9C63EBB2498EC1667D36AEBD8DC58DE07D8FE403984D89A899C9352F4D40432",
+                    "timestamp": "2021-07-16T13:57:44.482Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4543639,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1euslp8c2qadgs6jy6klwv6f332mj426qje6vsn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1y0w5qhdf6aj90u7knykdetqus4nc2axgng0hq6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1y0w5qhdf6aj90u7knykdetqus4nc2axgkrt8vn",
+                    "level": 2
+                },
+                {
+                    "voter": "star1zs66yh6daua3tjsanq7pqjffryrn65std6efjc",
+                    "tx_hash": "C7F0F0CD15915FF62C76D18E007EFC67974BC12A94020F42F40D760BF3905541",
+                    "timestamp": "2021-07-16T08:18:15.657Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4540217,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1zs66yh6daua3tjsanq7pqjffryrn65stg3ae73",
+                    "level": 3
+                },
+                {
+                    "voter": "star1c8p90su0tdz67xdhx5470lzvs2lw8twqtwklqq",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1c8p90su0tdz67xdhx5470lzvs2lw8twqw9j0vf",
+                    "level": 2
+                },
+                {
+                    "voter": "star18pk70ynegvzqy7hw74uqq9xs9jz5s5a679cp33",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper18pk70ynegvzqy7hw74uqq9xs9jz5s5a6mwu3ac",
+                    "level": 2
+                },
+                {
+                    "voter": "star1symf474wnypes2d3mecllqk6l26rwz8mdu6380",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1symf474wnypes2d3mecllqk6l26rwz8mgh7ptx",
+                    "level": 1
+                },
+                {
+                    "voter": "star1pdqlmncych8uzsfdnsptv7s0wpazc0rgf4xgk7",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h",
+                    "level": 2
+                },
+                {
+                    "voter": "star1734yczdw25efy0q604ydu2prfwt89mnadyvyq2",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1734yczdw25efy0q604ydu2prfwt89mnag0g5vr",
+                    "level": 2
+                },
+                {
+                    "voter": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                    "tx_hash": "78AC44F7464B68FDE220B195CD6147337DF6B4892CC82317AD36C2A6225441E6",
+                    "timestamp": "2021-07-15T17:22:14.710Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4531178,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper10nzzug4p95qtzy2rat79uvq6zrt3jk9emsjqpl",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "8",
+                "tx_hash": "F769D03C5B550DEA5B065B41C37ED2E5571AB1F1B9136BDC6BC4525E77D61233",
+                "proposer": "star1aq4ts05tgkvzz24kr25jlz432sz8d8zx62ar5r",
+                "title": "Fix IBC Configuration",
+                "description": "The staking parameter *historical_entries* must be greater than the default of 0 in order for IBC to work.  Vote 'yes' to set it to 10,000, like what's used on the Cosmos Hub.",
+                "proposal_type": "ParameterChange",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2021-07-07T19:37:52.354Z",
+                "voting_start_time": "2021-07-07T19:37:52.354Z",
+                "voting_end_time": "2021-07-11T19:37:52.354Z",
+                "deposit_end_time": "2021-07-09T19:37:52.354Z",
+                "notification_status": "VotingNotified",
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.params.v1beta1.ParameterChangeProposal",
+                        "title": "Fix IBC Configuration",
+                        "description": "The staking parameter *historical_entries* must be greater than the default of 0 in order for IBC to work.  Vote 'yes' to set it to 10,000, like what's used on the Cosmos Hub.",
+                        "changes": [
+                            {
+                                "subspace": "staking",
+                                "key": "HistoricalEntries",
+                                "value": "10000"
+                            }
+                        ]
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": "uiov",
+                    "amount": "1000000000"
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uiov",
+                        "amount": "1000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": "37",
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "42518609906323",
+                    "no_amount": "0",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "0"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "star1yz88gx2pkqqfrnwslleve43uq0r95al5dhgnpf",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1yz88gx2pkqqfrnwslleve43uq0r95al5guvrdq",
+                    "level": 2
+                },
+                {
+                    "voter": "star1vlqztrl5pwnw8v8vd2ejwge86y5zrguamgzw2m",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1vlqztrl5pwnw8v8vd2ejwge86y5zrgua7rx7xj",
+                    "level": 3
+                },
+                {
+                    "voter": "star180s323zw79duje02tqwt0pzz7tmtf5t3n7gqdr",
+                    "tx_hash": "36F89B11B0FDBE3DDA98D19DEFC7A1CA763A3135BE187B063D5BBABBBBBCA226",
+                    "timestamp": "2021-07-08T08:37:25.467Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4424299,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper180s323zw79duje02tqwt0pzz7tmtf5t3k4vsp2",
+                    "level": 3
+                },
+                {
+                    "voter": "star1mw08m28g2gt62py9yufdwduz52al0wn3vs8ckt",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1mw08m28g2gt62py9yufdwduz52al0wn3fmrg6z",
+                    "level": 2
+                },
+                {
+                    "voter": "star1htdspw9ta77dy25at076ea8xfff5z99kjg3ap3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1htdspw9ta77dy25at076ea8xfff5z99khr4ddc",
+                    "level": 1
+                },
+                {
+                    "voter": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                    "tx_hash": "0A5399EE4D2B7F48AE850EC8CC60B16DA2201D7D0AE399B8F466FDABA67ED57A",
+                    "timestamp": "2021-07-08T11:51:22.221Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4426253,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper17syw5hyjapftg3hslelqsqtch0jwgxzhuk7pvn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1euslp8c2qadgs6jy6klwv6f332mj426qhj7uu6",
+                    "tx_hash": "8826506E5538E7CB69913254B8A7EE54511FB1769D556FEE9AB41CAB65E2832F",
+                    "timestamp": "2021-07-08T17:26:25.612Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4429621,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1euslp8c2qadgs6jy6klwv6f332mj426qje6vsn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1y0w5qhdf6aj90u7knykdetqus4nc2axgng0hq6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1y0w5qhdf6aj90u7knykdetqus4nc2axgkrt8vn",
+                    "level": 2
+                },
+                {
+                    "voter": "star1zs66yh6daua3tjsanq7pqjffryrn65std6efjc",
+                    "tx_hash": "221C53FE9D100C0DCE0E5FA3DDA40285F78A6E3CAE85BAC6378448300A482531",
+                    "timestamp": "2021-07-08T10:18:40.508Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4425320,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1zs66yh6daua3tjsanq7pqjffryrn65stg3ae73",
+                    "level": 3
+                },
+                {
+                    "voter": "star1c8p90su0tdz67xdhx5470lzvs2lw8twqtwklqq",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1c8p90su0tdz67xdhx5470lzvs2lw8twqw9j0vf",
+                    "level": 2
+                },
+                {
+                    "voter": "star18pk70ynegvzqy7hw74uqq9xs9jz5s5a679cp33",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper18pk70ynegvzqy7hw74uqq9xs9jz5s5a6mwu3ac",
+                    "level": 2
+                },
+                {
+                    "voter": "star1symf474wnypes2d3mecllqk6l26rwz8mdu6380",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1symf474wnypes2d3mecllqk6l26rwz8mgh7ptx",
+                    "level": 1
+                },
+                {
+                    "voter": "star1pdqlmncych8uzsfdnsptv7s0wpazc0rgf4xgk7",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h",
+                    "level": 2
+                },
+                {
+                    "voter": "star1734yczdw25efy0q604ydu2prfwt89mnadyvyq2",
+                    "tx_hash": "99E1B2EC4F91369A32AD580DA1D83D2A8B56AABA5CA101F7A1AC3F09C27CA9A1",
+                    "timestamp": "2021-07-08T11:45:06.880Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4426190,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper1734yczdw25efy0q604ydu2prfwt89mnag0g5vr",
+                    "level": 2
+                },
+                {
+                    "voter": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                    "tx_hash": "67555E9FA4ECA353CC334A0A38269FE68D66DD39177E89996153BC5F37B4E5DB",
+                    "timestamp": "2021-07-07T20:32:47.817Z",
+                    "option": "VOTE_OPTION_YES",
+                    "tx_height": 4416987,
+                    "answer": "yes",
+                    "validatorAddress": "starvaloper10nzzug4p95qtzy2rat79uvq6zrt3jk9emsjqpl",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "7",
+                "tx_hash": null,
+                "proposer": null,
+                "title": "Stargate Upgrade At Block 4,294,679 + 0% Inflation",
+                "description": "Vote 'yes' to halt the Starname (IOV) blockchain `iov-mainnet-2` at block 4,294,679, export the state and migrate it to cosmos-sdk v0.42.4 (Stargate), set inflation to 0%, and start the migrated blockchain `iov-mainnet-ibc` at block 4,294,680 based on starnamed v0.10.12 (commit hash a92c6730de5ce25ce9cc01313409cc1d6f447327).\n- See https://medium.com/iov-internet-of-values/what-apy-will-the-starname-iov-blockchain-have-when-inflation-is-0-5d623c6f0a27 for APY with 0% inflation\n- See https://github.com/iov-one/starnamed/tree/master/scripts/genesis for the migration script\n\nBlock 4,294,679 is estimated to be committed on June 29, 2021 at approximately 8AM UTC.  If the migration does not succeed within 4 hours of the halt then `iov-mainnet-2` will be restarted.",
+                "proposal_type": "Text",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2021-06-24T08:38:47.437Z",
+                "voting_start_time": "2021-06-24T08:38:47.437Z",
+                "voting_end_time": "2021-06-28T08:38:47.437Z",
+                "deposit_end_time": "2021-06-26T08:38:47.437Z",
+                "notification_status": null,
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.gov.v1beta1.TextProposal",
+                        "title": "Stargate Upgrade At Block 4,294,679 + 0% Inflation",
+                        "description": "Vote 'yes' to halt the Starname (IOV) blockchain `iov-mainnet-2` at block 4,294,679, export the state and migrate it to cosmos-sdk v0.42.4 (Stargate), set inflation to 0%, and start the migrated blockchain `iov-mainnet-ibc` at block 4,294,680 based on starnamed v0.10.12 (commit hash a92c6730de5ce25ce9cc01313409cc1d6f447327).\n- See https://medium.com/iov-internet-of-values/what-apy-will-the-starname-iov-blockchain-have-when-inflation-is-0-5d623c6f0a27 for APY with 0% inflation\n- See https://github.com/iov-one/starnamed/tree/master/scripts/genesis for the migration script\n\nBlock 4,294,679 is estimated to be committed on June 29, 2021 at approximately 8AM UTC.  If the migration does not succeed within 4 hours of the halt then `iov-mainnet-2` will be restarted."
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": null,
+                    "amount": null
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uiov",
+                        "amount": "1000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": 0,
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "30860484137722",
+                    "no_amount": "1276250915",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "20427300118"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "star1yz88gx2pkqqfrnwslleve43uq0r95al5dhgnpf",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1yz88gx2pkqqfrnwslleve43uq0r95al5guvrdq",
+                    "level": 2
+                },
+                {
+                    "voter": "star1vlqztrl5pwnw8v8vd2ejwge86y5zrguamgzw2m",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1vlqztrl5pwnw8v8vd2ejwge86y5zrgua7rx7xj",
+                    "level": 3
+                },
+                {
+                    "voter": "star180s323zw79duje02tqwt0pzz7tmtf5t3n7gqdr",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper180s323zw79duje02tqwt0pzz7tmtf5t3k4vsp2",
+                    "level": 3
+                },
+                {
+                    "voter": "star1mw08m28g2gt62py9yufdwduz52al0wn3vs8ckt",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1mw08m28g2gt62py9yufdwduz52al0wn3fmrg6z",
+                    "level": 2
+                },
+                {
+                    "voter": "star1htdspw9ta77dy25at076ea8xfff5z99kjg3ap3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1htdspw9ta77dy25at076ea8xfff5z99khr4ddc",
+                    "level": 1
+                },
+                {
+                    "voter": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper17syw5hyjapftg3hslelqsqtch0jwgxzhuk7pvn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1euslp8c2qadgs6jy6klwv6f332mj426qhj7uu6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1euslp8c2qadgs6jy6klwv6f332mj426qje6vsn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1y0w5qhdf6aj90u7knykdetqus4nc2axgng0hq6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1y0w5qhdf6aj90u7knykdetqus4nc2axgkrt8vn",
+                    "level": 2
+                },
+                {
+                    "voter": "star1zs66yh6daua3tjsanq7pqjffryrn65std6efjc",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1zs66yh6daua3tjsanq7pqjffryrn65stg3ae73",
+                    "level": 3
+                },
+                {
+                    "voter": "star1c8p90su0tdz67xdhx5470lzvs2lw8twqtwklqq",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1c8p90su0tdz67xdhx5470lzvs2lw8twqw9j0vf",
+                    "level": 2
+                },
+                {
+                    "voter": "star18pk70ynegvzqy7hw74uqq9xs9jz5s5a679cp33",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper18pk70ynegvzqy7hw74uqq9xs9jz5s5a6mwu3ac",
+                    "level": 2
+                },
+                {
+                    "voter": "star1symf474wnypes2d3mecllqk6l26rwz8mdu6380",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1symf474wnypes2d3mecllqk6l26rwz8mgh7ptx",
+                    "level": 1
+                },
+                {
+                    "voter": "star1pdqlmncych8uzsfdnsptv7s0wpazc0rgf4xgk7",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h",
+                    "level": 2
+                },
+                {
+                    "voter": "star1734yczdw25efy0q604ydu2prfwt89mnadyvyq2",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1734yczdw25efy0q604ydu2prfwt89mnag0g5vr",
+                    "level": 2
+                },
+                {
+                    "voter": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper10nzzug4p95qtzy2rat79uvq6zrt3jk9emsjqpl",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "6",
+                "tx_hash": null,
+                "proposer": null,
+                "title": "Change Unbonding Time + Enable IBC + Burn Tokens",
+                "description": "Change unbonding time to 1,814,400,000,000,000 nanoseconds (21 days) in order to enable Inter-Blockchain Communication (IBC) so that IOV tokens will be tradeable on the Gravity DEX. Vote 'yes' to change the unbonding time, signal that validators should upgrade the network to cosmos-sdk v0.4x.x (Stargate), and burn the tokens in blackhole*iov (star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3).\n\nA subsequent proposal specifying the block height at which the migration to IBC should take place will follow.",
+                "proposal_type": "ParameterChange",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2021-06-19T09:20:18.585Z",
+                "voting_start_time": "2021-06-19T09:20:18.585Z",
+                "voting_end_time": "2021-06-23T09:20:18.585Z",
+                "deposit_end_time": "2021-06-21T09:20:18.585Z",
+                "notification_status": null,
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.params.v1beta1.ParameterChangeProposal",
+                        "title": "Change Unbonding Time + Enable IBC + Burn Tokens",
+                        "description": "Change unbonding time to 1,814,400,000,000,000 nanoseconds (21 days) in order to enable Inter-Blockchain Communication (IBC) so that IOV tokens will be tradeable on the Gravity DEX. Vote 'yes' to change the unbonding time, signal that validators should upgrade the network to cosmos-sdk v0.4x.x (Stargate), and burn the tokens in blackhole*iov (star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3).\n\nA subsequent proposal specifying the block height at which the migration to IBC should take place will follow.",
+                        "changes": [
+                            {
+                                "subspace": "staking",
+                                "key": "UnbondingTime",
+                                "value": "\"1814400000000000\""
+                            }
+                        ]
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": null,
+                    "amount": null
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uiov",
+                        "amount": "1000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": 0,
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "36450129496954",
+                    "no_amount": "1276250916",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "0"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "star1yz88gx2pkqqfrnwslleve43uq0r95al5dhgnpf",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1yz88gx2pkqqfrnwslleve43uq0r95al5guvrdq",
+                    "level": 2
+                },
+                {
+                    "voter": "star1vlqztrl5pwnw8v8vd2ejwge86y5zrguamgzw2m",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1vlqztrl5pwnw8v8vd2ejwge86y5zrgua7rx7xj",
+                    "level": 3
+                },
+                {
+                    "voter": "star180s323zw79duje02tqwt0pzz7tmtf5t3n7gqdr",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper180s323zw79duje02tqwt0pzz7tmtf5t3k4vsp2",
+                    "level": 3
+                },
+                {
+                    "voter": "star1mw08m28g2gt62py9yufdwduz52al0wn3vs8ckt",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1mw08m28g2gt62py9yufdwduz52al0wn3fmrg6z",
+                    "level": 2
+                },
+                {
+                    "voter": "star1htdspw9ta77dy25at076ea8xfff5z99kjg3ap3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1htdspw9ta77dy25at076ea8xfff5z99khr4ddc",
+                    "level": 1
+                },
+                {
+                    "voter": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper17syw5hyjapftg3hslelqsqtch0jwgxzhuk7pvn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1euslp8c2qadgs6jy6klwv6f332mj426qhj7uu6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1euslp8c2qadgs6jy6klwv6f332mj426qje6vsn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1y0w5qhdf6aj90u7knykdetqus4nc2axgng0hq6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1y0w5qhdf6aj90u7knykdetqus4nc2axgkrt8vn",
+                    "level": 2
+                },
+                {
+                    "voter": "star1zs66yh6daua3tjsanq7pqjffryrn65std6efjc",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1zs66yh6daua3tjsanq7pqjffryrn65stg3ae73",
+                    "level": 3
+                },
+                {
+                    "voter": "star1c8p90su0tdz67xdhx5470lzvs2lw8twqtwklqq",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1c8p90su0tdz67xdhx5470lzvs2lw8twqw9j0vf",
+                    "level": 2
+                },
+                {
+                    "voter": "star18pk70ynegvzqy7hw74uqq9xs9jz5s5a679cp33",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper18pk70ynegvzqy7hw74uqq9xs9jz5s5a6mwu3ac",
+                    "level": 2
+                },
+                {
+                    "voter": "star1symf474wnypes2d3mecllqk6l26rwz8mdu6380",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1symf474wnypes2d3mecllqk6l26rwz8mgh7ptx",
+                    "level": 1
+                },
+                {
+                    "voter": "star1pdqlmncych8uzsfdnsptv7s0wpazc0rgf4xgk7",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h",
+                    "level": 2
+                },
+                {
+                    "voter": "star1734yczdw25efy0q604ydu2prfwt89mnadyvyq2",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1734yczdw25efy0q604ydu2prfwt89mnag0g5vr",
+                    "level": 2
+                },
+                {
+                    "voter": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper10nzzug4p95qtzy2rat79uvq6zrt3jk9emsjqpl",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "5",
+                "tx_hash": null,
+                "proposer": null,
+                "title": "Token 'Burn' 4 of 6",
+                "description": "Reduce the circulating supply of tokens by sending them to blackhole\\*iov (star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3) where they can't be spent or delegated.  Tokens in account blackhole\\*iov will be burned when the chain is upgraded to cosmos-sdk 0.4x.x (Stargate).\n\nWhy Does IOV Need To Modernize Its Tokenomics?\n\nAt inception, IOV SAS focused on blockchain innovation including developing the Weave SDK, IOV Core (now rolled into CosmJS), and even CosmWasm. The focus on innovation required significant allocations in the ICO token distribution for research and development, grants, tech incentives, bounties, and the like. In February, when Karim Ganem became CEO, IOV SAS pivoted to a business focus built on Starnames, which made the tokens earmarked for blockchain innovation difficult to justify. Hence the need to modernize.\n\nVote yes to burn the tokens.",
+                "proposal_type": "CommunityPoolSpend",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2021-05-31T14:20:13.718Z",
+                "voting_start_time": "2021-05-31T14:20:13.718Z",
+                "voting_end_time": "2021-06-04T14:20:13.718Z",
+                "deposit_end_time": "2021-06-02T14:20:13.718Z",
+                "notification_status": null,
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.distribution.v1beta1.CommunityPoolSpendProposal",
+                        "title": "Token 'Burn' 4 of 6",
+                        "description": "Reduce the circulating supply of tokens by sending them to blackhole\\*iov (star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3) where they can't be spent or delegated.  Tokens in account blackhole\\*iov will be burned when the chain is upgraded to cosmos-sdk 0.4x.x (Stargate).\n\nWhy Does IOV Need To Modernize Its Tokenomics?\n\nAt inception, IOV SAS focused on blockchain innovation including developing the Weave SDK, IOV Core (now rolled into CosmJS), and even CosmWasm. The focus on innovation required significant allocations in the ICO token distribution for research and development, grants, tech incentives, bounties, and the like. In February, when Karim Ganem became CEO, IOV SAS pivoted to a business focus built on Starnames, which made the tokens earmarked for blockchain innovation difficult to justify. Hence the need to modernize.\n\nVote yes to burn the tokens.",
+                        "recipient": "star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3",
+                        "amount": [
+                            {
+                                "denom": "uiov",
+                                "amount": "4333332000000"
+                            }
+                        ]
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": null,
+                    "amount": null
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uiov",
+                        "amount": "1000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": 0,
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "30532738787792",
+                    "no_amount": "0",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "0"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "star1yz88gx2pkqqfrnwslleve43uq0r95al5dhgnpf",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1yz88gx2pkqqfrnwslleve43uq0r95al5guvrdq",
+                    "level": 2
+                },
+                {
+                    "voter": "star1vlqztrl5pwnw8v8vd2ejwge86y5zrguamgzw2m",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1vlqztrl5pwnw8v8vd2ejwge86y5zrgua7rx7xj",
+                    "level": 3
+                },
+                {
+                    "voter": "star180s323zw79duje02tqwt0pzz7tmtf5t3n7gqdr",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper180s323zw79duje02tqwt0pzz7tmtf5t3k4vsp2",
+                    "level": 3
+                },
+                {
+                    "voter": "star1mw08m28g2gt62py9yufdwduz52al0wn3vs8ckt",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1mw08m28g2gt62py9yufdwduz52al0wn3fmrg6z",
+                    "level": 2
+                },
+                {
+                    "voter": "star1htdspw9ta77dy25at076ea8xfff5z99kjg3ap3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1htdspw9ta77dy25at076ea8xfff5z99khr4ddc",
+                    "level": 1
+                },
+                {
+                    "voter": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper17syw5hyjapftg3hslelqsqtch0jwgxzhuk7pvn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1euslp8c2qadgs6jy6klwv6f332mj426qhj7uu6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1euslp8c2qadgs6jy6klwv6f332mj426qje6vsn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1y0w5qhdf6aj90u7knykdetqus4nc2axgng0hq6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1y0w5qhdf6aj90u7knykdetqus4nc2axgkrt8vn",
+                    "level": 2
+                },
+                {
+                    "voter": "star1zs66yh6daua3tjsanq7pqjffryrn65std6efjc",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1zs66yh6daua3tjsanq7pqjffryrn65stg3ae73",
+                    "level": 3
+                },
+                {
+                    "voter": "star1c8p90su0tdz67xdhx5470lzvs2lw8twqtwklqq",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1c8p90su0tdz67xdhx5470lzvs2lw8twqw9j0vf",
+                    "level": 2
+                },
+                {
+                    "voter": "star18pk70ynegvzqy7hw74uqq9xs9jz5s5a679cp33",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper18pk70ynegvzqy7hw74uqq9xs9jz5s5a6mwu3ac",
+                    "level": 2
+                },
+                {
+                    "voter": "star1symf474wnypes2d3mecllqk6l26rwz8mdu6380",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1symf474wnypes2d3mecllqk6l26rwz8mgh7ptx",
+                    "level": 1
+                },
+                {
+                    "voter": "star1pdqlmncych8uzsfdnsptv7s0wpazc0rgf4xgk7",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h",
+                    "level": 2
+                },
+                {
+                    "voter": "star1734yczdw25efy0q604ydu2prfwt89mnadyvyq2",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1734yczdw25efy0q604ydu2prfwt89mnag0g5vr",
+                    "level": 2
+                },
+                {
+                    "voter": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper10nzzug4p95qtzy2rat79uvq6zrt3jk9emsjqpl",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "4",
+                "tx_hash": null,
+                "proposer": null,
+                "title": "Token 'Burn' 3 of 6",
+                "description": "Reduce the circulating supply of tokens by sending them to blackhole\\*iov (star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3) where they can't be spent or delegated.  Tokens in account blackhole\\*iov will be burned when the chain is upgraded to cosmos-sdk 0.4x.x (Stargate).",
+                "proposal_type": "CommunityPoolSpend",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2021-04-28T13:11:56.489Z",
+                "voting_start_time": "2021-04-30T11:04:18.092Z",
+                "voting_end_time": "2021-05-04T11:04:18.092Z",
+                "deposit_end_time": "2021-04-30T13:11:56.489Z",
+                "notification_status": null,
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.distribution.v1beta1.CommunityPoolSpendProposal",
+                        "title": "Token 'Burn' 3 of 6",
+                        "description": "Reduce the circulating supply of tokens by sending them to blackhole\\*iov (star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3) where they can't be spent or delegated.  Tokens in account blackhole\\*iov will be burned when the chain is upgraded to cosmos-sdk 0.4x.x (Stargate).",
+                        "recipient": "star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3",
+                        "amount": [
+                            {
+                                "denom": "uiov",
+                                "amount": "5393944000000"
+                            }
+                        ]
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": null,
+                    "amount": null
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uiov",
+                        "amount": "1000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": 0,
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "46186036483754",
+                    "no_amount": "1276250915",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "0"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "star1yz88gx2pkqqfrnwslleve43uq0r95al5dhgnpf",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1yz88gx2pkqqfrnwslleve43uq0r95al5guvrdq",
+                    "level": 2
+                },
+                {
+                    "voter": "star1vlqztrl5pwnw8v8vd2ejwge86y5zrguamgzw2m",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1vlqztrl5pwnw8v8vd2ejwge86y5zrgua7rx7xj",
+                    "level": 3
+                },
+                {
+                    "voter": "star180s323zw79duje02tqwt0pzz7tmtf5t3n7gqdr",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper180s323zw79duje02tqwt0pzz7tmtf5t3k4vsp2",
+                    "level": 3
+                },
+                {
+                    "voter": "star1mw08m28g2gt62py9yufdwduz52al0wn3vs8ckt",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1mw08m28g2gt62py9yufdwduz52al0wn3fmrg6z",
+                    "level": 2
+                },
+                {
+                    "voter": "star1htdspw9ta77dy25at076ea8xfff5z99kjg3ap3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1htdspw9ta77dy25at076ea8xfff5z99khr4ddc",
+                    "level": 1
+                },
+                {
+                    "voter": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper17syw5hyjapftg3hslelqsqtch0jwgxzhuk7pvn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1euslp8c2qadgs6jy6klwv6f332mj426qhj7uu6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1euslp8c2qadgs6jy6klwv6f332mj426qje6vsn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1y0w5qhdf6aj90u7knykdetqus4nc2axgng0hq6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1y0w5qhdf6aj90u7knykdetqus4nc2axgkrt8vn",
+                    "level": 2
+                },
+                {
+                    "voter": "star1zs66yh6daua3tjsanq7pqjffryrn65std6efjc",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1zs66yh6daua3tjsanq7pqjffryrn65stg3ae73",
+                    "level": 3
+                },
+                {
+                    "voter": "star1c8p90su0tdz67xdhx5470lzvs2lw8twqtwklqq",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1c8p90su0tdz67xdhx5470lzvs2lw8twqw9j0vf",
+                    "level": 2
+                },
+                {
+                    "voter": "star18pk70ynegvzqy7hw74uqq9xs9jz5s5a679cp33",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper18pk70ynegvzqy7hw74uqq9xs9jz5s5a6mwu3ac",
+                    "level": 2
+                },
+                {
+                    "voter": "star1symf474wnypes2d3mecllqk6l26rwz8mdu6380",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1symf474wnypes2d3mecllqk6l26rwz8mgh7ptx",
+                    "level": 1
+                },
+                {
+                    "voter": "star1pdqlmncych8uzsfdnsptv7s0wpazc0rgf4xgk7",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h",
+                    "level": 2
+                },
+                {
+                    "voter": "star1734yczdw25efy0q604ydu2prfwt89mnadyvyq2",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1734yczdw25efy0q604ydu2prfwt89mnag0g5vr",
+                    "level": 2
+                },
+                {
+                    "voter": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper10nzzug4p95qtzy2rat79uvq6zrt3jk9emsjqpl",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "2",
+                "tx_hash": null,
+                "proposer": null,
+                "title": "Token 'Burn' 2 of 6",
+                "description": "Reduce the circulating supply of tokens by sending them to blackhole\\*iov (star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3) where they can't be spent or delegated.  Tokens in account blackhole\\*iov will be burned when the chain is upgraded to cosmos-sdk 0.4x.x (Stargate).",
+                "proposal_type": "CommunityPoolSpend",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2021-04-01T14:20:10.795Z",
+                "voting_start_time": "2021-04-03T11:28:44.715Z",
+                "voting_end_time": "2021-04-07T11:28:44.715Z",
+                "deposit_end_time": "2021-04-03T14:20:10.795Z",
+                "notification_status": null,
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.distribution.v1beta1.CommunityPoolSpendProposal",
+                        "title": "Token 'Burn' 2 of 6",
+                        "description": "Reduce the circulating supply of tokens by sending them to blackhole\\*iov (star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3) where they can't be spent or delegated.  Tokens in account blackhole\\*iov will be burned when the chain is upgraded to cosmos-sdk 0.4x.x (Stargate).",
+                        "recipient": "star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3",
+                        "amount": [
+                            {
+                                "denom": "uiov",
+                                "amount": "3865149000000"
+                            }
+                        ]
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": null,
+                    "amount": null
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uiov",
+                        "amount": "1101000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": 0,
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "40487255077382",
+                    "no_amount": "0",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "0"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "star1yz88gx2pkqqfrnwslleve43uq0r95al5dhgnpf",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1yz88gx2pkqqfrnwslleve43uq0r95al5guvrdq",
+                    "level": 2
+                },
+                {
+                    "voter": "star1vlqztrl5pwnw8v8vd2ejwge86y5zrguamgzw2m",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1vlqztrl5pwnw8v8vd2ejwge86y5zrgua7rx7xj",
+                    "level": 3
+                },
+                {
+                    "voter": "star180s323zw79duje02tqwt0pzz7tmtf5t3n7gqdr",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper180s323zw79duje02tqwt0pzz7tmtf5t3k4vsp2",
+                    "level": 3
+                },
+                {
+                    "voter": "star1mw08m28g2gt62py9yufdwduz52al0wn3vs8ckt",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1mw08m28g2gt62py9yufdwduz52al0wn3fmrg6z",
+                    "level": 2
+                },
+                {
+                    "voter": "star1htdspw9ta77dy25at076ea8xfff5z99kjg3ap3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1htdspw9ta77dy25at076ea8xfff5z99khr4ddc",
+                    "level": 1
+                },
+                {
+                    "voter": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper17syw5hyjapftg3hslelqsqtch0jwgxzhuk7pvn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1euslp8c2qadgs6jy6klwv6f332mj426qhj7uu6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1euslp8c2qadgs6jy6klwv6f332mj426qje6vsn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1y0w5qhdf6aj90u7knykdetqus4nc2axgng0hq6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1y0w5qhdf6aj90u7knykdetqus4nc2axgkrt8vn",
+                    "level": 2
+                },
+                {
+                    "voter": "star1zs66yh6daua3tjsanq7pqjffryrn65std6efjc",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1zs66yh6daua3tjsanq7pqjffryrn65stg3ae73",
+                    "level": 3
+                },
+                {
+                    "voter": "star1c8p90su0tdz67xdhx5470lzvs2lw8twqtwklqq",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1c8p90su0tdz67xdhx5470lzvs2lw8twqw9j0vf",
+                    "level": 2
+                },
+                {
+                    "voter": "star18pk70ynegvzqy7hw74uqq9xs9jz5s5a679cp33",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper18pk70ynegvzqy7hw74uqq9xs9jz5s5a6mwu3ac",
+                    "level": 2
+                },
+                {
+                    "voter": "star1symf474wnypes2d3mecllqk6l26rwz8mdu6380",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1symf474wnypes2d3mecllqk6l26rwz8mgh7ptx",
+                    "level": 1
+                },
+                {
+                    "voter": "star1pdqlmncych8uzsfdnsptv7s0wpazc0rgf4xgk7",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h",
+                    "level": 2
+                },
+                {
+                    "voter": "star1734yczdw25efy0q604ydu2prfwt89mnadyvyq2",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1734yczdw25efy0q604ydu2prfwt89mnag0g5vr",
+                    "level": 2
+                },
+                {
+                    "voter": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper10nzzug4p95qtzy2rat79uvq6zrt3jk9emsjqpl",
+                    "level": 2
+                }
+            ]
+        },
+        {
+            "detail": {
+                "id": "1",
+                "tx_hash": null,
+                "proposer": null,
+                "title": "Token 'Burn'",
+                "description": "Reduce the circulating supply of tokens by sending them to address 0x000...000 (star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3) where they can't be spent or delegated.  Tokens in account star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3 will be burned when the chain is upgraded to cosmos-sdk 0.4x.x (Stargate).",
+                "proposal_type": "CommunityPoolSpend",
+                "proposal_status": "PROPOSAL_STATUS_PASSED",
+                "submit_time": "2021-03-01T19:03:27.822Z",
+                "voting_start_time": "2021-03-03T17:33:26.252Z",
+                "voting_end_time": "2021-03-07T17:33:26.252Z",
+                "deposit_end_time": "2021-03-03T19:03:27.822Z",
+                "notification_status": null,
+                "metadata": null,
+                "gov_rest_path": "v1beta1",
+                "messages": [
+                    {
+                        "@type": "/cosmos.distribution.v1beta1.CommunityPoolSpendProposal",
+                        "title": "Token 'Burn'",
+                        "description": "Reduce the circulating supply of tokens by sending them to address 0x000...000 (star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3) where they can't be spent or delegated.  Tokens in account star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3 will be burned when the chain is upgraded to cosmos-sdk 0.4x.x (Stargate).",
+                        "recipient": "star1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqjewks3",
+                        "amount": [
+                            {
+                                "denom": "uiov",
+                                "amount": "3000000000000"
+                            }
+                        ]
+                    }
+                ],
+                "moniker": "",
+                "initial_deposit": {
+                    "denom": null,
+                    "amount": null
+                },
+                "total_deposit": [
+                    {
+                        "denom": "uiov",
+                        "amount": "1000000000"
+                    }
+                ],
+                "voteMeta": {
+                    "yes": 0,
+                    "no": 0,
+                    "no_with_veto": 0,
+                    "abstain": 0,
+                    "weighted": "0",
+                    "yes_amount": "44458011121656",
+                    "no_amount": "610238115",
+                    "no_with_veto_amount": "0",
+                    "abstain_amount": "100000"
+                }
+            },
+            "validatorVotes": [
+                {
+                    "voter": "star1yz88gx2pkqqfrnwslleve43uq0r95al5dhgnpf",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1yz88gx2pkqqfrnwslleve43uq0r95al5guvrdq",
+                    "level": 2
+                },
+                {
+                    "voter": "star1vlqztrl5pwnw8v8vd2ejwge86y5zrguamgzw2m",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1vlqztrl5pwnw8v8vd2ejwge86y5zrgua7rx7xj",
+                    "level": 3
+                },
+                {
+                    "voter": "star180s323zw79duje02tqwt0pzz7tmtf5t3n7gqdr",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper180s323zw79duje02tqwt0pzz7tmtf5t3k4vsp2",
+                    "level": 3
+                },
+                {
+                    "voter": "star1mw08m28g2gt62py9yufdwduz52al0wn3vs8ckt",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1mw08m28g2gt62py9yufdwduz52al0wn3fmrg6z",
+                    "level": 2
+                },
+                {
+                    "voter": "star1htdspw9ta77dy25at076ea8xfff5z99kjg3ap3",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1htdspw9ta77dy25at076ea8xfff5z99khr4ddc",
+                    "level": 1
+                },
+                {
+                    "voter": "star17syw5hyjapftg3hslelqsqtch0jwgxzhea63q6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper17syw5hyjapftg3hslelqsqtch0jwgxzhuk7pvn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1euslp8c2qadgs6jy6klwv6f332mj426qhj7uu6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1euslp8c2qadgs6jy6klwv6f332mj426qje6vsn",
+                    "level": 3
+                },
+                {
+                    "voter": "star1y0w5qhdf6aj90u7knykdetqus4nc2axgng0hq6",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1y0w5qhdf6aj90u7knykdetqus4nc2axgkrt8vn",
+                    "level": 2
+                },
+                {
+                    "voter": "star1zs66yh6daua3tjsanq7pqjffryrn65std6efjc",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1zs66yh6daua3tjsanq7pqjffryrn65stg3ae73",
+                    "level": 3
+                },
+                {
+                    "voter": "star1c8p90su0tdz67xdhx5470lzvs2lw8twqtwklqq",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1c8p90su0tdz67xdhx5470lzvs2lw8twqw9j0vf",
+                    "level": 2
+                },
+                {
+                    "voter": "star18pk70ynegvzqy7hw74uqq9xs9jz5s5a679cp33",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper18pk70ynegvzqy7hw74uqq9xs9jz5s5a6mwu3ac",
+                    "level": 2
+                },
+                {
+                    "voter": "star1symf474wnypes2d3mecllqk6l26rwz8mdu6380",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1symf474wnypes2d3mecllqk6l26rwz8mgh7ptx",
+                    "level": 1
+                },
+                {
+                    "voter": "star1pdqlmncych8uzsfdnsptv7s0wpazc0rgf4xgk7",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1pdqlmncych8uzsfdnsptv7s0wpazc0rgv7zc6h",
+                    "level": 2
+                },
+                {
+                    "voter": "star1734yczdw25efy0q604ydu2prfwt89mnadyvyq2",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper1734yczdw25efy0q604ydu2prfwt89mnag0g5vr",
+                    "level": 2
+                },
+                {
+                    "voter": "star10nzzug4p95qtzy2rat79uvq6zrt3jk9e7mksdk",
+                    "tx_hash": null,
+                    "timestamp": null,
+                    "option": "VOTE_OPTION_NO_VOTE",
+                    "tx_height": null,
+                    "answer": "did not vote",
+                    "validatorAddress": "starvaloper10nzzug4p95qtzy2rat79uvq6zrt3jk9emsjqpl",
+                    "level": 2
+                }
+            ]
+        }
+    ]
+}
