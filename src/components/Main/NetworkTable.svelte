@@ -161,7 +161,7 @@
 		display: flex;
 		justify-content: center;
 		.dashboard {
-			width: 87.5%;
+			width: 96%;
 			padding: 20px;
 			border-radius: 10px;
 			background-color: #11141b;

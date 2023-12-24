@@ -167,7 +167,7 @@
 	}
 
 	.dashboard {
-		width: 58%;
+		width: 65%;
 		height: 530px;
 		padding: 20px;
 		border-radius: 10px;

@@ -31,7 +31,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 95%;
+		width: 98.5%;
 		margin-top: 50px;
 	}
 
