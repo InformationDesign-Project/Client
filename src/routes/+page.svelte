@@ -45,6 +45,6 @@
 
 <style lang="scss">
 	body{
-		width:90%;
+		width:100%;
 	}
 </style>
