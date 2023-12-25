@@ -35,7 +35,7 @@
 	});
 </script>
 
-<main>
+<body>
 	<div class="wrapper">
 		<div class="leftSection">
 			<!-- 로고 이미지 클릭 시 메인 페이지로 이동 -->
@@ -72,12 +72,12 @@
 			</div>
 		</div>
 	</div>
-</main>
+</body>
 
 <style lang="scss">
 	.wrapper {
-		width: 100vw;
-		height: 100vh;
+		width: 1920px; // 너비 고정
+    height: 1080px;
 		background-color: #090910;
 		display: flex;
 		flex-direction: row;
