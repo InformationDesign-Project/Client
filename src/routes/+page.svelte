@@ -42,3 +42,9 @@
 	<MainDashboard {chainData} {validatorData} {chainName} {changeName} />
 	<NetworkTable {chainData} {changeName} />
 </body>
+
+<style lang="scss">
+	body{
+		width:95%;
+	}
+</style>
