@@ -721,7 +721,7 @@
 	}
 
 	#sankey-chart {
-		max-width: 100%;
-		height: 90%;
+		max-width: 87%;
+		height: 100%;
 	}
 </style>
