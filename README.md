@@ -51,6 +51,7 @@
 ## Tech Stack
 
 - FrontEnd : SCSS, D3js, Chartjs, JavaScript, Svelte
+- Data Cleansing : python
 
 <br /> 
 
