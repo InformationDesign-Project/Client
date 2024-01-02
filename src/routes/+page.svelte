@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount, setContext } from 'svelte';
+	import { Layout } from '../components/layout';
 	import MainDashboard from '../components/Main/MainDashboard.svelte';
 	import MainHeader from '../components/Main/MainHeader.svelte';
 	import NetworkTable from '../components/Main/NetworkTable.svelte';
@@ -38,9 +39,11 @@
 </script>
 
 <body>
+	<Layout>
 	<MainHeader />
 	<MainDashboard {chainData} {validatorData} {chainName} {changeName} />
 	<NetworkTable {chainData} {changeName} />
+	</Layout>	
 </body>
 
 <style lang="scss">
